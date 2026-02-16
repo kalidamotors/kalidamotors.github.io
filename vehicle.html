@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="text-right">
-                            <p class="text-sm text-[#617289] font-medium">CNF Price</p>
+                            <p class="text-sm text-[#617289] font-medium">Total Costs</p>
                             <p id="priceDisplay" class="text-3xl font-black text-primary">$42,500</p>
                         </div>
                     </div>
@@ -184,11 +184,15 @@
                 <!-- Contact Card -->
                 <div class="bg-white p-6 rounded-xl border border-[#f0f2f4] shadow-sm sticky top-24">
                     <div class="mb-6">
-                        <h4 class="text-sm font-bold text-[#617289] uppercase tracking-wider mb-1">Want to get a similar vehicle?</h4>
+                        <h4 id="importContact" class="text-sm font-bold text-[#617289] uppercase tracking-wider mb-1">Want to get a similar vehicle?</h4>
                         
                     </div>
                     <div class="space-y-4">
-                        <button
+                        <a
+                            href="#"
+                            id="whatsappInquiryBtn"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="w-full bg-[#25D366] text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 hover:brightness-95 transition-all shadow-lg shadow-[#25D366]/20">
                             <svg class="size-6 fill-current" viewbox="0 0 24 24">
                                 <path
@@ -196,28 +200,55 @@
                                 </path>
                             </svg>
                             Inquire on WhatsApp
-                        </button>
+                        </a>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                var btn = document.getElementById('whatsappInquiryBtn');
+                                btn.addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                    var title = document.getElementById('vehicleTitle').textContent.trim().replace(/^\d{4}\s*/, '');
+                                    var urlParams = new URLSearchParams(window.location.search);
+                                    var tab = urlParams.get('tab') || 'past';
+                                    var message;
+                                    
+                                    if (tab === 'local') {
+                                        message = encodeURIComponent("Hello Kalida, am interested in this " + title);
+                                    } else {
+                                        message = encodeURIComponent(
+                                            "Hello Kalida Motors, I'm interested in getting a similar vehicle to: " + title + ".\nCould you provide more details?"
+                                        );
+                                    }
+                                    
+                                    var url = "https://wa.me/254718036460?text=" + message;
+                                    window.open(url, '_blank');
+                                });
+                            });
+                        </script>
                     </div>
                     <div class="mt-8 pt-8 border-t border-[#f0f2f4]">
                         <p class="text-xs text-[#617289] font-medium mb-4">WE GUARANTEE</p>
                         <ul class="space-y-3">
                             <li class="flex items-center gap-3 text-sm">
                                 <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
-                                Genuine Mileage Verification
+                                Transparency
                             </li>
                             <li class="flex items-center gap-3 text-sm">
                                 <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
-                                No Accident History (Non-Accident)
+                                No hidden costs or fees
                             </li>
                             <li class="flex items-center gap-3 text-sm">
                                 <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
-                                Direct Port Shipping
+                                Safe handling of money and transactions
+                            </li>
+                            <li class="flex items-center gap-3 text-sm">
+                                <span class="material-symbols-outlined text-green-500 text-lg">check_circle</span>
+                                Professional and timely communication
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Featured Testimonial -->
-                <div class="bg-white p-6 rounded-xl border border-[#f0f2f4]">
+                <div id="testimonialSection" class="bg-white p-6 rounded-xl border border-[#f0f2f4]">
                     <div id="testimonialRating" class="flex items-center gap-1 text-yellow-400 mb-4">
                         <!-- Stars will be populated by JavaScript -->
                     </div>
@@ -313,6 +344,18 @@
         // Find vehicle by ID
         const vehicle = dataSource.find(v => v.id === vehicleId);
         
+        // Hide testimonials section if local tab
+        if (tab === 'local') {
+            const testimonialSection = document.getElementById('testimonialSection');
+            if (testimonialSection) {
+                testimonialSection.style.display = 'none';
+            }
+            const importContact = document.getElementById('importContact');
+            if (importContact) {
+                importContact.style.display = 'none';
+            }
+        }
+        
         if (vehicle) {
             
             // Update title
@@ -328,7 +371,7 @@
             document.getElementById('driveSpec').textContent = vehicle.drive_type || 'N/A';
             document.getElementById('colorSpec').textContent = vehicle.color || 'N/A';
             document.getElementById('seatsSpec').textContent = vehicle.seats || 'N/A';
-            document.getElementById('priceDisplay').textContent = vehicle.cnf_price ? vehicle.cnf_price : 'Contact for price';
+            document.getElementById('priceDisplay').textContent = vehicle.price ? vehicle.price : 'Contact for price';
             document.getElementById('chassisId').textContent = vehicle.chassis_id || 'N/A';
             document.getElementById('engineModel').textContent = vehicle.engine_model || 'N/A';
             document.getElementById('doorsSpec').textContent = vehicle.doors || 'N/A';
