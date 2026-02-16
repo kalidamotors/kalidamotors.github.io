@@ -8,7 +8,7 @@
   price: "KES 1,250,000"
   badge: "Available for Viewing"
   images:
-    - "/assets/images/vehicles/local/demio1.jpeg"
-    - "/assets/images/vehicles/local/demio2.jpeg"
-    - "/assets/images/vehicles/local/demio3.jpeg"
-    - "/assets/images/vehicles/local/demio4.jpeg" 
+    - "assets/images/vehicles/local/demio1.jpeg"
+    - "assets/images/vehicles/local/demio2.jpeg"
+    - "assets/images/vehicles/local/demio3.jpeg"
+    - "assets/images/vehicles/local/demio4.jpeg" 
