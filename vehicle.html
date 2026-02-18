@@ -84,7 +84,7 @@
                         <div>
                             <h1 id="vehicleTitle" class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2"></h1>
                             <div class="flex flex-wrap gap-2">
-                                <span
+                                <span id="verifiedImportBadge"
                                     class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                                     <span class="material-symbols-outlined text-sm">verified</span> Verified Import
                                 </span>
@@ -353,6 +353,10 @@
             const importContact = document.getElementById('importContact');
             if (importContact) {
                 importContact.style.display = 'none';
+            }
+            const verifiedImportBadge = document.getElementById('verifiedImportBadge');
+            if (verifiedImportBadge) {
+                verifiedImportBadge.style.display = 'none';
             }
         }
         
