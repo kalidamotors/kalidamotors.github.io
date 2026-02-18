@@ -3,7 +3,7 @@
   subtitle: "Grade 4.5"
   year: "2019"
   grade: "4.5"
-  mileage: "42k km"
+  mileage: "81k km"
   fuel: "Petrol"
   transmission: "Auto"
   engine_size: "1.5L"
@@ -11,11 +11,11 @@
   drive_type: "FWD"
   color: "White"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
-  airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
-  safety_systems: "Toyota Safety Sense"
+  chassis_id: "DJLFS"
+  engine_model: "SKYACTIV-G"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "15-inch"
+  safety_systems: "ABS, EBD, Brake Assist, Traction Control, Stability Control, Hill Start Assist"
   doors: "5"
   images: 
     - "assets/images/vehicles/past_imports/demio1.jpeg"
@@ -27,10 +27,10 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   testimonials:
-    - name: David M.
+    - name: Ivy K.
       rating: 5
-      testimonial: "I was skeptical about importing this Mazda Demio online, but Kalida Motors handled everything. The car arrived exactly as described in the auction sheet. Truly professional."
-      date: "Imported Sept 2023"
+      testimonial: "Kalida Motors handled everything. The car arrived exactly as described in the auction sheet. Truly professional."
+      date: "Imported November 2025"
 
 - id: "b8l4c0y3r"
   title: "Volkswagen Golf"
@@ -41,15 +41,15 @@
   fuel: "Petrol"
   transmission: "Auto"
   engine_size: "1.4L"
-  price: "KES 1,800,000"
+  price: "KES 2,200,000"
   drive_type: "FWD"
-  color: "White"
+  color: "Black"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
+  chassis_id: "AUCPT"
+  engine_model: "EA211"
   airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
-  safety_systems: "Toyota Safety Sense"
+  wheel_size: "17-inch Alloy"
+  safety_systems: "Front Assist with City Emergency Braking, Lane Assist, Adaptive Cruise Control, Blind Spot Monitor, Rear Traffic Alert, Rearview Camera"
   doors: "5"
   images: 
     - "assets/images/vehicles/past_imports/golf1.jpeg"
@@ -64,25 +64,26 @@
     - name: Tom K.
       rating: 4
       testimonial: "The Volkswagen Golf I imported through Kalida Motors was in excellent condition and exactly as described. The process was smooth, and the team was very responsive to my questions."
-      date: "Imported Oct 2023"
+      date: "Imported May 2024"
+
 - id: "c9m5d1z4s"
   title: "Peugeot 3008"
   subtitle: "GT Line | Grade 4"
   year: "2019"
   grade: "4"
   mileage: "84k km"
-  fuel: "Petrol"
+  fuel: "Diesel"
   transmission: "Auto"
   engine_size: "2L"
-  price: "KES 2,500,000"
+  price: "KES 2,700,000"
   drive_type: "FWD"
   color: "White"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
+  chassis_id: "LDA-P84AH01"
+  engine_model: "PSA DW10"
   airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
-  safety_systems: "Toyota Safety Sense"
+  wheel_size: "18-inch Alloy"
+  safety_systems: "Speed Limit Recognition and Recommendation, Driver Attention Alert, Lane Keeping Assist, Blind Spot Monitoring, Rear Cross Traffic Alert, 360-Degree Camera System"
   doors: "5"
   images: 
     - "assets/images/vehicles/past_imports/30081.jpeg"
@@ -94,10 +95,10 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   testimonials:
-    - name: Kimani R.
+    - name: Melvin A.
       rating: 5
-      testimonial: "I was skeptical about importing this Mazda Demio online, but Kalida Motors handled everything. The car arrived exactly as described in the auction sheet. Truly professional."
-      date: "Imported Sept 2023"
+      testimonial: "It was an awesome experience importing the Peugeot 3008 through Kalida Motors. The car was in great condition and the team was very helpful throughout the process."
+      date: "Imported December 2025"
 
 - id: "d0n6e2a5t"
   title: "Toyota Passo"
@@ -108,14 +109,14 @@
   fuel: "Petrol"
   transmission: "Auto"
   engine_size: "1.0L"
-  price: "KES 1,500,000"
+  price: "KES 1,100,000"
   drive_type: "FWD"
-  color: "White"
+  color: "Silver"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
-  airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
+  chassis_id: "M700A"
+  engine_model: "1KR-FE"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "14-inch Alloy"
   safety_systems: "Toyota Safety Sense"
   doors: "5"
   images:
@@ -125,10 +126,10 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   testimonials:
-    - name: Sarah K
+    - name: Lawrence T.
       rating: 4
       testimonial: "The Toyota Passo I imported through Kalida Motors was in excellent condition and exactly as described. The process was smooth, and the team was very responsive to my questions."
-      date: "Imported Oct 2023"
+      date: "Imported July 2025"
 
 - id: "e1o7f3b6u"
   title: "Nissan X-Trail"
@@ -143,11 +144,11 @@
   drive_type: "FWD"
   color: "White"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
+  chassis_id: "DBA-NT32"
+  engine_model: "MR20DD"
   airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
-  safety_systems: "Toyota Safety Sense"
+  wheel_size: "18-inch Alloy"
+  safety_systems: "Intelligent Emergency Braking, Intelligent Forward Collision Warning, Lane Departure Warning, Blind Spot Warning, Rear Cross Traffic Alert, 360-degree cameraf"
   doors: "5"
   images: 
     - "assets/images/vehicles/past_imports/xtrail1.jpeg"
@@ -158,13 +159,13 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   testimonials:
-    - name: David M.
+    - name: Chepkurui J.
       rating: 5
-      testimonial: "I was skeptical about importing this Mazda Demio online, but Kalida Motors handled everything. The car arrived exactly as described in the auction sheet. Truly professional."
-      date: "Imported Sept 2023"
+      testimonial: "I loved the Nissan X-Trail I imported through Kalida Motors. I recommend them to anyone looking for a great car import experience."
+      date: "Imported May 2025"
 
 - id: "f2p8g4c7v"
-  title: "Toyota Probox"
+  title: "Toyota Succeed"
   subtitle: "Grade 4"
   year: "2020"
   grade: "4"
@@ -176,10 +177,10 @@
   drive_type: "FWD"
   color: "White"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
-  airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
+  chassis_id: "NHP160V"
+  engine_model: "1NZ-FXE"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "15-inch Alloy"
   safety_systems: "Toyota Safety Sense"
   doors: "5"
   images: 
@@ -189,10 +190,10 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   testimonials:
-    - name: Otieno O.
+    - name: Cheruiyot W.
       rating: 4
-      testimonial: "The Toyota Probox I imported through Kalida Motors was in excellent condition and exactly as described. The process was smooth, and the team was very responsive to my questions."
-      date: "Imported Oct 2023"
+      testimonial: "The team at Kalida Motors was fantastic to work with. Ilifika ikiwa sawa"
+      date: "Imported August 2025"
 
 - id: "g3q9h5j8k"
   title: "Honda Shuttle"
@@ -205,13 +206,13 @@
   engine_size: "1.5L"
   price: "KES 1,400,000"
   drive_type: "FWD"
-  color: "White"
+  color: "Black"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
-  airbags: "8 (Front, Side, Curtain)"
+  chassis_id: "GP7"
+  engine_model: "LEB-H1"
+  airbags: "6 (Front, Side, Curtain)"
   wheel_size: "19-inch Alloy"
-  safety_systems: "Toyota Safety Sense"
+  safety_systems: "Collision Mitigation Braking System, Lane Departure Warning, Adaptive Cruise Control, City Brake Active System"
   doors: "5"
   images: 
     - "assets/images/vehicles/past_imports/honda1.jpeg"
@@ -222,10 +223,10 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   testimonials:
-    - name: Wamalwa K.
+    - name: Caroline C.
       rating: 5
-      testimonial: "I was skeptical about importing this Mazda Demio online, but Kalida Motors handled everything. The car arrived exactly as described in the auction sheet. Truly professional."
-      date: "Imported Sept 2023"
+      testimonial: "It car was a beauty and the process was seamless"
+      date: "Imported Sept 2025"
 
 - id: "h4r0i6k9l"
   title: "Nissan Note"
@@ -236,15 +237,15 @@
   fuel: "Hybrid"
   transmission: "Auto"
   engine_size: "1.2L"
-  price: "KES 1,350,000"
+  price: "KES 1,050,000"
   drive_type: "FWD"
-  color: "White"
+  color: "Silver"
   seats: "5 Seater"
-  chassis_id: "AXUH85"
-  engine_model: "A25A-FXS"
-  airbags: "8 (Front, Side, Curtain)"
-  wheel_size: "19-inch Alloy"
-  safety_systems: "Toyota Safety Sense"
+  chassis_id: "HE12"
+  engine_model: "HR12DE"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "15-inch Alloy"
+  safety_systems: "e-Pedal, ProPILOT, Intelligent Emergency Braking, 360-degree camera system"
   doors: "5"
   images: 
     - "assets/images/vehicles/past_imports/note1.jpeg"
@@ -255,7 +256,7 @@
   link: "inquiry"
   cta: "Similar Inquiry" 
   testimonials:
-    - name: Dennis W.
+    - name: Kinyua I.
       rating: 4
-      testimonial: "The Nissan Note I imported through Kalida Motors was in excellent condition and exactly as described. The process was smooth, and the team was very responsive to my questions."
-      date: "Imported Oct 2023"
+      testimonial: "The experience was awesome,  cost and waiting time was acceptable"
+      date: "Imported Oct 2025"
