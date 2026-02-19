@@ -193,7 +193,7 @@
                             <span class="flex items-center gap-1"><span
                                     class="material-symbols-outlined text-sm">speed</span> {{ vehicle.mileage }}</span>
                         </div>
-                        <a href="https://wa.me/254718036460?text=Hello%20Kalida%20Motors%2C%20I%20would%20like%20to%20book%20a%20viewing%20for%20this%20vehicle."
+                        <a href="https://wa.me/254718036460?text=Hello%20Kalida%20Motors%2C%20I%20would%20like%20to%20book%20a%20viewing%20for%20this%20vehicle%3A%20{{ vehicle.year }}%20{{ vehicle.title }}%0A%0AView%20details%3A%20{{ site.url }}/vehicle.html?id={{ vehicle.id }}%26tab=local"
                             target="_blank" rel="noopener"
                             class="w-full bg-green-500 hover:bg-green-600 text-white py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-colors">
                             <span class="material-symbols-outlined text-[18px]">calendar_month</span> Book Viewing

@@ -209,13 +209,15 @@
                                     var title = document.getElementById('vehicleTitle').textContent.trim().replace(/^\d{4}\s*/, '');
                                     var urlParams = new URLSearchParams(window.location.search);
                                     var tab = urlParams.get('tab') || 'past';
+                                    var vehicleId = urlParams.get('id');
+                                    var vehiclePageUrl = window.location.origin + window.location.pathname + '?id=' + vehicleId + '&tab=' + tab;
                                     var message;
                                     
                                     if (tab === 'local') {
-                                        message = encodeURIComponent("Hello Kalida, am interested in this " + title);
+                                        message = encodeURIComponent("Hello Kalida, am interested in this " + title + "\n\nView details: " + vehiclePageUrl);
                                     } else {
                                         message = encodeURIComponent(
-                                            "Hello Kalida Motors, I'm interested in getting a similar vehicle to: " + title + ".\nCould you provide more details?"
+                                            "Hello Kalida Motors, I'm interested in getting a similar vehicle to: " + title + ".\nCould you provide more details?\n\nView details: " + vehiclePageUrl
                                         );
                                     }
                                     
