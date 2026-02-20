@@ -179,9 +179,14 @@
                         </div>
                     </div>
                     <div class="p-5">
-                        <a href="vehicle.html?id={{ vehicle.id }}&tab=local"
-                            class="text-lg font-bold mb-1 hover:text-primary transition-colors">{{ vehicle.year }} {{
-                            vehicle.title }}</a>
+                        <div class="flex justify-between items-start gap-2 mb-1">
+                            <a href="vehicle.html?id={{ vehicle.id }}&tab=local"
+                                class="text-lg font-bold hover:text-primary transition-colors">{{ vehicle.year }} {{
+                                vehicle.title }}</a>
+                            {% if vehicle.price %}
+                            <span class="text-green-600 dark:text-green-400 font-bold text-base whitespace-nowrap">{{ vehicle.price }}</span>
+                            {% endif %}
+                        </div>
                         {% if vehicle.subtitle %}
                         <p class="text-slate-400 font-medium text-sm">{{ vehicle.subtitle }}</p>
                         {% endif %}
