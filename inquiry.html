@@ -124,17 +124,19 @@
                                         <div class="flex flex-col gap-2">
                                             <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Vehicle
                                                 Brand <span class="text-red-500">*</span></label>
-                                            <input id="brand"
-                                                class="form-input rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
-                                                placeholder="e.g. Toyota, Mazda, Subaru" type="text" />
+                                            <select id="brand"
+                                                class="form-select rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm">
+                                                <option value="">Select a brand</option>
+                                            </select>
                                             <span class="error-message" id="brandError"></span>
                                         </div>
                                         <div class="flex flex-col gap-2">
                                             <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Model
                                                 Name <span class="text-red-500">*</span></label>
-                                            <input id="model"
-                                                class="form-input rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
-                                                placeholder="e.g. RAV4, CX-5, Forester" type="text" />
+                                            <select id="model"
+                                                class="form-select rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm" disabled>
+                                                <option value="">Select a model</option>
+                                            </select>
                                             <span class="error-message" id="modelError"></span>
                                         </div>
                                         <div class="flex flex-col gap-2">
@@ -245,6 +247,145 @@
                                         <p class="text-[11px] text-slate-400">At Kalida Motors, we typically recommend
                                             Grade 4.0
                                             and above for the best long-term value.</p>
+                                    </div>
+                                    <!-- Additional Specifications -->
+                                    <div class="border-t border-slate-200 dark:border-slate-700 pt-6">
+                                        <label class="text-sm font-bold text-slate-700 dark:text-slate-300 mb-4 block">Additional Specifications <span class="text-xs text-slate-400 font-normal">(Optional)</span></label>
+                                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-4">Help us narrow down your search with specific features you're looking for.</p>
+                                        <div class="space-y-4">
+                                            <!-- Color Preferences -->
+                                            <div class="flex flex-col gap-2">
+                                                <label class="text-xs font-bold text-slate-600 dark:text-slate-400">Preferred Color</label>
+                                                <div class="flex flex-wrap gap-2">
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="white" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">White</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="black" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Black</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="silver" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Silver</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="gray" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Gray</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="red" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Red</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="blue" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Blue</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="brown" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Brown</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="color" value="gold" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Gold</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Fuel Type -->
+                                            <div class="flex flex-col gap-2">
+                                                <label class="text-xs font-bold text-slate-600 dark:text-slate-400">Preferred Fuel Type</label>
+                                                <div class="flex flex-wrap gap-2">
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="fuel" value="petrol" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Petrol</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="fuel" value="diesel" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Diesel</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="fuel" value="hybrid" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Hybrid</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="fuel" value="electric" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Electric</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Engine Size -->
+                                            <div class="flex flex-col gap-2">
+                                                <label class="text-xs font-bold text-slate-600 dark:text-slate-400">Preferred Engine Size</label>
+                                                <div class="flex flex-wrap gap-2">
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="engine" value="below1500cc" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Below 1500cc</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="engine" value="1500-2000cc" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">1500-2000cc</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="engine" value="2000-2500cc" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">2000-2500cc</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="engine" value="above2500cc" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Above 2500cc</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Special Features -->
+                                            <div class="flex flex-col gap-2">
+                                                <label class="text-xs font-bold text-slate-600 dark:text-slate-400">Special Features</label>
+                                                <div class="flex flex-wrap gap-2">
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="sunroof" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Sunroof</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="leather_seats" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Leather Seats</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="alloy_wheels" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Alloy Wheels</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="backup_camera" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Backup Camera</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="parking_sensors" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Parking Sensors</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="climate_control" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">Climate Control</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="gps_navigation" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">GPS Navigation</span>
+                                                    </label>
+                                                    <label class="flex items-center gap-2 cursor-pointer">
+                                                        <input type="checkbox" name="features" value="no_accidents" class="w-4 h-4 rounded">
+                                                        <span class="text-sm">No Accident History</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Additional Notes -->
+                                            <div class="flex flex-col gap-2">
+                                                <label class="text-xs font-bold text-slate-600 dark:text-slate-400">Additional Notes</label>
+                                                <textarea id="specifications"
+                                                    class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm resize-none"
+                                                    placeholder="Any other specific details or preferences? (e.g., must be single owner, low mileage, clean title, etc.)"
+                                                    rows="3\"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -428,11 +569,68 @@
     </div>
 
     <script>
+        // Car makes and models database
+        const carDatabase = {
+            'Toyota': ['Alphard', 'Auris', 'Avanza', 'Camry', 'Corolla', 'Crown', 'Fortuner', 'Glanza', 'Harrier', 'Hiace', 'Highlander', 'Hilux', 'Innova', 'Land Cruiser', 'Levin', 'Noah', 'Prado', 'Previa', 'Probox','Prius', 'Raize', 'RAV4', 'Sienna', 'Vanguard', 'Vellfire', 'Verso', 'Vitz', 'Wish', 'Yaris'],
+            'Mazda': ['CX-3', 'CX-30','CX-5', 'CX-50 ', 'CX-7', 'CX-8', 'CX-9', 'Demio', 'Familia', 'MPV', 'Premacy', 'RX-8', 'Verisa', '2', '3', '5', '6', '8'],
+            'Honda': ['Accord', 'City', 'Civic', 'CR-V', 'CR-X', 'Elysion', 'Fit', 'Freed', 'Grace', 'Odyssey', 'Pilot', 'Ridgeline', 'Stream', 'Vezel', 'WR-V', 'Zest', 'Insight', 'S660'],
+            'Subaru': ['BRZ', 'Crosstrek', 'Exiga', 'Forester', 'Impreza', 'Outback', 'Sambar', 'XV', 'WRX', 'Legacy', 'Levorg', 'Ascent', 'Justy', 'Rex', 'Traviq'],
+            'Mitsubishi': ['Airbag', 'Attrage', 'Canter', 'Colt', 'Delica', 'Fuso', 'Galant', 'Grandis', 'Lancer', 'Montero', 'Outlander', 'Pajero', 'Triton', 'Eclipse Cross', 'Mirage', 'RVR', 'Xpander', 'Eclipse', 'i-MiEV'],
+            'Nissan': ['Almera', 'Altima', 'Bluebird', 'Cedric', 'Cefiro', 'Cima', 'Dayz', 'Datsun', 'Diesel', 'Elgrand', 'Fuga', 'Gloria', 'Hiace', 'Laurel', 'Leaf', 'March', 'Maxima', 'Navara', 'Note', 'Pathfinder', 'Presage', 'Qashqai', 'Rogue', 'Roox', 'Safari', 'Serena', 'Sunny', 'Teana', 'Terrano', 'Tiida', 'Wingroad', 'X-Trail'],
+            'Volkswagen': ['Beetle', 'Caravelle', 'EOS', 'Fox', 'Golf', 'Golf Plus', 'Jetta', 'Passat', 'Polo', 'Rabbit', 'Scirocco', 'Tiguan', 'Touareg', 'Touran'],
+            'BMW': ['3 Series', '5 Series', '7 Series', 'X1', 'X3', 'X5', 'X6', 'Z4', 'i3', 'i8', 'M3', 'M4', 'M5', 'M6', 'M8', 'X2', 'X4', 'X7', '2 Series', '4 Series', '6 Series'],
+            'Mercedes-Benz': ['A-Class', 'B-Class', 'C-Class', 'CLA', 'E-Class', 'GLA', 'GLC', 'GLE', 'GLK', 'GLS', 'ML', 'S-Class', 'V-Class'],
+            'Audi': ['A1', 'A3', 'A4', 'A5', 'A6', 'A8', 'Q3', 'Q5', 'Q7'],
+            'Hyundai': ['Accent', 'Atos', 'Coupe', 'Creta', 'Elantra', 'Getz', 'Grandeur', 'Hy-15', 'iX25', 'Kona', 'Santa Fe', 'Sonata', 'Terracan', 'Tiburon', 'Tucson', 'Verna', 'Venue', 'i10', 'i20', 'i30', 'i40'],
+            'Kia': ['Carens', 'Cee\'d', 'Cerato', 'Forte', 'K5', 'Niro', 'Optima', 'Picanto', 'Rio', 'Rinado', 'Sorento', 'Soul', 'Sportage', 'Stinger', 'Seltos', 'Telluride', 'Venga', 'XCeed'],
+            'Chevrolet': ['Aveo', 'Captiva', 'Cruze', 'Epica', 'Equinox', 'Lacetti', 'Matiz', 'Malibu', 'Nubira', 'Optra', 'Spark', 'Tradewind'],
+            'Ford': ['Edge', 'EcoSport', 'Escape', 'Expedition', 'Explorer', 'Fiesta', 'Focus', 'Fusion', 'Galaxy', 'KA', 'Kuga', 'Mondeo', 'Mustang', 'Ranger', 'S-Max', 'Taurus', 'Territory'],
+            'Volkswagen Truck': ['Caravelle', 'Crafter', 'Transporter'],
+            'Isuzu': ['D-Max', 'ELF', 'MU-X', 'NPR', 'Rodeo'],
+            'Daihatsu': ['Boon', 'Charade', 'Copen', 'Cuore', 'Gran Max', 'Hijet', 'Mira', 'Move', 'Naked', 'Rocky', 'Sirion', 'Tanto', 'Terios', 'Taft', 'YRV'],
+            'Suzuki': ['Alto', 'Baleno', 'Celerio', 'Ciaz', 'Cultus', 'Ertiga', 'Esteem', 'Grand Vitara', 'Gypsy', 'Ignis', 'Jimmy', 'Jimny', 'Maruti', 'Reno', 'Samurai', 'SX4', 'Swift', 'Vitara', 'Wagon R'],
+            'Tata': ['Altroz', 'Aria', 'Bolt', 'Cameo', 'Indica', 'Indigo', 'Indigo CS', 'Indigo eCS', 'Indigo-TDI', 'Indigo-XL', 'Nexon', 'Nano', 'Safari', 'Sumo', 'Sumo Gold', 'Tata Xenon']
+        };
+
         const form = document.getElementById('inquiryForm');
         const nextBtn = document.getElementById('nextBtn');
         const prevBtn = document.getElementById('prevBtn');
         const submitBtn = document.getElementById('submitBtn');
+        const brandSelect = document.getElementById('brand');
+        const modelSelect = document.getElementById('model');
         let currentStep = 1;
+
+        // Populate brand dropdown
+        function populateBrands() {
+            const brands = Object.keys(carDatabase).sort();
+            brands.forEach(brand => {
+                const option = document.createElement('option');
+                option.value = brand;
+                option.textContent = brand;
+                brandSelect.appendChild(option);
+            });
+        }
+
+        // Handle brand selection and populate models
+        brandSelect.addEventListener('change', function() {
+            const selectedBrand = this.value;
+            modelSelect.innerHTML = '<option value="">Select a model</option>';
+            
+            if (selectedBrand && carDatabase[selectedBrand]) {
+                modelSelect.disabled = false;
+                carDatabase[selectedBrand].forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model;
+                    option.textContent = model;
+                    modelSelect.appendChild(option);
+                });
+            } else {
+                modelSelect.disabled = true;
+            }
+        });
+
+        // Initialize brands on page load
+        populateBrands();
 
         function showStep(step) {
             document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
@@ -469,8 +667,8 @@
 
             if (step === 1) {
                 // Validate Step 1
-                const brand = document.getElementById('brand').value.trim();
-                const model = document.getElementById('model').value.trim();
+                const brand = document.getElementById('brand').value;
+                const model = document.getElementById('model').value;
                 const yearFrom = document.getElementById('yearFrom').value;
                 const yearTo = document.getElementById('yearTo').value;
                 const transmission = document.getElementById('transmission').value;
@@ -575,6 +773,15 @@
             e.preventDefault();
             if (validateStep(currentStep)) {
                 // Collect form data
+                // Get selected colors
+                const colors = Array.from(document.querySelectorAll('input[name="color"]:checked')).map(el => el.value).join(', ');
+                // Get selected fuel types
+                const fuels = Array.from(document.querySelectorAll('input[name="fuel"]:checked')).map(el => el.value).join(', ');
+                // Get selected engine sizes
+                const engines = Array.from(document.querySelectorAll('input[name="engine"]:checked')).map(el => el.value).join(', ');
+                // Get selected features
+                const features = Array.from(document.querySelectorAll('input[name="features"]:checked')).map(el => el.value).join(', ');
+                
                 const formData = {
                     brand: document.getElementById('brand').value,
                     model: document.getElementById('model').value,
@@ -587,7 +794,12 @@
                     fullName: document.getElementById('fullName').value,
                     email: document.getElementById('email').value,
                     phone: document.getElementById('phone').value,
-                    county: document.getElementById('county').value
+                    county: document.getElementById('county').value,
+                    colors: colors || 'Not specified',
+                    fuels: fuels || 'Not specified',
+                    engines: engines || 'Not specified',
+                    features: features || 'Not specified',
+                    additionalNotes: document.getElementById('specifications').value || 'None'
                 };
 
                 // Disable submit button during submission
@@ -612,6 +824,11 @@
                 googleFormData.append('entry.395591527', formData.email);          // Replace XXXXXXXX10 with actual entry ID
                 googleFormData.append('entry.581968176', formData.phone);          // Replace XXXXXXXX11 with actual entry ID
                 googleFormData.append('entry.1836492600', formData.county);         // Replace XXXXXXXX12 with actual entry ID
+                googleFormData.append('entry.1438662909', formData.colors);         // Colors preference
+                googleFormData.append('entry.1553900011', formData.fuels);          // Fuel type preference
+                googleFormData.append('entry.69313456', formData.engines);        // Engine size preference
+                googleFormData.append('entry.944658942', formData.features);       // Special features
+                googleFormData.append('entry.2041652678', formData.additionalNotes); // Additional notes
 
                 // Submit to Google Forms
                 fetch(googleFormUrl, {
