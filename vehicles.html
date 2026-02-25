@@ -9,6 +9,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Gallery: Imports &amp; Local Stock - Kalida Motors Ltd</title>
+    <meta name="description" content="Browse quality imported and local vehicles in Kenya. Toyota, Mazda, Nissan, Honda and more. Grade 4.0+ vehicles with verified mileage. Secure your perfect car today." />
+    <meta name="keywords" content="cars for sale Kenya, imported cars Kenya, second hand cars Nairobi, Toyota, Mazda, Nissan, Honda, vehicle gallery, car inventory" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
@@ -54,9 +56,9 @@
     <main class="max-w-[1280px] mx-auto pb-20">
         <section class="px-6 lg:px-10 py-8 lg:py-12">
             <div
-                class="relative overflow-hidden rounded-xl bg-slate-900 min-h-[320px] lg:min-h-[420px] flex flex-col items-center justify-center text-center p-8">
-                <div class="absolute inset-0 z-0 opacity-40 bg-cover bg-center"
-                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDu3EbxhaQOFq_ESYXw7fnBl7JY7mSOX-b4o-Soa1XBKpaI8ol4uwBhVLUokI8btKp79qTc6bsVpPE6Lsxu_ExfgtoqTtfqBIfwzdQluVlzp_75Ucgipu0VuLIHaTuqhZwhye1c0JErG-n5W_dw1joLHuhEKXlyfbq3CGo6wSu-pwMP0EXjl4ESOREGZ3TsAfBoJWn4QogQZwgdznMtx6p7MPFxhzaxGhHQaJ-Oll2CJdjoMWy_r4lCWZCk0XFJH5fVGMUVD7UcaAs');">
+                class="relative overflow-hidden rounded-xl bg-slate-900 min-h-[320px] lg:min-h-[420px] flex flex-col items-center justify-center text-white p-8">
+                <div class="absolute inset-0 z-0 opacity-40 bg-cover bg-center bg-slate-800"
+                    data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu3EbxhaQOFq_ESYXw7fnBl7JY7mSOX-b4o-Soa1XBKpaI8ol4uwBhVLUokI8btKp79qTc6bsVpPE6Lsxu_ExfgtoqTtfqBIfwzdQluVlzp_75Ucgipu0VuLIHaTuqhZwhye1c0JErG-n5W_dw1joLHuhEKXlyfbq3CGo6wSu-pwMP0EXjl4ESOREGZ3TsAfBoJWn4QogQZwgdznMtx6p7MPFxhzaxGhHQaJ-Oll2CJdjoMWy_r4lCWZCk0XFJH5fVGMUVD7UcaAs" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1 1%22%3E%3Crect fill=%22%23374151%22 width=%221%22 height=%221%22/%3E%3C/svg%3E');">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent z-10">
                 </div>
@@ -140,14 +142,14 @@
                                 {% if vehicle.images %}
                                 {% for image in vehicle.images %}
                                 <div class="carousel-slide relative flex-shrink-0 h-full w-full">
-                                    <div class="absolute inset-0 bg-cover bg-center"
-                                        style="background-image: url('{{ image }}');"></div>
+                                    <div class="absolute inset-0 bg-cover bg-center bg-slate-300" loading="lazy"
+                                        data-src="{{ image }}" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1 1%22%3E%3Crect fill=%22%23cbd5e1%22 width=%221%22 height=%221%22/%3E%3C/svg%3E');"></div>
                                 </div>
                                 {% endfor %}
                                 {% else %}
                                 <div class="carousel-slide relative flex-shrink-0 w-full h-full">
-                                    <div class="absolute inset-0 bg-cover bg-center"
-                                        style="background-image: url('{{ vehicle.image }}');"></div>
+                                    <div class="absolute inset-0 bg-cover bg-center bg-slate-300" loading="lazy"
+                                        data-src="{{ vehicle.image }}" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1 1%22%3E%3Crect fill=%22%23cbd5e1%22 width=%221%22 height=%221%22/%3E%3C/svg%3E');"></div>
                                 </div>
                                 {% endif %}
                             </div>
@@ -413,6 +415,47 @@
     const urlParams = new URLSearchParams(window.location.search);
     const tabParam = urlParams.get('tab') || 'past';
     switchTab(tabParam);
+
+    // Lazy load background images
+    const lazyLoadBackgroundImages = () => {
+        const imageElements = document.querySelectorAll('[data-src]');
+        
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        const src = img.getAttribute('data-src');
+                        if (src) {
+                            img.style.backgroundImage = `url('${src}')`;
+                            img.removeAttribute('data-src');
+                            observer.unobserve(img);
+                        }
+                    }
+                });
+            }, {
+                rootMargin: '50px'
+            });
+            
+            imageElements.forEach(img => imageObserver.observe(img));
+        } else {
+            // Fallback for browsers without IntersectionObserver
+            imageElements.forEach(img => {
+                const src = img.getAttribute('data-src');
+                if (src) {
+                    img.style.backgroundImage = `url('${src}')`;
+                    img.removeAttribute('data-src');
+                }
+            });
+        }
+    };
+
+    // Run lazy loading when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', lazyLoadBackgroundImages);
+    } else {
+        lazyLoadBackgroundImages();
+    }
 </script>
 
 </html>
