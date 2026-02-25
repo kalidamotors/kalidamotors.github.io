@@ -368,7 +368,9 @@
         if (vehicle) {
             
             // Update title
-            document.getElementById('vehicleTitle').textContent = (vehicle.year || '') + ' ' + (vehicle.title || '');
+            const vehicleTitleText = (vehicle.year || '') + ' ' + (vehicle.title || '');
+            document.getElementById('vehicleTitle').textContent = vehicleTitleText;
+            document.title = 'Kalida Motors | ' + vehicleTitleText;
             document.getElementById('gradeSpan').textContent = 'Auction Grade: ' + (vehicle.grade || 'N/A');
             
             // Update vehicle-specific badge
