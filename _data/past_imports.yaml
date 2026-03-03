@@ -17,6 +17,7 @@
   wheel_size: "15-inch"
   safety_systems: "ABS, EBD, Brake Assist, Traction Control, Stability Control, Hill Start Assist"
   doors: "5"
+  efficiency: "18-20 km/l"
   images: 
     - "assets/images/vehicles/past_imports/demio1.jpeg"
     - "assets/images/vehicles/past_imports/demio2.jpeg"
@@ -51,6 +52,7 @@
   wheel_size: "17-inch Alloy"
   safety_systems: "Front Assist with City Emergency Braking, Lane Assist, Adaptive Cruise Control, Blind Spot Monitor, Rear Traffic Alert, Rearview Camera"
   doors: "5"
+  efficiency: "13-15 km/l"
   images: 
     - "assets/images/vehicles/past_imports/golf1.jpeg"
     - "assets/images/vehicles/past_imports/golf2.jpeg"
@@ -85,6 +87,7 @@
   wheel_size: "18-inch Alloy"
   safety_systems: "Speed Limit Recognition and Recommendation, Driver Attention Alert, Lane Keeping Assist, Blind Spot Monitoring, Rear Cross Traffic Alert, 360-Degree Camera System"
   doors: "5"
+  efficiency: "17-19 km/l"
   images: 
     - "assets/images/vehicles/past_imports/30081.jpeg"
     - "assets/images/vehicles/past_imports/30082.jpeg"
@@ -119,6 +122,7 @@
   wheel_size: "14-inch Alloy"
   safety_systems: "Toyota Safety Sense"
   doors: "5"
+  efficiency: "17-19 km/l"
   images:
     - "assets/images/vehicles/past_imports/passo1.jpeg"
     - "assets/images/vehicles/past_imports/passo2.jpeg"
@@ -150,6 +154,7 @@
   wheel_size: "18-inch Alloy"
   safety_systems: "Intelligent Emergency Braking, Intelligent Forward Collision Warning, Lane Departure Warning, Blind Spot Warning, Rear Cross Traffic Alert, 360-degree cameraf"
   doors: "5"
+  efficiency: "11-13 km/l"
   images: 
     - "assets/images/vehicles/past_imports/xtrail1.jpeg"
     - "assets/images/vehicles/past_imports/xtrail2.jpeg"
@@ -183,6 +188,7 @@
   wheel_size: "15-inch Alloy"
   safety_systems: "Toyota Safety Sense"
   doors: "5"
+  efficiency: "14-16 km/l"
   images: 
     - "assets/images/vehicles/past_imports/probox1.jpeg"
     - "assets/images/vehicles/past_imports/probox2.jpeg"
@@ -214,6 +220,7 @@
   wheel_size: "19-inch Alloy"
   safety_systems: "Collision Mitigation Braking System, Lane Departure Warning, Adaptive Cruise Control, City Brake Active System"
   doors: "5"
+  efficiency: "18-22 km/l"
   images: 
     - "assets/images/vehicles/past_imports/honda1.jpeg"
     - "assets/images/vehicles/past_imports/honda2.jpeg"
@@ -247,6 +254,7 @@
   wheel_size: "15-inch Alloy"
   safety_systems: "e-Pedal, ProPILOT, Intelligent Emergency Braking, 360-degree camera system"
   doors: "5"
+  efficiency: "20-25 km/l"
   images: 
     - "assets/images/vehicles/past_imports/note1.jpeg"
     - "assets/images/vehicles/past_imports/note2.jpeg"
