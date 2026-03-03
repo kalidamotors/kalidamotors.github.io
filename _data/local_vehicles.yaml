@@ -111,3 +111,17 @@
     - "assets/images/vehicles/local/voxy5.jpeg"
     - "assets/images/vehicles/local/voxy6.jpeg"
     - "assets/images/vehicles/local/voxy7.jpeg"
+
+- id: "j2n8o3p4q"
+  title: "Toyota Hiace"
+  year: "2009"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  mileage: "183793 km"
+  price: "KES 1,700,000"
+  badge: "Available for Viewing in Juja"
+  images:
+    - "assets/images/vehicles/local/hiace1.jpeg"
+    - "assets/images/vehicles/local/hiace2.jpeg"
+    - "assets/images/vehicles/local/hiace3.jpeg"
