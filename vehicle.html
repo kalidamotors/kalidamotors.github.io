@@ -170,6 +170,10 @@
                             <span id="engineModel" class="text-sm font-medium"></span>
                         </div>
                         <div class="flex justify-between py-2 border-b border-[#f0f2f4]">
+                            <span class="text-[#617289] text-sm">Efficiency</span>
+                            <span id="efficiencySpec" class="text-sm font-medium"></span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-[#f0f2f4]">
                             <span class="text-[#617289] text-sm">Doors</span>
                             <span id="doorsSpec" class="text-sm font-medium"></span>
                         </div>
@@ -404,6 +408,7 @@
             document.getElementById('wheelSizeSpec').textContent = vehicle.wheel_size || 'N/A';
             document.getElementById('safetySystemsSpec').textContent = vehicle.safety_systems || 'N/A';
             document.getElementById('otherSpec').textContent = vehicle.otherSpec || 'N/A';
+            document.getElementById('efficiencySpec').textContent = vehicle.efficiency || 'N/A';
             
             // Populate images
             const images = vehicle.images || (vehicle.image ? [vehicle.image] : []);
