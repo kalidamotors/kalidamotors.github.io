@@ -437,6 +437,12 @@
                     }
                     ratingContainer.appendChild(star);
                 }
+            } else {
+                // Hide testimonials section if no testimonials available
+                const testimonialSection = document.getElementById('testimonialSection');
+                if (testimonialSection) {
+                    testimonialSection.style.display = 'none';
+                }
             }
             
             // Set main image
