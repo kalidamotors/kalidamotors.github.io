@@ -90,7 +90,7 @@
                     <button onclick="switchTab('local')"
                         class="tab-btn px-4 py-4 border-b-2 border-transparent text-slate-500 hover:text-primary font-bold text-lg transition-all"
                         data-tab="local">
-                        Local Units
+                        Local Units For Sale
                     </button>
                 </div>
             </div>
@@ -306,6 +306,33 @@
     let currentPage = 1;
     const itemsPerPage = 6;
 
+    // Fisher-Yates shuffle algorithm
+    function shuffleArray(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    // Randomize vehicles in the grid
+    function randomizeVehicles() {
+        const grid = currentTab === 'past' ?
+            document.getElementById('pastImports') :
+            document.getElementById('localVehicles');
+        
+        if (!grid) return;
+        
+        const vehicles = Array.from(grid.querySelectorAll('.group'));
+        const shuffledVehicles = shuffleArray(vehicles);
+        
+        // Reorder vehicles in the DOM
+        shuffledVehicles.forEach(vehicle => {
+            grid.appendChild(vehicle);
+        });
+    }
+
     function switchTab(tab) {
         currentTab = tab;
         currentPage = 1;
@@ -414,6 +441,16 @@
     // Initialize with tab from URL parameter or default to 'past'
     const urlParams = new URLSearchParams(window.location.search);
     const tabParam = urlParams.get('tab') || 'past';
+    
+    // Randomize both grids on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        currentTab = 'past';
+        randomizeVehicles();
+        currentTab = 'local';
+        randomizeVehicles();
+        currentTab = tabParam;
+    });
+    
     switchTab(tabParam);
 
     // Lazy load background images
