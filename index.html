@@ -451,6 +451,29 @@
             }
         });
     }
+
+    // Randomize past imports grid on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const pastImportsGrids = document.querySelectorAll('.grid');
+        
+        // Find and shuffle the main past imports grid (the one with carousel-containers)
+        pastImportsGrids.forEach(grid => {
+            const cards = Array.from(grid.querySelectorAll('.group'));
+            if (cards.length > 0 && grid.querySelector('.carousel-container')) {
+                // Shuffle using Fisher-Yates algorithm
+                const shuffled = [...cards];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                
+                // Reorder elements in the DOM
+                shuffled.forEach(card => {
+                    grid.appendChild(card);
+                });
+            }
+        });
+    });
 </script>
 
 </html>
