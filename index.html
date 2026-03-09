@@ -43,6 +43,14 @@
             font-family: "Public Sans", sans-serif;
         }
     </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDGJNHB7VP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SDGJNHB7VP');
+    </script>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white transition-colors duration-300">
@@ -451,6 +459,29 @@
             }
         });
     }
+
+    // Randomize past imports grid on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const pastImportsGrids = document.querySelectorAll('.grid');
+        
+        // Find and shuffle the main past imports grid (the one with carousel-containers)
+        pastImportsGrids.forEach(grid => {
+            const cards = Array.from(grid.querySelectorAll('.group'));
+            if (cards.length > 0 && grid.querySelector('.carousel-container')) {
+                // Shuffle using Fisher-Yates algorithm
+                const shuffled = [...cards];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                
+                // Reorder elements in the DOM
+                shuffled.forEach(card => {
+                    grid.appendChild(card);
+                });
+            }
+        });
+    });
 </script>
 
 </html>
