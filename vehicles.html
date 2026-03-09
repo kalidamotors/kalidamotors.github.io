@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Gallery: Imports &amp; Local Stock - Kalida Motors Ltd</title>
+    <title>Vehicle Gallery: Imports &amp; Local Stock - Kalida Motors Ltd</title>
     <meta name="description" content="Browse quality imported and local vehicles in Kenya. Toyota, Mazda, Nissan, Honda and more. Grade 4.0+ vehicles with verified mileage. Secure your perfect car today." />
     <meta name="keywords" content="cars for sale Kenya, imported cars Kenya, second hand cars Nairobi, Toyota, Mazda, Nissan, Honda, vehicle gallery, car inventory" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -96,34 +96,17 @@
             </div>
         </section>
         <section class="px-6 lg:px-10 mb-6">
-            <!-- <div
-                class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-6">
-                <div class="flex gap-3 flex-wrap">
-                    <button
-                        class="flex h-10 items-center justify-center gap-2 rounded-full bg-primary text-white px-5 text-sm font-semibold">
-                        All Makes
-                    </button>
-                    <button
-                        class="flex h-10 items-center justify-center gap-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-5 text-sm font-medium hover:border-primary">
-                        SUVs <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
-                    </button>
-                    <button
-                        class="flex h-10 items-center justify-center gap-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-5 text-sm font-medium hover:border-primary">
-                        Luxury <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
-                    </button>
-                    <button
-                        class="flex h-10 items-center justify-center gap-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-5 text-sm font-medium hover:border-primary">
-                        Sedans <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
-                    </button>
-                </div>
-                <div class="relative w-full md:w-64">
-                    <span
-                        class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400">search</span>
+            <div class="flex flex-col items-end gap-4">
+                <div class="relative w-full max-w-md">
+                    <span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400">search</span>
                     <input
-                        class="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg pl-10 py-2 text-sm focus:ring-primary focus:border-primary"
-                        placeholder="Search model or year..." type="text" />
+                        id="searchInput"
+                        class="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg pl-10 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                        placeholder="Search by year, make, model..."
+                        type="text" />
                 </div>
-            </div> -->
+                <div id="searchResults" class="text-sm text-slate-600 dark:text-slate-400"></div>
+            </div>
         </section>
         <section class="px-6 lg:px-10" id="vehicles">
             <!-- Past Imports Grid -->
@@ -305,6 +288,10 @@
     let currentTab = 'past';
     let currentPage = 1;
     const itemsPerPage = 6;
+    let searchQuery = '';
+    let vehicleCache = {}; // Cache vehicle data for fast searching
+    let filteredVehicleIds = []; // Track filtered results
+    let searchTimeout; // For debouncing
 
     // Fisher-Yates shuffle algorithm
     function shuffleArray(array) {
@@ -357,11 +344,63 @@
         showPage(1);
     }
 
+    // Cache vehicle data on page load for fast searching
+    function cacheVehicleData() {
+        vehicleCache = {};
+        ['pastImports', 'localVehicles'].forEach(gridId => {
+            const grid = document.getElementById(gridId);
+            if (!grid) return;
+            
+            grid.querySelectorAll('.group').forEach(vehicle => {
+                const titleLink = vehicle.querySelector('a[href*="vehicle.html"]');
+                const subtitleP = vehicle.querySelector('.text-slate-400.font-medium.text-sm');
+                const yearSpan = vehicle.querySelector('.text-primary.font-bold.text-lg');
+                const priceSpan = vehicle.querySelector('.text-green-600, .text-green-400');
+                
+                const searchableText = (
+                    (titleLink ? titleLink.textContent : '') + ' ' +
+                    (subtitleP ? subtitleP.textContent : '') + ' ' +
+                    (yearSpan ? yearSpan.textContent : '') + ' ' +
+                    (priceSpan ? priceSpan.textContent : '')
+                ).toLowerCase();
+                
+                vehicleCache[vehicle.id || Math.random()] = {
+                    element: vehicle,
+                    searchText: searchableText,
+                    gridId: gridId
+                };
+            });
+        });
+    }
+
+    // Perform search on cached data
+    function performSearch(query) {
+        filteredVehicleIds = [];
+        
+        if (!query.trim()) {
+            // No search - include all vehicles
+            filteredVehicleIds = Object.keys(vehicleCache);
+        } else {
+            // Filter cached data
+            const terms = query.toLowerCase().trim().split(' ');
+            filteredVehicleIds = Object.entries(vehicleCache)
+                .filter(([key, data]) => 
+                    terms.every(term => data.searchText.includes(term))
+                )
+                .map(([key]) => key);
+        }
+    }
+
     function getVehicles() {
         const grid = currentTab === 'past' ?
             document.getElementById('pastImports') :
             document.getElementById('localVehicles');
-        return Array.from(grid.querySelectorAll('.group'));
+        
+        // Return only vehicles from current tab that match search
+        return filteredVehicleIds
+            .map(id => vehicleCache[id])
+            .filter(data => data && data.gridId === (currentTab === 'past' ? 'pastImports' : 'localVehicles'))
+            .map(data => data.element);
     }
 
     function getTotalPages() {
@@ -378,10 +417,13 @@
 
         currentPage = pageNum;
 
-        // Hide all vehicles
-        vehicles.forEach(v => v.style.display = 'none');
+        // Hide ALL vehicles in the grid first
+        const grid = currentTab === 'past' ?
+            document.getElementById('pastImports') :
+            document.getElementById('localVehicles');
+        grid.querySelectorAll('.group').forEach(v => v.style.display = 'none');
 
-        // Show vehicles for current page
+        // Show vehicles for current page from filtered results
         const startIdx = (pageNum - 1) * itemsPerPage;
         const endIdx = startIdx + itemsPerPage;
         vehicles.slice(startIdx, endIdx).forEach(v => v.style.display = 'block');
@@ -442,16 +484,47 @@
     const urlParams = new URLSearchParams(window.location.search);
     const tabParam = urlParams.get('tab') || 'past';
     
-    // Randomize both grids on page load
+    // Randomize both grids on page load and setup search
     document.addEventListener('DOMContentLoaded', function() {
         currentTab = 'past';
         randomizeVehicles();
         currentTab = 'local';
         randomizeVehicles();
         currentTab = tabParam;
+        
+        // Cache all vehicle data on load
+        cacheVehicleData();
+        performSearch(''); // Initialize with all vehicles
+        
+        // Setup debounced search functionality
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                clearTimeout(searchTimeout);
+                
+                // Debounce: wait 200ms after user stops typing
+                searchTimeout = setTimeout(() => {
+                    searchQuery = e.target.value.trim();
+                    currentPage = 1; // Reset to first page on search
+                    performSearch(searchQuery); // Use cached data for search
+                    updatePagination();
+                    showPage(1);
+                    
+                    // Show search results count
+                    const resultCount = getVehicles().length;
+                    const resultsDiv = document.getElementById('searchResults');
+                    if (searchQuery) {
+                        resultsDiv.textContent = resultCount + ' vehicle' + (resultCount !== 1 ? 's' : '') + ' found';
+                    } else {
+                        resultsDiv.textContent = '';
+                    }
+                }, 200);
+            });
+        }
+        
+        // Switch to default tab and populate grids
+        switchTab(tabParam);
     });
-    
-    switchTab(tabParam);
 
     // Lazy load background images
     const lazyLoadBackgroundImages = () => {
