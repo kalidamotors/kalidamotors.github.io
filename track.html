@@ -1,0 +1,341 @@
+---
+
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Track Your Vehicle | Kalida Motors</title>
+    <meta name="description" content="Real-time vehicle tracking from auction to delivery. Monitor your imported car's journey with our comprehensive tracking system." />
+    <meta name="keywords" content="vehicle tracking, car import tracking, shipment tracking, vehicle status, delivery tracking Kenya" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#101822",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: "Public Sans", sans-serif;
+        }
+        .pulse-indicator {
+            animation: pulse-blue 2s infinite;
+        }
+    </style>
+    <style data-purpose="animations">
+        @keyframes pulse-blue {
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(19, 109, 236, 0.7);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 10px rgba(19, 109, 236, 0);
+            }
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDGJNHB7VP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SDGJNHB7VP');
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white transition-colors duration-300">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+    {% include header.html %}
+    <!-- BEGIN: MainContent -->
+    <main class="flex-grow">
+        {% for vehicle in site.data.past_imports %}
+            {% if vehicle.current_status %}
+                {% assign tracked_vehicle = vehicle %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        <!-- BEGIN: SearchSection -->
+        <section class="py-12 bg-white dark:bg-slate-900" data-purpose="tracking-search-container">
+            <div class="max-w-3xl mx-auto px-4 text-center">
+                <h1 class="text-3xl font-semibold text-slate-900 dark:text-white mb-4">Track Your Vehicle</h1>
+                <p class="text-slate-600 dark:text-slate-400 mb-8">Enter your unique tracking number to see the real-time status of your shipment from auction to delivery.</p>
+                <div class="relative max-w-xl mx-auto">
+                    <input
+                        class="w-full px-5 py-4 rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-lg shadow-sm transition-all dark:text-white"
+                        id="tracking-input" placeholder="Enter your Tracking Number (e.g., KM-123456)" type="text"
+                        value="" />
+                    <button
+                        class="absolute right-2 top-2 bottom-2 bg-primary text-white px-6 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                        Track
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- END: SearchSection -->
+        <!-- BEGIN: TrackingProgress -->
+        <section class="py-12" data-purpose="tracking-results-display">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="mb-4 inline-block">
+                    <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-semibold rounded-full uppercase tracking-widest" data-purpose="sample-badge">Sample Tracking Data</span>
+                </div>
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12">
+                    <!-- Tracking Header Info -->
+                    <div class="flex flex-wrap justify-between items-end border-b border-slate-200 dark:border-slate-800 pb-8 mb-10 gap-4">
+                        <div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 uppercase tracking-widest font-semibold">Current Status</p>
+                            <h2 class="text-2xl font-bold text-slate-900 dark:text-white">{{ tracked_vehicle.current_status }}</h2>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Estimated Delivery</p>
+                            <p class="text-lg font-semibold text-slate-900 dark:text-white">{{ tracked_vehicle.estimated_delivery | date: "%B %d, %Y" }}</p>
+                        </div>
+                    </div>
+                    <!-- Vehicle Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 pb-10 border-b border-slate-200 dark:border-slate-800">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-2">Tracking ID</p>
+                            <p class="text-lg font-bold text-slate-900 dark:text-white font-mono">{{ tracked_vehicle.tracking_id }}</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-2">Client Name</p>
+                            <p class="text-lg font-bold text-slate-900 dark:text-white">{{ tracked_vehicle.client_name | default: "Vehicle Tracking" }}</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-2">Vehicle Model</p>
+                            <p class="text-lg font-bold text-slate-900 dark:text-white">{{ tracked_vehicle.title }}</p>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-2">Auction Date</p>
+                            <p class="text-lg font-bold text-slate-900 dark:text-white">{{ tracked_vehicle.auction_date | date: "%B %d, %Y" }}</p>
+                        </div>
+                    </div>
+                    <!-- Progress Steps (Dynamic from tracking.yaml) -->
+                    <div class="space-y-0 relative">
+                        {% assign currentStepIndex = -1 %}
+                        {% for step in tracked_vehicle.import_steps_completed %}
+                            {% if step.date_completed == blank and currentStepIndex == -1 %}
+                                {% assign currentStepIndex = forloop.index0 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% for step in tracked_vehicle.import_steps_completed %}
+                            {% if step.date_completed != blank %}
+                                {% assign isCompleted = true %}
+                            {% else %}
+                                {% assign isCompleted = false %}
+                            {% endif %}
+                            {% assign stepIndex = forloop.index0 %}
+                            {% assign isCurrent = false %}
+                            {% if stepIndex == currentStepIndex %}
+                                {% assign isCurrent = true %}
+                            {% endif %}
+                            <div class="flex gap-6 {% if forloop.last %}{% else %}pb-10{% endif %} relative">
+                                {% unless forloop.last %}
+                                    <div class="absolute left-[15px] top-8 bottom-0 w-0.5 {% if isCompleted %}bg-green-600{% else %}bg-slate-200 dark:bg-slate-700{% endif %}"></div>
+                                {% endunless %}
+                                <div class="relative z-10 flex items-center justify-center w-8 h-8 rounded-full {% if isCompleted %}bg-green-600 text-white{% elsif isCurrent %}bg-primary text-white pulse-indicator{% else %}bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400{% endif %} shrink-0">
+                                    {% if isCompleted %}
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                            <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                                        </svg>
+                                    {% elsif isCurrent %}
+                                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                                    {% else %}
+                                        <span class="text-xs font-bold">{{ forloop.index }}</span>
+                                    {% endif %}
+                                </div>
+                                <div>
+                                    <h3 class="font-bold {% if isCompleted %}text-slate-900 dark:text-white{% elsif isCurrent %}text-primary{% else %}text-slate-500 dark:text-slate-400{% endif %}">
+                                        {{ step.step }}
+                                    </h3>
+                                    <p class="text-sm {% if isCompleted %}text-slate-600 dark:text-slate-400{% else %}text-slate-500 dark:text-slate-400{% endif %} mt-1">
+                                        {{ step.details }}
+                                    </p>
+                                    {% if step.shipping_details %}
+                                        <div class="mt-4 p-4 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg space-y-3">
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                <div>
+                                                    <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-1">Carrier</p>
+                                                    <p class="text-sm font-bold text-slate-900 dark:text-white">{{ step.shipping_details.carrier }}</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-1">Est. Arrival</p>
+                                                    <p class="text-sm font-bold text-slate-900 dark:text-white">{{ step.shipping_details.estimated_arrival | date: "%b %d, %Y" }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if isCompleted %}
+                                        <p class="text-xs font-medium text-slate-500 dark:text-slate-500 mt-2">
+                                            {{ step.date_completed | date: "%b %d, %Y" }}
+                                        </p>
+                                    {% else %}
+                                        <p class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-2 italic">Pending</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: TrackingProgress -->
+        <!-- BEGIN: SupportSection -->
+        <section class="py-16 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800" data-purpose="customer-support">
+            <div class="max-w-2xl mx-auto px-4 text-center">
+                <h2 class="text-2xl font-semibold text-slate-900 dark:text-white mb-4">Need Help?</h2>
+                <p class="text-slate-600 dark:text-slate-400 mb-8">Our team is available to answer any questions regarding your import status</p>
+                <a class="inline-flex items-center justify-center px-8 py-4 bg-[#25D366] text-white rounded-full font-semibold hover:brightness-110 transition-all shadow-lg hover:shadow-xl"
+                    href="https://wa.me/254718036460?text=Hello%20Kalida%20Motors%2C%20I%20need%20assistance%20with%20tracking%20my%20vehicle.%20My%20tracking%20number%20is%20%5Binsert%20tracking%20number%5D" target="_blank">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.52c1.54.995 3.41 1.558 5.479 1.558 5.514 0 10-4.487 10.002-10.002.002-5.514-4.486-10-10.002-10.002-5.514 0-10 4.486-10 10.002.001 2.107.652 4.047 1.83 5.654l-.991 3.619 3.682-.966z">
+                        </path>
+                    </svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </section>
+        <!-- END: SupportSection -->
+    </main>
+    <!-- END: MainContent -->
+    {% include footer.html %}
+     </div>
+     </div>
+    <script>
+        // Embed vehicles data from YAML
+        const vehiclesData = {{ site.data.past_imports | jsonify }};
+        
+        // Track button search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const trackButton = document.querySelector('[data-purpose="tracking-search-container"] button');
+            const trackingInput = document.getElementById('tracking-input');
+            
+            if (trackButton) {
+                trackButton.addEventListener('click', function() {
+                    const trackingId = trackingInput.value.trim();
+                    if (!trackingId) {
+                        alert('Please enter a tracking number');
+                        return;
+                    }
+                    
+                    // Search for vehicle by tracking_id
+                    const foundVehicle = vehiclesData.find(v => v.tracking_id === trackingId);
+                    
+                    if (foundVehicle) {
+                        updateTrackingDisplay(foundVehicle);
+                    } else {
+                        alert('No vehicle found with tracking ID: ' + trackingId);
+                    }
+                });
+                
+                // Also allow Enter key to search
+                trackingInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        trackButton.click();
+                    }
+                });
+            }
+        });
+        
+        function updateTrackingDisplay(vehicle) {
+            // Remove sample badge when user performs a search
+            const sampleBadge = document.querySelector('[data-purpose="sample-badge"]');
+            if (sampleBadge) sampleBadge.remove();
+            // Update status
+            const statusElement = document.querySelector('[data-purpose="tracking-results-display"] h2');
+            if (statusElement) statusElement.textContent = vehicle.current_status || 'Processing';
+            
+            // Update delivery date
+            const deliveryElement = document.querySelector('[data-purpose="tracking-results-display"] .text-right .text-lg');
+            if (deliveryElement && vehicle.estimated_delivery) {
+                const date = new Date(vehicle.estimated_delivery);
+                deliveryElement.textContent = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            }
+            
+            // Update vehicle info grid
+            const infoElements = document.querySelectorAll('[data-purpose="tracking-results-display"] .grid.grid-cols-1 > div');
+            if (infoElements.length >= 4) {
+                infoElements[0].querySelector('p:last-child').textContent = vehicle.tracking_id || '';
+                infoElements[1].querySelector('p:last-child').textContent = vehicle.client_name || 'Vehicle Tracking';
+                infoElements[2].querySelector('p:last-child').textContent = vehicle.title || '';
+                if (vehicle.auction_date) {
+                    const auctionDate = new Date(vehicle.auction_date);
+                    infoElements[3].querySelector('p:last-child').textContent = auctionDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+                }
+            }
+            
+            // Update progress steps
+            const stepsContainer = document.querySelector('.space-y-0.relative');
+            if (stepsContainer && vehicle.import_steps_completed) {
+                // Find the index of the first incomplete step
+                const currentStepIndex = vehicle.import_steps_completed.findIndex(step => !step.date_completed);
+                
+                stepsContainer.innerHTML = '';
+                vehicle.import_steps_completed.forEach((step, index) => {
+                    const isCompleted = step.date_completed ? true : false;
+                    const isCurrent = index === currentStepIndex && !isCompleted;
+                    const isAfterCurrent = currentStepIndex >= 0 && index > currentStepIndex;
+                    
+                    const stepHTML = `
+                        <div class="flex gap-6 ${index < vehicle.import_steps_completed.length - 1 ? 'pb-10' : ''} relative">
+                            ${index < vehicle.import_steps_completed.length - 1 ? `<div class="absolute left-[15px] top-8 bottom-0 w-0.5 ${isCompleted ? 'bg-green-600' : 'bg-slate-200 dark:bg-slate-700'}"></div>` : ''}
+                            <div class="relative z-10 flex items-center justify-center w-8 h-8 rounded-full ${isCompleted ? 'bg-green-600 text-white' : isCurrent ? 'bg-primary text-white pulse-indicator' : 'bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400'} shrink-0">
+                                ${isCompleted ? '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>' : isCurrent ? '<div class="w-3 h-3 bg-white rounded-full"></div>' : `<span class="text-xs font-bold">${index + 1}</span>`}
+                            </div>
+                            <div>
+                                <h3 class="font-bold ${isCompleted ? 'text-slate-900 dark:text-white' : isCurrent ? 'text-primary' : 'text-slate-500 dark:text-slate-400'}">${step.step}</h3>
+                                <p class="text-sm ${isCompleted ? 'text-slate-600 dark:text-slate-400' : 'text-slate-500 dark:text-slate-400'} mt-1">${step.details}</p>
+                                ${step.shipping_details ? `
+                                    <div class="mt-4 p-4 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg space-y-3">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div>
+                                                <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-1">Carrier Name</p>
+                                                <p class="text-sm font-bold text-slate-900 dark:text-white">${step.shipping_details.carrier}</p>
+                                            </div>
+                                            <div>
+                                                <p class="text-xs uppercase tracking-widest font-semibold text-slate-500 dark:text-slate-400 mb-1">Est. Arrival</p>
+                                                <p class="text-sm font-bold text-slate-900 dark:text-white">${new Date(step.shipping_details.estimated_arrival).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>
+                                            </div>
+                                            <div>                                                
+                                                <p class="text-sm font-bold text-slate-900 dark:text-white"><a href="https://www.marinetraffic.com/" target="_blank" class="text-primary dark:text-blue-400 hover:underline font-medium text-sm">Track your vehicle carrier by its name</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ` : ''}
+                                ${isCompleted ? `<p class="text-xs font-medium text-slate-500 dark:text-slate-500 mt-2">${new Date(step.date_completed).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</p>` : '<p class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-2 italic">Pending</p>'}
+                            </div>
+                        </div>
+                    `;
+                    stepsContainer.innerHTML += stepHTML;
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
