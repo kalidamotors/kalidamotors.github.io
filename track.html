@@ -281,7 +281,7 @@
             const infoElements = document.querySelectorAll('[data-purpose="tracking-results-display"] .grid.grid-cols-1 > div');
             if (infoElements.length >= 4) {
                 infoElements[0].querySelector('p:last-child').textContent = vehicle.tracking_id || '';
-                infoElements[1].querySelector('p:last-child').textContent = vehicle.client_name || 'Vehicle Tracking';
+                infoElements[1].querySelector('p:last-child').textContent = vehicle.client_name || 'Kalida Motors';
                 infoElements[2].querySelector('p:last-child').textContent = vehicle.title || '';
                 if (vehicle.auction_date) {
                     const auctionDate = new Date(vehicle.auction_date);
