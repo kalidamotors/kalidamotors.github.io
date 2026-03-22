@@ -574,7 +574,7 @@
   tracking_id: "KM-110010"
   auction_date: "2026-02-05"
   current_status: "In Transit"
-  estimated_delivery: "2026-03-30"
+  estimated_delivery: "2026-04-10"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-02-05"
