@@ -589,7 +589,7 @@
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
-        carrier: "Global Auto Logistics"
+        carrier: "BRANDS HATCH V.IF602"
         estimated_arrival: "2026-03-30"
     - step: "Customs Clearance"
       date_completed: null
