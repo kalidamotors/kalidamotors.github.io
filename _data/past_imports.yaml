@@ -769,3 +769,57 @@
       date_completed: null
       details: "Estimated delivery to client's location in Mombasa."
 
+- id: "n0x6o2q5r"
+  title: "Peugeot 3008"
+  subtitle: "GT Line HDI"
+  year: "2019"
+  grade: "4.5"
+  mileage: "46k km"
+  fuel: "Diesel"
+  transmission: "Auto"
+  engine_size: "2L"
+  price: "KES 1,600,000 CNF"
+  # savings: "KES 400,000"
+  drive_type: "FWD"
+  color: "Amazonite Grey"
+  seats: "5 Seater"
+  chassis_id: "LDA-P84AH01"
+  engine_model: "PSA DW10"
+  airbags: "8 (Front, Side, Curtain)"
+  wheel_size: "18-inch Alloy"
+  safety_systems: "Speed Limit Recognition and Recommendation, Driver Attention Alert, Lane Keeping Assist, Blind Spot Monitoring, Rear Cross Traffic Alert, 360-Degree Camera System"
+  doors: "5"
+  efficiency: "17-19 km/l"
+  images: 
+    - "assets/images/vehicles/past_imports/3008hdi1.jpg"
+    - "assets/images/vehicles/past_imports/3008hdi2.jpg"
+    - "assets/images/vehicles/past_imports/3008hdi3.jpg"
+    - "assets/images/vehicles/past_imports/3008hdi4.jpg"
+    - "assets/images/vehicles/past_imports/3008hdi5.jpg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  tracking_id: "KM-114014"
+  auction_date: "2026-02-25"
+  current_status: "Payment pending"
+  estimated_delivery: "2026-05-20"
+  import_steps_completed:
+    - step: "Auction Bidding"
+      date_completed: "2026-03-26"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: null
+      details: "Awaiting payment processing and confirmation."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle inspection will be scheduled after payment confirmation."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle will be shipped after inspection and preparation."
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya after arrival."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Mombasa after customs clearance."
+
