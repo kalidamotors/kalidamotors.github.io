@@ -64,6 +64,12 @@
         .form-select.error {
             @apply border-red-500 focus:ring-red-500 focus:border-red-500;
         }
+        #advancedToggle {
+            @apply hover:bg-slate-50 dark:hover:bg-slate-800 -mx-2 px-2 py-2 rounded-lg transition-colors;
+        }
+        #toggleIcon {
+            @apply inline-block;
+        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDGJNHB7VP"></script>
@@ -95,8 +101,29 @@
         </header>
         <main class="flex-1 flex justify-center py-12">
             <div class="layout-content-container flex flex-col md:flex-row max-w-[1200px] flex-1 px-4 md:px-10 gap-10">
+                <!-- Mobile Chat (only visible on mobile) -->
+                <div class="md:hidden bg-primary/5 p-6 rounded-2xl border border-primary/20 w-full order-1">
+                    <div
+                        class="size-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
+                        <span class="material-symbols-outlined">support_agent</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 dark:text-white">Skip the form, just chat</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Importing your first car can be overwhelming. Chat with our experts for a transparent breakdown of costs and timelines</p>
+                    <a id="whatsappChatBtn"
+                        class="whatsapp-chat-btn flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold py-3 rounded-lg hover:brightness-110 transition-all shadow-md"
+                        href="#">
+                        <svg class="size-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                            </path>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Form -->
                 <div
-                    class="flex-1 max-w-3xl bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+                    class="flex-1 max-w-3xl bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden order-2 md:order-1">
                     <div class="border-b border-slate-100 dark:border-slate-800 px-8 py-6">
                         <div class="flex justify-between items-center mb-6">
                             <h1 class="text-2xl font-bold text-[#111418] dark:text-white">Import Inquiry Form</h1>
@@ -193,85 +220,93 @@
                                             <span class="error-message" id="transmissionError"></span>
                                         </div>
                                     </div>
-                                    <div class="flex flex-col gap-3 pt-2">
-                                        <div class="flex items-center gap-2">
-                                            <label
-                                                class="text-sm font-bold text-slate-700 dark:text-slate-300">Preferred
-                                                Auction Grade <span class="text-red-500">*</span></label>
-                                            <div class="relative tooltip-trigger flex items-center">
-                                                <span
-                                                    class="material-symbols-outlined text-slate-400 text-[18px] cursor-help">info</span>
-                                                <div
-                                                    class="tooltip-content invisible opacity-0 absolute left-full ml-3 top-1/2 -translate-y-1/2 w-72 p-4 bg-slate-800 text-white text-xs rounded-lg shadow-xl z-20 transition-all duration-200">
-                                                    <p class="font-bold mb-1">Expert Grade Guide:</p>
-                                                    <ul class="space-y-1.5 list-disc pl-4">
-                                                        <li><span class="font-bold">S/New:</span> Brand new or delivery
-                                                            mileage.
-                                                        </li>
-                                                        <li><span class="font-bold">Grade 5:</span> Excellent condition, virtually
-                                                            no wear.</li>
-                                                        <li><span class="font-bold">Grade 4.5:</span> Excellent
-                                                            condition,
-                                                            minimal wear.</li>
-                                                        <li><span class="font-bold">Grade 4.0:</span> Very good, small
-                                                            repairable marks.</li>
-                                                        <li><span class="font-bold">Grade 3.5:</span> Good, visible
-                                                            surface
-                                                            scratches/dents.</li>
-                                                    </ul>
-                                                    <div
-                                                        class="absolute left-0 top-1/2 -translate-x-1 -translate-y-1/2 w-2 h-2 bg-slate-800 rotate-45">
+                                    <!-- Advanced Options (Collapsible) -->
+                                    <div class="border-t border-slate-200 dark:border-slate-700 pt-6">
+                                        <button type="button" id="advancedToggle" class="flex items-center justify-between w-full text-left">
+                                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300 cursor-pointer">
+                                                <span class="flex items-center gap-2">
+                                                    <span class="material-symbols-outlined text-lg transition-transform" id="toggleIcon">expand_more</span>
+                                                    Advanced Options
+                                                </span>
+                                            </label>
+                                        </button>
+                                        <div id="advancedContent" class="hidden mt-4 space-y-4">
+                                            <!-- Preferred Auction Grade -->
+                                            <div class="flex flex-col gap-3">
+                                                <div class="flex items-center gap-2">
+                                                    <label
+                                                        class="text-sm font-bold text-slate-700 dark:text-slate-300">Preferred
+                                                        Auction Grade</label>
+                                                    <div class="relative tooltip-trigger flex items-center">
+                                                        <span
+                                                            class="material-symbols-outlined text-slate-400 text-[18px] cursor-help">info</span>
+                                                        <div
+                                                            class="tooltip-content invisible opacity-0 absolute left-full ml-3 top-1/2 -translate-y-1/2 w-72 p-4 bg-slate-800 text-white text-xs rounded-lg shadow-xl z-20 transition-all duration-200">
+                                                            <p class="font-bold mb-1">Expert Grade Guide:</p>
+                                                            <ul class="space-y-1.5 list-disc pl-4">
+                                                                <li><span class="font-bold">S/New:</span> Brand new or delivery
+                                                                    mileage.
+                                                                </li>
+                                                                <li><span class="font-bold">Grade 5:</span> Excellent condition, virtually
+                                                                    no wear.</li>
+                                                                <li><span class="font-bold">Grade 4.5:</span> Excellent
+                                                                    condition,
+                                                                    minimal wear.</li>
+                                                                <li><span class="font-bold">Grade 4.0:</span> Very good, small
+                                                                    repairable marks.</li>
+                                                                <li><span class="font-bold">Grade 3.5:</span> Good, visible
+                                                                    surface
+                                                                    scratches/dents.</li>
+                                                            </ul>
+                                                            <div
+                                                                class="absolute left-0 top-1/2 -translate-x-1 -translate-y-1/2 w-2 h-2 bg-slate-800 rotate-45">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <div class="flex flex-wrap gap-3">
+                                                    <div class="relative">
+                                                        <input class="peer hidden grade-chip" id="grade_s"
+                                                            name="auction_grade" type="radio" value="s" />
+                                                        <label
+                                                            class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
+                                                            for="grade_s">S / New</label>
+                                                    </div>
+                                                    <div>
+                                                        <input class="peer hidden grade-chip" id="grade_50" name="auction_grade"
+                                                            type="radio" value="5.0" />
+                                                        <label
+                                                            class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
+                                                            for="grade_50">Grade 5</label>
+                                                    </div>
+                                                    <div class="relative">
+                                                        <input class="peer hidden grade-chip" id="grade_45" name="auction_grade"
+                                                            type="radio" value="4.5" />
+                                                        <label
+                                                            class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
+                                                            for="grade_45">Grade 4.5</label>
+                                                    </div>
+                                                    <div class="relative">
+                                                        <input checked="" class="peer hidden grade-chip" id="grade_40" name="auction_grade"
+                                                            type="radio" value="4.0" />
+                                                        <label
+                                                            class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
+                                                            for="grade_40">Grade 4.0</label>
+                                                    </div>
+                                                    <div class="relative">
+                                                        <input class="peer hidden grade-chip" id="grade_35" name="auction_grade"
+                                                            type="radio" value="3.5" />
+                                                        <label
+                                                            class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
+                                                            for="grade_35">Grade 3.5</label>
+                                                    </div>
+                                                </div>
+                                                <span class="error-message" id="gradeError"></span>
+                                                <p class="text-[11px] text-slate-400">At Kalida Motors, we typically recommend
+                                                    Grade 4.0
+                                                    and above for the best long-term value.</p>
                                             </div>
-                                        </div>
-                                        <div class="flex flex-wrap gap-3">
-                                            <div class="relative">
-                                                <input checked="" class="peer hidden grade-chip" id="grade_s"
-                                                    name="auction_grade" type="radio" value="s" />
-                                                <label
-                                                    class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
-                                                    for="grade_s">S / New</label>
-                                            </div>
-                                            <div>
-                                                <input class="peer hidden grade-chip" id="grade_50" name="auction_grade"
-                                                    type="radio" value="5.0" />
-                                                <label
-                                                    class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
-                                                    for="grade_50">Grade 5</label>
-                                            </div>
-                                            <div class="relative">
-                                                <input class="peer hidden grade-chip" id="grade_45" name="auction_grade"
-                                                    type="radio" value="4.5" />
-                                                <label
-                                                    class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
-                                                    for="grade_45">Grade 4.5</label>
-                                            </div>
-                                            <div class="relative">
-                                                <input class="peer hidden grade-chip" id="grade_40" name="auction_grade"
-                                                    type="radio" value="4.0" />
-                                                <label
-                                                    class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
-                                                    for="grade_40">Grade 4.0</label>
-                                            </div>
-                                            <div class="relative">
-                                                <input class="peer hidden grade-chip" id="grade_35" name="auction_grade"
-                                                    type="radio" value="3.5" />
-                                                <label
-                                                    class="flex items-center px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 text-sm font-medium cursor-pointer hover:border-primary transition-colors dark:text-slate-300 peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary"
-                                                    for="grade_35">Grade 3.5</label>
-                                            </div>
-                                        </div>
-                                        <span class="error-message" id="gradeError"></span>
-                                        <p class="text-[11px] text-slate-400">At Kalida Motors, we typically recommend
-                                            Grade 4.0
-                                            and above for the best long-term value.</p>
-                                    </div>
-                                    <!-- Additional Specifications -->
-                                    <div class="border-t border-slate-200 dark:border-slate-700 pt-6">
-                                        <label class="text-sm font-bold text-slate-700 dark:text-slate-300 mb-4 block">Additional Specifications <span class="text-xs text-slate-400 font-normal">(Optional)</span></label>
-                                        <p class="text-slate-500 dark:text-slate-400 text-xs mb-4">Help us narrow down your search with specific features you're looking for.</p>
-                                        <div class="space-y-4">
+                                            <p class="text-slate-500 dark:text-slate-400 text-xs">Help us narrow down your search with specific features you're looking for.</p>
                                             <!-- Color Preferences -->
                                             <div class="flex flex-col gap-2">
                                                 <label class="text-xs font-bold text-slate-600 dark:text-slate-400">Preferred Color</label>
@@ -402,7 +437,7 @@
                                                 <textarea id="specifications"
                                                     class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm resize-none"
                                                     placeholder="Any other specific details or preferences? (e.g. specific color code, must be single owner, low mileage, clean title, etc.)"
-                                                    rows="3\"></textarea>
+                                                    rows="3"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -413,8 +448,7 @@
                             <div id="step2" class="form-step">
                                 <div class="mb-8">
                                     <h2 class="text-lg font-bold mb-1">Step 2: Budget &amp; Timeline</h2>
-                                    <p class="text-slate-500 dark:text-slate-400 text-sm">Help us understand your
-                                        financial parameters and delivery expectations.</p>
+                                    <p class="text-slate-500 dark:text-slate-400 text-sm">All direct imports from Japan typically take 6-8 weeks from auction win to Mombasa port.</p>
                                 </div>
                                 <div class="space-y-6">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -431,15 +465,13 @@
                                             <span class="error-message" id="budgetError"></span>
                                         </div>
                                         <div class="flex flex-col gap-2">
-                                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Expected
-                                                Delivery Timeline <span class="text-red-500">*</span></label>
+                                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300">When do you want to buy? <span class="text-red-500">*</span></label>
                                             <select id="timeline"
-                                                class="rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary">
+                                                class="form-select rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm">
                                                 <option value="">Select timeline</option>
-                                                <option>As soon as possible (4-6 weeks)</option>
-                                                <option>6-8 weeks</option>
-                                                <option>8-10 weeks</option>
-                                                <option>10+ weeks (flexible)</option>
+                                                <option value="immediately">Immediately</option>
+                                                <option value="within_30_days">Within 30 days</option>
+                                                <option value="exploring">Just exploring</option>
                                             </select>
                                             <span class="error-message" id="timelineError"></span>
                                         </div>
@@ -452,7 +484,7 @@
                                 <div class="mb-8">
                                     <h2 class="text-lg font-bold mb-1">Step 3: Contact Details</h2>
                                     <p class="text-slate-500 dark:text-slate-400 text-sm">Provide your contact
-                                        information so we can reach you with updates.</p>
+                                        information so we can get you a cost estimate. We respond promptly to all inquiries.</p>
                                 </div>
                                 <div class="space-y-6">
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -465,29 +497,28 @@
                                             <span class="error-message" id="fullNameError"></span>
                                         </div>
                                         <div class="flex flex-col gap-2">
-                                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Email
-                                                Address <span class="text-red-500">*</span></label>
-                                            <input id="email"
-                                                class="form-input rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
-                                                type="email" placeholder="john@example.com" />
-                                            <span class="error-message" id="emailError"></span>
-                                        </div>
-                                        <div class="flex flex-col gap-2">
                                             <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Phone
                                                 Number <span class="text-red-500">*</span></label>
                                             <input id="phone"
                                                 class="form-input rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
-                                                type="tel" placeholder="+254 7XX XXX XXX" />
+                                                type="tel" placeholder="01/07XX XXX XXX" />
                                             <span class="error-message" id="phoneError"></span>
                                         </div>
                                         <div class="flex flex-col gap-2">
-                                            <label
-                                                class="text-sm font-bold text-slate-700 dark:text-slate-300">County/Town
-                                                <span class="text-red-500">*</span></label>
-                                            <input id="county"
-                                                class="form-input rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm"
-                                                type="text" placeholder="e.g. Nairobi, Mombasa" />
-                                            <span class="error-message" id="countyError"></span>
+                                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Delivery Destination <span class="text-red-500">*</span></label>
+                                            <select id="deliveryDestination"
+                                                class="form-select rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm">
+                                                <option value="">Select delivery destination</option>
+                                                <option value="mombasa">Pickup at Mombasa (Ksh 0)</option>
+                                                <option value="nairobi">Deliver to Nairobi (Ksh 7,000)</option>
+                                                <option value="other">Other location</option>
+                                            </select>
+                                            <span class="error-message" id="deliveryDestinationError"></span>
+                                        </div>
+                                        <div id="otherDestinationField" class="flex flex-col gap-2 hidden">
+                                            <label class="text-sm font-bold text-slate-700 dark:text-slate-300">Specify Location <span class="text-red-500">*</span></label>
+                                            <input id="otherDestination" type="text" placeholder="Enter your delivery location" 
+                                                class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary text-sm" />
                                         </div>
                                     </div>
                                 </div>
@@ -509,7 +540,26 @@
                         </form>
                     </div>
                 </div>
-                <aside class="flex flex-col gap-6 w-full md:w-[320px]">
+                <aside class="flex flex-col gap-6 w-full md:w-[320px] order-3 md:order-2">
+                    <!-- Desktop Chat (only visible on desktop) -->
+                    <div class="hidden md:block bg-primary/5 p-6 rounded-2xl border border-primary/20">
+                        <div
+                            class="size-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
+                            <span class="material-symbols-outlined">support_agent</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 dark:text-white">Skip the form, just chat</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Importing your first car can be overwhelming. Chat with our experts for a transparent breakdown of costs and timelines</p>
+                        <a id="whatsappChatBtn2"
+                            class="whatsapp-chat-btn flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold py-3 rounded-lg hover:brightness-110 transition-all shadow-md"
+                            href="#">
+                            <svg class="size-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                                </path>
+                            </svg>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
                     <div
                         class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
                         <h3 class="font-bold text-sm uppercase tracking-wider text-slate-400 mb-4">Direct Import
@@ -527,7 +577,7 @@
                                 <span class="material-symbols-outlined text-green-500 text-xl">savings</span>
                                 <div>
                                     <p class="text-sm font-bold">Cost Effective</p>
-                                    <p class="text-xs text-slate-500">Save up to 15% compared to local dealership
+                                    <p class="text-xs text-slate-500">Save 30% compared to local dealership
                                         prices.</p>
                                 </div>
                             </li>
@@ -540,24 +590,6 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                    <div class="bg-primary/5 p-6 rounded-2xl border border-primary/20">
-                        <div
-                            class="size-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
-                            <span class="material-symbols-outlined">support_agent</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-2 dark:text-white">Skip the form, just chat</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Whether you have a specific car or need assistance on getting that first car but not sure where to start, our team is here to help.</p>
-                        <a id="whatsappChatBtn"
-                            class="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold py-3 rounded-lg hover:brightness-110 transition-all shadow-md"
-                            href="#">
-                            <svg class="size-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
-                                </path>
-                            </svg>
-                            Chat on WhatsApp
-                        </a>
                     </div>
                     <div
                         class="bg-slate-900 dark:bg-slate-800 p-6 rounded-2xl border border-slate-800 shadow-lg relative overflow-hidden group">
@@ -739,23 +771,13 @@
             } else if (step === 3) {
                 // Validate Step 3
                 const fullName = document.getElementById('fullName').value.trim();
-                const email = document.getElementById('email').value.trim();
                 const phone = document.getElementById('phone').value.trim();
-                const county = document.getElementById('county').value.trim();
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const deliveryDestination = document.getElementById('deliveryDestination').value;
+                const otherDestination = document.getElementById('otherDestination').value.trim();
 
                 if (!fullName) {
                     document.getElementById('fullNameError').textContent = 'Full name is required';
                     document.getElementById('fullName').classList.add('error');
-                    isValid = false;
-                }
-                if (!email) {
-                    document.getElementById('emailError').textContent = 'Email is required';
-                    document.getElementById('email').classList.add('error');
-                    isValid = false;
-                } else if (!emailRegex.test(email)) {
-                    document.getElementById('emailError').textContent = 'Please enter a valid email';
-                    document.getElementById('email').classList.add('error');
                     isValid = false;
                 }
                 if (!phone) {
@@ -763,9 +785,14 @@
                     document.getElementById('phone').classList.add('error');
                     isValid = false;
                 }
-                if (!county) {
-                    document.getElementById('countyError').textContent = 'County/region is required';
-                    document.getElementById('county').classList.add('error');
+                if (!deliveryDestination) {
+                    document.getElementById('deliveryDestinationError').textContent = 'Delivery destination is required';
+                    document.getElementById('deliveryDestination').classList.add('error');
+                    isValid = false;
+                }
+                if (deliveryDestination === 'other' && !otherDestination) {
+                    document.getElementById('deliveryDestinationError').textContent = 'Please specify your delivery location';
+                    document.getElementById('otherDestination').classList.add('error');
                     isValid = false;
                 }
             }
@@ -800,6 +827,9 @@
                 // Get selected features
                 const features = Array.from(document.querySelectorAll('input[name="features"]:checked')).map(el => el.value).join(', ');
                 
+                const deliveryDest = document.getElementById('deliveryDestination').value;
+                const finalDeliveryDestination = deliveryDest === 'other' ? document.getElementById('otherDestination').value : deliveryDest;
+                
                 const formData = {
                     brand: document.getElementById('brand').value,
                     model: document.getElementById('model').value,
@@ -809,10 +839,9 @@
                     grade: document.querySelector('input[name="auction_grade"]:checked').value,
                     budget: document.getElementById('budget').value,
                     timeline: document.getElementById('timeline').value,
+                    deliveryDestination: finalDeliveryDestination,
                     fullName: document.getElementById('fullName').value,
-                    email: document.getElementById('email').value,
                     phone: document.getElementById('phone').value,
-                    county: document.getElementById('county').value,
                     colors: colors || 'Not specified',
                     fuels: fuels || 'Not specified',
                     engines: engines || 'Not specified',
@@ -838,10 +867,9 @@
                 googleFormData.append('entry.1550790971', formData.grade);           // Replace XXXXXXXX6 with actual entry ID
                 googleFormData.append('entry.848195895', formData.budget);          // Replace XXXXXXXX7 with actual entry ID
                 googleFormData.append('entry.1618198879', formData.timeline);        // Replace XXXXXXXX8 with actual entry ID
-                googleFormData.append('entry.395591527', formData.fullName);        // Replace XXXXXXXX9 with actual entry ID
-                googleFormData.append('entry.395591527', formData.email);          // Replace XXXXXXXX10 with actual entry ID
-                googleFormData.append('entry.581968176', formData.phone);          // Replace XXXXXXXX11 with actual entry ID
-                googleFormData.append('entry.1836492600', formData.county);         // Replace XXXXXXXX12 with actual entry ID
+                googleFormData.append('entry.395591527', formData.fullName);        // Full Name
+                googleFormData.append('entry.581968176', formData.phone);          // Phone
+                googleFormData.append('entry.1836492600', formData.deliveryDestination);    // Delivery destination
                 googleFormData.append('entry.1438662909', formData.colors);         // Colors preference
                 googleFormData.append('entry.1553900011', formData.fuels);          // Fuel type preference
                 googleFormData.append('entry.69313456', formData.engines);        // Engine size preference
@@ -872,6 +900,31 @@
 
         // Initialize
         showStep(1);
+        
+        // Advanced Options Toggle
+        const advancedToggle = document.getElementById('advancedToggle');
+        const advancedContent = document.getElementById('advancedContent');
+        const toggleIcon = document.getElementById('toggleIcon');
+        
+        advancedToggle.addEventListener('click', () => {
+            advancedContent.classList.toggle('hidden');
+            toggleIcon.textContent = advancedContent.classList.contains('hidden') ? 'expand_more' : 'expand_less';
+        });
+
+        // Delivery Destination toggle for "Other"
+        const deliveryDestinationSelect = document.getElementById('deliveryDestination');
+        const otherDestinationField = document.getElementById('otherDestinationField');
+        const otherDestinationInput = document.getElementById('otherDestination');
+
+        deliveryDestinationSelect.addEventListener('change', () => {
+            if (deliveryDestinationSelect.value === 'other') {
+                otherDestinationField.classList.remove('hidden');
+            } else {
+                otherDestinationField.classList.add('hidden');
+                otherDestinationInput.value = '';
+            }
+        });
+        
         // WhatsApp open: app on mobile, web on desktop (with fallback)
         (function () {
             function openWhatsAppChat(e) {
@@ -897,8 +950,10 @@
 
             // Attach handler once DOM is ready
             document.addEventListener('DOMContentLoaded', function () {
-                const btn = document.getElementById('whatsappChatBtn');
-                if (btn) btn.addEventListener('click', openWhatsAppChat);
+                const btns = document.querySelectorAll('.whatsapp-chat-btn');
+                btns.forEach(btn => {
+                    if (btn) btn.addEventListener('click', openWhatsAppChat);
+                });
             });
         })();
     </script>
