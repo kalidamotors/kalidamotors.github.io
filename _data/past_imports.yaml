@@ -801,7 +801,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-114014"
   auction_date: "2026-03-26"
-  current_status: "Payment pending"
+  current_status: "Inspection pending"
   estimated_delivery: "2026-05-20"
   import_steps_completed:
     - step: "Auction Bidding"
