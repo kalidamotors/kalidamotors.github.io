@@ -808,11 +808,11 @@
       date_completed: "2026-03-26"
       details: "Successfully won the bid for the vehicle at the auction."
     - step: "Payment Processing"
-      date_completed: null
-      details: "Awaiting payment processing and confirmation."
+      date_completed: "2026-03-31"
+      details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
       date_completed: null
-      details: "Vehicle inspection will be scheduled after payment confirmation."
+      details: "Vehicle inspection will be scheduled"
     - step: "Shipping"
       date_completed: null
       details: "Vehicle will be shipped after inspection and preparation."
