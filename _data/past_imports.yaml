@@ -574,7 +574,7 @@
   tracking_id: "KM-110010"
   auction_date: "2026-02-05"
   current_status: "In Transit"
-  estimated_delivery: "2026-04-10"
+  estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-02-05"
@@ -590,7 +590,7 @@
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "BRANDS HATCH V.IF602"
-        estimated_arrival: "2026-03-30"
+        estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting arrival for customs clearance in Kenya."
@@ -688,7 +688,7 @@
   tracking_id: "KM-112012"
   auction_date: "2026-02-20"
   current_status: "In Transit"
-  estimated_delivery: "2026-04-10"
+  estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-02-20"
@@ -704,7 +704,7 @@
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "MORNING NINNI V.IE602"
-        estimated_arrival: "2026-04-03"
+        estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting arrival for customs clearance in Kenya."
@@ -745,7 +745,7 @@
   auction_date: "2026-02-11"
   current_status: "In Transit"
   tracking_id: "KM-113013"
-  estimated_delivery: "2026-04-10"
+  estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-02-11"
@@ -761,7 +761,7 @@
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "BRANDS HATCH V.IF602"
-        estimated_arrival: "2026-03-30"
+        estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
