@@ -687,7 +687,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-112012"
   auction_date: "2026-02-20"
-  current_status: "In Transit"
+  current_status: "Awaiting Clearance"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -801,7 +801,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-114014"
   auction_date: "2026-03-26"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "2026-05-20"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -811,7 +811,7 @@
       date_completed: "2026-03-31"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: null
+      date_completed: 2026-04-08
       details: "Vehicle inspection will be scheduled"
     - step: "Shipping"
       date_completed: null
