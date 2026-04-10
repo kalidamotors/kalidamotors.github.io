@@ -573,7 +573,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-110010"
   auction_date: "2026-02-05"
-  current_status: "In Transit"
+  current_status: "Awaiting Clearance"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -586,14 +586,14 @@
       date_completed: "2026-02-27"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
-      date_completed: null
+      date_completed: "2026-04-10"
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "BRANDS HATCH V.IF602"
         estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
       date_completed: null
-      details: "Awaiting arrival for customs clearance in Kenya."
+      details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: null
       details: "Estimated delivery to client's location in Mombasa."
@@ -707,7 +707,7 @@
         estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
       date_completed: null
-      details: "Awaiting arrival for customs clearance in Kenya."
+      details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: null
       details: "Estimated delivery to client's location in Mombasa."
@@ -743,7 +743,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-02-11"
-  current_status: "In Transit"
+  current_status: "Awaiting Clearance"
   tracking_id: "KM-113013"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
@@ -757,7 +757,7 @@
       date_completed: "2026-02-20"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
-      date_completed: null
+      date_completed: "2026-04-10"
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "BRANDS HATCH V.IF602"
