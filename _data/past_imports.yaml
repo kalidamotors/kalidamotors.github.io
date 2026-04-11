@@ -855,7 +855,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-115015"
   auction_date: "2026-04-02"
-  current_status: "Awaiting Clearance"
+  current_status: "Inspection pending"
   estimated_delivery: "May 2026"
   import_steps_completed:
     - step: "Auction Bidding"
