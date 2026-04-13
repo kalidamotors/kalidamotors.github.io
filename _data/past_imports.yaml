@@ -19,6 +19,7 @@
   safety_systems: "ABS, EBD, Brake Assist, Traction Control, Stability Control, Hill Start Assist"
   doors: "5"
   efficiency: "18-20 km/l"
+  days_to_import: "42"
   images: 
     - "assets/images/vehicles/past_imports/demio1.jpeg"
     - "assets/images/vehicles/past_imports/demio2.jpeg"
@@ -81,6 +82,7 @@
   safety_systems: "Front Assist with City Emergency Braking, Lane Assist, Adaptive Cruise Control, Blind Spot Monitor, Rear Traffic Alert, Rearview Camera"
   doors: "5"
   efficiency: "13-15 km/l"
+  days_to_import: "52"
   images: 
     - "assets/images/vehicles/past_imports/golf1.jpeg"
     - "assets/images/vehicles/past_imports/golf2.jpeg"
@@ -143,6 +145,7 @@
   safety_systems: "Speed Limit Recognition and Recommendation, Driver Attention Alert, Lane Keeping Assist, Blind Spot Monitoring, Rear Cross Traffic Alert, 360-Degree Camera System"
   doors: "5"
   efficiency: "17-19 km/l"
+  days_to_import: "42"
   images: 
     - "assets/images/vehicles/past_imports/30081.jpeg"
     - "assets/images/vehicles/past_imports/30082.jpeg"
@@ -676,6 +679,7 @@
   safety_systems: "i-Activsense"
   doors: "5"
   efficiency: "16-18 km/l"
+  days_to_import: "41"
   images: 
     - "assets/images/vehicles/past_imports/cx31.jpg"
     - "assets/images/vehicles/past_imports/cx32.jpg"
@@ -733,6 +737,7 @@
   safety_systems: "Active Brake Assist, Attention Assist, Crosswind Assist, Lane Keeping Assist, Blind Spot Assist"
   doors: "5"
   efficiency: "11-14 km/l"
+  days_to_import: "52"
   images: 
     - "assets/images/vehicles/past_imports/gla1.jpg"
     - "assets/images/vehicles/past_imports/gla2.jpg"

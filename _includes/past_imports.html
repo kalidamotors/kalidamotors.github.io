@@ -74,10 +74,9 @@
                                     {% if item.transmission %}<span class="flex items-center gap-1"><span
                                             class="material-symbols-outlined text-base">settings</span> {{
                                         item.transmission }}</span>{% endif %}
-                                    <!-- {% if item.cnf_price %}<span class="flex items-center gap-1"><span
-                                            class="material-symbols-outlined text-base">money</span> {{
-                                        item.cnf_price }}</span>
-                                    {% endif %} -->
+                                    {% if item.days_to_import %}<span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">timelapse</span> {{
+                                        item.days_to_import }} days</span>
+                                    {% endif %}
                                         
                                 </div>
                                 <a href="{{ item.link | default: 'inquiry' }}"
