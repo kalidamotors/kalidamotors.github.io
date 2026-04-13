@@ -97,11 +97,13 @@
                                 <span id="vehicleBadge"
                                     class="bg-green-600/90 text-white text-xs font-bold px-3 py-1 rounded-full">
                                 </span>
-                                <span id="verifiedImportBadge"
+                                <!-- <span id="verifiedImportBadge"
                                     class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                                     <span class="material-symbols-outlined text-sm">verified</span> Verified Import
-                                </span>
+                                </span> -->
                                 <span id="gradeSpan"
+                                    class="bg-[#f0f2f4] text-[#111418] text-xs font-bold px-3 py-1 rounded-full"></span>
+                                <span id="daysToImportSpan"
                                     class="bg-[#f0f2f4] text-[#111418] text-xs font-bold px-3 py-1 rounded-full"></span>
                             </div>
                         </div>
@@ -380,6 +382,10 @@
             if (verifiedImportBadge) {
                 verifiedImportBadge.style.display = 'none';
             }
+            const daysToImportSpan = document.getElementById('daysToImportSpan');
+            if (daysToImportSpan) {
+                daysToImportSpan.style.display = 'none';
+            }
         }
         
         if (vehicle) {
@@ -389,6 +395,15 @@
             document.getElementById('vehicleTitle').textContent = vehicleTitleText;
             document.title = 'Kalida Motors | ' + vehicleTitleText;
             document.getElementById('gradeSpan').textContent = 'Auction Grade: ' + (vehicle.grade || 'N/A');
+            
+            // Update days to import if available
+            const daysToImportSpan = document.getElementById('daysToImportSpan');
+            if (vehicle.days_to_import) {
+                daysToImportSpan.textContent = vehicle.days_to_import + ' days to import';
+                daysToImportSpan.style.display = 'inline-block';
+            } else {
+                daysToImportSpan.style.display = 'none';
+            }
             
             // Update vehicle-specific badge
             const vehicleBadge = document.getElementById('vehicleBadge');
