@@ -232,7 +232,7 @@
                         {% for item in site.data.past_imports limit:6 %}
                         <div
                             class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:shadow-2xl hover:border-primary/30">
-                            <div class="relative aspect-[16/10] overflow-hidden">
+                            <a href="vehicle.html?id={{ item.id }}" class="block relative aspect-[16/10] overflow-hidden">
                                 <!-- Image Carousel Container -->
                                 <div class="carousel-container relative w-full h-full overflow-hidden" data-slides="{% if item.images %}{{ item.images.size }}{% else %}1{% endif %}">
                                     <div class="carousel-track flex transition-transform duration-300 ease-out h-full w-full">
@@ -275,7 +275,7 @@
                                     {{ item.badge }}
                                 </div>
                                 {% endif %}
-                            </div>
+                            </a>
                             <div class="p-6 flex flex-col gap-4">
                                 <div class="flex justify-between items-start">
                                     <div>

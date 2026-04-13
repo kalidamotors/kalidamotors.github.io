@@ -125,7 +125,7 @@
                 {% for vehicle in site.data.local_vehicles %}
                 <div
                     class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700">
-                    <div class="relative aspect-[4/3] overflow-hidden">
+                    <a href="vehicle.html?id={{ vehicle.id }}&tab=local" class="block relative aspect-[4/3] overflow-hidden">
                         <!-- Image Carousel Container -->
                         <div class="carousel-container relative w-full h-full overflow-hidden"
                             data-slides="{% if vehicle.images %}{{ vehicle.images.size }}{% else %}1{% endif %}">
@@ -170,7 +170,7 @@
                             class="absolute top-3 left-3 bg-green-600/90 backdrop-blur-sm text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full z-10">
                             {{ vehicle.badge }}
                         </div>
-                    </div>
+                    </a>
                     <div class="p-5">
                         <div class="flex justify-between items-start gap-2 mb-1">
                             <a href="vehicle.html?id={{ vehicle.id }}&tab=local"
