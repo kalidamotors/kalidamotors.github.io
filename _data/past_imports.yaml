@@ -571,12 +571,12 @@
     - "assets/images/vehicles/past_imports/mazda33.jpeg"
     - "assets/images/vehicles/past_imports/mazda34.jpeg"
     - "assets/images/vehicles/past_imports/mazda35.jpeg"
-  badge: "At Mombasa Port, Awaiting Clearance"
+  badge: "Awaiting Delivery to Owner"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-110010"
   auction_date: "2026-02-05"
-  current_status: "Awaiting Clearance"
+  current_status: "Awaiting Delivery to Owner"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -595,11 +595,11 @@
         carrier: "BRANDS HATCH V.IF602"
         estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
-      date_completed: null
+      date_completed: "2026-04-12"
       details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: null
-      details: "Estimated delivery to client's location in Mombasa."
+      details: "Estimated delivery to client's location in Nairobi."
 
 - id: "k7u3l9n2o"
   title: "Nissan Note"
@@ -686,12 +686,12 @@
     - "assets/images/vehicles/past_imports/cx33.jpg"
     - "assets/images/vehicles/past_imports/cx34.jpg"
     - "assets/images/vehicles/past_imports/cx35.jpg"
-  badge: "At Mombasa Port, Awaiting Clearance"
+  badge: "Awaiting Delivery to Owner"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-112012"
   auction_date: "2026-02-20"
-  current_status: "Awaiting Clearance"
+  current_status: "Awaiting Delivery to Owner"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -710,11 +710,11 @@
         carrier: "MORNING NINNI V.IE602"
         estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
-      date_completed: null
+      date_completed: "2026-04-12"
       details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: null
-      details: "Estimated delivery to client's location in Mombasa."
+      details: "Estimated delivery to client's location in Nairobi."
 
 - id: "m9w5n1p4q"
   title: "Mercedes-Benz GLA-Class"
@@ -744,11 +744,11 @@
     - "assets/images/vehicles/past_imports/gla3.jpg"
     - "assets/images/vehicles/past_imports/gla4.jpg"
     - "assets/images/vehicles/past_imports/gla5.jpg"
-  badge: "At Mombasa Port, Awaiting Clearance"
+  badge: "Awaiting Delivery to Owner"
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-02-11"
-  current_status: "Awaiting Clearance"
+  current_status: "Awaiting Delivery to Owner"
   tracking_id: "KM-113013"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
@@ -768,7 +768,7 @@
         carrier: "BRANDS HATCH V.IF602"
         estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
-      date_completed: null
+      date_completed: 2026-04-12
       details: "Awaiting customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: null
