@@ -571,12 +571,12 @@
     - "assets/images/vehicles/past_imports/mazda33.jpeg"
     - "assets/images/vehicles/past_imports/mazda34.jpeg"
     - "assets/images/vehicles/past_imports/mazda35.jpeg"
-  badge: "Awaiting Delivery to Owner"
+  badge: "Delivered to Nairobi"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-110010"
   auction_date: "2026-02-05"
-  current_status: "Awaiting Delivery to Owner"
+  current_status: "Delivered"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -598,7 +598,7 @@
       date_completed: "2026-04-12"
       details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
-      date_completed: null
+      date_completed: "2026-04-18"
       details: "Estimated delivery to client's location in Nairobi."
 
 - id: "k7u3l9n2o"
@@ -686,12 +686,12 @@
     - "assets/images/vehicles/past_imports/cx33.jpg"
     - "assets/images/vehicles/past_imports/cx34.jpg"
     - "assets/images/vehicles/past_imports/cx35.jpg"
-  badge: "Awaiting Delivery to Owner"
+  badge: "Delivered to Nairobi"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-112012"
   auction_date: "2026-02-20"
-  current_status: "Awaiting Delivery to Owner"
+  current_status: "Delivered"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -713,7 +713,7 @@
       date_completed: "2026-04-12"
       details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
-      date_completed: null
+      date_completed: "2026-04-19"
       details: "Estimated delivery to client's location in Nairobi."
 
 - id: "m9w5n1p4q"
@@ -744,11 +744,11 @@
     - "assets/images/vehicles/past_imports/gla3.jpg"
     - "assets/images/vehicles/past_imports/gla4.jpg"
     - "assets/images/vehicles/past_imports/gla5.jpg"
-  badge: "Awaiting Delivery to Owner"
+  badge: "Delivered to Mombasa"
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-02-11"
-  current_status: "Awaiting Delivery to Owner"
+  current_status: "Delivered"
   tracking_id: "KM-113013"
   estimated_delivery: "2026-04-15"
   import_steps_completed:
@@ -768,10 +768,10 @@
         carrier: "BRANDS HATCH V.IF602"
         estimated_arrival: "2026-04-09"
     - step: "Customs Clearance"
-      date_completed: 2026-04-12
+      date_completed: "2026-04-12"
       details: "Awaiting customs clearance in Kenya."
     - step: "Final Delivery"
-      date_completed: null
+      date_completed: "2026-04-18"
       details: "Estimated delivery to client's location in Mombasa."
 
 - id: "n0x6o2q5r"
@@ -920,14 +920,14 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-116016"
   auction_date: "2026-04-09"
-  current_status: "Payment pending"
+  current_status: "Inspection pending"
   estimated_delivery: "June 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-04-09"
       details: "Successfully won the bid for the vehicle at the auction."
     - step: "Payment Processing"
-      date_completed: null
+      date_completed: "2026-04-21"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
       date_completed: null
