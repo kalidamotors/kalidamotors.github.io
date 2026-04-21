@@ -96,6 +96,121 @@
                     </div>
                 </div>
             </section>
+            <!-- past imports section -->
+            <section class="flex flex-1 justify-center py-20 bg-white dark:bg-background-dark">
+                <div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-4 md:px-10">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                        <div class="flex flex-col gap-3">
+                            <span class="text-primary font-bold uppercase tracking-widest text-xs">Past Imports</span>
+                            <h2
+                                class="text-[#111418] dark:text-white text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
+                                Hand-picked and Delivered to Happy Owners</h2>
+                            <p class="text-[#617289] dark:text-slate-400 text-base max-w-[600px]">
+                                High-grade units already imported to Kenya and delivered to their new homes
+                            </p>
+                        </div>
+                        <a href="vehicles" class="flex items-center gap-2 text-primary font-bold text-sm transition-colors hover:text-[#0b53c6]">
+                            View All Past Imports <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {% for item in site.data.past_imports limit:6 %}
+                        <div
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:shadow-2xl hover:border-primary/30">
+                            <a href="vehicle.html?id={{ item.id }}" class="block relative aspect-[16/10] overflow-hidden">
+                                <!-- Image Carousel Container -->
+                                <div class="carousel-container relative w-full h-full overflow-hidden" data-slides="{% if item.images %}{{ item.images.size }}{% else %}1{% endif %}">
+                                    <div class="carousel-track flex transition-transform duration-300 ease-out h-full w-full">
+                                        {% if item.images %}
+                                            {% for image in item.images %}
+                                            <div class="carousel-slide relative flex-shrink-0 h-full w-full">
+                                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ image }}');"></div>
+                                            </div>
+                                            {% endfor %}
+                                        {% else %}
+                                            <div class="carousel-slide relative flex-shrink-0 w-full h-full">
+                                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ item.image }}');"></div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+
+                                    <!-- Navigation Arrows (show only if multiple images) -->
+                                    {% if item.images and item.images.size > 1 %}
+                                    <button onclick="prevImage(event, this)" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                                        <span class="material-symbols-outlined text-sm">chevron_left</span>
+                                    </button>
+                                    <button onclick="nextImage(event, this)" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                                    </button>
+
+                                    <!-- Dot Indicators -->
+                                    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                                        {% if item.images %}
+                                            {% for image in item.images %}
+                                            <div class="carousel-dot w-1.5 h-1.5 rounded-full bg-white/50 transition-all {% if forloop.first %}!bg-white !w-4{% endif %}" data-index="{{ forloop.index0 }}"></div>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+
+                                {% if item.badge %}
+                                <div
+                                    class="absolute top-4 left-4 z-20 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+                                    {{ item.badge }}
+                                </div>
+                                {% endif %}
+                            </a>
+                            <div class="p-6 flex flex-col gap-4">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-[#111418] dark:text-white text-xl font-bold">
+                                            <a href="vehicle.html?id={{ item.id }}" class="hover:text-primary transition-colors">
+                                                {{ item.title }}
+                                            </a>
+                                        </h3>
+                                        </h3>
+                                        {% if item.subtitle %}
+                                        <p class="text-slate-400 font-medium text-sm">{{ item.subtitle }}</p>
+                                        {% endif %}
+                                    </div>
+                                    <div class="flex flex-col items-end gap-1">
+                                        {% if item.year %}
+                                        <span class="text-primary font-bold text-lg">{{ item.year }}</span>
+                                        {% endif %}
+                                        {% if item.price %}
+                                        <span class="text-green-600 dark:text-green-400 font-bold text-sm">{{ item.price }}</span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center gap-4 text-xs font-semibold text-slate-500 border-t border-slate-100 dark:border-slate-800 pt-4">
+                                    {% if item.mileage %}<span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-base">speed</span> {{ item.mileage
+                                        }}</span>{% endif %}
+                                    {% if item.fuel %}<span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-base">local_gas_station</span> {{
+                                        item.fuel }}</span>{% endif %}
+                                    {% if item.transmission %}<span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-base">settings</span> {{
+                                        item.transmission }}</span>{% endif %}
+                                    {% if item.days_to_import %}<span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-base">timelapse</span> {{
+                                        item.days_to_import }} days</span>
+                                    {% endif %}
+                                        
+                                </div>
+                                <a href="{{ item.link | default: 'inquiry' }}"
+                                    class="w-full mt-2 bg-slate-100 dark:bg-slate-800 text-[#111418] dark:text-white font-bold py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300 justify-center flex items-center"
+                                    role="button" aria-label="View Details">
+                                    {{ item.cta | default: "Similar Inquiry" }}
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
             <!-- How It Works Section Header -->
             <section class="flex flex-1 justify-center pt-16 pb-4 bg-background-light dark:bg-background-dark/50">
                 <div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-4 md:px-10 text-center">
@@ -209,120 +324,6 @@
                                     you, fully registered and ready for the Kenyan roads.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="flex flex-1 justify-center py-20 bg-white dark:bg-background-dark">
-                <div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-4 md:px-10">
-                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-                        <div class="flex flex-col gap-3">
-                            <span class="text-primary font-bold uppercase tracking-widest text-xs">Past Imports</span>
-                            <h2
-                                class="text-[#111418] dark:text-white text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
-                                Hand-picked and Delivered to Happy Owners</h2>
-                            <p class="text-[#617289] dark:text-slate-400 text-base max-w-[600px]">
-                                High-grade units already imported to Kenya and delivered to their new homes
-                            </p>
-                        </div>
-                        <a href="vehicles" class="flex items-center gap-2 text-primary font-bold text-sm transition-colors hover:text-[#0b53c6]">
-                            View All Past Imports <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </a>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {% for item in site.data.past_imports limit:6 %}
-                        <div
-                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:shadow-2xl hover:border-primary/30">
-                            <a href="vehicle.html?id={{ item.id }}" class="block relative aspect-[16/10] overflow-hidden">
-                                <!-- Image Carousel Container -->
-                                <div class="carousel-container relative w-full h-full overflow-hidden" data-slides="{% if item.images %}{{ item.images.size }}{% else %}1{% endif %}">
-                                    <div class="carousel-track flex transition-transform duration-300 ease-out h-full w-full">
-                                        {% if item.images %}
-                                            {% for image in item.images %}
-                                            <div class="carousel-slide relative flex-shrink-0 h-full w-full">
-                                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ image }}');"></div>
-                                            </div>
-                                            {% endfor %}
-                                        {% else %}
-                                            <div class="carousel-slide relative flex-shrink-0 w-full h-full">
-                                                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ item.image }}');"></div>
-                                            </div>
-                                        {% endif %}
-                                    </div>
-
-                                    <!-- Navigation Arrows (show only if multiple images) -->
-                                    {% if item.images and item.images.size > 1 %}
-                                    <button onclick="prevImage(event, this)" class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
-                                        <span class="material-symbols-outlined text-sm">chevron_left</span>
-                                    </button>
-                                    <button onclick="nextImage(event, this)" class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
-                                        <span class="material-symbols-outlined text-sm">chevron_right</span>
-                                    </button>
-
-                                    <!-- Dot Indicators -->
-                                    <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                                        {% if item.images %}
-                                            {% for image in item.images %}
-                                            <div class="carousel-dot w-1.5 h-1.5 rounded-full bg-white/50 transition-all {% if forloop.first %}!bg-white !w-4{% endif %}" data-index="{{ forloop.index0 }}"></div>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    {% endif %}
-                                </div>
-
-                                {% if item.badge %}
-                                <div
-                                    class="absolute top-4 left-4 z-20 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
-                                    {{ item.badge }}
-                                </div>
-                                {% endif %}
-                            </a>
-                            <div class="p-6 flex flex-col gap-4">
-                                <div class="flex justify-between items-start">
-                                    <div>
-                                        <h3 class="text-[#111418] dark:text-white text-xl font-bold">
-                                            <a href="vehicle.html?id={{ item.id }}" class="hover:text-primary transition-colors">
-                                                {{ item.title }}
-                                            </a>
-                                        </h3>
-                                        </h3>
-                                        {% if item.subtitle %}
-                                        <p class="text-slate-400 font-medium text-sm">{{ item.subtitle }}</p>
-                                        {% endif %}
-                                    </div>
-                                    <div class="flex flex-col items-end gap-1">
-                                        {% if item.year %}
-                                        <span class="text-primary font-bold text-lg">{{ item.year }}</span>
-                                        {% endif %}
-                                        {% if item.price %}
-                                        <span class="text-green-600 dark:text-green-400 font-bold text-sm">{{ item.price }}</span>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center gap-4 text-xs font-semibold text-slate-500 border-t border-slate-100 dark:border-slate-800 pt-4">
-                                    {% if item.mileage %}<span class="flex items-center gap-1"><span
-                                            class="material-symbols-outlined text-base">speed</span> {{ item.mileage
-                                        }}</span>{% endif %}
-                                    {% if item.fuel %}<span class="flex items-center gap-1"><span
-                                            class="material-symbols-outlined text-base">local_gas_station</span> {{
-                                        item.fuel }}</span>{% endif %}
-                                    {% if item.transmission %}<span class="flex items-center gap-1"><span
-                                            class="material-symbols-outlined text-base">settings</span> {{
-                                        item.transmission }}</span>{% endif %}
-                                    {% if item.days_to_import %}<span class="flex items-center gap-1"><span
-                                            class="material-symbols-outlined text-base">timelapse</span> {{
-                                        item.days_to_import }} days</span>
-                                    {% endif %}
-                                        
-                                </div>
-                                <a href="{{ item.link | default: 'inquiry' }}"
-                                    class="w-full mt-2 bg-slate-100 dark:bg-slate-800 text-[#111418] dark:text-white font-bold py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300 justify-center flex items-center"
-                                    role="button" aria-label="View Details">
-                                    {{ item.cta | default: "Similar Inquiry" }}
-                                </a>
-                            </div>
-                        </div>
-                        {% endfor %}
                     </div>
                 </div>
             </section>
