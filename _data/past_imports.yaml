@@ -628,12 +628,12 @@
     - "assets/images/vehicles/past_imports/note153k3.jpeg"
     - "assets/images/vehicles/past_imports/note153k4.jpeg"
     - "assets/images/vehicles/past_imports/note153k5.jpeg"
-  badge: "Shipping to Mombasa"
+  badge: "Delivered to Kwale"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-111011"
   auction_date: "2024-05-05"
-  current_status: "In Transit"
+  current_status: "Delivered"
   estimated_delivery: "2024-07-15"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -652,11 +652,11 @@
         carrier: "Premier Logistics"
         estimated_arrival: "2024-06-30"
     - step: "Customs Clearance"
-      date_completed: null
-      details: "Awaiting arrival for customs clearance in Kenya."
+      date_completed: "2024-07-05"
+      details: "Vehicle has cleared customs in Kenya."
     - step: "Final Delivery"
-      date_completed: null
-      details: "Estimated delivery to client's location in Mombasa."
+      date_completed: "2024-07-15"
+      details: "Delivered to client's location in Kwale."
 
 - id: "l8v4m0o3p"
   title: "Mazda CX-3"
@@ -714,7 +714,7 @@
       details: "Vehicle has arrived for customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: "2026-04-19"
-      details: "Estimated delivery to client's location in Nairobi."
+      details: "Delivered to client's location in Nairobi."
 
 - id: "m9w5n1p4q"
   title: "Mercedes-Benz GLA-Class"
@@ -772,7 +772,7 @@
       details: "Awaiting customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: "2026-04-18"
-      details: "Estimated delivery to client's location in Mombasa."
+      details: "Delivered to client's location in Mombasa."
 
 - id: "n0x6o2q5r"
   title: "Peugeot 3008"
@@ -878,9 +878,9 @@
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-        # carrier: "BRANDS HATCH V.IF602"
-        # estimated_arrival: null
+      shipping_details:
+        carrier: "Asian Empire"
+        estimated_arrival: "2026-05-22"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
@@ -1001,3 +1001,117 @@
     - step: "Final Delivery"
       date_completed: null
       details: "Estimated delivery to client's location in Mombasa."
+
+- id: "r4b0s6u9v"
+  title: "Honda CRV"
+  subtitle: "Grade 4"
+  year: "2019"
+  grade: "4.5"
+  mileage: "85k km"
+  fuel: "Petrol"
+  transmission: "Auto"
+  engine_size: "2L"
+  price: "KES 1,800,000 CNF"
+  # savings: "KES 500,000"
+  drive_type: "FWD"
+  color: "White"
+  seats: "5 Seater"
+  chassis_id: "RW5"
+  engine_model: "R20A"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "17-inch Alloy"
+  safety_systems: "Honda Sensing"
+  doors: "5"
+  efficiency: "12-15 km/l"
+  images:
+    - "assets/images/vehicles/past_imports/crv1.jpeg"
+    - "assets/images/vehicles/past_imports/crv2.jpeg"
+    - "assets/images/vehicles/past_imports/crv3.jpeg"
+    - "assets/images/vehicles/past_imports/crv4.jpeg"
+    - "assets/images/vehicles/past_imports/crv5.jpeg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  tracking_id: "KM-118018"
+  auction_date: "2026-04-24"
+  current_status: "Inspection pending"
+  estimated_delivery: "June 2026"
+  import_steps_completed:
+    - step: "Auction Bidding"
+      date_completed: "2026-04-24"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: "2026-05-01"
+      details: "Payment has been processed and confirmed."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle has passed inspection and is ready for shipping."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle has been shipped and is currently in transit to Kenya."
+      # shipping_details:
+        # carrier: "BRANDS HATCH V.IF602"
+        # estimated_arrival: "2026-04-09"
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Mombasa." 
+
+- id: "s5c1t7v0w"
+  title: "Mazda CX-5"
+  subtitle: "XD Exclusive Mode"
+  year: "2020"
+  grade: "4.5"
+  mileage: "18k km"
+  fuel: "Diesel"
+  transmission: "Auto"
+  engine_size: "2.2L"
+  price: "KES 2,000,000 CNF"
+  # savings: "KES 500,000"
+  drive_type: "AWD"
+  color: "Gray"
+  seats: "5 Seater"
+  chassis_id: "LDA-KF2P"
+  engine_model: "KF-2P"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "19-inch Alloy"
+  safety_systems: "i-Activsense"
+  doors: "5"
+  efficiency: "14-16 km/l"
+  images:
+    - "assets/images/vehicles/past_imports/cx51.jpeg"
+    - "assets/images/vehicles/past_imports/cx52.jpeg"
+    - "assets/images/vehicles/past_imports/cx53.jpeg"
+    - "assets/images/vehicles/past_imports/cx54.jpeg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  tracking_id: "KM-119019"
+  auction_date: "2026-05-01"
+  current_status: "Inspection pending"
+  estimated_delivery: "June 2026"
+  import_steps_completed:
+    - step: "Auction Bidding"
+      date_completed: "2026-04-29"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: null
+      details: "Payment has been processed and confirmed."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle has passed inspection and is ready for shipping."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle has been shipped and is currently in transit to Kenya."
+      # shipping_details:
+        # carrier: "BRANDS HATCH V.IF602"
+        # estimated_arrival: "2026-04-09"
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Mombasa."
+      
