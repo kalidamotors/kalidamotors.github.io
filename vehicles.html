@@ -360,20 +360,14 @@
             const grid = document.getElementById(gridId);
             if (!grid) return;
             
-            grid.querySelectorAll('.group').forEach(vehicle => {
-                const titleLink = vehicle.querySelector('a[href*="vehicle.html"]');
-                const subtitleP = vehicle.querySelector('.text-slate-400.font-medium.text-sm');
-                const yearSpan = vehicle.querySelector('.text-primary.font-bold.text-lg');
-                const priceSpan = vehicle.querySelector('.text-green-600, .text-green-400');
+            grid.querySelectorAll('.group').forEach((vehicle, index) => {
+                const vehicleId = vehicle.id || `vehicle-${gridId}-${index}`;
                 
-                const searchableText = (
-                    (titleLink ? titleLink.textContent : '') + ' ' +
-                    (subtitleP ? subtitleP.textContent : '') + ' ' +
-                    (yearSpan ? yearSpan.textContent : '') + ' ' +
-                    (priceSpan ? priceSpan.textContent : '')
-                ).toLowerCase();
+                // Get all text content from the vehicle card for searching
+                const allText = vehicle.innerText || vehicle.textContent || '';
+                const searchableText = allText.toLowerCase();
                 
-                vehicleCache[vehicle.id || Math.random()] = {
+                vehicleCache[vehicleId] = {
                     element: vehicle,
                     searchText: searchableText,
                     gridId: gridId
