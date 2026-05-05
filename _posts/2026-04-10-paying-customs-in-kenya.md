@@ -4,8 +4,9 @@ title:  "Paying Customs Duty in Kenya — What You're Paying, How to Pay, and Wh
 date:   2026-04-10 19:35:51 +0300
 read_time: 4
 featured_image: "/assets/images/blog/customs.jpg"
-categories: ["Import Guides"]
-featured: true
+categories: ["Import Guides", "Duty"]
+featured: false
+author: Tom
 ---
 
 This is usually the point where clients feel the most nervous — not because they don't trust the process, but because the numbers are big, unclear, the system feels unfamiliar and somehow unfair.
