@@ -115,37 +115,43 @@
                 class="relative group overflow-hidden rounded-lg bg-surface shadow-2xl transition-transform duration-500">
                 <div class="grid md:grid-cols-2 gap-0">
                     {% for post in site.posts %}
-                        {% if post.featured == true %}
-                        <div class="relative h-[400px] md:h-auto overflow-hidden">
-                            <img alt="{{ post.title }}" class="absolute inset-0 w-full h-full object-cover"
-                                src="{{ post.featured_image }}" />
-                            <div class="absolute top-6 left-6">
-                                <span
-                                    class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-lg">Featured</span>
-                            </div>
+                    {% if post.featured == true %}
+                    <div class="relative h-[400px] md:h-auto overflow-hidden">
+                        <img alt="{{ post.title }}" class="absolute inset-0 w-full h-full object-cover"
+                            src="{{ post.featured_image }}" />
+                        <div class="absolute top-6 left-6">
+                            <span
+                                class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-lg">Featured</span>
                         </div>
-                        <div class="p-10 md:p-16 flex flex-col justify-center bg-surface">
-                            <div class="flex items-center gap-4 text-slate-500 text-sm mb-4">
-                                <span class="flex items-center gap-1"><span
-                                        class="material-symbols-outlined text-sm">schedule</span> {% if post.read_time %}{{ post.read_time }}{% else %}5{% endif %} min read</span>
-                                <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
-                                <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                            </div>
-                            <h2 class="text-4xl font-black tracking-tight leading-tight mb-6">{{ post.title }}</h2>
-                            <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                                {% if post.excerpt %}
-                                    {{ post.excerpt | strip_html }}
-                                {% else %}
-                                    {{ post.content | strip_html | truncatewords: 30 }}
-                                {% endif %}
-                            </p>
-                            <a href="{{ post.url }}"
-                                class="inline-flex items-center justify-center bg-primary text-white h-[56px] px-8 rounded-lg font-bold hover:shadow-lg hover:shadow-primary/20 transition-all w-fit">
-                                Read Full Article
-                            </a>
+                    </div>
+                    <div class="p-10 md:p-16 flex flex-col justify-center bg-surface">
+                        <div class="flex items-center gap-4 text-slate-500 text-sm mb-4">
+                            <span class="flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-sm">schedule</span> {% if post.read_time %}{{
+                                post.read_time }}{% else %}5{% endif %} min read</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span>{{ post.date | date: "%B %d, %Y" }}</span>
+                            <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                            <span class="flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">person</span>
+                                {% if post.author %}{{ post.author }}{% else %}Kalida Motors{% endif %}
+                            </span>
                         </div>
-                        {% break %}
-                        {% endif %}
+                        <h2 class="text-4xl font-black tracking-tight leading-tight mb-6">{{ post.title }}</h2>
+                        <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                            {% if post.excerpt %}
+                            {{ post.excerpt | strip_html }}
+                            {% else %}
+                            {{ post.content | strip_html | truncatewords: 30 }}
+                            {% endif %}
+                        </p>
+                        <a href="{{ post.url }}"
+                            class="inline-flex items-center justify-center bg-primary text-white h-[56px] px-8 rounded-lg font-bold hover:shadow-lg hover:shadow-primary/20 transition-all w-fit">
+                            Read Full Article
+                        </a>
+                    </div>
+                    {% break %}
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>
@@ -158,12 +164,20 @@
                     <p class="text-slate-500 mt-2">Specialized knowledge for the discerning car buyer and owner.</p>
                 </div>
                 <div class="flex flex-wrap gap-2" id="categoryFilters">
-                    <button class="category-btn px-4 py-2 rounded-lg bg-primary text-white font-bold text-xs uppercase tracking-wider active" data-category="all">All</button>
-                    <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="import-guides">Import Guides</button>
-                    <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="costs-duty">Costs
+                    <button
+                        class="category-btn px-4 py-2 rounded-lg bg-primary text-white font-bold text-xs uppercase tracking-wider active"
+                        data-category="all">All</button>
+                    <button
+                        class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors"
+                        data-category="import-guides">Import Guides</button>
+                    <button
+                        class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors"
+                        data-category="costs-duty">Costs
                         &amp; Duty</button>
                     <!-- <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="auction-tips">Auction Tips</button> -->
-                    <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="car-reviews">Car Reviews and Model Guides</button>
+                    <button
+                        class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors"
+                        data-category="car-reviews">Car Reviews and Model Guides</button>
                     <!-- <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="buying-advice">Buying Advice</button>
                     <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="import-stories">Real Import Stories</button>
                     <button class="category-btn px-4 py-2 rounded-lg bg-surface-container text-slate-600 font-bold text-xs uppercase tracking-wider hover:bg-slate-200 transition-colors" data-category="industry-insights">Industry Insights</button> -->
@@ -172,7 +186,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="postsGrid">
                 {% for post in site.posts %}
                 <!-- Post Card -->
-                <article class="post-card group flex flex-col bg-surface hover:-translate-y-1 transition-all duration-300" data-categories="{{ post.categories | join: '|' }}">
+                <article
+                    class="post-card group flex flex-col bg-surface hover:-translate-y-1 transition-all duration-300"
+                    data-categories="{{ post.categories | join: '|' }}">
                     <div class="aspect-[16/10] overflow-hidden rounded-lg mb-6 border-8 border-white shadow-sm">
                         <img alt="{{ post.title }}"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -181,9 +197,9 @@
                     <div class="px-2">
                         <div class="flex items-center justify-between mb-3">
                             {% if post.categories %}
-                                <span class="text-[10px] font-bold uppercase tracking-widest text-primary">
-                                    {{ post.categories | join: ", " }}
-                                </span>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-primary">
+                                {{ post.categories | join: ", " }}
+                            </span>
                             {% endif %}
                             <span class="text-xs text-slate-400">{{ post.date | date: "%b %d, %Y" }}</span>
                         </div>
@@ -192,9 +208,9 @@
                         </h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
                             {% if post.excerpt %}
-                                {{ post.excerpt | strip_html | truncatewords: 20 }}
+                            {{ post.excerpt | strip_html | truncatewords: 20 }}
                             {% else %}
-                                {{ post.content | strip_html | truncatewords: 20 }}
+                            {{ post.content | strip_html | truncatewords: 20 }}
                             {% endif %}
                         </p>
                         <a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline underline-offset-4 decoration-2"
@@ -209,9 +225,9 @@
     </main>
     <!-- Footer -->
     {% include footer.html %}
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const categoryButtons = document.querySelectorAll('.category-btn');
             const postCards = document.querySelectorAll('.post-card');
 
@@ -221,9 +237,9 @@
             }
 
             categoryButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const selectedCategory = this.getAttribute('data-category');
-                    
+
                     // Update button states
                     categoryButtons.forEach(btn => {
                         btn.classList.remove('bg-primary', 'text-white');
@@ -235,17 +251,17 @@
                     // Filter posts
                     postCards.forEach(card => {
                         const postCategoriesStr = card.getAttribute('data-categories') || '';
-                        
+
                         if (selectedCategory === 'all') {
                             card.style.display = '';
                         } else {
                             // Split by pipe and normalize each category
                             const categoryList = postCategoriesStr.split('|').map(normalizeCategory).filter(c => c);
                             const selectedNormalized = normalizeCategory(selectedCategory);
-                            
+
                             // Check if any post category matches the selected one
                             const matches = categoryList.some(cat => cat === selectedNormalized);
-                            
+
                             card.style.display = matches ? '' : 'none';
                         }
                     });
