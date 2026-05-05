@@ -17,7 +17,7 @@ I had heard too many stories — people paying deposits and then being ghosted, 
 
 But I still wanted to import my own car.
 
-I had been looking at Mazda CX-3s for a while. They fit my budget, They looked good - perfect compact cross SUV for Nairobi baddies.
+I had been looking at Mazda CX-3s for a while. They fit my budget, They looked good - perfect compact cross SUV for Nairobi ladies.
 
 The problem was: I didn’t know who to trust.
 
