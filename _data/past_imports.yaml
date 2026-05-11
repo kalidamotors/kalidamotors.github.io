@@ -32,7 +32,7 @@
   tracking_id: "KM-101001"
   auction_date: "2024-02-10"
   current_status: "Delivered"
-  estimated_delivery: "2024-04-30"
+  estimated_delivery: "2026-07-01"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2024-02-10"
@@ -1089,7 +1089,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-119019"
-  auction_date: "2026-05-01"
+  auction_date: "2026-04-29"
   current_status: "Inspection pending"
   estimated_delivery: "June 2026"
   import_steps_completed:
@@ -1097,7 +1097,7 @@
       date_completed: "2026-04-29"
       details: "Successfully won the bid for the vehicle at the auction."
     - step: "Payment Processing"
-      date_completed: null
+      date_completed: "2026-05-11"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
       date_completed: null
