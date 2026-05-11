@@ -1091,7 +1091,7 @@
   tracking_id: "KM-119019"
   auction_date: "2026-04-29"
   current_status: "Inspection pending"
-  estimated_delivery: "June 2026"
+  estimated_delivery: "July 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-04-29"
