@@ -1,0 +1,192 @@
+- name: Mazda CX-3
+  slug: mazda-cx3
+  estimated_total_cost: 2500000
+  category: SUV
+  image: /assets/images/vehicles/cars/cx3.jpg
+
+  short_description: Stylish compact SUV with good fuel economy and modern interior.
+
+  ideal_for:
+    - Young professionals
+    - Daily commuting
+    - First-time SUV buyers
+
+  highlights: 
+    - Fuel efficient
+    - Easy to drive
+    - Popular in Kenya
+
+  caution:
+    - Smaller boot space compared to larger SUVs
+
+- name: Toyota RAV4
+  slug: toyota-rav4
+  estimated_total_cost: 3279253
+  category: SUV
+  image: /assets/images/vehicles/cars/rav4.jpg
+
+  short_description: Reliable and spacious SUV with strong resale value and good off-road capability.
+
+  ideal_for:
+    - Families
+    - Outdoor enthusiasts
+    - Those needing more space
+
+  highlights:
+    - Spacious interior
+    - Strong resale value
+    - Good for rough roads
+
+  caution:
+    - Higher price point than smaller SUVs
+
+- name: Honda CR-V
+  slug: honda-crv
+  estimated_total_cost: 328651110
+  category: SUV
+  image: /assets/images/vehicles/cars/crv.jpg
+
+  short_description: Comfortable and reliable SUV with a spacious interior and good fuel economy.
+  ideal_for:
+    - Families
+    - Commuters
+    - Those seeking a comfortable ride
+  highlights:
+    - Spacious interior
+    - Comfortable ride
+    - Good fuel economy
+  caution:
+    - Some models may have higher maintenance costs
+    - Limited off-road capability compared to larger SUVs
+
+- name: Subaru Forester
+  slug: subaru-forester
+  estimated_total_cost: 2694621
+  category: SUV
+  image: /assets/images/vehicles/cars/forester.jpg
+
+  short_description: Rugged and reliable SUV with standard all-wheel drive and good safety ratings.
+
+  ideal_for:
+    - Outdoor enthusiasts
+    - Those living in areas with rough weather
+    - Families needing a safe vehicle
+
+  highlights:
+    - Standard all-wheel drive
+    - Good safety ratings
+    - Reliable performance
+
+  caution:
+    - Higher fuel consumption than some competitors
+    - Interior may feel less refined than some rivals
+
+- name: Nissan X-Trail
+  slug: nissan-xtrail
+  estimated_total_cost: 2438141
+  category: SUV
+  image: /assets/images/vehicles/cars/xtrail.jpg
+
+  short_description: Practical and affordable SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Budget-conscious buyers
+    - Families
+    - Those seeking a reliable daily driver
+
+  highlights:
+    - Affordable price point
+    - Comfortable interior
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mitsubishi Outlander
+  slug: mitsubishi-outlander
+  estimated_total_cost: 2624587
+  category: SUV
+  image: /assets/images/vehicles/cars/outlander.jpg
+
+  short_description: Versatile SUV with a spacious interior and available all-wheel drive, suitable for families.
+
+  ideal_for:
+    - Families
+    - Those needing extra cargo space
+    - Buyers seeking a budget-friendly SUV
+
+  highlights:
+    - Spacious interior
+    - Available all-wheel drive
+    - Competitive pricing
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior quality may not match some rivals
+
+- name: Mazda CX-5
+  slug: mazda-cx5
+  estimated_total_cost: 2675535
+  category: SUV
+  image: /assets/images/vehicles/cars/cx5.jpg
+
+  short_description: Stylish and fun-to-drive SUV with a premium interior and good fuel economy.
+
+  ideal_for:
+    - Young professionals
+    - Those seeking a more engaging driving experience
+    - Buyers looking for a stylish SUV
+
+  highlights:
+    - Stylish design
+    - Engaging driving dynamics
+    - Premium interior
+
+  caution:
+    - Higher price point than some competitors
+    - Rear seat space may be tight for taller passengers
+
+- name: Toyota Land Cruiser Prado
+  slug: toyota-land-cruiser-prado
+  estimated_total_cost: 5648024
+  category: SUV
+  image: /assets/images/vehicles/cars/prado.jpg
+
+  short_description: Rugged and reliable SUV with excellent off-road capability and a spacious interior.
+
+  ideal_for:
+    - Off-road enthusiasts
+    - Those needing a durable and reliable vehicle
+    - Families seeking a spacious SUV
+
+  highlights:
+    - Excellent off-road capability
+    - Spacious interior
+    - Strong resale value
+
+  caution:
+    - Higher price point than many competitors
+    - Fuel consumption may be higher than smaller SUVs
+
+- name: Toyota Vitz
+  slug: toyota-vitz
+  estimated_total_cost: 1289516
+  category: Hatchback
+  image: /assets/images/vehicles/cars/vitz.jpg
+
+  short_description: Compact and fuel-efficient hatchback with a reputation for reliability and low maintenance costs.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable vehicle
+
+  highlights:
+    - Excellent fuel economy
+    - Low maintenance costs
+    - Reliable performance
+
+  caution:
+    - Limited interior space compared to larger vehicles
+    - May not be suitable for long road trips or larger families

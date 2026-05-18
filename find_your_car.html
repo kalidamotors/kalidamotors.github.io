@@ -1,0 +1,379 @@
+---
+
+---
+
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>What Can I Import? | Kalida Motors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#136dec",
+                        "on-error": "#ffffff",
+                        "on-background": "#111418",
+                        "tertiary-fixed": "#cbd5e1",
+                        "surface-container-highest": "#cbd5e1",
+                        "secondary-container": "#f1f5f9",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#1e293b",
+                        "on-tertiary-fixed": "#020617",
+                        "inverse-on-surface": "#ffffff",
+                        "surface-container-low": "#f8fafc",
+                        "inverse-primary": "#afc6ff",
+                        "primary-fixed-dim": "#afc6ff",
+                        "inverse-surface": "#101822",
+                        "on-tertiary-container": "#f8fafc",
+                        "surface-dim": "#f6f7f8",
+                        "primary-container": "#136dec",
+                        "surface": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#334155",
+                        "tertiary-container": "#1e293b",
+                        "surface-bright": "#ffffff",
+                        "secondary": "#64748b",
+                        "on-surface": "#111418",
+                        "secondary-fixed-dim": "#cbd5e1",
+                        "outline-variant": "#cbd5e1",
+                        "tertiary": "#0f172a",
+                        "surface-variant": "#f1f5f9",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e2e8f0",
+                        "surface-tint": "#136dec",
+                        "surface-container": "#f1f5f9",
+                        "secondary-fixed": "#e2e8f0",
+                        "primary-fixed": "#d9e2ff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#111418",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#e2e8f0",
+                        "on-secondary-fixed": "#0f172a",
+                        "background": "#f6f7f8",
+                        "tertiary-fixed-dim": "#94a3b8",
+                        "on-surface-variant": "#617289",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#ffffff",
+                        "on-primary-fixed-variant": "#004299",
+                        "on-primary-fixed": "#001944"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans"],
+                        "display": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background">
+    <!-- TopNavBar -->
+    {% include header.html %}
+    <main class="pt-24 pb-20 px-6 max-w-7xl mx-auto">
+        <!-- Matchmaker Hero / Budget Input Section -->
+        <section
+            class="bg-surface rounded-xl p-8 md:p-12 mb-12 shadow-sm relative overflow-hidden flex items-center justify-center min-h-[500px]">
+            <div class="relative z-10 mx-auto text-center !max-w-4xl">
+                <span class="font-black uppercase tracking-widest text-[10px] text-primary mb-4 block">Kalida
+                    Analytics</span>
+                <h1 class="md:text-5xl font-black tracking-tight text-slate-900 mb-6 leading-none md:text-6xl mb-8">What Can I <span class="text-primary">import?</span></h1>
+                <p class="text-secondary text-lg mb-10 leading-relaxed max-w-2xl mx-auto">Our proprietary algorithm
+                    analyzes current Kenyan market and Japanese auction trends to match your capital to the best vehicle import</p>
+                <div class="flex flex-col md:flex-row gap-4 items-end">
+                    <div class="w-full">
+                        <label
+                            class="font-bold text-[12px] uppercase tracking-widest text-slate-500 mb-2 block">Available
+                            Capital (KES)</label>
+                        <div class="relative">
+                            <input
+                                id="budgetInput"
+                                class="w-full pl-8 pr-4 py-4 rounded-lg bg-surface-container border-none focus:ring-2 focus:ring-primary text-xl font-bold text-slate-900"
+                                placeholder="1,500,000" type="number"/>
+                        </div>
+                    </div>
+                    <button
+                        id="findCarBtn"
+                        class="w-full md:w-auto h-[60px] bg-primary text-on-primary px-10 rounded-lg font-black uppercase tracking-widest text-sm hover:bg-blue-700 active:scale-95 duration-200 shadow-xl flex items-center justify-center gap-2">
+                        Find My Car
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Recommendation Grid -->
+        <section class="mb-20" id="recommendationSection" style="display: none;">
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-2xl font-black text-slate-900 uppercase tracking-tight">Top Recommendations</h2>
+                    <p class="text-slate-500 text-sm" id="recommendationSubtitle">Matches based on your KES 1,500,000 target range.</p>
+                </div>
+            </div>
+            <div id="recommendationGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically populated by JavaScript -->
+            </div>
+        </section>
+        <!-- No Match / Empty State Section -->
+        <section
+            class="bg-surface-container-low border border-dashed border-outline-variant rounded-2xl p-12 text-center max-w-4xl mx-auto">
+            <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                <span class="material-symbols-outlined text-4xl text-slate-300">search_off</span>
+            </div>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">No perfect match found?</h2>
+            <p class="text-secondary text-lg mb-8 max-w-xl mx-auto leading-relaxed">We couldn’t find a confident recommendation within this budget right now.
+Import pricing changes regularly, but we’d still be happy to guide you through possible options.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                    href="https://wa.me/254718036460?text=Hi%20Kalida%20Motors%2C%20I%20couldn%27t%20find%20a%20perfect%20match%20for%20my%20budget.%20Can%20you%20help%20me%20find%20alternative%20options%3F"
+                    class="bg-[#25D366] text-white px-8 py-4 rounded-lg font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:opacity-90 transition-all shadow-lg active:scale-95">
+                    <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                        </path>
+                    </svg>
+                    Talk to us on WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    {% include footer.html %}
+</body>
+
+<script>
+    // Embed cars data from YAML using Jekyll Liquid
+    const carsData = [
+        {% for car in site.data.cars %}
+        {
+            name: "{{ car.name }}",
+            slug: "{{ car.slug }}",
+            category: "{{ car.category }}",
+            estimated_total_cost: {{ car.estimated_total_cost }},
+            image: "{{ car.image }}",
+            short_description: "{{ car.short_description | strip_html | truncate: 100 }}",
+            highlights: [
+                {% for highlight in car.highlights %}
+                "{{ highlight }}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            ideal_for: [
+                {% for item in car.ideal_for %}
+                "{{ item }}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+
+    /**
+     * Budget-Based Matching Algorithm (IMPROVED)
+     * 
+     * Scoring system prioritizes cars that fall within the suitable budget range:
+     * - Sweet Spot (80-100% of budget): Score 90-100 (best matches)
+     * - Slight Overage (100-115% of budget): Score 75-90 (acceptable)
+     * - Underutilized (60-80% of budget): Score 40-75 (lower priority, wasteful of capital)
+     * - Significant Underspend (<60% of budget): Score <40 (excluded, not suitable)
+     * - Over 115% of budget: Excluded (too expensive)
+     * 
+     * This ensures users get cars that are appropriately matched to their budget,
+     * not just any car that's cheaper.
+     */
+    function findBestMatches(budget, maxResults = 6) {
+        // Define budget ranges
+        const sweetSpotMin = budget * 0.80; // 80% of budget (ideal minimum)
+        const sweetSpotMax = budget * 1.00; // 100% of budget (ideal maximum)
+        const acceptableMax = budget * 1.15; // 115% of budget (acceptable maximum overage)
+        const minAcceptablePrice = budget * 0.60; // 60% of budget (minimum consideration)
+        
+        // Score each car
+        const scored = carsData.map(car => {
+            const cost = car.estimated_total_cost;
+            const budgetUtilization = cost / budget;
+            
+            // Calculate match score (0-100)
+            let score = 0;
+            
+            if (cost >= sweetSpotMin && cost <= sweetSpotMax) {
+                // SWEET SPOT: 80-100% of budget - best matches
+                // Score increases as we get closer to 100%
+                const distanceFromMax = budget - cost;
+                const sweetSpotRange = budget - sweetSpotMin;
+                const positionInRange = 1 - (distanceFromMax / sweetSpotRange);
+                score = 90 + (positionInRange * 10); // 90-100
+            } else if (cost > sweetSpotMax && cost <= acceptableMax) {
+                // ACCEPTABLE OVERAGE: 100-115% of budget - still good
+                const overage = cost - budget;
+                const budgetOveragePercent = overage / budget;
+                score = 90 - (budgetOveragePercent / 0.15) * 15; // 75-90
+            } else if (cost < sweetSpotMin && cost >= minAcceptablePrice) {
+                // UNDERUTILIZED: 60-80% of budget - lower priority
+                // Wastes budget potential, but still acceptable
+                const distanceFromMin = sweetSpotMin - cost;
+                const underutilizedRange = sweetSpotMin - minAcceptablePrice;
+                const positionInRange = 1 - (distanceFromMin / underutilizedRange);
+                score = 40 + (positionInRange * 35); // 40-75
+            } else {
+                // EXCLUDED: Under 60% of budget or over 115%
+                score = -1;
+            }
+            
+            return {
+                ...car,
+                score,
+                savings: Math.max(0, budget - cost),
+                budgetUtilization: (budgetUtilization * 100).toFixed(1),
+                percentDifference: ((cost - budget) / budget * 100).toFixed(1),
+                isMatch: score >= 0
+            };
+        });
+        
+        // Filter valid matches and sort by score (descending)
+        const matches = scored
+            .filter(car => car.isMatch)
+            .sort((a, b) => b.score - a.score)
+            .slice(0, maxResults);
+        
+        return matches;
+    }
+
+    /**
+     * Format currency to KES with comma separators
+     */
+    function formatKES(amount) {
+        return amount.toLocaleString('en-KE', {
+            style: 'currency',
+            currency: 'KES',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+        });
+    }
+
+    /**
+     * Create recommendation card HTML
+     */
+    function createRecommendationCard(car, rank) {
+        const budgetUtilization = car.budgetUtilization;
+        const matchQuality = car.score >= 90 ? 'Perfect Match' : 
+                            car.score >= 75 ? 'Great Match' : 'Available Option';
+        
+        return `
+            <div class="group bg-surface border border-outline/50 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="aspect-[16/10] relative overflow-hidden bg-slate-200">
+                    ${car.image ? `<img class="w-full h-full object-cover" src="${car.image}" alt="${car.name}" />` : '<div class="w-full h-full bg-slate-300 flex items-center justify-center"><span class="text-slate-400 text-sm">No image available</span></div>'}
+                    <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-sm shadow-lg">
+                        #${rank} Match - ${matchQuality}
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-slate-900 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-sm shadow-sm">
+                        ${budgetUtilization}% of budget
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight">${car.name}</h3>
+                        <span class="text-primary font-black text-lg">${formatKES(car.estimated_total_cost)}</span>
+                    </div>
+                    <p class="text-slate-500 text-xs font-semibold uppercase mb-3">${car.category}</p>
+                    <div class="flex gap-2 mb-4 overflow-x-auto pb-1">
+                        ${car.highlights.slice(0, 2).map(h => `<span class="bg-surface-container text-slate-600 text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded whitespace-nowrap">${h}</span>`).join('')}
+                    </div>
+                    <div class="p-4 bg-surface-dim rounded-lg mb-6">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Why this fits</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">${car.short_description}</p>
+                    </div>
+                    <a href="/inquiry?car=${encodeURIComponent(car.name)}" class="w-full border border-primary text-primary py-3 rounded-lg font-bold text-sm hover:bg-primary hover:text-white transition-all text-center block">Start Inquiry</a>
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Populate recommendation grid
+     */
+    function populateRecommendations(budget) {
+        const matches = findBestMatches(budget);
+        const grid = document.getElementById('recommendationGrid');
+        const subtitle = document.getElementById('recommendationSubtitle');
+        const section = document.getElementById('recommendationSection');
+        
+        // Show the recommendation section
+        section.style.display = 'block';
+        
+        // Update subtitle
+        subtitle.textContent = `Matches based on your KES ${budget.toLocaleString()} target range.`;
+        
+        if (matches.length === 0) {
+            grid.innerHTML = `
+                <div class="col-span-full bg-surface-container-low border border-dashed border-outline-variant rounded-2xl p-12 text-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <span class="material-symbols-outlined text-4xl text-slate-300">search_off</span>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">No matches found</h3>
+                    <p class="text-slate-600 mb-4">Current auction trends for your budget range are unavailable. Please adjust your budget or contact our specialists.</p>
+                </div>
+            `;
+        } else {
+            grid.innerHTML = matches
+                .map((car, idx) => createRecommendationCard(car, idx + 1))
+                .join('');
+        }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const budgetInput = document.getElementById('budgetInput');
+        const findCarBtn = document.getElementById('findCarBtn');
+        
+        // Search button click handler
+        findCarBtn.addEventListener('click', function() {
+            const budget = parseInt(budgetInput.value);
+            if (budget && budget > 0) {
+                populateRecommendations(budget);
+                // Scroll to recommendations
+                document.querySelector('.mb-20').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                alert('Please enter a valid budget amount');
+            }
+        });
+        
+        // Allow Enter key to search
+        budgetInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                findCarBtn.click();
+            }
+        });
+    });
+</script>
+
+</html>

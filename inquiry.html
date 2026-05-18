@@ -886,8 +886,37 @@
             }
         });
 
+        // Pre-fill form from URL parameter
+        function prefillFormFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const carName = urlParams.get('car');
+            
+            if (carName) {
+                // Try to find matching brand and model
+                const brands = Object.keys(carDatabase).sort((a, b) => b.length - a.length); // Sort by length (longest first)
+                
+                for (let brand of brands) {
+                    if (carName.startsWith(brand)) {
+                        const model = carName.substring(brand.length).trim();
+                        
+                        // Set brand
+                        brandSelect.value = brand;
+                        brandSelect.dispatchEvent(new Event('change')); // Trigger change event to populate models
+                        
+                        // Set model (after a brief delay to allow models to populate)
+                        setTimeout(() => {
+                            modelSelect.value = model;
+                        }, 50);
+                        
+                        break;
+                    }
+                }
+            }
+        }
+
         // Initialize
         showStep(1);
+        prefillFormFromUrl(); // Pre-fill if car parameter is in URL
         
         // Advanced Options Toggle
         const advancedToggle = document.getElementById('advancedToggle');
