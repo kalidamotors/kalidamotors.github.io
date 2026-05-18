@@ -801,12 +801,12 @@
     - "assets/images/vehicles/past_imports/3008hdi3.jpeg"
     - "assets/images/vehicles/past_imports/3008hdi4.jpeg"
     - "assets/images/vehicles/past_imports/3008hdi5.jpeg"
-  badge: "Shipping to Mombasa"
+  badge: "Awaiting clearance At Mombasa Port"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-114014"
   auction_date: "2026-03-26"
-  current_status: "Shipping"
+  current_status: "Awaiting clearance At Mombasa Port"
   estimated_delivery: "2026-05-20"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -863,7 +863,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-115015"
   auction_date: "2026-04-02"
-  current_status: "Shipping pending"
+  current_status: "Awaiting clearance At Mombasa Port"
   estimated_delivery: "June 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -873,10 +873,10 @@
       date_completed: "2026-04-10"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: 2026-04-17
+      date_completed: "2026-04-17"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
-      date_completed: null
+      date_completed: "2026-05-17"
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "Asian Empire"
