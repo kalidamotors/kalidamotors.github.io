@@ -190,3 +190,412 @@
   caution:
     - Limited interior space compared to larger vehicles
     - May not be suitable for long road trips or larger families
+
+- name: Suzuki Swift
+  slug: suzuki-swift
+  estimated_total_cost: 1606000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/swift.jpg
+  short_description: Stylish and fun-to-drive hatchback with good fuel economy and a comfortable interior.
+  ideal_for:
+    - Young professionals
+    - Urban commuters
+    - Those seeking a stylish and affordable hatchback
+  highlights:
+    - Stylish design
+    - Fun-to-drive handling
+    - Good fuel economy
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Nissan Note E12
+  slug: note-epower-e12
+  estimated_total_cost: 1281694
+  category: Hatchback
+  image: /assets/images/vehicles/cars/note12.jpg
+  
+  short_description: Practical and spacious hatchback with good fuel economy and a comfortable interior.
+
+  ideal_for:
+    - Families needing a compact vehicle
+    - Urban commuters
+    - Those seeking a reliable and affordable hatchback
+
+  highlights:
+    - Spacious interior for its class
+    - Good fuel economy
+    - Comfortable ride
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Nissan Note E13
+  slug: note-epower-e13
+  estimated_total_cost: 1514157
+  category: Hatchback
+  image: /assets/images/vehicles/cars/note13.jpg
+  
+  short_description: Practical and spacious hatchback with good fuel economy and a comfortable interior.
+
+  ideal_for:
+    - Families needing a compact vehicle
+    - Urban commuters
+    - Those seeking a reliable and affordable hatchback
+
+  highlights:
+    - Spacious interior for its class
+    - Good fuel economy
+    - Comfortable ride
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Aqua
+  slug: toyota-aqua
+  estimated_total_cost: 1936068
+  category: Hatchback
+  image: /assets/images/vehicles/cars/aqua.jpg
+  short_description: Fuel-efficient hybrid hatchback with a comfortable interior and a reputation for reliability.
+
+  ideal_for:
+    - Urban commuters
+    - Environmentally conscious drivers
+    - Those seeking a reliable and affordable hybrid vehicle
+
+  highlights:
+    - Excellent fuel economy
+    - Comfortable interior
+    - Reliable performance
+
+  caution:
+    - Limited cargo space compared to larger vehicles
+    - Higher initial cost than some non-hybrid competitors
+
+- name: Honda Fit
+  slug: honda-fit
+  estimated_total_cost: 1539650
+  category: Hatchback
+  image: /assets/images/vehicles/cars/fit.jpg
+
+  short_description: Versatile and practical hatchback with a spacious interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Those needing a compact yet spacious vehicle
+    - Buyers seeking a reliable and affordable hatchback
+
+  highlights:
+    - Spacious interior for its class
+    - Good fuel economy
+    - Versatile cargo space with Magic Seat feature
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Sienta
+  slug: toyota-sienta
+  estimated_total_cost: 1893931
+  category: MPV
+  image: /assets/images/vehicles/cars/sienta.jpg
+
+  short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
+
+  ideal_for:
+    - Families needing a practical and spacious vehicle
+    - Urban commuters seeking a versatile Multi-Purpose Vehicle
+    - Those looking for a reliable and affordable family car
+    - Buyers seeking a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Sliding rear doors for easy access in tight spaces
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Honda Vezel
+  slug: honda-vezel
+  estimated_total_cost: 2405502
+  category: MPV
+  image: /assets/images/vehicles/cars/vezel.jpg
+
+  short_description: Stylish and practical compact Multi-Purpose Vehicle with a spacious interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Urban commuters seeking a stylish Multi-Purpose Vehicle
+    - Those looking for a reliable and affordable family car
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Stylish design with modern features
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Noah WxB
+  slug: toyota-noah-wxb
+  estimated_total_cost: 3056250
+  category: MPV
+  image: /assets/images/vehicles/cars/noahwxb.jpg
+  short_description: Spacious and practical Multi-Purpose Vehicle with a comfortable interior and good fuel economy.
+  ideal_for:
+    - Large families needing a spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Peugeot 3008
+  slug: peugeot-3008
+  estimated_total_cost: 2654181
+  category: SUV
+  image: /assets/images/vehicles/cars/3008.jpg
+
+  short_description: Stylish and modern SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Young professionals
+    - Urban commuters
+    - Those seeking a stylish and affordable SUV
+
+  highlights:
+    - Stylish design
+    - Comfortable interior
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+
+- name: Mazda Mazda2
+  slug: mazda-mazda2
+  estimated_total_cost: 1289516
+  category: Hatchback
+  image: /assets/images/vehicles/cars/mazda2.jpg
+  
+  short_description: Compact and fuel-efficient hatchback with a stylish design and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Stylish design
+    - Good fuel economy
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Volvo XC40
+  slug: volvo-xc40
+  estimated_total_cost: 2971879
+  category: SUV
+  image: /assets/images/vehicles/cars/xc40.jpg
+
+  short_description: Premium compact SUV with a stylish design, advanced safety features, and a comfortable interior.
+
+  ideal_for:
+    - Young professionals seeking a luxury SUV
+    - Urban commuters looking for a stylish and safe vehicle
+    - Those seeking a reliable and well-equipped compact SUV
+
+  highlights:
+    - Stylish and modern design
+    - Advanced safety features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Peugeot 308
+  slug: peugeot-308
+  estimated_total_cost: 1805160
+  category: Hatchback
+  image: /assets/images/vehicles/cars/308.jpg
+
+  short_description: Stylish and practical hatchback with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Those seeking a stylish and affordable hatchback
+    - Buyers looking for a reliable and efficient vehicle
+
+  highlights:
+    - Stylish design
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Suzuki Alto
+  slug: suzuki-alto
+  estimated_total_cost: 707946
+  category: Hatchback
+  image: /assets/images/vehicles/cars/alto.jpg
+
+  short_description: Compact and affordable hatchback with good fuel economy and a reputation for reliability.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Excellent fuel economy
+    - Low maintenance costs
+    - Reliable performance
+
+  caution:
+    - Limited interior space compared to larger vehicles
+    - May not be suitable for long road trips or larger families
+
+- name: Subaru XV
+  slug: subaru-xv
+  estimated_total_cost: 2340500
+  category: SUV
+  image: /assets/images/vehicles/cars/xv.jpg
+
+  short_description: Rugged and reliable compact SUV with standard all-wheel drive and good safety ratings.
+
+  ideal_for:
+    - Outdoor enthusiasts
+    - Those living in areas with rough weather
+    - Families needing a safe vehicle
+
+  highlights:
+    - Standard all-wheel drive
+    - Good safety ratings
+    - Reliable performance
+
+  caution:
+    - Higher fuel consumption than some competitors
+    - Interior may feel less refined than some rivals
+
+- name: Mercedes A180
+  slug: mercedes-a180
+  estimated_total_cost: 2436360
+  category: Hatchback
+  image: /assets/images/vehicles/cars/a180.jpg
+
+  short_description: Premium compact hatchback with a stylish design, advanced features, and a comfortable interior.
+
+  ideal_for:
+    - Young professionals seeking a luxury hatchback
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Stylish and modern design
+    - Advanced features and technology
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Toyota Passo
+  slug: toyota-passo
+  estimated_total_cost: 1053841
+  category: Hatchback
+  image: /assets/images/vehicles/cars/passo.jpg
+
+  short_description: Compact and fuel-efficient hatchback with a stylish design and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Stylish design
+    - Good fuel economy
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Toyota Yaris
+  slug: toyota-yaris
+  estimated_total_cost: 1509478
+  category: Hatchback
+  image: /assets/images/vehicles/cars/yaris.jpg
+
+  short_description: Compact and fuel-efficient hatchback with a stylish design and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Stylish design
+    - Good fuel economy
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Toyota Harrier
+  slug: toyota-harrier
+  estimated_total_cost: 3166028
+  category: SUV
+  image: /assets/images/vehicles/cars/harrier.jpg
+
+  short_description: Stylish and comfortable SUV with a spacious interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Urban commuters seeking a stylish SUV
+    - Those looking for a reliable and affordable family car
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Stylish design with modern features
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Raize
+  slug: toyota-raize
+  estimated_total_cost: 2047654
+  category: SUV
+  image: /assets/images/vehicles/cars/raize.jpg
+
+  short_description: Compact and stylish SUV with a spacious interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Young professionals
+    - Those seeking a stylish and affordable compact SUV
+
+  highlights:
+    - Stylish design
+    - Spacious interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors

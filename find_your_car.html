@@ -139,6 +139,7 @@
                 <div>
                     <h2 class="text-2xl font-black text-slate-900 uppercase tracking-tight">Top Recommendations</h2>
                     <p class="text-slate-500 text-sm" id="recommendationSubtitle">Matches based on your KES 1,500,000 target range.</p>
+                    <p class="text-slate-400 text-xs mt-2">💡 Prices are estimates and may vary based on car condition, mileage, auction outcomes and government taxes.</p>
                 </div>
             </div>
             <div id="recommendationGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -198,22 +199,26 @@ Import pricing changes regularly, but we’d still be happy to guide you through
     ];
 
     /**
-     * Budget-Based Matching Algorithm (IMPROVED)
+     * Budget-Based Matching Algorithm (REVISED)
      * 
-     * Scoring system prioritizes cars that fall within the suitable budget range:
-     * - Sweet Spot (80-100% of budget): Score 90-100 (best matches)
-     * - Slight Overage (100-115% of budget): Score 75-90 (acceptable)
-     * - Underutilized (60-80% of budget): Score 40-75 (lower priority, wasteful of capital)
-     * - Significant Underspend (<60% of budget): Score <40 (excluded, not suitable)
-     * - Over 115% of budget: Excluded (too expensive)
+     * Scoring system prioritizes cars with optimal budget utilization:
+     * - Slightly Over (100-105% of budget): Score 95-100 (HIGHEST PRIORITY - best value)
+     * - Sweet Spot (90-100% of budget): Score 88-95 (very good match)
+     * - Good Value (85-90% of budget): Score 75-88 (acceptable match)
+     * - Over Budget (105-115% of budget): Score 65-75 (acceptable but less ideal)
+     * - Significantly Under (60-85% of budget): Score 15-65 (wastes capital, lower priority)
+     * - Outside ranges: Excluded (too expensive or too cheap)
      * 
-     * This ensures users get cars that are appropriately matched to their budget,
-     * not just any car that's cheaper.
+     * This prioritizes cars that are slightly over budget (better value prop) over 
+     * cars that waste capital by being significantly under budget.
      */
     function findBestMatches(budget, maxResults = 6) {
         // Define budget ranges
-        const sweetSpotMin = budget * 0.80; // 80% of budget (ideal minimum)
-        const sweetSpotMax = budget * 1.00; // 100% of budget (ideal maximum)
+        const slightlyOverMin = budget * 1.00; // 100% of budget
+        const slightlyOverMax = budget * 1.05; // 105% of budget (5% overage threshold)
+        const sweetSpotMax = budget * 1.00; // 100% of budget
+        const sweetSpotMin = budget * 0.90; // 90% of budget
+        const goodValueMin = budget * 0.85; // 85% of budget
         const acceptableMax = budget * 1.15; // 115% of budget (acceptable maximum overage)
         const minAcceptablePrice = budget * 0.60; // 60% of budget (minimum consideration)
         
@@ -225,25 +230,35 @@ Import pricing changes regularly, but we’d still be happy to guide you through
             // Calculate match score (0-100)
             let score = 0;
             
-            if (cost >= sweetSpotMin && cost <= sweetSpotMax) {
-                // SWEET SPOT: 80-100% of budget - best matches
-                // Score increases as we get closer to 100%
+            if (cost >= slightlyOverMin && cost <= slightlyOverMax) {
+                // SLIGHTLY OVER: 100-105% of budget - HIGHEST PRIORITY (best value)
+                // These cars offer excellent value with optimal capital utilization
+                const overage = cost - budget;
+                const overagePercent = overage / budget;
+                score = 95 + (1 - (overagePercent / 0.05)) * 5; // 95-100
+            } else if (cost >= sweetSpotMin && cost < slightlyOverMin) {
+                // SWEET SPOT: 90-100% of budget - very good, leave room for contingency
                 const distanceFromMax = budget - cost;
                 const sweetSpotRange = budget - sweetSpotMin;
                 const positionInRange = 1 - (distanceFromMax / sweetSpotRange);
-                score = 90 + (positionInRange * 10); // 90-100
-            } else if (cost > sweetSpotMax && cost <= acceptableMax) {
-                // ACCEPTABLE OVERAGE: 100-115% of budget - still good
+                score = 88 + (positionInRange * 7); // 88-95
+            } else if (cost >= goodValueMin && cost < sweetSpotMin) {
+                // GOOD VALUE: 85-90% of budget - acceptable but not ideal
+                const distanceFromMin = sweetSpotMin - cost;
+                const goodValueRange = sweetSpotMin - goodValueMin;
+                const positionInRange = 1 - (distanceFromMin / goodValueRange);
+                score = 75 + (positionInRange * 13); // 75-88
+            } else if (cost > slightlyOverMax && cost <= acceptableMax) {
+                // OVER BUDGET: 105-115% of budget - acceptable but less ideal
                 const overage = cost - budget;
                 const budgetOveragePercent = overage / budget;
-                score = 90 - (budgetOveragePercent / 0.15) * 15; // 75-90
-            } else if (cost < sweetSpotMin && cost >= minAcceptablePrice) {
-                // UNDERUTILIZED: 60-80% of budget - lower priority
-                // Wastes budget potential, but still acceptable
-                const distanceFromMin = sweetSpotMin - cost;
-                const underutilizedRange = sweetSpotMin - minAcceptablePrice;
+                score = 75 - (budgetOveragePercent / 0.10) * 10; // 65-75
+            } else if (cost < goodValueMin && cost >= minAcceptablePrice) {
+                // SIGNIFICANTLY UNDER: 60-85% of budget - LOWER PRIORITY (wastes capital)
+                const distanceFromMin = goodValueMin - cost;
+                const underutilizedRange = goodValueMin - minAcceptablePrice;
                 const positionInRange = 1 - (distanceFromMin / underutilizedRange);
-                score = 40 + (positionInRange * 35); // 40-75
+                score = 15 + (positionInRange * 50); // 15-65
             } else {
                 // EXCLUDED: Under 60% of budget or over 115%
                 score = -1;
@@ -302,7 +317,10 @@ Import pricing changes regularly, but we’d still be happy to guide you through
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight">${car.name}</h3>
-                        <span class="text-primary font-black text-lg">${formatKES(car.estimated_total_cost)}</span>
+                        <div class="text-right">
+                            <div class="text-primary font-black text-lg">${formatKES(car.estimated_total_cost)}</div>
+                            <div class="text-[10px] text-slate-400 font-semibold mt-0.5">estimate</div>
+                        </div>
                     </div>
                     <p class="text-slate-500 text-xs font-semibold uppercase mb-3">${car.category}</p>
                     <div class="flex gap-2 mb-4 overflow-x-auto pb-1">
