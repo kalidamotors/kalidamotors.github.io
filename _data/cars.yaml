@@ -599,3 +599,267 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
+
+- name: Toyota Fielder
+  slug: toyota-fielder
+  estimated_total_cost: 1825818
+  category: Station Wagon
+  image: /assets/images/vehicles/cars/fielder.jpg
+
+  short_description: Practical and spacious station wagon with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Toyota Axio
+  slug: toyota-axio
+  estimated_total_cost: 1617580
+  category: Sedan
+  image: /assets/images/vehicles/cars/axio.jpg
+
+  short_description: Practical and spacious sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Volkswagen Golf GTI
+  slug: volkswagen-golf-gti
+  estimated_total_cost: 3258686
+  category: Hatchback
+  image: /assets/images/vehicles/cars/gti.jpg
+
+  short_description: Sporty and practical hatchback with a powerful engine, sharp handling, and a comfortable interior.
+  ideal_for:
+    - Driving enthusiasts seeking a sporty hatchback
+    - Urban commuters looking for a stylish and fun-to-drive vehicle
+    - Those seeking a reliable and well-equipped compact car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Sharp handling and responsive steering
+    - Comfortable and well-equipped interior 
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mazda Mazda3
+  slug: mazda-mazda3
+  estimated_total_cost: 2223815
+  category: Sedan
+  image: /assets/images/vehicles/cars/mazda3.jpg
+
+  short_description: Stylish and practical sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Young professionals
+    - Those seeking a stylish and affordable sedan
+
+  highlights:
+    - Stylish design
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Volkswagen Golf
+  slug: volkswagen-golf
+  estimated_total_cost: 2250934
+  category: Hatchback
+  image: /assets/images/vehicles/cars/golf.jpg
+
+  short_description: Practical and spacious hatchback with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Those seeking a stylish and affordable hatchback
+    - Buyers looking for a reliable and efficient vehicle
+
+  highlights:
+    - Stylish design
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Subaru Levorg
+  slug: subaru-levorg
+  estimated_total_cost: 1920071
+  category: Station Wagon
+  image: /assets/images/vehicles/cars/levorg.jpg
+
+  short_description: Stylish and practical station wagon with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Toyota Voxy
+  slug: toyota-voxy
+  estimated_total_cost: 2423450
+  category: MPV
+  image: /assets/images/vehicles/cars/voxy.jpg
+
+  short_description: Spacious and practical Multi-Purpose Vehicle with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Large families needing a spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Toyota Hilux
+  slug: toyota-hilux
+  estimated_total_cost: 3656248
+  category: Pickup Truck
+  image: /assets/images/vehicles/cars/hilux.jpg
+
+  short_description: Rugged and reliable pickup truck with excellent off-road capability and a spacious interior.
+
+  ideal_for:
+    - Off-road enthusiasts
+    - Those needing a durable and reliable vehicle for work or adventure
+    - Families seeking a versatile pickup truck
+
+  highlights:
+    - Excellent off-road capability
+    - Spacious interior for a pickup truck
+    - Strong resale value
+
+  caution:
+    - Higher price point than many competitors
+    - Fuel consumption may be higher than smaller vehicles
+
+- name: Nissan Sylphy
+  slug: nissan-sylphy
+  estimated_total_cost: 1409343
+  category: Sedan
+  image: /assets/images/vehicles/cars/sylphy.jpg
+
+  short_description: Practical and spacious sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Volkswagen Polo
+  slug: volkswagen-polo
+  estimated_total_cost: 1817420
+  category: Hatchback
+  image: /assets/images/vehicles/cars/polo.jpg
+
+  short_description: Stylish and practical hatchback with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Those seeking a stylish and affordable hatchback
+    - Buyers looking for a reliable and efficient vehicle
+
+  highlights:
+    - Stylish design
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Suzuki Hustler
+  slug: suzuki-hustler
+  estimated_total_cost: 888995
+  category: SUV
+  image: /assets/images/vehicles/cars/hustler.jpg
+
+  short_description: Compact and stylish SUV with a spacious interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters
+    - Young professionals
+    - Those seeking a stylish and affordable compact SUV
+
+  highlights:
+    - Stylish design
+    - Spacious interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Nissan Teana
+  slug: nissan-teana
+  estimated_total_cost: 1831337
+  category: Sedan
+  image: /assets/images/vehicles/cars/teana.jpg
+
+  short_description: Practical and spacious sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
