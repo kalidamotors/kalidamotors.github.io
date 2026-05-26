@@ -10,6 +10,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>What Can I Import? | Kalida Motors</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/general/logo-favicon-32.png" />
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700;900&amp;display=swap"
         rel="stylesheet" />
     <link
@@ -110,23 +111,21 @@
             <div class="relative z-10 mx-auto text-center !max-w-4xl">
                 <span class="font-black uppercase tracking-widest text-[10px] text-primary mb-4 block">Kalida
                     Analytics</span>
-                <h1 class="md:text-5xl font-black tracking-tight text-slate-900 mb-6 leading-none md:text-6xl mb-8">What Can I <span class="text-primary">import?</span></h1>
-                <p class="text-secondary text-lg mb-10 leading-relaxed max-w-2xl mx-auto">Our proprietary algorithm
-                    analyzes current Kenyan market and Japanese auction trends to match your capital to the best vehicle import</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-6 leading-none mb-8">What Can I <span class="text-primary">import?</span></h1>
+                <p class="text-secondary text-lg mb-10 leading-relaxed max-w-2xl mx-auto">Search by car name, model, category or enter your budget to find your best options.</p>
                 <div class="flex flex-col md:flex-row gap-4 items-end">
                     <div class="w-full">
                         <label
-                            class="font-bold text-[12px] uppercase tracking-widest text-slate-500 mb-2 block">Available
-                            Capital (KES)</label>
+                            class="font-bold text-[12px] uppercase tracking-widest text-slate-500 mb-2 block">Search by car or Budget</label>
                         <div class="relative">
                             <input
-                                id="budgetInput"
-                                class="w-full pl-8 pr-4 py-4 rounded-lg bg-surface-container border-none focus:ring-2 focus:ring-primary text-xl font-bold text-slate-900"
-                                placeholder="1,500,000" type="number"/>
+                                id="searchInput"
+                                class="w-full pl-8 pr-4 py-4 rounded-lg bg-surface-container border-none focus:ring-2 focus:ring-primary text-lg font-semibold text-slate-900"
+                                placeholder="e.g., Toyota, SUV, or 1500000"/>
                         </div>
                     </div>
                     <button
-                        id="findCarBtn"
+                        id="searchBtn"
                         class="w-full md:w-auto h-[60px] bg-primary text-on-primary px-10 rounded-lg font-black uppercase tracking-widest text-sm hover:bg-blue-700 active:scale-95 duration-200 shadow-xl flex items-center justify-center gap-2">
                         Find My Car
                     </button>
@@ -137,8 +136,8 @@
         <section class="mb-20" id="recommendationSection" style="display: none;">
             <div class="flex justify-between items-end mb-8">
                 <div>
-                    <h2 class="text-2xl font-black text-slate-900 uppercase tracking-tight">Top Recommendations</h2>
-                    <p class="text-slate-500 text-sm" id="recommendationSubtitle">Matches based on your KES 1,500,000 target range.</p>
+                    <h2 class="text-2xl font-black text-slate-900 uppercase tracking-tight">Available Options</h2>
+                    <p class="text-slate-500 text-sm" id="recommendationSubtitle">Results for your search.</p>
                     <p class="text-slate-400 text-xs mt-2">💡 Prices are estimates and may vary based on car condition, mileage, auction outcomes and government taxes.</p>
                 </div>
             </div>
@@ -147,14 +146,13 @@
             </div>
         </section>
         <!-- No Match / Empty State Section -->
-        <section
+        <section id="staticEmptyState"
             class="bg-surface-container-low border border-dashed border-outline-variant rounded-2xl p-12 text-center max-w-4xl mx-auto">
             <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
                 <span class="material-symbols-outlined text-4xl text-slate-300">search_off</span>
             </div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">No perfect match found?</h2>
-            <p class="text-secondary text-lg mb-8 max-w-xl mx-auto leading-relaxed">We couldn’t find a confident recommendation within this budget right now.
-Import pricing changes regularly, but we’d still be happy to guide you through possible options.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">No results found?</h2>
+            <p class="text-secondary text-lg mb-8 max-w-xl mx-auto leading-relaxed">Kalida Analytics is designed to help you discover vehicles available for sourcing and importation. Try searching for a car make, model, category or budget.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                     href="https://wa.me/254718036460?text=Hi%20Kalida%20Motors%2C%20I%20couldn%27t%20find%20a%20perfect%20match%20for%20my%20budget.%20Can%20you%20help%20me%20find%20alternative%20options%3F"
@@ -164,7 +162,7 @@ Import pricing changes regularly, but we’d still be happy to guide you through
                             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
                         </path>
                     </svg>
-                    Talk to us on WhatsApp
+                    Or Talk to us on WhatsApp
                 </a>
             </div>
         </section>
@@ -199,88 +197,236 @@ Import pricing changes regularly, but we’d still be happy to guide you through
     ];
 
     /**
-     * Budget-Based Matching Algorithm (REVISED)
+     * Budget-Based Matching Algorithm
      * 
-     * Scoring system prioritizes cars with optimal budget utilization:
-     * - Slightly Over (100-105% of budget): Score 95-100 (HIGHEST PRIORITY - best value)
-     * - Sweet Spot (90-100% of budget): Score 88-95 (very good match)
-     * - Good Value (85-90% of budget): Score 75-88 (acceptable match)
-     * - Over Budget (105-115% of budget): Score 65-75 (acceptable but less ideal)
-     * - Significantly Under (60-85% of budget): Score 15-65 (wastes capital, lower priority)
-     * - Outside ranges: Excluded (too expensive or too cheap)
-     * 
-     * This prioritizes cars that are slightly over budget (better value prop) over 
-     * cars that waste capital by being significantly under budget.
+     * Scoring system prioritizes cars with optimal budget utilization
      */
     function findBestMatches(budget, maxResults = 6) {
-        // Define budget ranges
-        const slightlyOverMin = budget * 1.00; // 100% of budget
-        const slightlyOverMax = budget * 1.05; // 105% of budget (5% overage threshold)
-        const sweetSpotMax = budget * 1.00; // 100% of budget
-        const sweetSpotMin = budget * 0.90; // 90% of budget
-        const goodValueMin = budget * 0.85; // 85% of budget
-        const acceptableMax = budget * 1.15; // 115% of budget (acceptable maximum overage)
-        const minAcceptablePrice = budget * 0.60; // 60% of budget (minimum consideration)
+        const slightlyOverMin = budget * 1.00;
+        const slightlyOverMax = budget * 1.05;
+        const sweetSpotMin = budget * 0.90;
+        const goodValueMin = budget * 0.85;
+        const acceptableMax = budget * 1.15;
+        const minAcceptablePrice = budget * 0.60;
         
-        // Score each car
         const scored = carsData.map(car => {
             const cost = car.estimated_total_cost;
             const budgetUtilization = cost / budget;
             
-            // Calculate match score (0-100)
             let score = 0;
             
             if (cost >= slightlyOverMin && cost <= slightlyOverMax) {
-                // SLIGHTLY OVER: 100-105% of budget - HIGHEST PRIORITY (best value)
-                // These cars offer excellent value with optimal capital utilization
                 const overage = cost - budget;
                 const overagePercent = overage / budget;
-                score = 95 + (1 - (overagePercent / 0.05)) * 5; // 95-100
+                score = 95 + (1 - (overagePercent / 0.05)) * 5;
             } else if (cost >= sweetSpotMin && cost < slightlyOverMin) {
-                // SWEET SPOT: 90-100% of budget - very good, leave room for contingency
                 const distanceFromMax = budget - cost;
                 const sweetSpotRange = budget - sweetSpotMin;
                 const positionInRange = 1 - (distanceFromMax / sweetSpotRange);
-                score = 88 + (positionInRange * 7); // 88-95
+                score = 88 + (positionInRange * 7);
             } else if (cost >= goodValueMin && cost < sweetSpotMin) {
-                // GOOD VALUE: 85-90% of budget - acceptable but not ideal
                 const distanceFromMin = sweetSpotMin - cost;
                 const goodValueRange = sweetSpotMin - goodValueMin;
                 const positionInRange = 1 - (distanceFromMin / goodValueRange);
-                score = 75 + (positionInRange * 13); // 75-88
+                score = 75 + (positionInRange * 13);
             } else if (cost > slightlyOverMax && cost <= acceptableMax) {
-                // OVER BUDGET: 105-115% of budget - acceptable but less ideal
                 const overage = cost - budget;
                 const budgetOveragePercent = overage / budget;
-                score = 75 - (budgetOveragePercent / 0.10) * 10; // 65-75
+                score = 75 - (budgetOveragePercent / 0.10) * 10;
             } else if (cost < goodValueMin && cost >= minAcceptablePrice) {
-                // SIGNIFICANTLY UNDER: 60-85% of budget - LOWER PRIORITY (wastes capital)
                 const distanceFromMin = goodValueMin - cost;
                 const underutilizedRange = goodValueMin - minAcceptablePrice;
                 const positionInRange = 1 - (distanceFromMin / underutilizedRange);
-                score = 15 + (positionInRange * 50); // 15-65
+                score = 15 + (positionInRange * 50);
             } else {
-                // EXCLUDED: Under 60% of budget or over 115%
                 score = -1;
             }
             
             return {
                 ...car,
                 score,
-                savings: Math.max(0, budget - cost),
                 budgetUtilization: (budgetUtilization * 100).toFixed(1),
-                percentDifference: ((cost - budget) / budget * 100).toFixed(1),
                 isMatch: score >= 0
             };
         });
         
-        // Filter valid matches and sort by score (descending)
         const matches = scored
             .filter(car => car.isMatch)
             .sort((a, b) => b.score - a.score)
             .slice(0, maxResults);
         
-        return matches;
+        return matches.map((car, idx) => ({
+            ...car,
+            pickType: 'budget',
+            rank: idx + 1
+        }));
+    }
+
+    /**
+     * Search-based Car Matching System
+     * 
+     * Tries to match user search to specific cars or curated recommendations
+     */
+    
+    // Define categories and ideal_for mappings for curated picks
+    const categoryAliases = {
+        'suv': ['SUV'],
+        'sedan': ['Sedan'],
+        'compact': ['Compact Car'],
+        'mpv': ['MPV/Van'],
+        'truck': ['Pickup Truck'],
+        'coupe': ['Coupe'],
+        'hatchback': ['Hatchback']
+    };
+
+    // Brand name aliases - map common abbreviations and variations to full names
+    const brandAliases = {
+        'vw': 'Volkswagen',
+        'volkswagen': 'Volkswagen',
+        'mb': 'Mercedes-Benz',
+        'mercedes': 'Mercedes-Benz',
+        'benz': 'Mercedes-Benz',
+        'bmw': 'BMW',
+        'audi': 'Audi',
+        'toyota': 'Toyota',
+        'mazda': 'Mazda',
+        'honda': 'Honda',
+        'nissan': 'Nissan',
+        'ford': 'Ford',
+        'chevrolet': 'Chevrolet',
+        'chevy': 'Chevrolet',
+        'isuzu': 'Isuzu',
+        'daihatsu': 'Daihatsu',
+        'suzuki': 'Suzuki',
+        'subaru': 'Subaru',
+        'mitsubishi': 'Mitsubishi',
+        'hyundai': 'Hyundai',
+        'kia': 'Kia',
+        'volvo': 'Volvo'
+    };
+
+    const idealForPicks = {
+        'affordable': car => car.estimated_total_cost < 1200000,
+        'fuel-efficient': car => car.ideal_for.some(tag => tag.toLowerCase().includes('fuel')),
+        'premium': car => car.estimated_total_cost > 2500000 && car.category !== 'Pickup Truck',
+        'family': car => car.ideal_for.some(tag => tag.toLowerCase().includes('family')) || car.category === 'MPV/Van',
+        'sporty': car => car.ideal_for.some(tag => tag.toLowerCase().includes('sporty') || tag.toLowerCase().includes('stylish')),
+        'aspirational': car => car.ideal_for.some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 3000000
+    };
+
+    /**
+     * Normalize strings by removing special characters for better matching
+     * e.g., "cx-5" → "cx5", "rav 4" → "rav4"
+     */
+    function normalizeString(str) {
+        return str.toLowerCase().replace(/[\s\-\.]/g, '');
+    }
+
+    /**
+     * Search for cars by name or find curated picks by category
+     */
+    function searchCars(query) {
+        let searchLower = query.toLowerCase().trim();
+        
+        if (!searchLower) {
+            return [];
+        }
+
+        // Check if search is a brand alias and convert to full brand name
+        if (brandAliases[searchLower]) {
+            searchLower = brandAliases[searchLower].toLowerCase();
+        }
+
+        // Normalize search query for model matching
+        const normalizedSearch = normalizeString(searchLower);
+
+        // Try to find specific car matches first (by name/make/model)
+        const exactMatches = carsData.filter(car => {
+            const carNameLower = car.name.toLowerCase();
+            const normalizedCarName = normalizeString(carNameLower);
+            const carMake = carNameLower.split(' ')[0];
+            
+            // Match against original non-normalized (for brand/make matching)
+            const baseMatch = carNameLower.includes(searchLower) || 
+                   searchLower.includes(carMake) ||
+                   carNameLower.startsWith(searchLower);
+            
+            // Also match against normalized versions (for model variations like cx5 vs cx-5)
+            const normalizedMatch = normalizedCarName.includes(normalizedSearch) ||
+                   normalizedSearch.includes(normalizeString(carMake));
+            
+            return baseMatch || normalizedMatch;
+        });
+
+        if (exactMatches.length > 0) {
+            // Return up to 6 specific car matches
+            return exactMatches.slice(0, 6).map((car, idx) => ({
+                ...car,
+                pickType: 'exact',
+                rank: idx + 1
+            }));
+        }
+
+        // Try to find category matches
+        const matchedCategories = Object.keys(categoryAliases).filter(alias => 
+            searchLower.includes(alias) || alias.includes(searchLower)
+        );
+
+        if (matchedCategories.length > 0) {
+            // Return curated picks for this category
+            const categoryKeywords = matchedCategories.flatMap(alias => categoryAliases[alias]);
+            const categoryMatches = carsData.filter(car => 
+                categoryKeywords.some(keyword => car.category.includes(keyword))
+            );
+
+            if (categoryMatches.length > 0) {
+                return getCuratedPicks(categoryMatches);
+            }
+        }
+
+        // Check for ideal_for matches (family, sports, premium, etc.)
+        for (const [pickType, filterFn] of Object.entries(idealForPicks)) {
+            const matches = carsData.filter(filterFn);
+            if (matches.length > 0 && 
+                (searchLower.includes(pickType) || searchLower.includes(pickType + 's'))) {
+                return getCuratedPicks(carsData);
+            }
+        }
+
+        // No matches found
+        return null;
+    }
+
+    /**
+     * Get curated picks based on ideal_for categories
+     */
+    function getCuratedPicks(filteredCars = carsData) {
+        const picks = [];
+        const pickSequence = ['affordable', 'fuel-efficient', 'premium', 'family', 'sporty', 'aspirational'];
+        const usedIndices = new Set();
+
+        for (let i = 0; i < pickSequence.length && picks.length < 6; i++) {
+            const pickType = pickSequence[i];
+            const filterFn = idealForPicks[pickType];
+            
+            // Find first car not yet used that matches this criteria
+            const match = filteredCars.find((car, idx) => {
+                if (usedIndices.has(idx)) return false;
+                return filterFn(car);
+            });
+
+            if (match) {
+                const idx = filteredCars.indexOf(match);
+                usedIndices.add(idx);
+                picks.push({
+                    ...match,
+                    pickType,
+                    rank: picks.length + 1
+                });
+            }
+        }
+
+        return picks.length > 0 ? picks : null;
     }
 
     /**
@@ -296,22 +442,29 @@ Import pricing changes regularly, but we’d still be happy to guide you through
     }
 
     /**
+     * Get badge label for result type
+     */
+    function getPickBadge(car) {
+        if (car.pickType === 'exact') {
+            return `#${car.rank} - Match`;
+        } else if (car.pickType === 'budget') {
+            return `#${car.rank} - ${car.budgetUtilization}% of budget`;
+        }
+        return `${car.rank}. ${car.pickType.charAt(0).toUpperCase() + car.pickType.slice(1).replace('-', ' ')} Pick`;
+    }
+
+    /**
      * Create recommendation card HTML
      */
-    function createRecommendationCard(car, rank) {
-        const budgetUtilization = car.budgetUtilization;
-        const matchQuality = car.score >= 90 ? 'Perfect Match' : 
-                            car.score >= 75 ? 'Great Match' : 'Available Option';
+    function createRecommendationCard(car) {
+        const badge = getPickBadge(car);
         
         return `
             <div class="group bg-surface border border-outline/50 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                 <div class="aspect-[16/10] relative overflow-hidden bg-slate-200">
                     ${car.image ? `<img class="w-full h-full object-cover" src="${car.image}" alt="${car.name}" />` : '<div class="w-full h-full bg-slate-300 flex items-center justify-center"><span class="text-slate-400 text-sm">No image available</span></div>'}
                     <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-sm shadow-lg">
-                        #${rank} Match - ${matchQuality}
-                    </div>
-                    <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-slate-900 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-sm shadow-sm">
-                        ${budgetUtilization}% of budget
+                        ${badge}
                     </div>
                 </div>
                 <div class="p-6">
@@ -339,59 +492,96 @@ Import pricing changes regularly, but we’d still be happy to guide you through
     /**
      * Populate recommendation grid
      */
-    function populateRecommendations(budget) {
-        const matches = findBestMatches(budget);
+    function populateResults(query, results) {
         const grid = document.getElementById('recommendationGrid');
         const subtitle = document.getElementById('recommendationSubtitle');
         const section = document.getElementById('recommendationSection');
+        const staticEmptyState = document.getElementById('staticEmptyState');
         
-        // Show the recommendation section
+        // Show the recommendation section and hide the static empty state
         section.style.display = 'block';
+        if (staticEmptyState) {
+            staticEmptyState.style.display = 'none';
+        }
         
         // Update subtitle
-        subtitle.textContent = `Matches based on your KES ${budget.toLocaleString()} target range.`;
-        
-        if (matches.length === 0) {
+        if (results && results.length > 0) {
+            let resultType = 'Options';
+            if (results[0].pickType === 'exact') {
+                resultType = 'Search results';
+            } else if (results[0].pickType === 'budget') {
+                resultType = 'Top matches';
+            } else {
+                resultType = 'Curated picks';
+            }
+            subtitle.textContent = `${resultType} for "${query}"`;
+            
+            grid.innerHTML = results
+                .map(car => createRecommendationCard(car))
+                .join('');
+        } else {
+            subtitle.textContent = `No results for "${query}"`;
             grid.innerHTML = `
                 <div class="col-span-full bg-surface-container-low border border-dashed border-outline-variant rounded-2xl p-12 text-center">
                     <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
                         <span class="material-symbols-outlined text-4xl text-slate-300">search_off</span>
                     </div>
-                    <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">No matches found</h3>
-                    <p class="text-slate-600 mb-4">Current auction trends for your budget range are unavailable. Please adjust your budget or contact our specialists.</p>
+                    <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">No matches found?</h3>
+                    <p class="text-slate-600 mb-4">Kalida Analytics is designed to help you discover vehicles available for sourcing and importation. Try searching for a car make, model, category or budget.</p>
                 </div>
             `;
-        } else {
-            grid.innerHTML = matches
-                .map((car, idx) => createRecommendationCard(car, idx + 1))
-                .join('');
         }
     }
 
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', function() {
-        const budgetInput = document.getElementById('budgetInput');
-        const findCarBtn = document.getElementById('findCarBtn');
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
         
         // Search button click handler
-        findCarBtn.addEventListener('click', function() {
-            const budget = parseInt(budgetInput.value);
-            if (budget && budget > 0) {
-                populateRecommendations(budget);
-                // Scroll to recommendations
-                document.querySelector('.mb-20').scrollIntoView({ behavior: 'smooth' });
-            } else {
-                alert('Please enter a valid budget amount');
+        searchBtn.addEventListener('click', function() {
+            const value = searchInput.value.trim();
+            
+            if (!value) {
+                alert('Please enter a search value');
+                return;
             }
+            
+            // Detect if input is a number (budget) or text (keyword)
+            const isNumber = /^\d+$/.test(value.replace(/,/g, ''));
+            
+            let results;
+            if (isNumber) {
+                // Budget search
+                const budget = parseInt(value.replace(/,/g, ''));
+                if (budget <= 0) {
+                    alert('Please enter a valid budget amount');
+                    return;
+                }
+                results = findBestMatches(budget);
+                populateResults(`Budget: KES ${budget.toLocaleString()}`, results);
+            } else {
+                // Keyword search
+                results = searchCars(value);
+                if (results === null) {
+                    populateResults(value, null);
+                } else {
+                    populateResults(value, results);
+                }
+            }
+            
+            // Scroll to recommendations
+            document.getElementById('recommendationSection').scrollIntoView({ behavior: 'smooth' });
         });
         
         // Allow Enter key to search
-        budgetInput.addEventListener('keypress', function(e) {
+        searchInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                findCarBtn.click();
+                searchBtn.click();
             }
         });
     });
+
 </script>
 
 </html>
