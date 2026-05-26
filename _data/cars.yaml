@@ -1,6 +1,6 @@
 - name: Mazda CX-3
   slug: mazda-cx3
-  estimated_total_cost: 2500000
+  estimated_total_cost: 2304007
   category: SUV
   image: /assets/images/vehicles/cars/cx3.jpg
 
@@ -863,3 +863,290 @@
     - Higher price point than some competitors
     - Some models may have less powerful engines
 
+- name: Nissan Dayz
+  slug: nissan-dayz
+  estimated_total_cost: 995000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/dayz.jpg
+
+  short_description: Compact and fuel-efficient hatchback with a stylish design and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Stylish design
+    - Good fuel economy
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Mitsubishi Delica D2
+  slug: mitsubishi-delica
+  estimated_total_cost: 1441730
+  category: MPV
+  image: /assets/images/vehicles/cars/delica.jpg
+
+  short_description: Rugged and spacious Multi-Purpose Vehicle with excellent off-road capability and a comfortable interior.
+
+  ideal_for:
+    - Off-road enthusiasts
+    - Those needing a durable and reliable vehicle for work or adventure
+    - Families seeking a versatile Multi-Purpose Vehicle
+
+  highlights:
+    - Excellent off-road capability
+    - Spacious interior for a Multi-Purpose Vehicle
+    - Strong resale value
+
+  caution:
+    - Higher price point than many competitors
+    - Fuel consumption may be higher than smaller vehicles
+
+- name: Toyota Roomy
+  slug: toyota-roomy
+  estimated_total_cost: 1317895
+  category: MPV
+  image: /assets/images/vehicles/cars/roomy.jpg
+
+  short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
+
+  ideal_for:
+    - Families needing a practical and spacious vehicle
+    - Urban commuters seeking a versatile Multi-Purpose Vehicle
+    - Those looking for a reliable and affordable family car
+    - Buyers seeking a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Sliding rear doors for easy access in tight spaces
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Succeed Probox
+  slug: toyota-succeed-probox
+  estimated_total_cost: 1423119
+  category: Station Wagon
+  image: /assets/images/vehicles/cars/probox.jpg
+
+  short_description: Practical and spacious station wagon with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+- name: Toyota Spade
+  slug: toyota-spade
+  estimated_total_cost: 1497321
+  category: MPV
+  image: /assets/images/vehicles/cars/spade.jpg
+
+  short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
+
+  ideal_for:
+    - Families needing a practical and spacious vehicle
+    - Urban commuters seeking a versatile Multi-Purpose Vehicle
+    - Those looking for a reliable and affordable family car
+    - Buyers seeking a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Sliding rear doors for easy access in tight spaces
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors 
+
+- name: Suzuki Solio
+  slug: suzuki-solio
+  estimated_total_cost: 1025930
+  category: MPV
+  image: /assets/images/vehicles/cars/solio.jpg
+
+  short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
+
+  ideal_for:
+    - Families needing a practical and spacious vehicle
+    - Urban commuters seeking a versatile Multi-Purpose Vehicle
+    - Those looking for a reliable and affordable family car
+    - Buyers seeking a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Sliding rear doors for easy access in tight spaces
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Corolla Sport G
+  slug: toyota-corolla-sport-g
+  estimated_total_cost: 2053271
+  category: Hatchback
+  image: /assets/images/vehicles/cars/corollasport.jpg
+
+  short_description: Sporty and practical hatchback with a powerful engine, sharp handling, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty hatchback
+    - Urban commuters looking for a stylish and fun-to-drive vehicle
+    - Those seeking a reliable and well-equipped compact car
+
+  highlights:
+    - Powerful engine
+    - Sharp handling and responsive steering
+    - Comfortable and well-equipped interior 
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Toyota Vellfire
+  slug: toyota-vellfire
+  estimated_total_cost: 3471712
+  category: MPV
+  image: /assets/images/vehicles/cars/vellfire.jpg
+
+  short_description: Luxurious and spacious Multi-Purpose Vehicle with a comfortable interior and advanced features.
+
+  ideal_for:
+    - Large families needing a spacious and luxurious vehicle
+    - Those seeking a reliable and premium family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Luxurious design with advanced features
+    - Comfortable ride for all passengers
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mazda Bongo
+  slug: mazda-bongo
+  estimated_total_cost: 1319764
+  category: Van
+  image: /assets/images/vehicles/cars/bongo.jpg
+
+  short_description: Practical and spacious van with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Nissan NV200 Vanette
+  slug: nissan-nv200-vanette
+  estimated_total_cost: 1525816
+  category: Van
+  image: /assets/images/vehicles/cars/vanette.jpg
+
+  short_description: Practical and spacious van with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+
+- name: Daihatsu Move
+  slug: daihatsu-move
+  estimated_total_cost: 862970
+  category: Hatchback
+  image: /assets/images/vehicles/cars/move.jpg
+
+  short_description: Compact and fuel-efficient hatchback with a stylish design and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Stylish design
+    - Good fuel economy
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Toyota Aqua Crossover
+  slug: toyota-aqua-crossover
+  estimated_total_cost: 1936068
+  category: Hatchback
+  image: /assets/images/vehicles/cars/aqua-crossover.jpg
+
+  short_description: Fuel-efficient hybrid hatchback with a rugged design, higher ground clearance, and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters seeking a fuel-efficient vehicle with a rugged design
+    - Environmentally conscious drivers looking for a hybrid option
+    - Those seeking a reliable and affordable compact car with off-road capability
+
+  highlights:
+    - Excellent fuel economy
+    - Rugged design with higher ground clearance
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Higher initial cost than some non-hybrid competitors
+
+- name: Honda Insight
+  slug: honda-insight
+  estimated_total_cost: 1950000
+  category: Sedan
+  image: /assets/images/vehicles/cars/insight.jpg
+
+  short_description: Fuel-efficient hybrid sedan with a comfortable interior and a reputation for reliability.
+
+  ideal_for:
+    - Urban commuters seeking a fuel-efficient vehicle
+    - Environmentally conscious drivers looking for a hybrid option
+    - Those seeking a reliable and affordable compact sedan
+
+  highlights:
+    - Excellent fuel economy
+    - Comfortable interior for its class
+    - Reliable performance
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Higher initial cost than some non-hybrid competitors
