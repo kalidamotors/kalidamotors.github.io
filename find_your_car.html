@@ -311,7 +311,7 @@
         'premium': car => car.estimated_total_cost > 2500000 && car.category !== 'Pickup Truck',
         'family': car => car.ideal_for.some(tag => tag.toLowerCase().includes('family')) || car.category === 'MPV/Van',
         'sporty': car => car.ideal_for.some(tag => tag.toLowerCase().includes('sporty') || tag.toLowerCase().includes('stylish')),
-        'aspirational': car => car.ideal_for.some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 3000000
+        'desirable': car => car.ideal_for.some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 3000000
     };
 
     /**
@@ -402,7 +402,7 @@
      */
     function getCuratedPicks(filteredCars = carsData) {
         const picks = [];
-        const pickSequence = ['affordable', 'fuel-efficient', 'premium', 'family', 'sporty', 'aspirational'];
+        const pickSequence = ['affordable', 'fuel-efficient', 'premium', 'family', 'sporty', 'desirable'];
         const usedIndices = new Set();
 
         for (let i = 0; i < pickSequence.length && picks.length < 6; i++) {
