@@ -42,7 +42,7 @@
 
 - name: Honda CR-V
   slug: honda-crv
-  estimated_total_cost: 328651110
+  estimated_total_cost: 2865111
   category: SUV
   image: /assets/images/vehicles/cars/crv.jpg
 
@@ -147,7 +147,7 @@
     - Higher price point than some competitors
     - Rear seat space may be tight for taller passengers
 
-- name: Toyota Land Cruiser Prado
+- name: Toyota Land Cruiser Prado TZ G
   slug: toyota-land-cruiser-prado
   estimated_total_cost: 5648024
   category: SUV
@@ -1131,7 +1131,7 @@
 
 - name: Honda Insight
   slug: honda-insight
-  estimated_total_cost: 1950000
+  estimated_total_cost: 2000000
   category: Sedan
   image: /assets/images/vehicles/cars/insight.jpg
 
@@ -1150,3 +1150,180 @@
   caution:
     - Limited rear seat space for taller passengers
     - Higher initial cost than some non-hybrid competitors
+
+- name: Toyota Prius
+  slug: toyota-prius
+  estimated_total_cost: 2200000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/prius.jpg
+
+  short_description: Iconic and fuel-efficient hybrid hatchback with a comfortable interior and a reputation for reliability.
+
+  ideal_for:
+    - Urban commuters seeking a fuel-efficient vehicle
+    - Environmentally conscious drivers looking for a hybrid option
+    - Those seeking a reliable and affordable compact car
+
+  highlights:
+    - Excellent fuel economy
+    - Comfortable interior for its class
+    - Reliable performance
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Higher initial cost than some non-hybrid competitors
+
+- name: Toyota Camry Hybrid
+  slug: toyota-camry-hybrid
+  estimated_total_cost: 3000000
+  category: Sedan
+  image: /assets/images/vehicles/cars/camry-hybrid.jpg
+
+  short_description: Fuel-efficient hybrid sedan with a spacious interior, comfortable ride, and a reputation for reliability.
+
+  ideal_for:
+    - Urban commuters seeking a fuel-efficient vehicle
+    - Environmentally conscious drivers looking for a hybrid option
+    - Those seeking a reliable and comfortable midsize sedan
+
+  highlights:
+    - Excellent fuel economy
+    - Spacious interior with comfortable seating
+    - Reliable performance
+
+  caution:
+    - Higher price point than some non-hybrid competitors
+    - Some models may have less powerful engines
+
+- name: Mazda CX-30
+  slug: mazda-cx-30
+  estimated_total_cost: 2904989
+  category: SUV
+  image: /assets/images/vehicles/cars/cx30.jpg
+
+  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Subaru Outback
+  slug: subaru-outback
+  estimated_total_cost: 2873121
+  category: SUV
+  image: /assets/images/vehicles/cars/outback.jpg
+
+  short_description: Rugged and reliable crossover SUV with standard all-wheel drive, excellent safety ratings, and a comfortable interior.
+
+  ideal_for:
+    - Outdoor enthusiasts seeking a versatile and capable vehicle
+    - Those living in areas with rough weather conditions
+    - Families needing a safe and spacious vehicle
+
+  highlights:
+    - Standard all-wheel drive for enhanced traction
+    - Excellent safety ratings from reputable organizations
+    - Comfortable interior with ample cargo space
+
+  caution:
+    - Higher fuel consumption than some competitors
+    - Interior may feel less refined than some rivals
+
+- name: Mercedes GLA220
+  slug: mercedes-gla220
+  estimated_total_cost: 2920567
+  category: SUV
+  image: /assets/images/vehicles/cars/gla220.jpg
+
+  short_description: Premium compact SUV with a stylish design, advanced features, and a comfortable interior.
+
+  ideal_for:
+    - Young professionals seeking a luxury SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Stylish and modern design
+    - Advanced features and technology
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Volkswagen Tiguan
+  slug: volkswagen-tiguan
+  estimated_total_cost: 3082606
+  category: SUV
+  image: /assets/images/vehicles/cars/tiguan.jpg
+
+  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mercedes C180
+  slug: mercedes-c180
+  estimated_total_cost: 3201666
+  category: Sedan
+  image: /assets/images/vehicles/cars/c180.jpg
+
+  short_description: Premium compact sedan with a stylish design, advanced features, and a comfortable interior.
+
+  ideal_for:
+    - Young professionals seeking a luxury sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Stylish and modern design
+    - Advanced features and technology
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Volkswagen T-roc
+  slug: volkswagen-troc
+  estimated_total_cost: 3450767
+  category: SUV
+  image: /assets/images/vehicles/cars/troc.jpg
+
+  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
