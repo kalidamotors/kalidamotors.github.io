@@ -1661,7 +1661,7 @@
   slug: volvo-xc90
   estimated_total_cost: 6028842
   category: SUV
-  image: /assets/images/vehicles/cars/xc90.jpg
+  image: /assets/images/vehicles/cars/XC90.jpg
 
   short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
 
@@ -1766,4 +1766,3 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-    
