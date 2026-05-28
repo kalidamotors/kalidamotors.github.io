@@ -299,7 +299,7 @@
 - name: Toyota Sienta
   slug: toyota-sienta
   estimated_total_cost: 1893931
-  category: MPV
+  category: Family Car
   image: /assets/images/vehicles/cars/sienta.jpg
 
   short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
@@ -322,7 +322,7 @@
 - name: Honda Vezel
   slug: honda-vezel
   estimated_total_cost: 2405502
-  category: MPV
+  category: Compact SUV
   image: /assets/images/vehicles/cars/vezel.jpg
 
   short_description: Stylish and practical compact Multi-Purpose Vehicle with a spacious interior and good fuel economy.
@@ -344,7 +344,7 @@
 - name: Toyota Noah WxB
   slug: toyota-noah-wxb
   estimated_total_cost: 3056250
-  category: MPV
+  category: Minivan
   image: /assets/images/vehicles/cars/noahwxb.jpg
   short_description: Spacious and practical Multi-Purpose Vehicle with a comfortable interior and good fuel economy.
   ideal_for:
@@ -734,7 +734,7 @@
 - name: Toyota Voxy
   slug: toyota-voxy
   estimated_total_cost: 2423450
-  category: MPV
+  category: Minivan
   image: /assets/images/vehicles/cars/voxy.jpg
 
   short_description: Spacious and practical Multi-Purpose Vehicle with a comfortable interior and good fuel economy.
@@ -888,7 +888,7 @@
 - name: Mitsubishi Delica D2
   slug: mitsubishi-delica
   estimated_total_cost: 1441730
-  category: MPV
+  category: Family Car
   image: /assets/images/vehicles/cars/delica.jpg
 
   short_description: Rugged and spacious Multi-Purpose Vehicle with excellent off-road capability and a comfortable interior.
@@ -910,7 +910,7 @@
 - name: Toyota Roomy
   slug: toyota-roomy
   estimated_total_cost: 1317895
-  category: MPV
+  category: Family Car
   image: /assets/images/vehicles/cars/roomy.jpg
 
   short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
@@ -954,7 +954,7 @@
 - name: Toyota Spade
   slug: toyota-spade
   estimated_total_cost: 1497321
-  category: MPV
+  category: Family Car
   image: /assets/images/vehicles/cars/spade.jpg
 
   short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
@@ -977,7 +977,7 @@
 - name: Suzuki Solio
   slug: suzuki-solio
   estimated_total_cost: 1025930
-  category: MPV
+  category: Taxi
   image: /assets/images/vehicles/cars/solio.jpg
 
   short_description: Compact Multi-Purpose Vehicle with a spacious interior, sliding rear doors, and good fuel economy.
@@ -1022,7 +1022,7 @@
 - name: Toyota Vellfire
   slug: toyota-vellfire
   estimated_total_cost: 3471712
-  category: MPV
+  category: Family Car
   image: /assets/images/vehicles/cars/vellfire.jpg
 
   short_description: Luxurious and spacious Multi-Purpose Vehicle with a comfortable interior and advanced features.
@@ -1459,4 +1459,311 @@
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
 
+- name: Toyota Alphard
+  slug: toyota-alphard
+  estimated_total_cost: 3859066
+  category: Family Car
+  image: /assets/images/vehicles/cars/alphard.jpg
 
+  short_description: Luxurious and spacious Multi-Purpose Vehicle with a comfortable interior and advanced features.
+
+  ideal_for:
+    - Large families needing a spacious and luxurious vehicle
+    - Those seeking a reliable and premium family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Luxurious design with advanced features
+    - Comfortable ride for all passengers
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+  
+- name: Mercedes E220D
+  slug: mercedes-e220d
+  estimated_total_cost: 4028795
+  category: Sedan
+  image: /assets/images/vehicles/cars/e220d.jpg
+
+  short_description: Premium midsize sedan with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful turbocharged diesel engine
+    - Stylish design with AMG Line features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mercedes E200
+  slug: mercedes-e200
+  estimated_total_cost: 4054174
+  category: Sedan
+  image: /assets/images/vehicles/cars/e200.jpg
+
+  short_description: Premium midsize sedan with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Stylish design with AMG Line features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Merceded GLC 250
+  slug: mercedes-glc-250
+  estimated_total_cost: 4123972
+  category: SUV
+  image: /assets/images/vehicles/cars/glc250.jpg
+
+  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful turbocharged diesel engine
+    - Stylish design with AMG Line features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Lexus RX300
+  slug: lexus-rx300
+  estimated_total_cost: 4310969
+  category: SUV
+  image: /assets/images/vehicles/cars/rx300.jpg
+
+  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful V6 engine
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Toyota Crown
+  slug: toyota-crown
+  estimated_total_cost: 4370060
+  category: Sedan
+  image: /assets/images/vehicles/cars/crown.jpg
+
+  short_description: Iconic and luxurious sedan with a powerful engine, advanced features, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Range Rover Evoque
+  slug: range-rover-evoque
+  estimated_total_cost: 4502753
+  category: SUV
+  image: /assets/images/vehicles/cars/evoque.jpg
+
+  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Range Rover Sport
+  slug: range-rover-sport
+  estimated_total_cost: 5607308
+  category: SUV
+  image: /assets/images/vehicles/cars/sport.jpg
+
+  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Audi Q7
+  slug: audi-q7
+  estimated_total_cost: 5630188
+  category: SUV
+  image: /assets/images/vehicles/cars/q7.jpg
+
+  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Volvo XC90
+  slug: volvo-xc90
+  estimated_total_cost: 6028842
+  category: SUV
+  image: /assets/images/vehicles/cars/xc90.jpg
+
+  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: BMW M2 Competition
+  slug: bmw-m2-competition
+  estimated_total_cost: 6054934
+  category: Coupe
+  image: /assets/images/vehicles/cars/m2.jpg
+
+  short_description: High-performance coupe with a powerful engine, sharp handling, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious coupe
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Sharp handling and responsive steering
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Porsche Cayenne
+  slug: porsche-cayenne
+  estimated_total_cost: 6210357
+  category: SUV
+  image: /assets/images/vehicles/cars/cayenne.jpg
+
+  short_description: High-performance luxury SUV with a powerful engine, sharp handling, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Sharp handling and responsive steering
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Suzuki Jimny
+  slug: suzuki-jimny
+  estimated_total_cost: 2452091
+  category: SUV
+  image: /assets/images/vehicles/cars/jimny.jpg
+
+  short_description: Compact and rugged SUV with excellent off-road capability and a comfortable interior.
+
+  ideal_for:
+    - Off-road enthusiasts seeking a compact and capable vehicle
+    - Urban commuters looking for a stylish and practical SUV
+    - Those seeking a reliable and affordable compact SUV
+
+  highlights:
+    - Excellent off-road capability
+    - Stylish design with modern features
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Toyota Hiace
+  slug: toyota-hiace
+  estimated_total_cost: 2698557
+  category: Van
+  image: /assets/images/vehicles/cars/hiace.jpg
+
+  short_description: Practical and spacious van with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and affordable family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Comfortable ride for all passengers
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than some competitors
+    - Some models may have less powerful engines
+    
