@@ -1327,3 +1327,136 @@
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
 
+- name: BMW 330i M-SPORT
+  slug: bmw-330i-m-sport
+  estimated_total_cost: 3523847
+  category: Sedan
+  image: /assets/images/vehicles/cars/330i.jpg
+
+  short_description: Premium compact sedan with a sporty design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Sporty design with M-Sport features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Volkswagen Arteon
+  slug: volkswagen-arteon
+  estimated_total_cost: 3570091
+  category: Sedan
+  image: /assets/images/vehicles/cars/arteon.jpg
+
+  short_description: Stylish and practical sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical sedan
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact sedan
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mercedes C220D
+  slug: mercedes-c220d
+  estimated_total_cost: 3498794
+  category: Sedan
+  image: /assets/images/vehicles/cars/c220d.jpg
+
+  short_description: Premium compact sedan with a sporty design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Sporty design with AMG Line features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Peugeot 5008
+  slug: peugeot-5008
+  estimated_total_cost: 3157882
+  category: SUV
+  image: /assets/images/vehicles/cars/5008.jpg
+
+  short_description: Stylish and practical SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Lexus NX300
+  slug: lexus-nx300
+  estimated_total_cost: 3826276
+  category: SUV
+  image: /assets/images/vehicles/cars/nx300.jpg
+
+  short_description: Premium compact SUV with a stylish design, advanced features, and a comfortable interior.
+
+  ideal_for:
+    - Young professionals seeking a luxury SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Stylish and modern design
+    - Advanced features and technology
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: BMW X3 XDRIVE
+  slug: bmw-x3-xdrive
+  estimated_total_cost: 3855295
+  category: SUV
+  image: /assets/images/vehicles/cars/x3.jpg
+
+  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful turbocharged diesel engine
+    - Stylish design with XDRIVE features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+
