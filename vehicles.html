@@ -125,7 +125,10 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="localVehicles" style="display: none;">
                 {% for vehicle in site.data.local_vehicles %}
                 <div
-                    class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700">
+                    class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700"
+                    data-paid-for="{{ vehicle.paid_for | default: false }}"
+                    data-listed-date="{{ vehicle.listed_date | default: '' }}"
+                    data-active="{{ vehicle.active | default: true }}">
                     <a href="vehicle.html?id={{ vehicle.id }}&tab=local" class="block relative aspect-[4/3] overflow-hidden">
                         <!-- Image Carousel Container -->
                         <div class="carousel-container relative w-full h-full overflow-hidden"
@@ -400,10 +403,48 @@
             document.getElementById('localVehicles');
         
         // Return only vehicles from current tab that match search
-        return filteredVehicleIds
+        let vehicles = filteredVehicleIds
             .map(id => vehicleCache[id])
             .filter(data => data && data.gridId === (currentTab === 'past' ? 'pastImports' : 'localVehicles'))
             .map(data => data.element);
+        
+        // For local vehicles, apply filtering and sorting
+        if (currentTab === 'local') {
+            vehicles = filterAndSortLocalVehicles(vehicles);
+        }
+        
+        return vehicles;
+    }
+    
+    function filterAndSortLocalVehicles(vehicleElements) {
+        const today = new Date();
+        const thirtyDaysAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
+        
+        // Filter and sort vehicles
+        return vehicleElements
+            .map(element => {
+                // Extract vehicle data from DOM
+                const vehicleCard = element;
+                const dataAttributes = {
+                    element: vehicleCard,
+                    paidFor: vehicleCard.dataset.paidFor === 'true',
+                    listedDate: vehicleCard.dataset.listedDate ? new Date(vehicleCard.dataset.listedDate) : null,
+                    active: vehicleCard.dataset.active !== 'false'
+                };
+                return dataAttributes;
+            })
+            .filter(vehicle => {
+                // Filter: keep only active vehicles OR vehicles listed within 30 days
+                if (!vehicle.active) return false;
+                if (!vehicle.listedDate) return true;
+                return vehicle.listedDate >= thirtyDaysAgo;
+            })
+            .sort((a, b) => {
+                // Sort: paid for vehicles first
+                if (a.paidFor === b.paidFor) return 0;
+                return a.paidFor ? -1 : 1;
+            })
+            .map(vehicle => vehicle.element);
     }
 
     function getTotalPages() {
