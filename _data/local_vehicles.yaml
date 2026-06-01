@@ -8,6 +8,9 @@
   price: "KES 1,250,000"
   badge: "Available for Viewing in Ruaka"
   efficiency: "18-20 km/l"
+  paid_for: true
+  listed_date: "2026-05-28"
+  active: true
   images:
     - "assets/images/vehicles/local/demio1.jpeg"
     - "assets/images/vehicles/local/demio2.jpeg"
@@ -24,6 +27,9 @@
   price: "KES 930,000"
   badge: "Available for Viewing in Ngong town"
   efficiency: "9-11 km/l"
+  paid_for: false
+  listed_date: "2026-04-25"
+  active: false
   images:
     - "assets/images/vehicles/local/harrier1.jpeg"
     - "assets/images/vehicles/local/harrier2.jpeg"
@@ -52,6 +58,9 @@
   price: "KES 1,600,000"
   badge: "Available for Viewing in Ngong town"
   efficiency: "9-11 km/l"
+  paid_for: true
+  listed_date: "2026-05-20"
+  active: true
   images:
     - "assets/images/vehicles/local/prado1.jpeg"
     - "assets/images/vehicles/local/prado2.jpeg"
@@ -67,6 +76,9 @@
   fuel: "Petrol"
   transmission: "Auto"
   mileage: "110,000 km"
+  paid_for: false
+  listed_date: "2026-05-15"
+  active: true
   price: "KES 750,000"
   badge: "Available for Viewing in Ngong town"
   efficiency: "11-12 km/l"
@@ -84,6 +96,9 @@
   fuel: "hybrid"
   transmission: "Auto"
   mileage: "82,000 km"
+  paid_for: true
+  listed_date: "2026-05-25"
+  active: true
   price: "KES 1,250,000"
   badge: "Available for Viewing in Nairobi"
   efficiency: "20-25 km/l"
@@ -101,6 +116,9 @@
   fuel: "Diesel"
   transmission: "Manual"
   mileage: "145,000 km"
+  paid_for: false
+  listed_date: "2026-05-10"
+  active: true
   price: "KES 1,850,000"
   badge: "Available for Viewing in Eastleigh"
   efficiency: "10-12 km/l"
@@ -118,6 +136,9 @@
   fuel: "Petrol"
   transmission: "Auto"
   mileage: "93,000 km"
+  paid_for: true
+  listed_date: "2026-05-30"
+  active: true
   price: "KES 2,650,000"
   badge: "Available for Viewing in Nyali"
   efficiency: "12-14 km/l"
@@ -134,6 +155,9 @@
   title: "Toyota Hiace"
   year: "2009"
   grade: "Locally Used"
+  paid_for: false
+  listed_date: "2026-05-05"
+  active: true
   fuel: "Petrol"
   transmission: "Auto"
   mileage: "183793 km"
@@ -151,6 +175,9 @@
   grade: "Locally Used"
   fuel: "Petrol"
   transmission: "Auto"
+  paid_for: true
+  listed_date: "2026-05-22"
+  active: true
   mileage: "120,000 km"
   price: "KES 1,550,000"
   engine_model: "1TR-FE"
@@ -177,6 +204,9 @@
   engine_size: "1.6L"
   chassis_number: "ABA-T85F02"
   badge: "Available for Viewing in Juja"
+  paid_for: false
+  listed_date: "2026-05-12"
+  active: true
   efficiency: "12-14 km/l"
   drive_type: "FWD"
   color: "Blue"
@@ -196,3 +226,37 @@
     - "assets/images/vehicles/local/300810.jpeg"
     - "assets/images/vehicles/local/300811.jpeg"
   owner: "Mabel Karani - 0717 134530"
+
+- id: "m0q6r7s8t"
+  title: "Nissan Note"
+  year: "2016"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  mileage: "122,000 km"
+  price: "KES 750,000"
+  engine_model: "HR12DE"
+  paid_for: true
+  listed_date: "2026-05-18"
+  active: true
+  engine_size: "1.2L"
+  chassis_number: "DBA-E12"
+  badge: "Available for Viewing in Mombasa"
+  efficiency: "18-20 km/l"
+  drive_type: "FWD"
+  color: "Silver"
+  seats: "5"
+  doors: "5"
+  wheel_size: "15 inches"
+  images:
+    - "assets/images/vehicles/local/note11.jpeg"
+    - "assets/images/vehicles/local/note12.jpeg"
+    - "assets/images/vehicles/local/note13.jpeg"
+    - "assets/images/vehicles/local/note14.jpeg"
+    - "assets/images/vehicles/local/note15.jpeg"
+    - "assets/images/vehicles/local/note16.jpeg"
+    - "assets/images/vehicles/local/note17.jpeg"
+    - "assets/images/vehicles/local/note18.jpeg"
+    - "assets/images/vehicles/local/note19.jpeg"
+    - "assets/images/vehicles/local/note110.jpeg"
+  owner: "Nobert Ogutu - 0714 851234"
