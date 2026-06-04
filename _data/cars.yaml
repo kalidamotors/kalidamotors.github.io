@@ -1131,7 +1131,7 @@
 
 - name: Honda Insight
   slug: honda-insight
-  estimated_total_cost: 2000000
+  estimated_total_cost: 2100300
   category: Sedan
   image: /assets/images/vehicles/cars/insight.jpg
 
@@ -1766,3 +1766,131 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
+
+- name: Mercedes GLC300
+  slug: mercedes-glc300
+  estimated_total_cost: 5245227
+  category: SUV
+  image: /assets/images/vehicles/cars/glc300.jpg
+
+  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mercedes GLS 400D
+  slug: mercedes-gls-400d
+  estimated_total_cost: 9717331
+  category: SUV
+  image: /assets/images/vehicles/cars/gls400d.jpg
+  short_description: Premium full-size SUV with a stylish design, powerful engine, and a comfortable interior.
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium full-size car
+  highlights:
+    - Powerful turbocharged diesel engine
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mazda CX-8
+  slug: mazda-cx-8
+  estimated_total_cost: 3167554
+  category: SUV
+  image: /assets/images/vehicles/cars/cx8.jpg
+
+  short_description: Stylish and practical midsize SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Families needing a spacious and comfortable vehicle
+    - Those seeking a reliable and efficient midsize SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior with three rows of seating
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mazda Mazda6
+  slug: mazda-mazda6
+  estimated_total_cost: 2696878
+  category: Sedan
+  image: /assets/images/vehicles/cars/mazda6.jpg
+
+  short_description: Stylish and practical midsize sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical sedan
+    - Families needing a spacious and comfortable vehicle
+    - Those seeking a reliable and efficient midsize sedan
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior with ample seating space
+    - Good fuel economy for its class
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mercedes GLE  
+  slug: mercedes-gle
+  estimated_total_cost: 8263530
+  category: SUV
+  image: /assets/images/vehicles/cars/gle.jpg
+
+  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Volvo XC60
+  slug: volvo-xc60
+  estimated_total_cost: 4175817
+  category: SUV
+  image: /assets/images/vehicles/cars/xc60.jpg
+
+  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
