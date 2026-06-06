@@ -1894,3 +1894,25 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
+
+- name: Tesla Model 3
+  slug: tesla-model-3
+  estimated_total_cost: 2532413
+  category: Sedan
+  image: /assets/images/vehicles/cars/model3.jpg
+
+  short_description: Electric sedan with a sleek design, impressive performance, and a comfortable interior.
+
+  ideal_for:
+    - Environmentally conscious drivers looking for an electric vehicle
+    - Urban commuters seeking a stylish and high-tech sedan
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Long electric range on a single charge
+    - Sleek and modern design
+    - Comfortable and high-tech interior
+
+  caution:
+    - Higher initial cost than some non-electric competitors
+    - Limited charging infrastructure in some areas
