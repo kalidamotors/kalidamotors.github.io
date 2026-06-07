@@ -1916,3 +1916,47 @@
   caution:
     - Higher initial cost than some non-electric competitors
     - Limited charging infrastructure in some areas
+
+- name: Nissan Kicks
+  slug: nissan-kicks
+  estimated_total_cost: 2138349
+  category: SUV
+  image: /assets/images/vehicles/cars/kicks.jpeg
+
+  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Peugeot 2008
+  slug: peugeot-2008
+  estimated_total_cost: 2528995
+  category: SUV
+  image: /assets/images/vehicles/cars/2008.jpeg
+
+  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
