@@ -1114,4 +1114,62 @@
     - step: "Final Delivery"
       date_completed: null
       details: "Estimated delivery to client's location in Mombasa."
+
+- id: "t6d2u8w1x"
+  title: "Nissan Juke"
+  subtitle: "Grade 4"
+  year: "2019"
+  grade: "4"
+  mileage: "74k km"
+  fuel: "Petrol"
+  transmission: "Auto"
+  engine_size: "1.5L"
+  price: "KES 1,505,445"
+  # savings: "KES 500,000"
+  drive_type: "FWD"
+  color: "White"
+  seats: "5 Seater"
+  chassis_id: "F15"
+  engine_model: "HR15DE"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "16-inch Alloy"
+  safety_systems: "Around View Monitor (360° Camera), Lane Departure Warning, Blind Spot Warning"
+  doors: "5"
+  efficiency: "15-18 km/l"
+  images:
+    - "assets/images/vehicles/past_imports/juke1.jpeg"
+    - "assets/images/vehicles/past_imports/juke2.jpeg"
+    - "assets/images/vehicles/past_imports/juke3.jpeg"
+    - "assets/images/vehicles/past_imports/juke4.jpeg"
+    - "assets/images/vehicles/past_imports/juke5.jpeg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  tracking_id: "KM-120020"
+  auction_date: "2026-05-21"
+  current_status: "Inspection pending"
+  estimated_delivery: "August 2026"
+  import_steps_completed:
+    - step: "Auction Bidding"
+      date_completed: "2026-05-21"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: "2026-05-21"
+      details: "Payment has been processed and confirmed."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle has passed inspection and is ready for shipping."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle has been shipped and is currently in transit to Kenya."
+      # shipping_details:
+        # carrier: "BRANDS HATCH V.IF602"
+        # estimated_arrival: "2026-04-09"
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Mombasa."
+
       
