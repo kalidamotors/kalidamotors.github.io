@@ -152,6 +152,12 @@
             <div id="recommendationGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Dynamically populated by JavaScript -->
             </div>
+            <div id="searchAgainContainer" class="mt-10 text-center" style="display: none;">
+                <button id="searchAgainBtn" class="border border-slate-300 text-slate-600 px-8 py-3 rounded-lg font-bold text-sm hover:border-primary hover:text-primary transition-all active:scale-95">
+                    Not the desired results? See more
+                </button>
+                <p id="searchAgainNote" class="text-slate-400 text-xs mt-2"></p>
+            </div>
         </section>
         <!-- No Match / Empty State Section -->
         <section id="staticEmptyState"
@@ -335,11 +341,11 @@
 
     const idealForPicks = {
         'affordable': car => car.estimated_total_cost < 1200000,
-        'fuel-efficient': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('fuel')),
+        'fuel-efficient': car => (car.short_description || '').toLowerCase().includes('efficient'),
         'premium': car => car.estimated_total_cost > 3000000 && car.category !== 'Pickup Truck',
-        'family': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('family')) || ['Family Car', 'Minivan', 'Van'].includes(car.category),
-        'sporty': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('sporty')),
-        'desirable': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 4000000
+        'family': car => (car.short_description || '').toLowerCase().includes('family') || ['Family Car', 'Minivan', 'Van'].includes(car.category),
+        'sporty': car => (car.short_description || '').toLowerCase().includes('sporty'),
+        'desirable': car => (car.short_description || '').toLowerCase().includes('premium') || (car.short_description || '').toLowerCase().includes('luxury') || car.estimated_total_cost > 4000000
     };
 
     /**
@@ -348,6 +354,85 @@
      */
     function normalizeString(str) {
         return str.toLowerCase().replace(/[\s\-\.]/g, '');
+    }
+
+    /**
+     * Returns the full unsliced pool of cars matching a text query, sorted by price.
+     * Used for "search again" pagination — bypasses curated pick ordering.
+     */
+    function getSearchPool(query) {
+        const queryLower = query.toLowerCase().trim();
+        if (!queryLower) return [];
+
+        let expandedQuery = queryLower;
+        const sortedBrandAliases = Object.entries(brandAliases).sort((a, b) => b[0].length - a[0].length);
+        for (const [alias, brand] of sortedBrandAliases) {
+            if (expandedQuery.includes(alias)) {
+                expandedQuery = expandedQuery.replace(alias, brand.toLowerCase());
+                break;
+            }
+        }
+        expandedQuery = expandedQuery.split(/\s+/)
+            .map(token => brandAliases[token] ? brandAliases[token].toLowerCase() : token)
+            .join(' ');
+
+        const detectedBrand = Object.values(brandAliases).map(b => b.toLowerCase()).find(b => expandedQuery.includes(b));
+        const sortedAliasKeys = Object.keys(categoryAliases).sort((a, b) => b.length - a.length);
+        const matchedCategoryNames = [...new Set(
+            sortedAliasKeys
+                .filter(alias => queryLower.includes(alias) || expandedQuery.includes(alias))
+                .flatMap(alias => categoryAliases[alias])
+        )];
+        const hasBrand = !!detectedBrand;
+        const hasCategory = matchedCategoryNames.length > 0;
+
+        if (hasBrand && hasCategory) {
+            const pool = carsData.filter(car =>
+                car.name.toLowerCase().includes(detectedBrand) &&
+                matchedCategoryNames.some(cat => car.category === cat)
+            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
+            if (pool.length > 0) return pool;
+        }
+
+        const normalizedQ = normalizeString(expandedQuery);
+        const namePool = carsData.filter(car => {
+            const nl = car.name.toLowerCase();
+            return nl.includes(expandedQuery) || normalizeString(nl).includes(normalizedQ) || expandedQuery.includes(nl);
+        }).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
+        if (namePool.length > 0) return namePool;
+
+        if (hasBrand) {
+            const pool = carsData.filter(car =>
+                car.name.toLowerCase().includes(detectedBrand)
+            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
+            if (pool.length > 0) return pool;
+        }
+
+        if (hasCategory) {
+            return carsData.filter(car =>
+                matchedCategoryNames.some(cat => car.category === cat)
+            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
+        }
+
+        const normalizedQueryStr = normalizeString(queryLower);
+        for (const [pickType, filterFn] of Object.entries(idealForPicks)) {
+            if (normalizedQueryStr.includes(normalizeString(pickType))) {
+                const pool = carsData.filter(filterFn).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
+                if (pool.length > 0) return pool;
+            }
+        }
+
+        const tokens = queryLower.split(/\s+/).filter(t => t.length > 3);
+        if (tokens.length > 0) {
+            return carsData.map(car => {
+                const allText = [...(car.highlights || []), ...(car.ideal_for || []), car.short_description || ''].join(' ').toLowerCase();
+                const score = tokens.filter(t => allText.includes(t)).length;
+                return { ...car, _kwScore: score };
+            }).filter(car => car._kwScore > 0)
+              .sort((a, b) => b._kwScore - a._kwScore || a.estimated_total_cost - b.estimated_total_cost);
+        }
+
+        return [];
     }
 
     /**
@@ -425,15 +510,14 @@
             if (results.length > 0) return results;
         }
 
-        // Step 7: Category-only search
+        // Step 7: Category-only search — ordered by idealForPicks keys, not price
         if (hasCategory) {
             const categoryMatches = carsData.filter(car =>
                 matchedCategoryNames.some(cat => car.category === cat)
-            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
+            );
             if (categoryMatches.length > 0) {
                 const picks = getCuratedPicks(categoryMatches);
-                // Fall back to raw sorted list if no car matched any idealForPick criteria
-                return picks || categoryMatches.slice(0, 6).map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
+                return picks || categoryMatches.sort((a, b) => a.estimated_total_cost - b.estimated_total_cost).slice(0, 6).map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
             }
         }
 
@@ -613,23 +697,38 @@
         }
     }
 
+    // Pagination state for "search again"
+    let searchState = { query: '', pool: [], shownNames: new Set() };
+
+    function updateSearchAgainUI() {
+        const container = document.getElementById('searchAgainContainer');
+        const note = document.getElementById('searchAgainNote');
+        const remaining = searchState.pool.filter(car => !searchState.shownNames.has(car.name));
+        if (remaining.length > 0) {
+            container.style.display = 'block';
+            note.textContent = `${remaining.length} more result${remaining.length !== 1 ? 's' : ''} available`;
+        } else {
+            container.style.display = 'none';
+        }
+    }
+
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('searchInput');
         const searchBtn = document.getElementById('searchBtn');
-        
+        const searchAgainBtn = document.getElementById('searchAgainBtn');
+
         // Search button click handler
         searchBtn.addEventListener('click', function() {
             const value = searchInput.value.trim();
-            
+
             if (!value) {
                 alert('Please enter a search value');
                 return;
             }
-            
-            // Detect if input is a number (budget) or text (keyword)
+
             const isNumber = /^\d+$/.test(value.replace(/,/g, ''));
-            
+
             let results;
             if (isNumber) {
                 // Budget search
@@ -638,22 +737,50 @@
                     alert('Please enter a valid budget amount');
                     return;
                 }
-                results = findBestMatches(budget);
-                populateResults(`Budget: KES ${budget.toLocaleString()}`, results);
+                const allBudgetMatches = findBestMatches(budget, 50);
+                results = allBudgetMatches.slice(0, 6);
+                searchState = {
+                    query: `Budget: KES ${budget.toLocaleString()}`,
+                    pool: allBudgetMatches,
+                    shownNames: new Set(results.map(r => r.name))
+                };
+                populateResults(searchState.query, results);
             } else {
                 // Keyword search
                 results = searchCars(value);
+                searchState = {
+                    query: value,
+                    pool: getSearchPool(value),
+                    shownNames: new Set((results || []).map(r => r.name))
+                };
                 if (results === null) {
                     populateResults(value, null);
                 } else {
                     populateResults(value, results);
                 }
             }
-            
-            // Scroll to recommendations
+
+            updateSearchAgainUI();
             document.getElementById('recommendationSection').scrollIntoView({ behavior: 'smooth' });
         });
-        
+
+        // Search again — show the next batch of results not yet displayed
+        searchAgainBtn.addEventListener('click', function() {
+            const remaining = searchState.pool.filter(car => !searchState.shownNames.has(car.name));
+            if (remaining.length === 0) return;
+
+            const nextBatch = remaining.slice(0, 6).map((car, idx) => ({
+                ...car,
+                pickType: car.pickType === 'budget' ? 'budget' : 'exact',
+                rank: idx + 1
+            }));
+            nextBatch.forEach(car => searchState.shownNames.add(car.name));
+
+            populateResults(searchState.query, nextBatch);
+            updateSearchAgainUI();
+            document.getElementById('recommendationSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
         // Allow Enter key to search
         searchInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
