@@ -336,10 +336,10 @@
     const idealForPicks = {
         'affordable': car => car.estimated_total_cost < 1200000,
         'fuel-efficient': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('fuel')),
-        'premium': car => car.estimated_total_cost > 2500000 && car.category !== 'Pickup Truck',
+        'premium': car => car.estimated_total_cost > 3000000 && car.category !== 'Pickup Truck',
         'family': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('family')) || ['Family Car', 'Minivan', 'Van'].includes(car.category),
-        'sporty': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('sporty') || tag.toLowerCase().includes('stylish')),
-        'desirable': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 3000000
+        'sporty': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('sporty')),
+        'desirable': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 4000000
     };
 
     /**
