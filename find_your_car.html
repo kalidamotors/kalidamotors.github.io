@@ -278,13 +278,23 @@
     
     // Define categories and ideal_for mappings for curated picks
     const categoryAliases = {
-        'suv': ['SUV'],
+        'suv': ['SUV', 'Compact SUV'],
         'sedan': ['Sedan'],
-        'compact': ['Compact Car'],
-        'mpv': ['MPV/Van'],
+        'compact': ['Compact SUV'],
+        'compact suv': ['Compact SUV'],
+        'mpv': ['Van', 'Minivan'],
+        'minivan': ['Minivan'],
+        'van': ['Van'],
         'truck': ['Pickup Truck'],
+        'pickup': ['Pickup Truck'],
+        'pickup truck': ['Pickup Truck'],
         'coupe': ['Coupe'],
-        'hatchback': ['Hatchback']
+        'hatchback': ['Hatchback'],
+        'wagon': ['Station Wagon'],
+        'station wagon': ['Station Wagon'],
+        'family': ['Family Car'],
+        'family car': ['Family Car'],
+        'taxi': ['Taxi']
     };
 
     // Brand name aliases - map common abbreviations and variations to full names
@@ -294,6 +304,7 @@
         'mb': 'Mercedes-Benz',
         'mercedes': 'Mercedes-Benz',
         'benz': 'Mercedes-Benz',
+        'mercedes-benz': 'Mercedes-Benz',
         'bmw': 'BMW',
         'audi': 'Audi',
         'toyota': 'Toyota',
@@ -310,16 +321,25 @@
         'mitsubishi': 'Mitsubishi',
         'hyundai': 'Hyundai',
         'kia': 'Kia',
-        'volvo': 'Volvo'
+        'volvo': 'Volvo',
+        'lexus': 'Lexus',
+        'porsche': 'Porsche',
+        'range rover': 'Range Rover',
+        'land rover': 'Land Rover',
+        'peugeot': 'Peugeot',
+        'tesla': 'Tesla',
+        'jeep': 'Jeep',
+        'jaguar': 'Jaguar',
+        'infiniti': 'Infiniti'
     };
 
     const idealForPicks = {
         'affordable': car => car.estimated_total_cost < 1200000,
-        'fuel-efficient': car => car.ideal_for.some(tag => tag.toLowerCase().includes('fuel')),
-        'premium': car => car.estimated_total_cost > 2500000 && car.category !== 'Pickup Truck',
-        'family': car => car.ideal_for.some(tag => tag.toLowerCase().includes('family')) || car.category === 'MPV/Van',
-        'sporty': car => car.ideal_for.some(tag => tag.toLowerCase().includes('sporty') || tag.toLowerCase().includes('stylish')),
-        'desirable': car => car.ideal_for.some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 3000000
+        'fuel-efficient': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('fuel')),
+        'premium': car => car.estimated_total_cost > 3000000 && car.category !== 'Pickup Truck',
+        'family': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('family')) || ['Family Car', 'Minivan', 'Van'].includes(car.category),
+        'sporty': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('sporty')),
+        'desirable': car => (car.ideal_for || []).some(tag => tag.toLowerCase().includes('premium') || tag.toLowerCase().includes('luxury')) || car.estimated_total_cost > 4000000
     };
 
     /**
@@ -334,71 +354,114 @@
      * Search for cars by name or find curated picks by category
      */
     function searchCars(query) {
-        let searchLower = query.toLowerCase().trim();
-        
-        if (!searchLower) {
-            return [];
+        const queryLower = query.toLowerCase().trim();
+
+        if (!queryLower) return [];
+
+        // Step 1: Expand brand aliases per token (e.g., "vw golf" → "volkswagen golf")
+        // Multi-word aliases (e.g., "range rover") are checked before splitting into tokens
+        let expandedQuery = queryLower;
+        const sortedBrandAliases = Object.entries(brandAliases).sort((a, b) => b[0].length - a[0].length);
+        for (const [alias, brand] of sortedBrandAliases) {
+            if (expandedQuery.includes(alias)) {
+                expandedQuery = expandedQuery.replace(alias, brand.toLowerCase());
+                break;
+            }
+        }
+        // Also expand remaining single-word tokens
+        expandedQuery = expandedQuery.split(/\s+/)
+            .map(token => brandAliases[token] ? brandAliases[token].toLowerCase() : token)
+            .join(' ');
+
+        // Step 2: Detect brand — find a brand name that appears in the expanded query
+        const detectedBrand = Object.values(brandAliases)
+            .map(b => b.toLowerCase())
+            .find(b => expandedQuery.includes(b));
+
+        // Step 3: Detect categories — check original and expanded query against all aliases
+        // Sort longest-first so "compact suv" matches before "suv", "station wagon" before "wagon"
+        const sortedAliasKeys = Object.keys(categoryAliases).sort((a, b) => b.length - a.length);
+        const matchedCategoryNames = [...new Set(
+            sortedAliasKeys
+                .filter(alias => queryLower.includes(alias) || expandedQuery.includes(alias))
+                .flatMap(alias => categoryAliases[alias])
+        )];
+
+        const hasBrand = !!detectedBrand;
+        const hasCategory = matchedCategoryNames.length > 0;
+
+        // Step 4: Brand + Category intersection (e.g., "Toyota SUV", "Honda sedan")
+        if (hasBrand && hasCategory) {
+            const results = carsData.filter(car =>
+                car.name.toLowerCase().includes(detectedBrand) &&
+                matchedCategoryNames.some(cat => car.category === cat)
+            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost)
+             .slice(0, 6)
+             .map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
+            if (results.length > 0) return results;
         }
 
-        // Check if search is a brand alias and convert to full brand name
-        if (brandAliases[searchLower]) {
-            searchLower = brandAliases[searchLower].toLowerCase();
+        // Step 5: Name/model substring search — runs before brand-only so "nissan kicks" finds
+        // the specific car rather than being crowded out by cheaper brand siblings
+        const normalizedQuery = normalizeString(expandedQuery);
+        const nameMatches = carsData.filter(car => {
+            const nameLower = car.name.toLowerCase();
+            const normalizedName = normalizeString(nameLower);
+            return nameLower.includes(expandedQuery) ||
+                   normalizedName.includes(normalizedQuery) ||
+                   expandedQuery.includes(nameLower);
+        }).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost)
+          .slice(0, 6)
+          .map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
+        if (nameMatches.length > 0) return nameMatches;
+
+        // Step 6: Brand-only fallback (query is just a brand name with no recognisable model)
+        if (hasBrand) {
+            const results = carsData.filter(car =>
+                car.name.toLowerCase().includes(detectedBrand)
+            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost)
+             .slice(0, 6)
+             .map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
+            if (results.length > 0) return results;
         }
 
-        // Normalize search query for model matching
-        const normalizedSearch = normalizeString(searchLower);
-
-        // Try to find specific car matches first (by name/make/model)
-        const exactMatches = carsData.filter(car => {
-            const carNameLower = car.name.toLowerCase();
-            const normalizedCarName = normalizeString(carNameLower);
-            const carMake = carNameLower.split(' ')[0];
-            
-            // Match against original non-normalized (for brand/make matching)
-            const baseMatch = carNameLower.includes(searchLower) || 
-                   searchLower.includes(carMake) ||
-                   carNameLower.startsWith(searchLower);
-            
-            // Also match against normalized versions (for model variations like cx5 vs cx-5)
-            const normalizedMatch = normalizedCarName.includes(normalizedSearch) ||
-                   normalizedSearch.includes(normalizeString(carMake));
-            
-            return baseMatch || normalizedMatch;
-        });
-
-        if (exactMatches.length > 0) {
-            // Return up to 6 specific car matches
-            return exactMatches.slice(0, 6).map((car, idx) => ({
-                ...car,
-                pickType: 'exact',
-                rank: idx + 1
-            }));
-        }
-
-        // Try to find category matches
-        const matchedCategories = Object.keys(categoryAliases).filter(alias => 
-            searchLower.includes(alias) || alias.includes(searchLower)
-        );
-
-        if (matchedCategories.length > 0) {
-            // Return curated picks for this category
-            const categoryKeywords = matchedCategories.flatMap(alias => categoryAliases[alias]);
-            const categoryMatches = carsData.filter(car => 
-                categoryKeywords.some(keyword => car.category.includes(keyword))
-            );
-
+        // Step 7: Category-only search
+        if (hasCategory) {
+            const categoryMatches = carsData.filter(car =>
+                matchedCategoryNames.some(cat => car.category === cat)
+            ).sort((a, b) => a.estimated_total_cost - b.estimated_total_cost);
             if (categoryMatches.length > 0) {
-                return getCuratedPicks(categoryMatches);
+                const picks = getCuratedPicks(categoryMatches);
+                // Fall back to raw sorted list if no car matched any idealForPick criteria
+                return picks || categoryMatches.slice(0, 6).map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
             }
         }
 
-        // Check for ideal_for matches (family, sports, premium, etc.)
+        // Step 8: idealForPicks keyword search — normalized to handle "fuel efficient" vs "fuel-efficient"
+        const normalizedQueryStr = normalizeString(queryLower);
         for (const [pickType, filterFn] of Object.entries(idealForPicks)) {
-            const matches = carsData.filter(filterFn);
-            if (matches.length > 0 && 
-                (searchLower.includes(pickType) || searchLower.includes(pickType + 's'))) {
-                return getCuratedPicks(carsData);
+            if (normalizedQueryStr.includes(normalizeString(pickType))) {
+                const matches = carsData.filter(filterFn);
+                if (matches.length > 0) return getCuratedPicks(matches);
             }
+        }
+
+        // Step 9: Keyword fallback — search highlights, ideal_for, short_description
+        const tokens = queryLower.split(/\s+/).filter(t => t.length > 3);
+        if (tokens.length > 0) {
+            const keywordMatches = carsData.map(car => {
+                const allText = [
+                    ...(car.highlights || []),
+                    ...(car.ideal_for || []),
+                    car.short_description || ''
+                ].join(' ').toLowerCase();
+                const score = tokens.filter(t => allText.includes(t)).length;
+                return { ...car, _kwScore: score };
+            }).filter(car => car._kwScore > 0)
+              .sort((a, b) => b._kwScore - a._kwScore || a.estimated_total_cost - b.estimated_total_cost)
+              .slice(0, 6)
+              .map((car, idx) => ({ ...car, pickType: 'exact', rank: idx + 1 }));
+            if (keywordMatches.length > 0) return keywordMatches;
         }
 
         // No matches found
