@@ -1044,7 +1044,7 @@
 - name: Mazda Bongo
   slug: mazda-bongo
   estimated_total_cost: 1319764
-  category: Van
+  category: Minivan
   image: /assets/images/vehicles/cars/bongo.jpg
 
   short_description: Practical and spacious van with a comfortable interior and good fuel economy.
@@ -1066,7 +1066,7 @@
 - name: Nissan NV200 Vanette
   slug: nissan-nv200-vanette
   estimated_total_cost: 1525816
-  category: Van
+  category: Minivan
   image: /assets/images/vehicles/cars/vanette.jpg
 
   short_description: Practical and spacious van with a comfortable interior and good fuel economy.
@@ -1973,6 +1973,50 @@
     - Urban commuters seeking a stylish and practical SUV
     - Young professionals looking for a well-equipped vehicle
     - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Honda Fit RS
+  slug: honda-fit
+  estimated_total_cost: 1940954
+  category: Hatchback
+  image: /assets/images/vehicles/cars/fitrs.jpg
+
+  short_description: Compact and fuel-efficient hatchback with a stylish design and a comfortable interior.
+
+  ideal_for:
+    - Urban commuters
+    - First-time car buyers
+    - Those seeking an affordable and reliable hatchback
+
+  highlights:
+    - Stylish design
+    - Good fuel economy
+    - Comfortable interior for its class
+
+  caution:
+    - Limited rear seat space for taller passengers
+    - Some models may have less powerful engines
+
+- name: Subaru Impreza
+  slug: subaru-impreza
+  estimated_total_cost: 1883917
+  category: Sedan
+  image: /assets/images/vehicles/cars/impreza.jpeg
+
+  short_description: Compact and practical sedan with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical sedan
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact sedan
 
   highlights:
     - Stylish design with modern features
