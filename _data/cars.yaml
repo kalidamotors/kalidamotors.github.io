@@ -1960,3 +1960,25 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
+
+- name: Nissan Juke
+  slug: nissan-juke
+  estimated_total_cost: 1505445
+  category: SUV
+  image: /assets/images/vehicles/cars/juke.jpeg
+
+  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
