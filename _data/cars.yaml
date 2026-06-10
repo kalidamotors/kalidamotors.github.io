@@ -1,15 +1,15 @@
 - name: Mazda CX-3
   slug: mazda-cx3
   estimated_total_cost: 2304007
-  category: SUV
+  category: Crossover
   image: /assets/images/vehicles/cars/cx3.jpg
 
-  short_description: Stylish compact SUV with good fuel economy and modern interior.
+  short_description: compact crossover that blends sporty handling, premium styling, and excellent fuel efficiency, making it ideal for urban driving and daily commutes
 
   ideal_for:
     - Young professionals
     - Daily commuting
-    - First-time SUV buyers
+    - First-time Crossover buyers
 
   highlights: 
     - Fuel efficient
@@ -25,7 +25,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/rav4.jpg
 
-  short_description: Reliable and spacious SUV with strong resale value and good off-road capability.
+  short_description: Versatile and reliable SUV known for its spacious interior, strong fuel economy, and capability for both city driving and weekend adventures.
 
   ideal_for:
     - Families
@@ -46,7 +46,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/crv.jpg
 
-  short_description: Comfortable and reliable SUV with a spacious interior and good fuel economy.
+  short_description: Practical and comfortable SUV that offers a spacious cabin, excellent fuel efficiency, and Honda's renowned reliability for family and everyday use.
   ideal_for:
     - Families
     - Commuters
@@ -87,7 +87,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/xtrail.jpg
 
-  short_description: Practical and affordable SUV with a comfortable interior and good fuel economy.
+  short_description: Spacious and versatile SUV that combines family-friendly comfort, practical features, and capable performance for both urban and outdoor adventures.
 
   ideal_for:
     - Budget-conscious buyers
@@ -109,7 +109,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/outlander.jpg
 
-  short_description: Versatile SUV with a spacious interior and available all-wheel drive, suitable for families.
+  short_description: practical and spacious SUV offering comfortable seating, available three-row versatility, and dependable performance for both city driving and family trips.
 
   ideal_for:
     - Families
@@ -131,7 +131,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/cx5.jpg
 
-  short_description: Stylish and fun-to-drive SUV with a premium interior and good fuel economy.
+  short_description: Refined and sporty SUV that delivers premium interior quality, engaging driving dynamics, and strong overall reliability for everyday and long-distance driving.
 
   ideal_for:
     - Young professionals
@@ -153,7 +153,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/prado.jpg
 
-  short_description: Rugged and reliable SUV with excellent off-road capability and a spacious interior.
+  short_description: Premium off-road SUV that combines rugged 4x4 capability, strong reliability, and a well-equipped luxury interior for both tough terrain and comfortable long-distance travel.
 
   ideal_for:
     - Off-road enthusiasts
@@ -322,10 +322,10 @@
 - name: Honda Vezel
   slug: honda-vezel
   estimated_total_cost: 2405502
-  category: Compact SUV
+  category: Crossover
   image: /assets/images/vehicles/cars/vezel.jpg
 
-  short_description: Stylish and practical compact Multi-Purpose Vehicle with a spacious interior and good fuel economy.
+  short_description: Sleek and fuel-efficient compact SUV that blends urban-friendly size, modern hybrid options, and Honda’s practical reliability for everyday driving.
 
   ideal_for:
     - Families needing a versatile and spacious vehicle
@@ -365,7 +365,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/3008.jpg
 
-  short_description: Stylish and modern SUV with a comfortable interior and good fuel economy.
+  short_description: Stylish European SUV that stands out with its bold design, premium interior feel, and efficient performance suited for modern urban and highway driving.
 
   ideal_for:
     - Young professionals
@@ -405,10 +405,10 @@
 - name: Volvo XC40
   slug: volvo-xc40
   estimated_total_cost: 2971879
-  category: SUV
+  category: Crossover
   image: /assets/images/vehicles/cars/xc40.jpg
 
-  short_description: Premium compact SUV with a stylish design, advanced safety features, and a comfortable interior.
+  short_description: Premium compact SUV that combines Scandinavian design, strong safety features, and efficient performance in a stylish, city-friendly package.
 
   ideal_for:
     - Young professionals seeking a luxury SUV
@@ -471,10 +471,10 @@
 - name: Subaru XV
   slug: subaru-xv
   estimated_total_cost: 2340500
-  category: SUV
+  category: Crossover
   image: /assets/images/vehicles/cars/xv.jpg
 
-  short_description: Rugged and reliable compact SUV with standard all-wheel drive and good safety ratings.
+  short_description: Rugged and capable compact SUV featuring standard all-wheel drive, strong safety credentials, and practical versatility for both city driving and light off-road use.
 
   ideal_for:
     - Outdoor enthusiasts
@@ -562,7 +562,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/harrier.jpg
 
-  short_description: Stylish and comfortable SUV with a spacious interior and good fuel economy.
+  short_description: Premium and comfortable SUV known for its sleek design, refined interior, and smooth, quiet ride tailored for both city cruising and long-distance travel.
 
   ideal_for:
     - Families needing a versatile and spacious vehicle
@@ -581,10 +581,10 @@
 - name: Toyota Raize
   slug: toyota-raize
   estimated_total_cost: 2047654
-  category: SUV
+  category: Crossover
   image: /assets/images/vehicles/cars/raize.jpg
 
-  short_description: Compact and stylish SUV with a spacious interior and good fuel economy.
+  short_description: Small, fuel-efficient Compact SUV that offers modern styling, compact city-friendly size, and practical features for everyday urban driving.
 
   ideal_for:
     - Urban commuters
@@ -822,10 +822,10 @@
 - name: Suzuki Hustler
   slug: suzuki-hustler
   estimated_total_cost: 888995
-  category: SUV
+  category: Crossover
   image: /assets/images/vehicles/cars/hustler.jpg
 
-  short_description: Compact and stylish SUV with a spacious interior and good fuel economy.
+  short_description: Compact crossover with a spacious interior and good fuel economy.
 
   ideal_for:
     - Urban commuters
@@ -1177,7 +1177,7 @@
   slug: toyota-camry-hybrid
   estimated_total_cost: 3000000
   category: Sedan
-  image: /assets/images/vehicles/cars/camry-hybrid.jpg
+  image: /assets/images/vehicles/cars/camry.jpeg
 
   short_description: Fuel-efficient hybrid sedan with a spacious interior, comfortable ride, and a reputation for reliability.
 
@@ -1198,10 +1198,10 @@
 - name: Mazda CX-30
   slug: mazda-cx-30
   estimated_total_cost: 2904989
-  category: SUV
+  category: compact SUV
   image: /assets/images/vehicles/cars/cx30.jpg
 
-  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+  short_description: Stylish and refined compact SUV that blends premium interior quality, engaging driving dynamics, and efficient performance in a city-friendly package.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1220,10 +1220,10 @@
 - name: Subaru Outback
   slug: subaru-outback
   estimated_total_cost: 2873121
-  category: SUV
+  category: Crossover SUV
   image: /assets/images/vehicles/cars/outback.jpg
 
-  short_description: Rugged and reliable crossover SUV with standard all-wheel drive, excellent safety ratings, and a comfortable interior.
+  short_description: Rugged all-wheel-drive wagon-SUV hybrid that offers strong off-road capability, spacious practicality, and excellent safety for both adventure and everyday driving.
 
   ideal_for:
     - Outdoor enthusiasts seeking a versatile and capable vehicle
@@ -1242,10 +1242,10 @@
 - name: Mercedes GLA220
   slug: mercedes-gla220
   estimated_total_cost: 2920567
-  category: SUV
+  category: Compact SUV
   image: /assets/images/vehicles/cars/gla220.jpg
 
-  short_description: Premium compact SUV with a stylish design, advanced features, and a comfortable interior.
+  short_description: Premium compact SUV that combines Mercedes-Benz luxury, advanced technology, and smooth performance in a stylish, city-friendly package.
 
   ideal_for:
     - Young professionals seeking a luxury SUV
@@ -1267,7 +1267,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/tiguan.jpg
 
-  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+  short_description: Well-built and versatile SUV that offers a spacious interior, refined driving comfort, and solid performance for both city use and long-distance travel.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1311,7 +1311,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/troc.jpg
 
-  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+  short_description: Stylish and sporty compact SUV that combines Volkswagen comfort, modern technology, and efficient performance in a city-friendly package.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1399,7 +1399,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/5008.jpg
 
-  short_description: Stylish and practical SUV with a comfortable interior and good fuel economy.
+  short_description: Spacious seven-seater SUV that combines bold French design, a premium interior, and flexible family-friendly practicality with smooth, efficient performance.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1421,7 +1421,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/nx300.jpg
 
-  short_description: Premium compact SUV with a stylish design, advanced features, and a comfortable interior.
+  short_description: Refined premium SUV that delivers strong build quality, a comfortable luxury interior, and smooth performance with Lexus reliability.
 
   ideal_for:
     - Young professionals seeking a luxury SUV
@@ -1443,7 +1443,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/x3.jpg
 
-  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Dynamic all-wheel-drive SUV that blends sporty performance, premium interior comfort, and advanced driving technology for both everyday use and long-distance driving.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1525,13 +1525,13 @@
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
 
-- name: Merceded GLC 250
+- name: Mercedes GLC 250
   slug: mercedes-glc-250
   estimated_total_cost: 4123972
   category: SUV
   image: /assets/images/vehicles/cars/glc250.jpg
 
-  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Refined and comfortable SUV that combines Mercedes-Benz luxury, smooth turbocharged performance, and advanced tech for a premium everyday driving experience.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1553,7 +1553,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/rx300.jpg
 
-  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Premium SUV that delivers a quiet, comfortable ride, strong reliability, and refined luxury suited for both city cruising and long-distance travel.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1597,7 +1597,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/evoque.jpg
 
-  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Stylish premium SUV that combines bold design, refined interior luxury, and capable all-wheel-drive performance for urban driving with light off-road ability.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1619,7 +1619,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/sport.jpg
 
-  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: High-performance luxury SUV that blends powerful engines, refined interior comfort, and strong off-road capability with a sporty driving feel.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1641,7 +1641,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/q7.jpg
 
-  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Spacious and refined SUV that offers three-row versatility, advanced technology, and strong performance wrapped in Audi’s signature premium comfort.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1663,7 +1663,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/XC90.jpg
 
-  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Premium three-row SUV that combines elegant Scandinavian design, top-tier safety features, and smooth, refined performance for family and long-distance comfort.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1707,7 +1707,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/cayenne.jpg
 
-  short_description: High-performance luxury SUV with a powerful engine, sharp handling, and a comfortable interior.
+  short_description: high-performance SUV that delivers sports car–like handling, powerful engine options, and premium luxury comfort in a practical, everyday package.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1726,10 +1726,10 @@
 - name: Suzuki Jimny
   slug: suzuki-jimny
   estimated_total_cost: 2452091
-  category: SUV
+  category: compact SUV
   image: /assets/images/vehicles/cars/jimny.jpg
 
-  short_description: Compact and rugged SUV with excellent off-road capability and a comfortable interior.
+  short_description: compact 4x4 built for serious off-road capability, offering rugged simplicity, lightweight design, and excellent maneuverability in tough terrain.
 
   ideal_for:
     - Off-road enthusiasts seeking a compact and capable vehicle
@@ -1773,7 +1773,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/glc300.jpg
 
-  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Refined premium SUV that delivers smooth turbocharged performance, advanced technology, and a comfortable, upscale interior for everyday luxury driving.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1794,7 +1794,7 @@
   estimated_total_cost: 9717331
   category: SUV
   image: /assets/images/vehicles/cars/gls400d.jpg
-  short_description: Premium full-size SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Flagship seven-seater SUV that combines powerful diesel performance, first-class interior luxury, and exceptional comfort for long-distance family travel.
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
     - Urban commuters looking for a stylish and well-equipped vehicle
@@ -1813,7 +1813,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/cx8.jpg
 
-  short_description: Stylish and practical midsize SUV with a comfortable interior and good fuel economy.
+  short_description: Refined family SUV that offers three-row seating, premium interior quality, and smooth, efficient performance for comfortable long-distance and everyday driving.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1857,7 +1857,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/gle.jpg
 
-  short_description: Premium midsize SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Premium SUV that blends powerful performance, advanced technology, and a spacious, luxurious interior for both family comfort and long-distance driving.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1879,7 +1879,7 @@
   category: SUV
   image: /assets/images/vehicles/cars/xc60.jpg
 
-  short_description: Premium compact SUV with a stylish design, powerful engine, and a comfortable interior.
+  short_description: Refined and safe SUV that combines Scandinavian design, advanced driver assistance features, and smooth, comfortable performance for everyday and long-distance driving.
 
   ideal_for:
     - Driving enthusiasts seeking a sporty and luxurious SUV
@@ -1920,10 +1920,10 @@
 - name: Nissan Kicks
   slug: nissan-kicks
   estimated_total_cost: 2138349
-  category: SUV
+  category: crossover SUV
   image: /assets/images/vehicles/cars/kicks.jpeg
 
-  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+  short_description: Fuel efficient and practical urban SUV that offers modern styling, good fuel economy, and easy maneuverability for everyday city driving.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1942,10 +1942,10 @@
 - name: Peugeot 2008
   slug: peugeot-2008
   estimated_total_cost: 2528995
-  category: SUV
+  category: crossover SUV
   image: /assets/images/vehicles/cars/2008.jpeg
 
-  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+  short_description: Stylish and efficient compact SUV that blends bold French design, a modern interior, and smooth city-friendly performance.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
@@ -1964,10 +1964,10 @@
 - name: Nissan Juke
   slug: nissan-juke
   estimated_total_cost: 1505445
-  category: SUV
+  category: crossover SUV
   image: /assets/images/vehicles/cars/juke.jpeg
 
-  short_description: Stylish and practical compact SUV with a comfortable interior and good fuel economy.
+  short_description: Distinctive small SUV known for its bold styling, compact city-friendly size, and efficient performance suited for urban driving.
 
   ideal_for:
     - Urban commuters seeking a stylish and practical SUV
