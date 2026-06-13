@@ -2,7 +2,7 @@
   title: "Mazda Demio"
   year: "2018"
   grade: "4.0"
-  fuel: "Petrol"
+  fuel: "Diesel"
   transmission: "FWD"
   mileage: "51,000 km"
   price: "KES 1,250,000"
@@ -190,7 +190,7 @@
     - "assets/images/vehicles/local/hiace13.jpeg"
     - "assets/images/vehicles/local/hiace14.jpeg"
     - "assets/images/vehicles/local/hiace15.jpeg"
-  owner: "Brayo Kiba - 0722 123456"
+  # owner: "Brayo Kiba - 0722 123456"
 
 - id: "l9p5q6r7s"
   title: "Peugeot 3008 | Allure"
@@ -225,7 +225,7 @@
     - "assets/images/vehicles/local/30089.jpeg"
     - "assets/images/vehicles/local/300810.jpeg"
     - "assets/images/vehicles/local/300811.jpeg"
-  owner: "Mabel Karani - 0717 134530"
+  # owner: "Mabel Karani - 0717 134530"
 
 - id: "m0q6r7s8t"
   title: "Nissan Note"
@@ -259,7 +259,7 @@
     - "assets/images/vehicles/local/note18.jpeg"
     - "assets/images/vehicles/local/note19.jpeg"
     - "assets/images/vehicles/local/note110.jpeg"
-  owner: "Nobert Ogutu - 0714 851234"
+  # owner: "Nobert Ogutu - 0714 851234"
 
 - id: "n2r7s8t9u"
   title: "Isuzu D-Max"
@@ -280,4 +280,6 @@
     - "assets/images/vehicles/local/dmax13.jpeg"
     - "assets/images/vehicles/local/dmax14.jpeg"
     - "assets/images/vehicles/local/dmax15.jpeg"
-  owner: "Mzae - 0727150251"
+  # owner: "Mzae - 0727150251"
+
+
