@@ -936,8 +936,8 @@
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
-        # carrier: "BRANDS HATCH V.IF602"
-        # estimated_arrival: "2026-04-09"
+        carrier: "GENTLE LEADER V.121"
+        estimated_arrival: "2026-07-11"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
@@ -1091,7 +1091,7 @@
   tracking_id: "KM-119019"
   auction_date: "2026-04-29"
   current_status: "Shipping pending"
-  estimated_delivery: "July 2026"
+  estimated_delivery: "2026-07-15"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-04-29"
@@ -1105,9 +1105,9 @@
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-        # carrier: "BRANDS HATCH V.IF602"
-        # estimated_arrival: "2026-04-09"
+      shipping_details:
+        carrier: "GENTLE LEADER V.121"
+        estimated_arrival: "2026-07-11"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
