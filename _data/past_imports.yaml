@@ -972,7 +972,7 @@
     - "assets/images/vehicles/past_imports/vezel3.jpeg"
     - "assets/images/vehicles/past_imports/vezel4.jpeg"
     - "assets/images/vehicles/past_imports/vezel5.jpeg"
-  badge: "Shipping to Mombasa"
+  badge: "Delivering to Nairobi"
   link: "inquiry"
   cta: "Similar Inquiry"
   tracking_id: "KM-117017"
@@ -996,11 +996,11 @@
         carrier: "GUARDIAN LEADER"
         estimated_arrival: "2026-06-13"
     - step: "Customs Clearance"
-      date_completed: null
+      date_completed: "2026-06-24"
       details: "Awaiting customs clearance in Kenya."
     - step: "Final Delivery"
       date_completed: null
-      details: "Estimated delivery to client's location in Mombasa."
+      details: "Estimated delivery to client's location in Nairobi."
 
 - id: "r4b0s6u9v"
   title: "Honda CRV"
@@ -1256,7 +1256,7 @@
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
   current_status: "Inspection pending"
-  estimated_delivery: "September 2026"
+  estimated_delivery: "August 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-06-18"
