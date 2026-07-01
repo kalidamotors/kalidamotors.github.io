@@ -128,6 +128,7 @@
                     class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700"
                     data-paid-for="{{ vehicle.paid_for | default: false }}"
                     data-listed-date="{{ vehicle.listed_date | default: '' }}"
+                    data-badge="{{ vehicle.badge | default: '' | downcase }}"
                     data-active="{{ vehicle.active | default: true }}">
                     <a href="vehicle.html?id={{ vehicle.id }}&tab=local" class="block relative aspect-[4/3] overflow-hidden">
                         <!-- Image Carousel Container -->
@@ -429,15 +430,25 @@
                     element: vehicleCard,
                     paidFor: vehicleCard.dataset.paidFor === 'true',
                     listedDate: vehicleCard.dataset.listedDate ? new Date(vehicleCard.dataset.listedDate) : null,
-                    active: vehicleCard.dataset.active !== 'false'
+                    active: vehicleCard.dataset.active !== 'false',
+                    isSold: (vehicleCard.dataset.badge || '').includes('sold')
                 };
                 return dataAttributes;
             })
             .filter(vehicle => {
-                // Filter: keep only active vehicles OR vehicles listed within 30 days
+                // Keep only active vehicles.
                 if (!vehicle.active) return false;
-                if (!vehicle.listedDate) return true;
-                return vehicle.listedDate >= thirtyDaysAgo;
+
+                // Keep sold-badge vehicles listed even past 30 days.
+                if (vehicle.isSold) return true;
+
+                // Paid-for vehicles are delisted only when older than 30 days.
+                if (vehicle.paidFor && vehicle.listedDate) {
+                    return vehicle.listedDate >= thirtyDaysAgo;
+                }
+
+                // All other active vehicles stay listed regardless of date.
+                return true;
             })
             .sort((a, b) => {
                 // Sort: paid for vehicles first
