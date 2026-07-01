@@ -164,7 +164,7 @@
                         <div class="bg-white p-4 rounded-xl border border-[#f0f2f4] text-center">
                             <span class="material-symbols-outlined text-primary mb-2">build</span>
                             <p class="text-xs text-[#617289] uppercase tracking-wider font-bold">Condition</p>
-                            <p id="otherSpec" class="text-sm font-semibold"></p>
+                            <p id="conditionSpec" class="text-sm font-semibold"></p>
                         </div>
                     </div>
                 </section>
@@ -431,7 +431,7 @@
             document.getElementById('airbagsSpec').textContent = vehicle.airbags || 'N/A';
             document.getElementById('wheelSizeSpec').textContent = vehicle.wheel_size || 'N/A';
             document.getElementById('safetySystemsSpec').textContent = vehicle.safety_systems || 'N/A';
-            document.getElementById('otherSpec').textContent = vehicle.otherSpec || 'N/A';
+            document.getElementById('conditionSpec').textContent = vehicle.grade || 'N/A';
             document.getElementById('efficiencySpec').textContent = vehicle.efficiency || 'N/A';
             
             // Populate images
