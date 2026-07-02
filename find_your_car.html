@@ -195,7 +195,7 @@
             category: "{{ car.category }}",
             estimated_total_cost: {{ car.estimated_total_cost }},
             image: "{{ car.image }}",
-            short_description: "{{ car.short_description | strip_html | truncate: 100 }}",
+            short_description: "{{ car.short_description | strip_html }}",
             highlights: [
                 {% for highlight in car.highlights %}
                 "{{ highlight }}"{% unless forloop.last %},{% endunless %}
@@ -638,7 +638,9 @@
                     </div>
                     <div class="p-4 bg-surface-dim rounded-lg mb-6">
                         <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Why this fits</p>
-                        <p class="text-sm text-slate-600 leading-relaxed">${car.short_description}</p>
+                        <div class="overflow-x-auto pb-1">
+                            <p class="text-sm text-slate-600 leading-relaxed whitespace-nowrap min-w-max">${car.short_description}</p>
+                        </div>
                     </div>
                     <a href="/inquiry?car=${encodeURIComponent(car.name)}" class="w-full border border-primary text-primary py-3 rounded-lg font-bold text-sm hover:bg-primary hover:text-white transition-all text-center block">Start Inquiry</a>
                 </div>
