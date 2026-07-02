@@ -2026,3 +2026,113 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
+
+- name: Toyota CHR
+  slug: toyota-chr
+  estimated_total_cost: 2547288
+  category: Crossover SUV
+  image: /assets/images/vehicles/cars/chr.jpg
+
+  short_description: Stylish and fuel-efficient compact SUV that combines bold coupe-inspired design, modern technology, and agile city driving performance.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Suzuki SX4
+  slug: suzuki-sx4
+  estimated_total_cost: 2227281
+  category: Crossover SUV
+  image: /assets/images/vehicles/cars/sx4.jpeg
+
+  short_description: A practical and fuel-efficient crossover with a comfortable ride and dependable performance for both city rides and weekend getaways.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mercedes Benz GLC220D
+  slug: mercedes-glc220d
+  estimated_total_cost: 5576463
+  category: SUV
+  image: /assets/images/vehicles/cars/glc220d.jpeg
+
+  short_description: Premium diesel SUV that combines excellent fuel efficiency, refined comfort, and advanced technology with the confidence of Mercedes-Benz luxury.
+
+  ideal_for:
+    - Professionals seeking a premium SUV
+    - Families looking for a spacious and comfortable vehicle
+    - Those who value advanced safety and technology features
+
+  highlights:
+    - Luxurious interior with high-quality materials
+    - Advanced safety and technology features
+    - Smooth and powerful performance
+
+  caution:
+    - Higher maintenance and repair costs
+    - Premium fuel requirements
+
+- name: BMW X1
+  slug: bmw-x1
+  estimated_total_cost: 2875162
+  category: SUV
+  image: /assets/images/vehicles/cars/x1.jpeg
+
+  short_description: A premium compact SUV that offers sporty performance, a spacious interior, and advanced technology in a practical, city-friendly package.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior with premium materials
+    - Good fuel economy for its class
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Toyota Esquire
+  slug: toyota-esquire
+  estimated_total_cost: 2780005
+  category: Minivan
+  image: /assets/images/vehicles/cars/esquire.jpeg
+
+  short_description: Premium family van that offers a spacious cabin, versatile seating, and a comfortable ride with refined styling and excellent practicality.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and premium family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Luxurious design with advanced features
+    - Comfortable ride for all passengers
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
