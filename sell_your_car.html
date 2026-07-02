@@ -458,31 +458,14 @@
                             </section>
 
                             <!-- Additional Notes -->
-                            <div id="preview-notes-section" class="hidden bg-surface-container-low p-6 rounded-xl border border-outline">
-                                <h4 class="font-bold mb-3 flex items-center gap-2">
+                            <div id="preview-notes-section" class="hidden bg-surface p-6 rounded-xl border border-outline shadow-sm">
+                                <h4 class="font-bold mb-3 flex items-center gap-2 text-on-surface">
                                     <span class="material-symbols-outlined text-primary text-lg">description</span>
                                     Additional Notes
                                 </h4>
-                                <p id="preview-notes" class="text-sm text-on-surface whitespace-pre-wrap"></p>
+                                <p id="preview-notes" class="text-sm text-on-surface-variant leading-relaxed whitespace-pre-wrap"></p>
                             </div>
 
-                            <!-- Contact Information -->
-                            <div class="bg-primary-fixed p-6 rounded-xl border border-primary">
-                                <h4 class="font-bold mb-4 flex items-center gap-2 text-on-primary-fixed">
-                                    <span class="material-symbols-outlined">person</span>
-                                    Seller Information
-                                </h4>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-on-primary-fixed">
-                                    <div>
-                                        <p class="text-xs uppercase tracking-widest font-bold text-primary mb-1">Name</p>
-                                        <p id="preview-name" class="font-semibold"></p>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs uppercase tracking-widest font-bold text-primary mb-1">Phone</p>
-                                        <p id="preview-phone" class="font-semibold"></p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <!-- Navigation Actions -->
                         <div class="flex justify-between items-center pt-8 border-t border-outline">
@@ -585,7 +568,7 @@
             if (currentStep === totalSteps) {
                 nextBtn.classList.add('hidden');
                 submitBtn.classList.remove('hidden');
-                submitBtn.innerHTML = `SUBMIT FOR REVIEW <span class="material-symbols-outlined">check_circle</span>`;
+                submitBtn.innerHTML = `SUBMIT FOR REVIEW`;
             } else {
                 nextBtn.classList.remove('hidden');
                 submitBtn.classList.add('hidden');
@@ -610,15 +593,10 @@
             const interior = document.getElementById('f-interior').value.trim();
             const additionalNotes = document.getElementById('f-additional-notes').value.trim();
             const location = document.getElementById('f-location').value.trim();
-            const name = document.getElementById('f-name').value.trim();
-            const phone = document.getElementById('f-phone').value.trim();
-
             // Update title and basic info
             document.getElementById('preview-title').textContent = `${year} ${make} ${model}`;
             document.getElementById('preview-location').textContent = location;
             document.getElementById('preview-price').textContent = new Intl.NumberFormat('en-KE', { style: 'currency', currency: 'KES', minimumFractionDigits: 0 }).format(price);
-            document.getElementById('preview-name').textContent = name;
-            document.getElementById('preview-phone').textContent = phone;
             
             // Update specifications
             document.getElementById('preview-engine').textContent = engine || '—';
