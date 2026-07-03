@@ -1131,7 +1131,7 @@
 
 - name: Honda Insight
   slug: honda-insight
-  estimated_total_cost: 2100300
+  estimated_total_cost: 2400300
   category: Sedan
   image: /assets/images/vehicles/cars/insight.jpg
 
@@ -2136,3 +2136,135 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
+
+- name: Honda Shuttle
+  slug: honda-shuttle
+  estimated_total_cost: 1737985
+  category: Minivan
+  image: /assets/images/vehicles/cars/shuttle.jpeg
+
+  short_description: Practical and fuel-efficient wagon that combines generous cargo space, comfortable seating, and reliable performance for families and everyday driving.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and efficient minivan
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Good fuel economy for its class
+    - Comfortable ride for all passengers
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Renault Megane
+  slug: renault-megane
+  estimated_total_cost: 1754671
+  category: Hatchback
+  image: /assets/images/vehicles/cars/megane.jpeg
+
+  short_description: Stylish European hatchback that offers a comfortable ride, efficient performance, and modern technology for everyday driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical hatchback
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Allion
+  slug: toyota-allion
+  estimated_total_cost: 2501432
+  category: Sedan
+  image: /assets/images/vehicles/cars/allion.jpeg
+
+  short_description: A reliable and fuel-efficient sedan that offers a comfortable ride, spacious interior, and low running costs for everyday driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical sedan
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Toyota Premio
+  slug: toyota-premio
+  estimated_total_cost: 2513241
+  category: Sedan
+  image: /assets/images/vehicles/cars/premio.jpeg
+
+  short_description: A refined and reliable sedan that combines comfort, fuel efficiency, and a premium feel for smooth everyday and long-distance driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical sedan
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Elegant design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mercedes Benz C200
+  slug: mercedes-c200
+  estimated_total_cost: 3361686
+  category: Sedan
+  image: /assets/images/vehicles/cars/c200.jpeg
+
+  short_description: A premium sedan that combines elegant styling, refined comfort, and smooth turbocharged performance with advanced Mercedes-Benz technology.
+
+  ideal_for:
+    - Young professionals seeking a luxury sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Stylish and modern design
+    - Advanced features and technology
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Nissan NV200
+  slug: nissan-nv200
+  estimated_total_cost: 1935908
+  category: Van
+  image: /assets/images/vehicles/cars/nv200.jpeg
+
+  short_description: A versatile and fuel-efficient van that offers practical cargo space, easy maneuverability, and dependable performance for business or family use.
+
+  ideal_for:
+    - Small business owners needing a reliable delivery vehicle
+    - Urban commuters seeking a practical and spacious van
+    - Those looking for a cost-effective and efficient commercial vehicle
+
+  highlights:
+    - Spacious cargo area with flexible configurations
+    - Good fuel economy for its class
+    - Easy maneuverability in urban environments
+
+  caution:
+    - Limited passenger seating options
+    - Some models may have less powerful engines
