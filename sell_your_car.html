@@ -238,7 +238,7 @@
                                 </div>
                                 <div class="space-y-1">
                                     <label
-                                        class="text-[10px] font-black uppercase tracking-widest text-secondary">Engine <span class="text-red-500">*</span></label>
+                                        class="text-[10px] font-black uppercase tracking-widest text-secondary">Fuel Type <span class="text-red-500">*</span></label>
                                     <select id="f-engine" required
                                         class="w-full bg-surface-container border-none rounded-lg p-4 font-bold focus:ring-2 focus:ring-primary">
                                         <option>Petrol</option>
@@ -373,7 +373,7 @@
                                 <div class="flex items-start gap-3 pt-4">
                                     <input id="f-certify" required class="mt-1 rounded text-primary focus:ring-primary" type="checkbox" />
                                     <p class="text-[10px] leading-tight text-on-surface-variant">I confirm that all
-                                        information provided is accurate and I authorize Kalida Motors to market and sell this vehicle on my behalf, in line with the <a href="/terms" class="text-primary underline hover:text-blue-700">terms governing sale on behalf</a>. <span class="text-red-500">*</span></p>
+                                        information provided is accurate and I authorize Kalida Motors to market and sell this vehicle on my behalf, in line with the <a href="/faqs.html" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:text-blue-700">terms governing sale on behalf</a>. <span class="text-red-500">*</span></p>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +416,7 @@
                                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                                     <div class="bg-surface-container-low p-4 rounded-xl border border-outline text-center">
                                         <span class="material-symbols-outlined text-primary mb-2">settings_input_component</span>
-                                        <p class="text-xs text-secondary uppercase tracking-wider font-bold">Engine</p>
+                                        <p class="text-xs text-secondary uppercase tracking-wider font-bold">Engine Size</p>
                                         <p id="preview-engine" class="text-sm font-semibold mt-2"></p>
                                     </div>
                                     <div class="bg-surface-container-low p-4 rounded-xl border border-outline text-center">
@@ -599,7 +599,7 @@
             document.getElementById('preview-price').textContent = new Intl.NumberFormat('en-KE', { style: 'currency', currency: 'KES', minimumFractionDigits: 0 }).format(price);
             
             // Update specifications
-            document.getElementById('preview-engine').textContent = engine || '—';
+            document.getElementById('preview-engine').textContent = engineSize || '—';
             document.getElementById('preview-fuel').textContent = engine || '—';
             document.getElementById('preview-transmission').textContent = transmission || '—';
             document.getElementById('preview-year').textContent = year || '—';
