@@ -1201,7 +1201,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "August 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1211,7 +1211,7 @@
       date_completed: "2026-06-24"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: null
+      date_completed: "2026-07-03"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
       date_completed: null
@@ -1255,7 +1255,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "August 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1265,7 +1265,7 @@
       date_completed: "2026-06-23"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: null
+      date_completed: "2026-07-03"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
       date_completed: null
