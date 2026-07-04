@@ -6,7 +6,7 @@
   transmission: "FWD"
   mileage: "51,000 km"
   price: "KES 1,250,000"
-  badge: "Available for Viewing at Baraka Court Mall"
+  badge: "Reserved"
   efficiency: "18-20 km/l"
   paid_for: true
   listed_date: "2026-07-01"
@@ -138,7 +138,7 @@
   transmission: "Auto"
   mileage: "126,000 km"
   price: "KES 950,000"
-  badge: "Reserved"
+  badge: "Available for Viewing in Baraka Court Mall"
   efficiency: "18-20 km/l"
   paid_for: true
   listed_date: "2026-06-19"
