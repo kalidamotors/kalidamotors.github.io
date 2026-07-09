@@ -199,5 +199,36 @@
     - "assets/images/vehicles/local/landcruiser12.jpeg"
     - "assets/images/vehicles/local/landcruiser13.jpeg"
     - "assets/images/vehicles/local/landcruiser14.jpeg"
+
+- id: "q5u0v1w2x"
+  title: "Toyota Allion"
+  year: "2003"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  drive_type: "FWD"
+  engine_model: "1NZ-FE"
+  engine_size: "1.5L"
+  color: "Silver"
+  doors: "4"
+  seats: "5"
+  wheel_size: "15 inches"
+  chassis_id: "NZE121-1234567"
+  mileage: "270,000 km"
+  price: "KES 560,000"
+  badge: "Available for Viewing in Roysambu"
+  efficiency: "12-14 km/l"
+  paid_for: true
+  listed_date: "2026-07-10"
+  active: true
+  images:
+    - "assets/images/vehicles/local/allion1.jpeg"
+    - "assets/images/vehicles/local/allion2.jpeg"
+    - "assets/images/vehicles/local/allion3.jpeg"
+    - "assets/images/vehicles/local/allion4.jpeg"
+    - "assets/images/vehicles/local/allion5.jpeg"
+    - "assets/images/vehicles/local/allion6.jpeg"
+    - "assets/images/vehicles/local/allion7.jpeg"
+    - "assets/images/vehicles/local/allion8.jpeg"
     
   
