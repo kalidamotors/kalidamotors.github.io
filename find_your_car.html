@@ -10,6 +10,20 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>What Can I Import? | Kalida Motors</title>
+    <meta name="description" content="Find the right car to import to Kenya with Kalida Motors. Search by make, model, category, or budget to see practical vehicle options and estimated import costs." />
+    <meta name="keywords" content="what can I import, car import Kenya, import car by budget, car finder Kenya, Japanese cars Kenya, vehicle import calculator, Kalida Motors, imported cars Nairobi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.kalidamotors.com/find_your_car.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="What Can I Import? | Kalida Motors" />
+    <meta property="og:description" content="Search by make, model, category, or budget to discover vehicle options and estimated import costs in Kenya." />
+    <meta property="og:url" content="https://www.kalidamotors.com/find_your_car.html" />
+    <meta property="og:site_name" content="Kalida Motors" />
+    <meta property="og:image" content="https://www.kalidamotors.com/assets/images/general/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What Can I Import? | Kalida Motors" />
+    <meta name="twitter:description" content="Use Kalida Analytics to search vehicles by budget, model, or category and compare practical import options in Kenya." />
+    <meta name="twitter:image" content="https://www.kalidamotors.com/assets/images/general/logo.png" />
     <link rel="icon" type="image/x-icon" href="/assets/images/general/logo-favicon-32.png" />
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700;900&amp;display=swap"
         rel="stylesheet" />
@@ -105,7 +119,34 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-SDGJNHB7VP');
+        gtag('config', 'G-SDGJNHB7VP', {
+            page_title: 'What Can I Import? | Kalida Motors',
+            page_path: '/find_your_car.html'
+        });
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "What Can I Import?",
+            "url": "https://www.kalidamotors.com/find_your_car.html",
+            "description": "Search by make, model, category, or budget to discover import-ready vehicle options and estimated costs in Kenya.",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Kalida Motors",
+                "url": "https://www.kalidamotors.com"
+            },
+            "about": {
+                "@type": "Service",
+                "name": "Vehicle Import Matching",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Kalida Motors",
+                    "url": "https://www.kalidamotors.com"
+                },
+                "areaServed": "Kenya"
+            }
+        }
     </script>
 </head>
 
@@ -602,11 +643,25 @@
      * Get badge label for result type
      */
     function getPickBadge(car) {
+        const curatedOptionLabels = [
+            'Here are six options.',
+            "Here's the cheapest to maintain.",
+            "Here's the most fuel efficient.",
+            "Here's the one with the highest resale value.",
+            "Here's the safest.",
+            'Best value for money'
+        ];
+
         if (car.pickType === 'exact') {
             return `#${car.rank} - Match`;
         } else if (car.pickType === 'budget') {
             return `#${car.rank} - ${car.budgetUtilization}% of budget`;
         }
+
+        if (car.rank >= 1 && car.rank <= curatedOptionLabels.length) {
+            return curatedOptionLabels[car.rank - 1];
+        }
+
         return `${car.rank}. ${car.pickType.charAt(0).toUpperCase() + car.pickType.slice(1).replace('-', ' ')} Pick`;
     }
 
