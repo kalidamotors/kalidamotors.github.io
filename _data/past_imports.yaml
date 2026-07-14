@@ -937,7 +937,7 @@
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "GENTLE LEADER V.121"
-        estimated_arrival: "2026-07-11"
+        estimated_arrival: "2026-07-19"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
@@ -1107,7 +1107,7 @@
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "GENTLE LEADER V.121"
-        estimated_arrival: "2026-07-11"
+        estimated_arrival: "2026-07-19"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
@@ -1147,7 +1147,7 @@
   cta: "Similar Inquiry"
   tracking_id: "KM-120020"
   auction_date: "2026-05-21"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "August 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1157,14 +1157,14 @@
       date_completed: "2026-05-21"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: null
+      date_completed: "2026-07-06"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-        # carrier: "BRANDS HATCH V.IF602"
-        # estimated_arrival: "2026-04-09"
+      shipping_details:
+        carrier: "Glovis Sirius"
+        estimated_arrival: "2026-08-11"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
