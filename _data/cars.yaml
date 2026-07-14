@@ -2268,3 +2268,114 @@
   caution:
     - Limited passenger seating options
     - Some models may have less powerful engines
+
+- name: Volvo v40
+  slug: volvo-v40
+  estimated_total_cost: 2330057
+  category: Hatchback
+  image: /assets/images/vehicles/cars/v40.jpeg
+
+  short_description: A premium hatchback that combines Scandinavian design, advanced safety features, and efficient performance for stylish and practical urban driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical hatchback
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior with premium materials
+    - Advanced safety features
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Volvo v60
+  slug: volvo-v60
+  estimated_total_cost: 3025610
+  category: Wagon
+  image: /assets/images/vehicles/cars/v60.jpeg
+
+  short_description: A premium wagon that combines Scandinavian design, advanced safety features, and efficient performance for stylish and practical family driving.
+
+  ideal_for:
+    - Families seeking a spacious and practical wagon
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and efficient midsize car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior with premium materials
+    - Advanced safety features
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mercedes Benz GLE Coupe 400D
+  slug: mercedes-gle-coupe-400d
+  estimated_total_cost: 10600342
+  category: SUV
+  image: /assets/images/vehicles/cars/glecoupe400d.jpeg
+
+  short_description: A sporty and luxurious SUV coupe that combines powerful performance, advanced technology, and a stylish design for a dynamic driving experience.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV coupe
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Lexus LX 570
+  slug: lexus-lx-570
+  estimated_total_cost: 11109400
+  category: SUV
+  image: /assets/images/vehicles/cars/lx570.jpeg
+
+  short_description: A full-size luxury SUV that combines off-road capability, refined comfort, and advanced technology for a premium driving experience.
+
+  ideal_for:
+    - Driving enthusiasts seeking a powerful and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium full-size car
+
+  highlights:
+    - Powerful V8 engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: BMW 340i
+  slug: bmw-340i
+  estimated_total_cost: 5967109
+  category: Wagon
+  image: /assets/images/vehicles/cars/340i.jpeg
+
+  short_description: A sporty and luxurious wagon that combines powerful performance, advanced technology, and a stylish design for an exhilarating driving experience.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful turbocharged engine
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
