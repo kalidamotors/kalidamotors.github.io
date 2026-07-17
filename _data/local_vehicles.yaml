@@ -6,11 +6,11 @@
   transmission: "FWD"
   mileage: "51,000 km"
   price: "KES 1,250,000"
-  badge: "Reserved"
+  badge: "Sold"
   efficiency: "18-20 km/l"
   paid_for: false
   listed_date: "2026-07-01"
-  active: true
+  active: false
   images:
     - "assets/images/vehicles/local/demio1.jpeg"
     - "assets/images/vehicles/local/demio2.jpeg"
@@ -56,11 +56,11 @@
   transmission: "Auto"
   mileage: "150,000 km"
   price: "KES 1,600,000"
-  badge: "Reserved"
+  badge: "Sold"
   efficiency: "9-11 km/l"
   paid_for: false
   listed_date: "2026-07-01"
-  active: true
+  active: false
   images:
     - "assets/images/vehicles/local/prado1.jpeg"
     - "assets/images/vehicles/local/prado2.jpeg"
@@ -129,39 +129,6 @@
     - "assets/images/vehicles/local/dmax14.jpeg"
     - "assets/images/vehicles/local/dmax15.jpeg"
   # owner: "Mzae - 0727150251"
-
-- id: "o3s8t9u0v"
-  title: "Mazda Demio"
-  year: "2018"
-  grade: "Locally Used"
-  fuel: "Petrol"
-  transmission: "Auto"
-  mileage: "126,000 km"
-  price: "KES 950,000"
-  badge: "Available for Viewing in Baraka Court Mall"
-  efficiency: "18-20 km/l"
-  paid_for: true
-  listed_date: "2026-06-19"
-  color: "Silver"
-  doors: "5"
-  seats: "5"
-  drive_type: "FWD"
-  engine_size: "1.3L"
-  engine_model: "ZJ-VE"
-  chassis_number: "DBA-DE3FS"
-  wheel_size: "15 inches"
-  active: true
-  images:
-    - "assets/images/vehicles/local/demio11.jpeg"
-    - "assets/images/vehicles/local/demio12.jpeg"
-    - "assets/images/vehicles/local/demio13.jpeg"
-    - "assets/images/vehicles/local/demio14.jpeg"
-    - "assets/images/vehicles/local/demio15.jpeg"
-    - "assets/images/vehicles/local/demio16.jpeg"
-    - "assets/images/vehicles/local/demio17.jpeg"
-    - "assets/images/vehicles/local/demio18.jpeg"
-    - "assets/images/vehicles/local/demio19.jpeg"
-    - "assets/images/vehicles/local/demio110.jpeg"
 
 - id: "p4t9u0v1w"
   title: "Toyota 79 Series Land Cruiser"
