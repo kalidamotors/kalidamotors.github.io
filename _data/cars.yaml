@@ -382,7 +382,7 @@
 
 - name: Mazda Mazda2
   slug: mazda-mazda2
-  estimated_total_cost: 1289516
+  estimated_total_cost: 1459516
   category: Hatchback
   image: /assets/images/vehicles/cars/mazda2.jpg
   
@@ -2366,7 +2366,7 @@
   short_description: A sporty and luxurious wagon that combines powerful performance, advanced technology, and a stylish design for an exhilarating driving experience.
 
   ideal_for:
-    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Driving enthusiasts seeking a sporty and luxurious wagon
     - Urban commuters looking for a stylish and well-equipped vehicle
     - Those seeking a reliable and premium midsize car
 
