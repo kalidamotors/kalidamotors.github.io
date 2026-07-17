@@ -1202,7 +1202,7 @@
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
   current_status: "Shipping pending"
-  estimated_delivery: "August 2026"
+  estimated_delivery: "September 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-06-18"
@@ -1216,9 +1216,9 @@
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-      #   carrier: "GENTLE LEADER V.121"
-      #   estimated_arrival: "2026-07-11"
+      shipping_details:
+        carrier: "TURANDOT V.705"
+        estimated_arrival: "2026-08-18"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
@@ -1256,7 +1256,7 @@
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
   current_status: "Shipping pending"
-  estimated_delivery: "August 2026"
+  estimated_delivery: "September 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-06-18"
@@ -1270,9 +1270,9 @@
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-      #   carrier: "GENTLE LEADER V.121"
-      #   estimated_arrival: "2026-08-15"
+      shipping_details:
+        carrier: "TURANDOT V.705"
+        estimated_arrival: "2026-08-18"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
