@@ -2379,3 +2379,24 @@
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
 
+- name: Landrover Defender 110 
+  slug: landrover-defender-110
+  estimated_total_cost: 15075898
+  category: SUV
+  image: /assets/images/vehicles/cars/defender110.jpeg
+
+  short_description: A rugged and capable off-road SUV that combines advanced technology, refined comfort, and a stylish design for both urban and adventurous driving.
+
+  ideal_for:
+    - Off-road enthusiasts seeking a capable and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Advanced off-road capabilities
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
