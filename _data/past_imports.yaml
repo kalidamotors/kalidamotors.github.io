@@ -1428,9 +1428,9 @@
   badge: "Shipping to Mombasa"
   link: "inquiry"
   cta: "Similar Inquiry"
-  auction_date: "2026-08-05"
+  auction_date: "2026-07-18"
   current_status: "Inspection pending"
-  estimated_delivery: "October 2026"
+  estimated_delivery: "September 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-07-18"
