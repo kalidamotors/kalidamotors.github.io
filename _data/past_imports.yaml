@@ -1335,9 +1335,9 @@
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-      #   carrier: "GENTLE LEADER V.121"
-      #   estimated_arrival: "2026-08-15"
+      shipping_details:
+        carrier: "ARABIAN SEA V.IE603"
+        estimated_arrival: "2026-08-23"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
