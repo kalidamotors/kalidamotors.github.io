@@ -1384,7 +1384,7 @@
       date_completed: "2026-07-16"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: "2026-08-03"
+      date_completed: "2026-08-07"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
       date_completed: null
