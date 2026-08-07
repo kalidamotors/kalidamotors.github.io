@@ -1374,7 +1374,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-07-16"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "September 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1384,14 +1384,14 @@
       date_completed: "2026-07-16"
       details: "Payment has been processed and confirmed."
     - step: "Vehicle Inspection"
-      date_completed: null
+      date_completed: "2026-08-07"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
       date_completed: null
       details: "Vehicle has been shipped and is currently in transit to Kenya."
-      # shipping_details:
-      #   carrier: "GENTLE LEADER V.121"
-      #   estimated_arrival: "2026-08-15"
+      shipping_details:
+        carrier: "DON JUAN"
+        estimated_arrival: "2026-09-09"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya."
@@ -1541,7 +1541,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-08-05"
-  current_status: "payment pending"
+  current_status: "Shipping pending"
   estimated_delivery: "October 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1613,6 +1613,63 @@
       # shipping_details:
       #   carrier: "Gentle Leader"
       #   estimated_arrival: "2026-08-30"
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya after arrival."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Nairobi after customs clearance."
+
+- id: "d4e5f6g7h"
+  tracking_id: "KM-04D5E6F"
+  title: "Lexus NX300"
+  subtitle: "F Sport | 2.0L Turbo"
+  year: "2020"
+  grade: "4.5"
+  mileage: "66k km"
+  fuel: "petrol"
+  transmission: "Auto"
+  engine_size: "2.0L"
+  price: "KES 2,400,000 CNF"
+  drive_type: "AWD"
+  color: "Grey"
+  seats: "5 Seater"
+  chassis_id: "AGZ15"
+  engine_model: "T24A-FTS"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "18-inch Alloy"
+  safety_systems: "Lexus Safety System+, Lane Departure Alert, Pre-Collision System, Adaptive Cruise Control, Blind Spot Monitor"
+  doors: "5"
+  efficiency: "15-18 km/l"
+  images:
+    - "assets/images/vehicles/past_imports/nx300_1.jpeg"
+    - "assets/images/vehicles/past_imports/nx300_2.jpeg"
+    - "assets/images/vehicles/past_imports/nx300_3.jpeg"
+    - "assets/images/vehicles/past_imports/nx300_4.jpeg"
+    - "assets/images/vehicles/past_imports/nx300_5.jpeg"
+    - "assets/images/vehicles/past_imports/nx300_6.jpeg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  auction_date: "2026-08-01"
+  current_status: "Inspection pending"
+  estimated_delivery: "October 2026"
+  import_steps_completed:
+    - step: "Auction Bidding" 
+      date_completed: "2026-07-30"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: "2026-08-05"
+      details: "Payment is pending for the vehicle."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle inspection will be scheduled after payment confirmation."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle will be shipped after inspection and preparation."
+      # shipping_details:
+      #   carrier: "Gentle Leader"
+      #   estimated_arrival: "2026-09-15"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya after arrival."
