@@ -323,7 +323,7 @@
   badge: "Available for Viewing in Karen"
   efficiency: "10-12 km/l"
   paid_for: true
-  listed_date: "2026-08-01"
+  listed_date: "2026-08-07"
   active: true
   images:
     - "assets/images/vehicles/local/ranger1.jpeg"
@@ -332,3 +332,36 @@
     - "assets/images/vehicles/local/ranger4.jpeg"
     - "assets/images/vehicles/local/ranger5.jpeg"
     - "assets/images/vehicles/local/ranger6.jpeg"
+
+- id: "v0z5a6b7c"
+  title: "Nissan X-Trail"
+  year: "2007"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  drive_type: "4WD"
+  engine_model: "QR25DE"
+  engine_size: "2L"
+  color: "Black"
+  doors: "5"
+  seats: "7"
+  wheel_size: "17 inches"
+  chassis_id: "T31-1234567"
+  mileage: "155,000 km"
+  price: "KES 600,000"
+  badge: "Available for Viewing in Kikuyu"
+  efficiency: "10-12 km/l"
+  paid_for: true
+  listed_date: "2026-08-08"
+  active: true
+  images:
+    - "assets/images/vehicles/local/xtrail1.jpeg"
+    - "assets/images/vehicles/local/xtrail2.jpeg"
+    - "assets/images/vehicles/local/xtrail3.jpeg"
+    - "assets/images/vehicles/local/xtrail4.jpeg"
+    - "assets/images/vehicles/local/xtrail5.jpeg"
+    - "assets/images/vehicles/local/xtrail6.jpeg"
+    - "assets/images/vehicles/local/xtrail7.jpeg"
+    - "assets/images/vehicles/local/xtrail8.jpeg"
+    - "assets/images/vehicles/local/xtrail9.jpeg"
+    - "assets/images/vehicles/local/xtrail10.jpeg"
