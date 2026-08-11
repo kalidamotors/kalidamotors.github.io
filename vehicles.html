@@ -136,6 +136,7 @@
             <!-- Local Units Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="localVehicles" style="display: none;">
                 {% for vehicle in site.data.local_vehicles %}
+                {% unless vehicle.active == false %}
                 <div
                     class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700"
                     data-paid-for="{{ vehicle.paid_for | default: false }}"
@@ -215,6 +216,7 @@
                         </a>
                     </div>
                 </div>
+                {% endunless %}
                 {% endfor %}
             </div>
         </section>
