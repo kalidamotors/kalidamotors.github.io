@@ -27,7 +27,7 @@
   price: "KES 930,000"
   badge: "Available for Viewing at Kalida Motors Showroom"
   efficiency: "9-11 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-01"
   active: true
   images:
@@ -119,7 +119,7 @@
   price: "KES 1,550,000"
   badge: "Available for Viewing in Bungoma"
   efficiency: "10-12 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-04"
   active: true
   images:
@@ -148,7 +148,7 @@
   price: "KES 6,000,000"
   badge: "Available for Viewing in Nairobi"
   efficiency: "8-10 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-01"
   active: true
   images:
@@ -185,7 +185,7 @@
   price: "KES 560,000"
   badge: "Available for Viewing in Roysambu"
   efficiency: "12-14 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-10"
   active: true
   images:
@@ -216,7 +216,7 @@
   price: "KES 4,000,000"
   badge: "Available for Viewing in Karen"
   efficiency: "9-11km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-10"
   active: true
   images:
@@ -254,7 +254,7 @@
   price: "KES 1,050,000"
   badge: "Available for Viewing at Kalida Motors Showroom"
   efficiency: "10-12 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-11"
   active: true
   images:
@@ -284,7 +284,7 @@
   price: "KES 900,000"
   badge: "Available for Viewing in Upperhill"
   efficiency: "18-20 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-07-16"
   active: true
   images:
@@ -322,7 +322,7 @@
   price: "KES 2,700,000"
   badge: "Available for Viewing in Karen"
   efficiency: "10-12 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-08-07"
   active: true
   images:
@@ -351,7 +351,7 @@
   price: "KES 600,000"
   badge: "Available for Viewing in Kikuyu"
   efficiency: "10-12 km/l"
-  paid_for: true
+  paid_for: false
   listed_date: "2026-08-08"
   active: true
   images:
