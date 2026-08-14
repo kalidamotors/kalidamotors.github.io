@@ -77,7 +77,7 @@
     <main class="max-w-7xl mx-auto py-6 px-4 md:px-10">
         <!-- Back Button -->
         <div class="flex items-center gap-2 mb-6">
-            <a class="flex items-center gap-2 text-primary font-bold hover:text-blue-600 transition-colors" href="vehicles.html">
+            <a id="backToGalleryLink" class="flex items-center gap-2 text-primary font-bold hover:text-blue-600 transition-colors" href="vehicles.html">
                 <span class="material-symbols-outlined">arrow_back</span>
                 Back to Gallery
             </a>
@@ -244,13 +244,19 @@
                                     e.preventDefault();
                                     var title = document.getElementById('vehicleTitle').textContent.trim().replace(/^\d{4}\s*/, '');
                                     var urlParams = new URLSearchParams(window.location.search);
-                                    var tab = urlParams.get('tab') || 'past';
+                                    var dealId = urlParams.get('deal_id');
+                                    var tab = urlParams.get('tab') || (dealId ? 'deals' : 'past');
                                     var vehicleId = urlParams.get('id');
-                                    var vehiclePageUrl = window.location.origin + window.location.pathname + '?id=' + vehicleId + '&tab=' + tab;
+                                    var detailQuery = dealId ? ('deal_id=' + encodeURIComponent(dealId)) : ('id=' + encodeURIComponent(vehicleId || ''));
+                                    var vehiclePageUrl = window.location.origin + window.location.pathname + '?' + detailQuery + '&tab=' + encodeURIComponent(tab);
                                     var message;
                                     
                                     if (tab === 'local') {
                                         message = encodeURIComponent("Hello Kalida, am interested in this " + title + "\n\nView details: " + vehiclePageUrl);
+                                    } else if (tab === 'deals') {
+                                        message = encodeURIComponent(
+                                            "Hello Kalida Motors, I'm interested in this deal: " + title + ".\nCould you share availability and next steps?\n\nView details: " + vehiclePageUrl
+                                        );
                                     } else {
                                         message = encodeURIComponent(
                                             "Hello Kalida Motors, I'm interested in getting a similar vehicle to: " + title + ".\nCould you provide more details?\n\nView details: " + vehiclePageUrl
@@ -370,19 +376,34 @@
     <!-- Footer -->
     {% include footer.html %}
 </body>
+<script id="past-imports-data" type="application/json">{{ site.data.past_imports | jsonify }}</script>
+<script id="local-vehicles-data" type="application/json">{{ site.data.local_vehicles | jsonify }}</script>
+<script id="import-deals-data" type="application/json">{{ site.data.import_deals.deals | jsonify }}</script>
 <script>
     // Load vehicle data on page load
     document.addEventListener('DOMContentLoaded', function() {
         const urlParams = new URLSearchParams(window.location.search);
         const vehicleId = urlParams.get('id');
-        const tab = urlParams.get('tab') || 'past';
-        const dataSource = tab === 'past' ? {{ site.data.past_imports | jsonify }} : {{ site.data.local_vehicles | jsonify }};
+        const dealId = urlParams.get('deal_id');
+        const tab = urlParams.get('tab') || (dealId ? 'deals' : 'past');
+        const pastImportsData = JSON.parse(document.getElementById('past-imports-data').textContent || '[]');
+        const localVehiclesData = JSON.parse(document.getElementById('local-vehicles-data').textContent || '[]');
+        const dealsData = JSON.parse(document.getElementById('import-deals-data').textContent || '[]');
+        const dataSource = tab === 'past'
+            ? pastImportsData
+            : (tab === 'local' ? localVehiclesData : dealsData);
         
-        // Find vehicle by ID
-        const vehicle = dataSource.find(v => v.id === vehicleId);
+        // Find vehicle/deal by ID
+        const selectedId = tab === 'deals' ? dealId : vehicleId;
+        const vehicle = dataSource.find(v => v.id === selectedId);
+
+        const backToGalleryLink = document.getElementById('backToGalleryLink');
+        if (backToGalleryLink) {
+            backToGalleryLink.href = 'vehicles.html?tab=' + encodeURIComponent(tab);
+        }
         
-        // Hide testimonials section if local tab
-        if (tab === 'local') {
+        // Hide testimonials section for non-past tabs
+        if (tab !== 'past') {
             const testimonialSection = document.getElementById('testimonialSection');
             if (testimonialSection) {
                 testimonialSection.style.display = 'none';
@@ -407,15 +428,25 @@
             const vehicleTitleText = (vehicle.year || '') + ' ' + (vehicle.title || '');
             document.getElementById('vehicleTitle').textContent = vehicleTitleText;
             document.title = 'Kalida Motors | ' + vehicleTitleText;
-            document.getElementById('gradeSpan').textContent = 'Auction Grade: ' + (vehicle.grade || 'N/A');
+            document.getElementById('gradeSpan').textContent = tab === 'deals'
+                ? ('Deal Ref: ' + (vehicle.id || 'N/A'))
+                : ('Auction Grade: ' + (vehicle.grade || 'N/A'));
             
             // Update days to import if available
             const daysToImportSpan = document.getElementById('daysToImportSpan');
-            if (vehicle.days_to_import) {
+            if (vehicle.days_to_import && tab !== 'deals') {
                 daysToImportSpan.textContent = vehicle.days_to_import + ' days to import';
                 daysToImportSpan.style.display = 'inline-block';
             } else {
                 daysToImportSpan.style.display = 'none';
+            }
+
+            if (tab === 'deals') {
+                const importContact = document.getElementById('importContact');
+                if (importContact) {
+                    importContact.style.display = 'block';
+                    importContact.textContent = 'Ready to secure this deal?';
+                }
             }
             
             // Update vehicle-specific badge
@@ -552,7 +583,11 @@
                     const carCard = document.createElement('div');
                     carCard.className = 'bg-white rounded-xl overflow-hidden border border-[#f0f2f4] hover:shadow-md transition-shadow cursor-pointer';
                     carCard.onclick = () => {
-                        window.location.href = `vehicle.html?id=${car.id}&tab=${tab}`;
+                        if (tab === 'deals') {
+                            window.location.href = `vehicle.html?deal_id=${car.id}&tab=deals`;
+                        } else {
+                            window.location.href = `vehicle.html?id=${car.id}&tab=${tab}`;
+                        }
                     };
                     
                     const carImages = car.images || (car.image ? [car.image] : []);

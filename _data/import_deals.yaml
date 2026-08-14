@@ -1,0 +1,44 @@
+enabled: true
+title: Deals of the Week
+subtitle: Direct from Japan Auction Houses
+footer_note: All prices are estimated landed costs.
+deals:
+  - id: xtrail-2019-a7f2
+    title: Nissan X-Trail 2019
+    subtitle: 2L Petrol
+    images: 
+      - assets/images/vehicles/deals/xtrail1.jpeg
+      - assets/images/vehicles/deals/xtrail2.jpeg
+      - assets/images/vehicles/deals/xtrail3.jpeg
+      - assets/images/vehicles/deals/xtrail4.jpeg
+      - assets/images/vehicles/deals/xtrail5.jpeg
+      - assets/images/vehicles/deals/xtrail6.jpeg
+      - assets/images/vehicles/deals/xtrail8.jpeg
+      - assets/images/vehicles/deals/xtrail9.jpeg
+      - assets/images/vehicles/deals/xtrail10.jpeg
+      - assets/images/vehicles/deals/xtrail11.jpeg
+      - assets/images/vehicles/deals/xtrail12.jpeg
+      - assets/images/vehicles/deals/xtrail13.jpeg
+      - assets/images/vehicles/deals/xtrail14.jpeg
+      - assets/images/vehicles/deals/xtrail15.jpeg
+    price: KES 2,200,000
+    savings_text: Save KES 500,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2019"
+    grade: "4.5"
+    mileage: "82k km"
+    fuel: "Petrol"
+    transmission: "Auto"
+    engine_size: "2L"
+    # savings: "KES 400,000"
+    drive_type: "FWD"
+    color: "Black"
+    seats: "5 Seater"
+    chassis_id: "DBA-T32"
+    engine_model: "MR20DD"
+    airbags: "8 (Front, Side, Curtain)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "ABS, EBD, Brake Assist, Traction Control, Stability Control"
+    doors: "5"
+    efficiency: "12-14 km/l"
