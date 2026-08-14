@@ -113,6 +113,11 @@
                         data-tab="local">
                         Local Units For Sale
                     </button>
+                    <button onclick="switchTab('deals')"
+                        class="tab-btn px-4 py-4 border-b-2 border-transparent text-slate-500 hover:text-primary font-bold text-lg transition-all"
+                        data-tab="deals">
+                        Deals
+                    </button>
                 </div>
             </div>
         </section>
@@ -219,6 +224,47 @@
                 {% endunless %}
                 {% endfor %}
             </div>
+
+            <!-- Deals Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="dealsVehicles" style="display: none;">
+                {% for deal in site.data.import_deals.deals %}
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700"
+                    data-active="true"
+                    data-badge="{{ deal.badge | default: '' | downcase }}">
+                    <a href="vehicle.html?deal_id={{ deal.id }}&tab=deals" class="block relative aspect-[4/3] overflow-hidden">
+                        {% assign deal_image = deal.images[0] | default: deal.image %}
+                        <div class="absolute inset-0 bg-cover bg-center bg-slate-300" loading="lazy"
+                            data-src="{{ deal_image }}" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1 1%22%3E%3Crect fill=%22%23cbd5e1%22 width=%221%22 height=%221%22/%3E%3C/svg%3E');"></div>
+                        {% if deal.badge %}
+                        <div
+                            class="absolute top-3 left-3 bg-primary/90 backdrop-blur-sm text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full z-10">
+                            {{ deal.badge }}
+                        </div>
+                        {% endif %}
+                    </a>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start gap-2 mb-1">
+                            <a href="vehicle.html?deal_id={{ deal.id }}&tab=deals"
+                                class="text-lg font-bold hover:text-primary transition-colors">{{ deal.title }}</a>
+                            {% if deal.price %}
+                            <span class="text-primary font-bold text-base whitespace-nowrap">{{ deal.price }}</span>
+                            {% endif %}
+                        </div>
+                        {% if deal.subtitle %}
+                        <p class="text-slate-400 font-medium text-sm mb-2">{{ deal.subtitle }}</p>
+                        {% endif %}
+                        {% if deal.savings_text %}
+                        <p class="text-green-600 dark:text-green-400 font-semibold text-sm mb-4">{{ deal.savings_text }}</p>
+                        {% endif %}
+                        <a href="vehicle.html?deal_id={{ deal.id }}&tab=deals"
+                            class="w-full bg-primary hover:bg-blue-600 text-white py-2.5 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-colors">
+                            <span class="material-symbols-outlined text-[18px]">open_in_new</span> View Deal
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </section>
         <section class="mt-16 flex justify-center">
             <nav class="flex items-center gap-2">
@@ -259,6 +305,7 @@
         </section>
     </main>
     {% include footer.html %}
+    {% include onload_popup.html %}
 </body>
 <script>
     // Track carousel state per container
@@ -331,10 +378,14 @@
     }
 
     // Randomize vehicles in the grid
+    function getGridIdForTab(tab) {
+        if (tab === 'local') return 'localVehicles';
+        if (tab === 'deals') return 'dealsVehicles';
+        return 'pastImports';
+    }
+
     function randomizeVehicles() {
-        const grid = currentTab === 'past' ?
-            document.getElementById('pastImports') :
-            document.getElementById('localVehicles');
+        const grid = document.getElementById(getGridIdForTab(currentTab));
         
         if (!grid) return;
         
@@ -365,6 +416,7 @@
         // Show/hide vehicle sections
         document.getElementById('pastImports').style.display = tab === 'past' ? 'grid' : 'none';
         document.getElementById('localVehicles').style.display = tab === 'local' ? 'grid' : 'none';
+        document.getElementById('dealsVehicles').style.display = tab === 'deals' ? 'grid' : 'none';
 
         // Update pagination and show first page
         updatePagination();
@@ -374,7 +426,7 @@
     // Cache vehicle data on page load for fast searching
     function cacheVehicleData() {
         vehicleCache = {};
-        ['pastImports', 'localVehicles'].forEach(gridId => {
+        ['pastImports', 'localVehicles', 'dealsVehicles'].forEach(gridId => {
             const grid = document.getElementById(gridId);
             if (!grid) return;
             
@@ -413,14 +465,12 @@
     }
 
     function getVehicles() {
-        const grid = currentTab === 'past' ?
-            document.getElementById('pastImports') :
-            document.getElementById('localVehicles');
+        const gridId = getGridIdForTab(currentTab);
         
         // Return only vehicles from current tab that match search
         let vehicles = filteredVehicleIds
             .map(id => vehicleCache[id])
-            .filter(data => data && data.gridId === (currentTab === 'past' ? 'pastImports' : 'localVehicles'))
+            .filter(data => data && data.gridId === gridId)
             .map(data => data.element);
         
         // For local vehicles, apply filtering and sorting
@@ -487,9 +537,7 @@
         currentPage = pageNum;
 
         // Hide ALL vehicles in the grid first
-        const grid = currentTab === 'past' ?
-            document.getElementById('pastImports') :
-            document.getElementById('localVehicles');
+        const grid = document.getElementById(getGridIdForTab(currentTab));
         grid.querySelectorAll('.group').forEach(v => v.style.display = 'none');
 
         // Show vehicles for current page from filtered results
@@ -545,13 +593,16 @@
 
     // Initialize with tab from URL parameter or default to 'past'
     const urlParams = new URLSearchParams(window.location.search);
-    const tabParam = urlParams.get('tab') || 'past';
+    const tabParamRaw = urlParams.get('tab') || 'past';
+    const tabParam = ['past', 'local', 'deals'].includes(tabParamRaw) ? tabParamRaw : 'past';
     
     // Randomize both grids on page load and setup search
     document.addEventListener('DOMContentLoaded', function() {
         currentTab = 'past';
         randomizeVehicles();
         currentTab = 'local';
+        randomizeVehicles();
+        currentTab = 'deals';
         randomizeVehicles();
         currentTab = tabParam;
         
