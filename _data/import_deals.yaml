@@ -4,23 +4,8 @@ subtitle: Direct from Japan Auction Houses
 footer_note: All prices are estimated landed costs.
 deals:
   - id: xtrail-2019-a7f2
-    title: Nissan X-Trail 2019
+    title: Nissan X-Trail
     subtitle: 2L Petrol
-    images: 
-      - assets/images/vehicles/deals/xtrail1.jpeg
-      - assets/images/vehicles/deals/xtrail2.jpeg
-      - assets/images/vehicles/deals/xtrail3.jpeg
-      - assets/images/vehicles/deals/xtrail4.jpeg
-      - assets/images/vehicles/deals/xtrail5.jpeg
-      - assets/images/vehicles/deals/xtrail6.jpeg
-      - assets/images/vehicles/deals/xtrail8.jpeg
-      - assets/images/vehicles/deals/xtrail9.jpeg
-      - assets/images/vehicles/deals/xtrail10.jpeg
-      - assets/images/vehicles/deals/xtrail11.jpeg
-      - assets/images/vehicles/deals/xtrail12.jpeg
-      - assets/images/vehicles/deals/xtrail13.jpeg
-      - assets/images/vehicles/deals/xtrail14.jpeg
-      - assets/images/vehicles/deals/xtrail15.jpeg
     price: KES 2,200,000
     savings_text: Save KES 500,000 vs Local
     badge: Direct Import Deal
@@ -42,3 +27,56 @@ deals:
     safety_systems: "ABS, EBD, Brake Assist, Traction Control, Stability Control"
     doors: "5"
     efficiency: "12-14 km/l"
+    images: 
+      - assets/images/vehicles/deals/xtrail1.jpeg
+      - assets/images/vehicles/deals/xtrail2.jpeg
+      - assets/images/vehicles/deals/xtrail3.jpeg
+      - assets/images/vehicles/deals/xtrail4.jpeg
+      - assets/images/vehicles/deals/xtrail5.jpeg
+      - assets/images/vehicles/deals/xtrail6.jpeg
+      - assets/images/vehicles/deals/xtrail8.jpeg
+      - assets/images/vehicles/deals/xtrail9.jpeg
+      - assets/images/vehicles/deals/xtrail10.jpeg
+      - assets/images/vehicles/deals/xtrail11.jpeg
+      - assets/images/vehicles/deals/xtrail12.jpeg
+      - assets/images/vehicles/deals/xtrail13.jpeg
+      - assets/images/vehicles/deals/xtrail14.jpeg
+      - assets/images/vehicles/deals/xtrail15.jpeg
+
+  - id: vezel-2019-
+    title: Honda Vezel
+    subtitle: Hybrid Z
+    price: KES 2,300,000
+    savings_text: Save KES 400,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2019"
+    grade: "4"
+    mileage: "63k km"
+    fuel: "Petrol"
+    transmission: "Auto"
+    engine_size: "1.5L"
+    # savings: "KES 400,000"
+    drive_type: "FWD"
+    color: "Red"
+    seats: "5 Seater"
+    chassis_id: "DAA-RU3"
+    engine_model: "LEB-H1"
+    airbags: "8 (Front, Side, Curtain)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "Honda Z Sensing"
+    doors: "5"
+    efficiency: "18 km/l"
+    images: 
+      - assets/images/vehicles/deals/vezel1.jpeg
+      - assets/images/vehicles/deals/vezel2.jpeg
+      - assets/images/vehicles/deals/vezel3.jpeg
+      - assets/images/vehicles/deals/vezel4.jpeg
+      - assets/images/vehicles/deals/vezel5.jpeg
+      - assets/images/vehicles/deals/vezel6.jpeg
+      - assets/images/vehicles/deals/vezel7.jpeg
+      - assets/images/vehicles/deals/vezel8.jpeg
+      - assets/images/vehicles/deals/vezel9.jpeg
+      - assets/images/vehicles/deals/vezel10.jpeg
+      - assets/images/vehicles/deals/vezel11.jpeg
+      - assets/images/vehicles/deals/vezel12.jpeg

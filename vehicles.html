@@ -134,6 +134,28 @@
                 <div id="searchResults" class="text-sm text-slate-600 dark:text-slate-400"></div>
             </div>
         </section>
+        <section class="px-6 lg:px-10 mb-8">
+            <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-4 md:p-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                    <select id="filterMake"
+                        class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg py-2.5 px-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary transition-all">
+                        <option value="">All Makes</option>
+                    </select>
+                    <select id="filterYear"
+                        class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg py-2.5 px-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary transition-all">
+                        <option value="">All Years</option>
+                    </select>
+                    <input id="filterMileageMax" type="number" min="0" step="1000" placeholder="Max mileage (km)"
+                        class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg py-2.5 px-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary transition-all" />
+                    <input id="filterBudgetMax" type="number" min="0" step="10000" placeholder="Max budget (KES)"
+                        class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg py-2.5 px-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary transition-all" />
+                    <button id="clearFiltersBtn" type="button"
+                        class="w-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-100 rounded-lg py-2.5 px-3 text-sm font-semibold hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors">
+                        Clear Filters
+                    </button>
+                </div>
+            </div>
+        </section>
         <section class="px-6 lg:px-10" id="vehicles">
             <!-- Past Imports Grid -->
             {% include past_imports.html %}
@@ -147,7 +169,11 @@
                     data-paid-for="{{ vehicle.paid_for | default: false }}"
                     data-listed-date="{{ vehicle.listed_date | default: '' }}"
                     data-badge="{{ vehicle.badge | default: '' | downcase }}"
-                    data-active="{{ vehicle.active | default: true }}">
+                    data-active="{{ vehicle.active | default: true }}"
+                    data-title="{{ vehicle.title | default: '' }}"
+                    data-year="{{ vehicle.year | default: '' }}"
+                    data-mileage="{{ vehicle.mileage | default: '' }}"
+                    data-price="{{ vehicle.price | default: '' }}">
                     <a href="vehicle.html?id={{ vehicle.id }}&tab=local" class="block relative aspect-[4/3] overflow-hidden">
                         <!-- Image Carousel Container -->
                         <div class="carousel-container relative w-full h-full overflow-hidden"
@@ -231,7 +257,11 @@
                 <div
                     class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700"
                     data-active="true"
-                    data-badge="{{ deal.badge | default: '' | downcase }}">
+                    data-badge="{{ deal.badge | default: '' | downcase }}"
+                    data-title="{{ deal.title | default: '' }}"
+                    data-year="{{ deal.year | default: '' }}"
+                    data-mileage="{{ deal.mileage | default: '' }}"
+                    data-price="{{ deal.price | default: '' }}">
                     <a href="vehicle.html?deal_id={{ deal.id }}&tab=deals" class="block relative aspect-[4/3] overflow-hidden">
                         {% assign deal_image = deal.images[0] | default: deal.image %}
                         <div class="absolute inset-0 bg-cover bg-center bg-slate-300" loading="lazy"
@@ -366,6 +396,51 @@
     let vehicleCache = {}; // Cache vehicle data for fast searching
     let filteredVehicleIds = []; // Track filtered results
     let searchTimeout; // For debouncing
+    let activeFilters = {
+        make: '',
+        year: '',
+        mileageMax: '',
+        budgetMax: ''
+    };
+
+    function parseNumber(value) {
+        if (value === null || value === undefined) return null;
+        const digits = String(value).replace(/[^\d.]/g, '');
+        if (!digits) return null;
+        const number = Number(digits);
+        return Number.isFinite(number) ? number : null;
+    }
+
+    function extractYear(value, fallbackText) {
+        const directYear = String(value || '').match(/\b(19|20)\d{2}\b/);
+        if (directYear) return Number(directYear[0]);
+        const fallbackYear = String(fallbackText || '').match(/\b(19|20)\d{2}\b/);
+        return fallbackYear ? Number(fallbackYear[0]) : null;
+    }
+
+    function extractMake(title) {
+        const raw = String(title || '').trim();
+        if (!raw) return '';
+        return raw.split(/\s+/)[0].toLowerCase();
+    }
+
+    function titleCase(value) {
+        return String(value || '')
+            .split(' ')
+            .filter(Boolean)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+    }
+
+    function getResultsLabel(count) {
+        return count + ' vehicle' + (count !== 1 ? 's' : '') + ' found';
+    }
+
+    function updateResultsCount() {
+        const resultsDiv = document.getElementById('searchResults');
+        if (!resultsDiv) return;
+        resultsDiv.textContent = getResultsLabel(getVehicles().length);
+    }
 
     // Fisher-Yates shuffle algorithm
     function shuffleArray(array) {
@@ -419,8 +494,10 @@
         document.getElementById('dealsVehicles').style.display = tab === 'deals' ? 'grid' : 'none';
 
         // Update pagination and show first page
+        updateFilterOptions();
         updatePagination();
         showPage(1);
+        updateResultsCount();
     }
 
     // Cache vehicle data on page load for fast searching
@@ -440,7 +517,13 @@
                 vehicleCache[vehicleId] = {
                     element: vehicle,
                     searchText: searchableText,
-                    gridId: gridId
+                    gridId: gridId,
+                    meta: {
+                        make: extractMake(vehicle.dataset.title || allText),
+                        year: extractYear(vehicle.dataset.year, allText),
+                        mileage: parseNumber(vehicle.dataset.mileage),
+                        budget: parseNumber(vehicle.dataset.price)
+                    }
                 };
             });
         });
@@ -464,6 +547,81 @@
         }
     }
 
+    function matchesFilters(meta) {
+        if (activeFilters.make && meta.make !== activeFilters.make) return false;
+        if (activeFilters.year && String(meta.year || '') !== String(activeFilters.year)) return false;
+
+        const mileageMax = parseNumber(activeFilters.mileageMax);
+        if (mileageMax !== null && meta.mileage !== null && meta.mileage > mileageMax) return false;
+
+        const budgetMax = parseNumber(activeFilters.budgetMax);
+        if (budgetMax !== null && meta.budget !== null && meta.budget > budgetMax) return false;
+
+        return true;
+    }
+
+    function getAvailableOptionsForCurrentTab() {
+        const gridId = getGridIdForTab(currentTab);
+        const records = Object.values(vehicleCache).filter(item => item.gridId === gridId);
+        const makes = new Set();
+        const years = new Set();
+
+        records.forEach(item => {
+            if (item.meta.make) makes.add(item.meta.make);
+            if (item.meta.year) years.add(item.meta.year);
+        });
+
+        return {
+            makes: Array.from(makes).sort((a, b) => a.localeCompare(b)),
+            years: Array.from(years).sort((a, b) => b - a)
+        };
+    }
+
+    function updateFilterOptions() {
+        const makeSelect = document.getElementById('filterMake');
+        const yearSelect = document.getElementById('filterYear');
+        if (!makeSelect || !yearSelect) return;
+
+        const options = getAvailableOptionsForCurrentTab();
+        makeSelect.innerHTML = '<option value="">All Makes</option>';
+        options.makes.forEach(make => {
+            const option = document.createElement('option');
+            option.value = make;
+            option.textContent = titleCase(make);
+            makeSelect.appendChild(option);
+        });
+
+        yearSelect.innerHTML = '<option value="">All Years</option>';
+        options.years.forEach(year => {
+            const option = document.createElement('option');
+            option.value = String(year);
+            option.textContent = String(year);
+            yearSelect.appendChild(option);
+        });
+
+        if (activeFilters.make && options.makes.includes(activeFilters.make)) {
+            makeSelect.value = activeFilters.make;
+        } else {
+            activeFilters.make = '';
+            makeSelect.value = '';
+        }
+
+        if (activeFilters.year && options.years.map(String).includes(String(activeFilters.year))) {
+            yearSelect.value = String(activeFilters.year);
+        } else {
+            activeFilters.year = '';
+            yearSelect.value = '';
+        }
+    }
+
+    function applyFiltersAndRefresh() {
+        currentPage = 1;
+        performSearch(searchQuery);
+        updatePagination();
+        showPage(1);
+        updateResultsCount();
+    }
+
     function getVehicles() {
         const gridId = getGridIdForTab(currentTab);
         
@@ -471,6 +629,7 @@
         let vehicles = filteredVehicleIds
             .map(id => vehicleCache[id])
             .filter(data => data && data.gridId === gridId)
+            .filter(data => matchesFilters(data.meta))
             .map(data => data.element);
         
         // For local vehicles, apply filtering and sorting
@@ -524,7 +683,7 @@
 
     function getTotalPages() {
         const vehicles = getVehicles();
-        return Math.ceil(vehicles.length / itemsPerPage);
+        return Math.max(1, Math.ceil(vehicles.length / itemsPerPage));
     }
 
     function showPage(pageNum) {
@@ -609,6 +768,52 @@
         // Cache all vehicle data on load
         cacheVehicleData();
         performSearch(''); // Initialize with all vehicles
+        updateFilterOptions();
+
+        const filterMake = document.getElementById('filterMake');
+        const filterYear = document.getElementById('filterYear');
+        const filterMileageMax = document.getElementById('filterMileageMax');
+        const filterBudgetMax = document.getElementById('filterBudgetMax');
+        const clearFiltersBtn = document.getElementById('clearFiltersBtn');
+
+        if (filterMake) {
+            filterMake.addEventListener('change', function (e) {
+                activeFilters.make = e.target.value || '';
+                applyFiltersAndRefresh();
+            });
+        }
+
+        if (filterYear) {
+            filterYear.addEventListener('change', function (e) {
+                activeFilters.year = e.target.value || '';
+                applyFiltersAndRefresh();
+            });
+        }
+
+        if (filterMileageMax) {
+            filterMileageMax.addEventListener('input', function (e) {
+                activeFilters.mileageMax = e.target.value || '';
+                applyFiltersAndRefresh();
+            });
+        }
+
+        if (filterBudgetMax) {
+            filterBudgetMax.addEventListener('input', function (e) {
+                activeFilters.budgetMax = e.target.value || '';
+                applyFiltersAndRefresh();
+            });
+        }
+
+        if (clearFiltersBtn) {
+            clearFiltersBtn.addEventListener('click', function () {
+                activeFilters = { make: '', year: '', mileageMax: '', budgetMax: '' };
+                if (filterMake) filterMake.value = '';
+                if (filterYear) filterYear.value = '';
+                if (filterMileageMax) filterMileageMax.value = '';
+                if (filterBudgetMax) filterBudgetMax.value = '';
+                applyFiltersAndRefresh();
+            });
+        }
         
         // Setup debounced search functionality
         const searchInput = document.getElementById('searchInput');
@@ -619,19 +824,7 @@
                 // Debounce: wait 200ms after user stops typing
                 searchTimeout = setTimeout(() => {
                     searchQuery = e.target.value.trim();
-                    currentPage = 1; // Reset to first page on search
-                    performSearch(searchQuery); // Use cached data for search
-                    updatePagination();
-                    showPage(1);
-                    
-                    // Show search results count
-                    const resultCount = getVehicles().length;
-                    const resultsDiv = document.getElementById('searchResults');
-                    if (searchQuery) {
-                        resultsDiv.textContent = resultCount + ' vehicle' + (resultCount !== 1 ? 's' : '') + ' found';
-                    } else {
-                        resultsDiv.textContent = '';
-                    }
+                    applyFiltersAndRefresh();
                 }, 200);
             });
         }
