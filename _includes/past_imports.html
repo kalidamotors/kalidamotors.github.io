@@ -1,7 +1,11 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="pastImports">
                         {% for item in site.data.past_imports %}
                         <div
-                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:shadow-2xl hover:border-primary/30">
+                            class="group flex flex-col bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 transition-all hover:shadow-2xl hover:border-primary/30"
+                            data-title="{{ item.title | default: '' }}"
+                            data-year="{{ item.year | default: '' }}"
+                            data-mileage="{{ item.mileage | default: '' }}"
+                            data-price="{{ item.price | default: '' }}">
                             <a href="vehicle.html?id={{ item.id }}&tab=past" class="block relative aspect-[16/10] overflow-hidden">
                                 <!-- Image Carousel Container -->
                                 <div class="carousel-container relative w-full h-full overflow-hidden" data-slides="{% if item.images %}{{ item.images.size }}{% else %}1{% endif %}">
