@@ -463,4 +463,36 @@
     - "assets/images/vehicles/local/crv28.jpeg"
     - "assets/images/vehicles/local/crv29.jpeg"
 
+- id: "y3c8d9e0f"
+  title: "Toyota Wish"
+  year: "2011"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  drive_type: "FWD"
+  engine_model: "2ZR-FE"
+  engine_size: "1.8L"
+  color: "Silver"
+  doors: "5"
+  seats: "7"
+  wheel_size: "17 inches"
+  chassis_id: "ZNE14-1234567"
+  mileage: "210,000 km"
+  price: "KES 1,000,000"
+  badge: "Available for Viewing at Ngara"
+  efficiency: "12-14 km/l"
+  paid_for: false
+  listed_date: "2026-08-17"
+  active: true
+  images:
+    - "assets/images/vehicles/local/wish1.jpeg"
+    - "assets/images/vehicles/local/wish2.jpeg"
+    - "assets/images/vehicles/local/wish3.jpeg"
+    - "assets/images/vehicles/local/wish4.jpeg"
+    - "assets/images/vehicles/local/wish5.jpeg"
+    - "assets/images/vehicles/local/wish6.jpeg"
+    - "assets/images/vehicles/local/wish7.jpeg"
+    - "assets/images/vehicles/local/wish8.jpeg"
+    - "assets/images/vehicles/local/wish9.jpeg"
+
   
