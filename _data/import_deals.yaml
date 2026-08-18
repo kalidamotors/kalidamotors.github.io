@@ -80,3 +80,81 @@ deals:
       - assets/images/vehicles/deals/vezel10.jpeg
       - assets/images/vehicles/deals/vezel11.jpeg
       - assets/images/vehicles/deals/vezel12.jpeg
+
+  - id: outlander-2019-c9h4
+    title: Mitsubishi Outlander
+    subtitle: PHEV G Premium Package
+    price: KES 2,750,000
+    savings_text: Save KES 800,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2019"
+    grade: "4.5"
+    mileage: "107000 km"
+    fuel: "Petrol / Plug-in Hybrid"
+    transmission: "Auto"
+    engine_size: "2.4L"
+    # savings: "KES 450,000"
+    drive_type: "S-AWC 4WD"
+    color: "Black"
+    seats: "5 Seater"
+    chassis_id: "LA-GG3W"
+    engine_model: "4B12-MIVEC"
+    airbags: "7 (Front, Side, Curtain, Driver Knee)"
+    wheel_size: "18-inch Alloy Wheels"
+    safety_systems: "e-Assist (FCM, LDW, ACC, BSW)"
+    doors: "5"
+    efficiency: "18.6 km/l (EV Range ~55 km)"
+    images: 
+      - assets/images/vehicles/deals/outlander1.jpeg
+      - assets/images/vehicles/deals/outlander2.jpeg
+      - assets/images/vehicles/deals/outlander3.jpeg
+      - assets/images/vehicles/deals/outlander4.jpeg
+      - assets/images/vehicles/deals/outlander5.jpeg
+      - assets/images/vehicles/deals/outlander6.jpeg
+      - assets/images/vehicles/deals/outlander7.jpeg
+
+  - id: subaru-xv-2019-d1j5
+    title: Subaru XV
+    subtitle: Advance e-BOXER
+    price: KES 2,000,000
+    savings_text: Save KES 600,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2019"
+    grade: "4.5"
+    mileage: "91,000 km"
+    fuel: "Petrol / Mild-Hybrid (e-BOXER)"
+    transmission: "Lineartronic CVT"
+    engine_size: "2.0L"
+    # savings: "KES 350,000"
+    drive_type: "Symmetrical AWD"
+    color: "Lagoon Blue Pearl"
+    seats: "5 Seater"
+    chassis_id: "5AA-GTE"
+    engine_model: "FB20-MA1"
+    airbags: "7 (Front, Side, Curtain, Driver Knee)"
+    wheel_size: "18-inch Alloy Wheels"
+    safety_systems: "Subaru EyeSight Ver.3"
+    doors: "5"
+    efficiency: "19.2 km/l"
+    images: 
+      - assets/images/vehicles/deals/xv1.jpeg
+      - assets/images/vehicles/deals/xv2.jpeg
+      - assets/images/vehicles/deals/xv3.jpeg
+      - assets/images/vehicles/deals/xv4.jpeg
+      - assets/images/vehicles/deals/xv5.jpeg
+      - assets/images/vehicles/deals/xv6.jpeg
+      - assets/images/vehicles/deals/xv7.jpeg
+      - assets/images/vehicles/deals/xv8.jpeg
+      - assets/images/vehicles/deals/xv9.jpeg
+      - assets/images/vehicles/deals/xv10.jpeg
+      - assets/images/vehicles/deals/xv11.jpeg
+      - assets/images/vehicles/deals/xv12.jpeg
+      - assets/images/vehicles/deals/xv13.jpeg
+      - assets/images/vehicles/deals/xv14.jpeg
+      - assets/images/vehicles/deals/xv15.jpeg
+      - assets/images/vehicles/deals/xv16.jpeg
+      - assets/images/vehicles/deals/xv17.jpeg
+      - assets/images/vehicles/deals/xv18.jpeg
+      - assets/images/vehicles/deals/xv19.jpeg
