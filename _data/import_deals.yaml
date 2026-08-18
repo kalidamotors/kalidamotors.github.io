@@ -12,7 +12,7 @@ deals:
     cta_text: Grab this deal
     year: "2019"
     grade: "4.5"
-    mileage: "82k km"
+    mileage: "82000 km"
     fuel: "Petrol"
     transmission: "Auto"
     engine_size: "2L"
@@ -43,7 +43,7 @@ deals:
       - assets/images/vehicles/deals/xtrail14.jpeg
       - assets/images/vehicles/deals/xtrail15.jpeg
 
-  - id: vezel-2019-
+  - id: vezel-2019-b8g3
     title: Honda Vezel
     subtitle: Hybrid Z
     price: KES 2,300,000
@@ -52,7 +52,7 @@ deals:
     cta_text: Grab this deal
     year: "2019"
     grade: "4"
-    mileage: "63k km"
+    mileage: "63000 km"
     fuel: "Petrol"
     transmission: "Auto"
     engine_size: "1.5L"
@@ -80,4 +80,3 @@ deals:
       - assets/images/vehicles/deals/vezel10.jpeg
       - assets/images/vehicles/deals/vezel11.jpeg
       - assets/images/vehicles/deals/vezel12.jpeg
-      
