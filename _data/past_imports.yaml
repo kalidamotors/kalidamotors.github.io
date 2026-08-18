@@ -1160,7 +1160,7 @@
       date_completed: "2026-07-06"
       details: "Vehicle has passed inspection and is ready for shipping."
     - step: "Shipping"
-      date_completed: null
+      date_completed: "2026-08-17"
       details: "Vehicle has been shipped and is currently in transit to Kenya."
       shipping_details:
         carrier: "Glovis Sirius"
