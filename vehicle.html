@@ -108,7 +108,7 @@
                             <h1 id="vehicleTitle" class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2"></h1>
                             <div class="flex flex-wrap gap-2">
                                 <span id="vehicleBadge"
-                                    class="bg-green-600/90 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                    class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
                                 </span>
                                 <!-- <span id="verifiedImportBadge"
                                     class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
@@ -452,7 +452,10 @@
             // Update vehicle-specific badge
             const vehicleBadge = document.getElementById('vehicleBadge');
             if (vehicle.badge) {
-                vehicleBadge.textContent = vehicle.badge;
+                const badgeText = String(vehicle.badge);
+                const isSoldBadge = badgeText.toLowerCase() === 'sold';
+                vehicleBadge.textContent = badgeText;
+                vehicleBadge.className = 'text-white text-xs font-bold px-3 py-1 rounded-full ' + (isSoldBadge ? 'bg-green-600/90' : 'bg-primary');
                 vehicleBadge.style.display = 'inline-block';
             } else {
                 vehicleBadge.style.display = 'none';

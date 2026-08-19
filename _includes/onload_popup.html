@@ -37,8 +37,10 @@
                     class="deal-card hidden w-full max-w-sm bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-lg group hover:shadow-xl transition-all border border-transparent hover:border-primary/20 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40">
                     <div class="aspect-[16/10] relative overflow-hidden">
                         {% if deal.badge %}
+                        {% assign deal_badge = deal.badge | default: '' %}
+                        {% assign is_deal_sold = deal_badge | downcase == 'sold' %}
                         <div class="absolute top-3 left-3 z-10">
-                            <span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded shadow-lg">{{ deal.badge }}</span>
+                            <span class="{% if is_deal_sold %}bg-green-600/90{% else %}bg-primary{% endif %} text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded shadow-lg">{{ deal_badge }}</span>
                         </div>
                         {% endif %}
                         <div class="w-full h-full bg-slate-100 group-hover:scale-105 transition-transform duration-700 bg-cover bg-center"

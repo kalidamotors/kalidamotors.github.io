@@ -215,9 +215,10 @@
                             {% endif %}
                         </div>
 
-                        <div
-                            class="absolute top-3 left-3 bg-green-600/90 backdrop-blur-sm text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full z-10">
-                            {{ vehicle.badge }}
+                        {% assign vehicle_badge = vehicle.badge | default: '' %}
+                        {% assign is_sold_badge = vehicle_badge | downcase == 'sold' %}
+                        <div class="absolute top-3 left-3 {% if is_sold_badge %}bg-green-600/90{% else %}bg-primary/90{% endif %} backdrop-blur-sm text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full z-10">
+                            {{ vehicle_badge }}
                         </div>
                     </a>
                     <div class="p-5">
@@ -267,9 +268,10 @@
                         <div class="absolute inset-0 bg-cover bg-center bg-slate-300" loading="lazy"
                             data-src="{{ deal_image }}" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1 1%22%3E%3Crect fill=%22%23cbd5e1%22 width=%221%22 height=%221%22/%3E%3C/svg%3E');"></div>
                         {% if deal.badge %}
-                        <div
-                            class="absolute top-3 left-3 bg-primary/90 backdrop-blur-sm text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full z-10">
-                            {{ deal.badge }}
+                        {% assign deal_badge = deal.badge | default: '' %}
+                        {% assign is_deal_sold_badge = deal_badge | downcase == 'sold' %}
+                        <div class="absolute top-3 left-3 {% if is_deal_sold_badge %}bg-green-600/90{% else %}bg-primary/90{% endif %} backdrop-blur-sm text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full z-10">
+                            {{ deal_badge }}
                         </div>
                         {% endif %}
                     </a>
