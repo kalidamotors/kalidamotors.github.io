@@ -495,4 +495,35 @@
     - "assets/images/vehicles/local/wish8.jpeg"
     - "assets/images/vehicles/local/wish9.jpeg"
 
-  
+- id: "z4d9e0f1g"
+  title: "Mitsubishi Pajero IO"
+  year: "1999"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  drive_type: "4WD"
+  engine_model: "4G93"
+  engine_size: "1.8L"
+  color: "White"
+  doors: "5"
+  seats: "5"
+  wheel_size: "15 inches"
+  chassis_id: "H66W-1234567"
+  mileage: "253000 km"
+  price: "KES 700,000"
+  badge: "Available for Viewing at Thome"
+  efficiency: "10-12 km/l"
+  paid_for: false
+  listed_date: "2026-08-20"
+  active: true
+  additional_info: "Full set of windbreakers, full set of Dunlop tyres, recently repainted, logo badges replaced, one owner, full service history"
+  images:
+    - "assets/images/vehicles/local/pajeroio1.jpeg"
+    - "assets/images/vehicles/local/pajeroio2.jpeg"
+    - "assets/images/vehicles/local/pajeroio3.jpeg"
+    - "assets/images/vehicles/local/pajeroio4.jpeg"
+    - "assets/images/vehicles/local/pajeroio5.jpeg"
+    - "assets/images/vehicles/local/pajeroio6.jpeg"
+    - "assets/images/vehicles/local/pajeroio7.jpeg"
+    - "assets/images/vehicles/local/pajeroio8.jpeg"
+   
