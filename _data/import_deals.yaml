@@ -202,3 +202,45 @@ deals:
       - assets/images/vehicles/deals/vezel2_16.jpeg
       - assets/images/vehicles/deals/vezel2_17.jpeg
       - assets/images/vehicles/deals/vezel2_18.jpeg
+
+  - id: honda-vezel-2021-f3l7
+    title: Honda Vezel
+    subtitle: Hybrid Z
+    price: KES 3,500,000
+    savings_text: Save KES 700,000 vs Local
+    badge: Reserved
+    cta_text: Grab this deal
+    year: "2021"
+    grade: "4.5"
+    mileage: "34000 km"
+    fuel: "Petrol"
+    transmission: "Auto"
+    engine_size: "1.5L"
+    # savings: "KES 400,000"
+    drive_type: "FWD"
+    color: "Black"
+    seats: "5 Seater"
+    chassis_id: "6AA-RV5"
+    engine_model: "LEB-H1"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "Honda Sensing"
+    doors: "5"
+    efficiency: "20.1 km/l"
+    images: 
+      - assets/images/vehicles/deals/vezel3_1.jpeg
+      - assets/images/vehicles/deals/vezel3_2.jpeg
+      - assets/images/vehicles/deals/vezel3_3.jpeg
+      - assets/images/vehicles/deals/vezel3_4.jpeg
+      - assets/images/vehicles/deals/vezel3_5.jpeg
+      - assets/images/vehicles/deals/vezel3_6.jpeg
+      - assets/images/vehicles/deals/vezel3_7.jpeg
+      - assets/images/vehicles/deals/vezel3_8.jpeg
+      - assets/images/vehicles/deals/vezel3_9.jpeg
+      - assets/images/vehicles/deals/vezel3_10.jpeg
+      - assets/images/vehicles/deals/vezel3_11.jpeg
+      - assets/images/vehicles/deals/vezel3_12.jpeg
+      - assets/images/vehicles/deals/vezel3_13.jpeg
+      - assets/images/vehicles/deals/vezel3_14.jpeg
+      - assets/images/vehicles/deals/vezel3_15.jpeg
+      - assets/images/vehicles/deals/vezel3_16.jpeg
