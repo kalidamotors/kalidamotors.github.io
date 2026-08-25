@@ -1301,6 +1301,7 @@
   safety_systems: "Speed Limit Recognition and Recommendation, Driver Attention Alert, Lane Keeping Assist, Blind Spot Monitoring, Rear Cross Traffic Alert, 360-Degree Camera System"
   doors: "5"
   efficiency: "17-19 km/l"
+  additional_features: "Panoramic Sunroof, 360-Degree Camera, Adaptive Cruise Control, Lane Departure Warning, Automatic Emergency Braking"
   images:
     - "assets/images/vehicles/past_imports/5008_1.jpeg"
     - "assets/images/vehicles/past_imports/5008_2.jpeg"
@@ -1706,14 +1707,14 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-08-18"
-  current_status: "Payment pending"
+  current_status: "Inspection pending"
   estimated_delivery: "October 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-08-18"
       details: "Successfully won the bid for the vehicle at the auction."
     - step: "Payment Processing"
-      date_completed: null
+      date_completed: "2026-08-25"
       details: "Payment is pending for the vehicle."
     - step: "Vehicle Inspection"
       date_completed: null

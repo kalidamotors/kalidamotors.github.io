@@ -214,12 +214,12 @@
                         </div>
                     </div>
                 </section>
-                <section id="additionalInfoSection" class="hidden bg-white p-6 rounded-xl border border-[#f0f2f4] mt-6">
+                <section id="additionalFeaturesSection" class="hidden bg-white p-6 rounded-xl border border-[#f0f2f4] mt-6">
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
                         <span class="material-symbols-outlined text-primary">note_stack</span>
-                        Additional Info
+                        Additional Features
                     </h3>
-                    <p id="additionalInfoText" class="text-sm leading-relaxed text-[#111418]"></p>
+                    <p id="additionalFeaturesText" class="text-sm leading-relaxed text-[#111418]"></p>
                 </section>
             </div>
             <!-- Right Column: Sidebar / CTA -->
@@ -487,14 +487,14 @@
             document.getElementById('conditionSpec').textContent = vehicle.grade || 'N/A';
             document.getElementById('efficiencySpec').textContent = vehicle.efficiency || 'N/A';
 
-            const additionalInfoSection = document.getElementById('additionalInfoSection');
-            const additionalInfoText = document.getElementById('additionalInfoText');
-            const vehicleAdditionalInfo = vehicle.additional_info || vehicle.additionalInfo || '';
-            if (vehicleAdditionalInfo && String(vehicleAdditionalInfo).trim()) {
-                additionalInfoText.textContent = vehicleAdditionalInfo;
-                additionalInfoSection.classList.remove('hidden');
+            const additionalFeaturesSection = document.getElementById('additionalFeaturesSection');
+            const additionalFeaturesText = document.getElementById('additionalFeaturesText');
+            const vehicleAdditionalFeatures = vehicle.additional_features || vehicle.additionalFeatures || vehicle.additional_info || vehicle.additionalInfo || '';
+            if (vehicleAdditionalFeatures && String(vehicleAdditionalFeatures).trim()) {
+                additionalFeaturesText.textContent = vehicleAdditionalFeatures;
+                additionalFeaturesSection.classList.remove('hidden');
             } else {
-                additionalInfoSection.classList.add('hidden');
+                additionalFeaturesSection.classList.add('hidden');
             }
             
             // Populate images
