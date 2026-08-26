@@ -208,7 +208,7 @@ deals:
     subtitle: Hybrid Z
     price: KES 3,500,000
     savings_text: Save KES 700,000 vs Local
-    badge: Reserved
+    badge: Direct Import Deal
     cta_text: Grab this deal
     year: "2021"
     grade: "4.5"
@@ -244,3 +244,68 @@ deals:
       - assets/images/vehicles/deals/vezel3_14.jpeg
       - assets/images/vehicles/deals/vezel3_15.jpeg
       - assets/images/vehicles/deals/vezel3_16.jpeg
+
+  - id: mazda-cx-5-2021-g4m8
+    title: Mazda CX-5
+    subtitle: 2.2L Diesel AWD
+    price: KES 3200000
+    savings_text: Save KES 800,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2021"
+    grade: "4"
+    mileage: "130000 km"
+    fuel: "Diesel"
+    transmission: "Auto"
+    engine_size: "2.2L"
+    # savings: "KES 400,000"
+    drive_type: "AWD"
+    color: "Black"
+    seats: "5 Seater"
+    chassis_id: " 3DA-KF2P"
+    engine_model: "SH-VPTS"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "19-inch Alloy Wheels"
+    safety_systems: "i-Activsense (FCM, LDW, ACC, BSW)"
+    doors: "5"
+    efficiency: "17-19 km/l"
+    additional_features: "Sunroof, 360-Degree Camera, Adaptive Cruise Control, Lane Departure Warning, Automatic Emergency Braking, leather seats, Apple CarPlay, Android Auto, digital instrument cluster, keyless entry, push-button start, dual-zone climate control, heated seats, power-adjustable driver's seat, rain-sensing wipers, LED headlights, and more."
+    images: 
+      - assets/images/vehicles/deals/cx5_1.jpeg
+      - assets/images/vehicles/deals/cx5_2.jpeg
+      - assets/images/vehicles/deals/cx5_3.jpeg
+      - assets/images/vehicles/deals/cx5_4.jpeg
+      - assets/images/vehicles/deals/cx5_5.jpeg
+
+  - id: forester-2019-h5n9
+    title: Subaru Forester
+    subtitle: 2.0i-L Advance
+    price: KES 3,200,000
+    savings_text: Save KES 700,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2019"
+    grade: "4"
+    mileage: "107000 km"
+    fuel: "Petrol"
+    transmission: "Auto"
+    engine_size: "2.0L"
+    # savings: "KES 400,000"
+    drive_type: "Symmetrical AWD"
+    color: "White"
+    seats: "5 Seater"
+    chassis_id: "DBA-SKE"
+    engine_model: "FB20-MA1"
+    airbags: "7 (Front, Side, Curtain, Driver Knee)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "Subaru EyeSight Ver.3"
+    doors: "5"
+    efficiency: "17-19 km/l"
+    additional_features: "360-Degree Camera, Adaptive Cruise Control, Lane Departure Warning, Automatic Emergency Braking, leather seats, Apple CarPlay, Android Auto, digital instrument cluster, keyless entry, push-button start, dual-zone climate control, heated seats, power-adjustable driver's seat, rain-sensing wipers, LED headlights, and more."
+    images:
+      - assets/images/vehicles/deals/forester1.jpeg
+      - assets/images/vehicles/deals/forester2.jpeg
+      - assets/images/vehicles/deals/forester3.jpeg
+      - assets/images/vehicles/deals/forester4.jpeg
+      - assets/images/vehicles/deals/forester5.jpeg
+      - assets/images/vehicles/deals/forester6.jpeg
