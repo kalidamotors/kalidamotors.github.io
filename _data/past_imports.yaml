@@ -1317,11 +1317,11 @@
     - "assets/images/vehicles/past_imports/5008_13.jpeg"
     - "assets/images/vehicles/past_imports/5008_14.jpeg"
     - "assets/images/vehicles/past_imports/5008_15.jpeg"
-  badge: "Awaiting Clearance at Mombasa Port"
+  badge: "Delivered to Nairobi"
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-07-04"
-  current_status: "Customs clearance pending"
+  current_status: "Delivered to Nairobi"
   estimated_delivery: "September 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1340,10 +1340,10 @@
         carrier: "ARABIAN SEA"
         estimated_arrival: "2026-08-23"
     - step: "Customs Clearance"
-      date_completed: null
+      date_completed: "2026-08-25"
       details: "Awaiting customs clearance in Kenya."
     - step: "Final Delivery"
-      date_completed: null
+      date_completed: "2026-08-29"
       details: "Estimated delivery to client's location in Mombasa."
 
 - id: "x0h6y2z5b"
@@ -1725,6 +1725,60 @@
       # shipping_details:
       #   carrier: "Gentle Leader"
       #   estimated_arrival: "2026-09-20"
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya after arrival."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Nairobi after customs clearance."
+
+- id: "f6g7h8i9j"
+  tracking_id: "KM-06F7G8H"
+  title: "Mazda 3"
+  subtitle: "L Package | 2.0L"
+  year: "2019"
+  grade: "4"
+  mileage: "101000 km"
+  fuel: "Petrol"
+  transmission: "Auto"
+  engine_size: "2.0L"
+  price: "KES 1,200,000 CNF"
+  drive_type: "FWD"
+  color: "Black"
+  seats: "5 Seater"
+  chassis_id: "BPFP"
+  engine_model: "PE-VPS"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "16-inch Alloy"
+  safety_systems: "Mazda Safety Shield, Lane Departure Warning, Blind Spot Monitoring, Adaptive Cruise Control"
+  doors: "5"
+  efficiency: "12-15 km/l (combined)"
+  images:
+    - "assets/images/vehicles/past_imports/mazda3_1.jpeg"
+    - "assets/images/vehicles/past_imports/mazda3_2.jpeg"
+    - "assets/images/vehicles/past_imports/mazda3_3.jpeg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  auction_date: "2026-08-26"
+  current_status: "Inspection pending"
+  estimated_delivery: "November 2026"
+  import_steps_completed:
+    - step: "Auction Bidding"
+      date_completed: "2026-08-26"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: "2026-08-27"
+      details: "Payment is processed for the vehicle."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle inspection will be scheduled after payment confirmation."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle will be shipped after inspection and preparation."
+      # shipping_details:
+      #   carrier: "Gentle Leader"
+      #   estimated_arrival: "2026-09-25"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya after arrival."
