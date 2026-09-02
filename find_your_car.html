@@ -238,6 +238,7 @@
             estimated_total_cost: {{ car.estimated_total_cost }},
             image: "{{ car.image }}",
             short_description: "{{ car.short_description | strip_html }}",
+            costs: {{ car.costs | jsonify }},
             highlights: [
                 {% for highlight in car.highlights %}
                 "{{ highlight }}"{% unless forloop.last %},{% endunless %}
@@ -671,7 +672,36 @@
      */
     function createRecommendationCard(car) {
         const badge = getPickBadge(car);
-        
+        // If per-car cost fields exist in `site.data.cars`, build a hidden breakdown panel.
+        const idSafe = (car.slug || car.name || '').toString().replace(/[^a-z0-9_-]/gi, '_').toLowerCase();
+        let breakdownHtml = '';
+        if (car.costs && (car.costs.cnf || car.costs.customs || car.costs.clearance || car.costs.service_fee)) {
+            const cnf = car.costs.cnf ? Number(car.costs.cnf) : null;
+            const customs = car.costs.customs ? Number(car.costs.customs) : null;
+            const clearance = car.costs.clearance ? Number(car.costs.clearance) : null;
+            const serviceFee = car.costs.service_fee ? Number(car.costs.service_fee) : null;
+
+            breakdownHtml = `
+                    <div id="breakdown-${idSafe}" style="display:none;" class="p-4 bg-surface-container-low rounded-lg mb-6">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Estimated cost breakdown</p>
+                        <div class="text-sm text-slate-600 space-y-2">
+                            ${cnf !== null ? `<div class="flex justify-between items-center"><div class="text-slate-500">Cost & Freight (CNF Mombasa)</div><div class="font-black text-slate-900">${formatKES(cnf)}</div></div>` : ''}
+                            ${customs !== null ? `<div class="flex justify-between items-center"><div class="text-slate-500">Customs (duties & taxes)</div><div class="font-black text-slate-900">${formatKES(customs)}</div></div>` : ''}
+                            ${clearance !== null ? `<div class="flex justify-between items-center"><div class="text-slate-500">Clearance (port & ntsa)</div><div class="font-black text-slate-900">${formatKES(clearance)}</div></div>` : ''}
+                            ${serviceFee !== null ? `<div class="flex justify-between items-center"><div class="text-slate-500">Service fee (Kalida admin fee)</div><div class="font-black text-slate-900">${formatKES(serviceFee)}</div></div>` : ''}
+                        </div>
+                        <p class="text-[11px] text-slate-400 mt-3">💡 Prices are estimates and may vary based on car condition, mileage, auction outcomes and government taxes.</p>
+                    </div>
+            `;
+        } else {
+            // If no breakdown provided, render a hidden placeholder that explains how to add data
+            breakdownHtml = `
+                    <div id="breakdown-${idSafe}" style="display:none;" class="p-4 bg-surface-container-low rounded-lg mb-6">
+                        <p class="text-sm text-slate-600">Cost breakdown not available</p>
+                    </div>
+            `;
+        }
+
         return `
             <div class="group bg-surface border border-outline/50 rounded-xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                 <div class="aspect-[16/10] relative overflow-hidden bg-slate-200">
@@ -684,7 +714,12 @@
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight">${car.name}</h3>
                         <div class="text-right">
-                            <div class="text-primary font-black text-lg">${formatKES(car.estimated_total_cost)}</div>
+                            <div class="flex items-center justify-end gap-1">
+                                    <div class="text-primary font-black text-lg">${formatKES(car.estimated_total_cost)}</div>
+                                    <button onclick="toggleBreakdown('${idSafe}')" aria-controls="breakdown-${idSafe}" aria-expanded="false" class="text-slate-400 hover:text-primary p-0.5 rounded text-sm" title="Show cost breakdown">
+                                        <span class="material-symbols-outlined text-[16px]" style="font-variation-settings:'FILL' 0">info</span>
+                                    </button>
+                                </div>
                             <div class="text-[10px] text-slate-400 font-semibold mt-0.5">estimate</div>
                         </div>
                     </div>
@@ -698,6 +733,7 @@
                             <p class="text-sm text-slate-600 leading-relaxed whitespace-nowrap min-w-max">${car.short_description}</p>
                         </div>
                     </div>
+                    ${breakdownHtml}
                     <a href="/inquiry?car=${encodeURIComponent(car.name)}" class="w-full border border-primary text-primary py-3 rounded-lg font-bold text-sm hover:bg-primary hover:text-white transition-all text-center block">Start Inquiry</a>
                 </div>
             </div>
@@ -848,6 +884,17 @@
             }
         });
     });
+
+    // Toggle a breakdown panel by id (show/hide)
+    function toggleBreakdown(id) {
+        const panel = document.getElementById(`breakdown-${id}`);
+        if (!panel) return;
+        const isHidden = panel.style.display === 'none' || getComputedStyle(panel).display === 'none';
+        panel.style.display = isHidden ? 'block' : 'none';
+
+        const btn = document.querySelector(`[aria-controls="breakdown-${id}"]`);
+        if (btn) btn.setAttribute('aria-expanded', String(isHidden));
+    }
 
 </script>
 
