@@ -309,3 +309,44 @@ deals:
       - assets/images/vehicles/deals/forester4.jpeg
       - assets/images/vehicles/deals/forester5.jpeg
       - assets/images/vehicles/deals/forester6.jpeg
+
+  - id: mazda6-2020-i6o1
+    title: Mazda 6
+    subtitle: 20S Proactive
+    price: KES 2,356,169
+    costs:
+      cnf: 1369900
+      customs: 836269
+      clearance: 80000
+      service_fee: 70000
+    savings_text: Save KES 400,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2020"
+    grade: "4"
+    mileage: "87000 km"
+    fuel: "Petrol"
+    transmission: "Auto"
+    engine_size: "2L"
+    drive_type: "FWD"
+    color: "Brown"
+    seats: "5 Seater"
+    chassis_id: "6BA-GJEFW"
+    engine_model: "PE-VPS"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "19-inch Alloy Wheels"
+    safety_systems: "i-Activsense (FCM, LDW, ACC, BSW)"
+    doors: "4"
+    efficiency: "14-16 km/l"
+    additional_features: "Adaptive Cruise Control, Lane Departure Warning, Automatic Emergency Braking, keyless entry, push-button start, dual-zone climate control, power-adjustable driver's seat, rain-sensing wipers, LED headlights."
+    images:
+      - assets/images/vehicles/deals/mazda6_1.jpeg
+      - assets/images/vehicles/deals/mazda6_2.jpeg
+      - assets/images/vehicles/deals/mazda6_3.jpeg
+      - assets/images/vehicles/deals/mazda6_4.jpeg
+      - assets/images/vehicles/deals/mazda6_5.jpeg
+      - assets/images/vehicles/deals/mazda6_6.jpeg
+      - assets/images/vehicles/deals/mazda6_7.jpeg
+      - assets/images/vehicles/deals/mazda6_8.jpeg
+      - assets/images/vehicles/deals/mazda6_9.jpeg
+      - assets/images/vehicles/deals/mazda6_10.jpeg
