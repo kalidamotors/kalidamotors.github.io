@@ -1653,7 +1653,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-08-01"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "October 2026"
   import_steps_completed:
     - step: "Auction Bidding" 
