@@ -2231,6 +2231,11 @@
 - name: Toyota Premio
   slug: toyota-premio
   estimated_total_cost: 2513241
+  costs:
+    cnf: 1460000
+    customs: 873241
+    clearance: 80000
+    service_fee: 100000
   category: Sedan
   image: /assets/images/vehicles/cars/premio.jpeg
 
@@ -2253,6 +2258,11 @@
 - name: Mercedes Benz C200
   slug: mercedes-c200
   estimated_total_cost: 3361686
+  costs:
+    cnf: 1974823
+    customs: 1201863
+    clearance: 85000
+    service_fee: 100000
   category: Sedan
   image: /assets/images/vehicles/cars/c200.jpeg
 
@@ -2362,7 +2372,12 @@
 
 - name: Lexus LX 570
   slug: lexus-lx-570
-  estimated_total_cost: 11109400
+  estimated_total_cost: 10605530
+  costs:
+    cnf: 6784800
+    customs: 3360730
+    clearance: 100000
+    service_fee: 360000
   category: SUV
   image: /assets/images/vehicles/cars/lx570.jpeg
 
