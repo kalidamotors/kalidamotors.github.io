@@ -1,6 +1,11 @@
 - name: Mazda CX-3
   slug: mazda-cx3
   estimated_total_cost: 2304007
+  costs:
+    cnf: 1349007
+    customs: 805000
+    clearance: 80000
+    service_fee: 70000
   category: Crossover
   image: /assets/images/vehicles/cars/cx3.jpg
 
@@ -22,6 +27,11 @@
 - name: Toyota RAV4
   slug: toyota-rav4
   estimated_total_cost: 3279253
+  costs:
+    cnf: 2200000
+    customs: 
+    clearance: 304007
+    service_fee: 80000
   category: SUV
   image: /assets/images/vehicles/cars/rav4.jpg
 
@@ -470,7 +480,12 @@
 
 - name: Subaru XV
   slug: subaru-xv
-  estimated_total_cost: 2340500
+  estimated_total_cost: 2187548
+  costs:
+    cnf: 1349000
+    customs: 693548
+    clearance: 75000
+    service_fee: 70000
   category: Crossover
   image: /assets/images/vehicles/cars/xv.jpg
 
@@ -1550,6 +1565,11 @@
 - name: Lexus RX300
   slug: lexus-rx300
   estimated_total_cost: 4310969
+  costs:
+    cnf: 2558398
+    customs: 1557571
+    clearance: 85000
+    service_fee: 110000
   category: SUV
   image: /assets/images/vehicles/cars/rx300.jpg
 
@@ -1832,6 +1852,11 @@
 - name: Mazda Mazda6
   slug: mazda-mazda6
   estimated_total_cost: 2696878
+  costs:
+    cnf: 1680609
+    customs: 836269
+    clearance: 80000
+    service_fee: 100000
   category: Sedan
   image: /assets/images/vehicles/cars/mazda6.jpg
 
@@ -2382,6 +2407,11 @@
 - name: Landrover Defender 110 
   slug: landrover-defender-110
   estimated_total_cost: 15075898
+  costs:
+    cnf: 8300000
+    customs: 6075898
+    clearance: 100000
+    service_fee: 600000
   category: SUV
   image: /assets/images/vehicles/cars/defender110.jpeg
 
@@ -2391,6 +2421,195 @@
     - Off-road enthusiasts seeking a capable and luxurious SUV
     - Urban commuters looking for a stylish and well-equipped vehicle
     - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Advanced off-road capabilities
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Mercedes Benz B180
+  slug: mercedes-b180
+  estimated_total_cost: 2306435
+  costs:
+    cnf: 1300000
+    customs: 861435
+    clearance: 75000
+    service_fee: 100000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/b180.jpeg
+
+  short_description: A premium hatchback that combines elegant styling, refined comfort, and smooth turbocharged performance with advanced Mercedes-Benz technology.
+
+  ideal_for:
+    - Young professionals seeking a luxury hatchback
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Stylish and modern design
+    - Advanced features and technology
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Toyota Yaris Cross
+  slug: toyota-yaris-cross
+  estimated_total_cost: 2497515
+  costs:
+    cnf: 1689072
+    customs: 663443
+    clearance: 75000
+    service_fee: 70000
+  category: Crossover SUV
+  image: /assets/images/vehicles/cars/yariscross.jpeg
+
+  short_description: A compact and fuel-efficient crossover that combines stylish design, modern technology, and practical performance for urban driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mercedes Benz GLE 63S
+  slug: mercedes-gle-63s
+  estimated_total_cost: 13537685
+  costs:
+    cnf: 6700000
+    customs: 6737685
+    clearance: 100000
+    service_fee: 450000
+  category: SUV
+  image: /assets/images/vehicles/cars/gle63s.jpeg
+
+  short_description: A high-performance luxury SUV that combines powerful AMG performance, advanced technology, and a stylish design for an exhilarating driving experience.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium full-size car
+
+  highlights:
+    - Powerful AMG engine options
+    - Advanced performance features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Daihatsu Move
+  slug: daihatsu-move
+  estimated_total_cost: 1022658
+  costs:
+    cnf: 600000
+    customs: 277658
+    clearance: 75000
+    service_fee: 70000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/move.jpeg
+
+  short_description: A compact and fuel-efficient hatchback that combines practical design, modern technology, and reliable performance for urban driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical hatchback
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Nissan Elgrand
+  slug: nissan-elgrand
+  estimated_total_cost: 2595029
+  costs:
+    cnf: 1376000
+    customs: 1044029
+    clearance: 80000
+    service_fee: 95000
+  category: Minivan
+  image: /assets/images/vehicles/cars/elgrand.jpeg
+
+  short_description: A premium minivan that combines spacious interior, advanced technology, and refined comfort for family and long-distance travel.
+
+  ideal_for:
+    - Families needing a versatile and spacious vehicle
+    - Those seeking a reliable and premium family car
+    - Buyers looking for a car for uber or bolt services
+
+  highlights:
+    - Spacious interior with flexible seating arrangements
+    - Luxurious design with advanced features
+    - Comfortable ride for all passengers
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Toyota Landcruiser J250
+  slug: toyota-landcruiser-j250
+  estimated_total_cost: 12467354
+  costs:
+    cnf: 6700000
+    customs: 5217354
+    clearance: 100000
+    service_fee: 450000
+  category: SUV
+  image: /assets/images/vehicles/cars/j250.jpeg
+
+  short_description: A rugged and capable full-size SUV that combines off-road performance, advanced technology, and refined comfort for both urban and adventurous driving.
+
+  ideal_for:
+    - Off-road enthusiasts seeking a capable and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium full-size car
+
+  highlights:
+    - Powerful engine options
+    - Advanced off-road capabilities
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Landrover Defender
+  slug: landrover-defender
+  estimated_total_cost: 13325898
+  costs:
+    cnf: 6700000
+    customs: 6075898
+    clearance: 100000
+    service_fee: 450000
+  category: SUV
+  image: /assets/images/vehicles/cars/defender.jpeg
+
+  short_description: A compact and capable off-road SUV that combines advanced technology, refined comfort, and a stylish design for both urban and adventurous driving.
+
+  ideal_for:
+    - Off-road enthusiasts seeking a capable and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact SUV
 
   highlights:
     - Powerful engine options
