@@ -28,10 +28,10 @@
   slug: toyota-rav4
   estimated_total_cost: 3279253
   costs:
-    cnf: 2200000
-    customs: 
-    clearance: 304007
-    service_fee: 80000
+    cnf: 2124314
+    customs: 969939
+    clearance: 85000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/rav4.jpg
 
@@ -52,7 +52,12 @@
 
 - name: Honda CR-V
   slug: honda-crv
-  estimated_total_cost: 2865111
+  estimated_total_cost: 3311372
+  costs:
+    cnf: 1861400
+    customs: 1254972
+    clearance: 85000
+    service_fee: 110000
   category: SUV
   image: /assets/images/vehicles/cars/crv.jpg
 
@@ -72,6 +77,11 @@
 - name: Subaru Forester
   slug: subaru-forester
   estimated_total_cost: 2694621
+  costs:
+    cnf: 1278181
+    customs: 1236440
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/forester.jpg
 
@@ -94,6 +104,11 @@
 - name: Nissan X-Trail
   slug: nissan-xtrail
   estimated_total_cost: 2438141
+  costs:
+    cnf: 1491041
+    customs: 802100
+    clearance: 75000
+    service_fee: 70000
   category: SUV
   image: /assets/images/vehicles/cars/xtrail.jpg
 
@@ -138,6 +153,11 @@
 - name: Mazda CX-5
   slug: mazda-cx5
   estimated_total_cost: 2675535
+  costs: 
+    cnf: 1575495
+    customs: 920040
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/cx5.jpg
 
@@ -182,6 +202,11 @@
 - name: Toyota Vitz
   slug: toyota-vitz
   estimated_total_cost: 1289516
+  costs:
+    cnf: 851516
+    customs: 293000
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/vitz.jpg
 
@@ -222,6 +247,11 @@
 - name: Nissan Note E12
   slug: note-epower-e12
   estimated_total_cost: 1281694
+  costs:
+    cnf: 642537
+    customs: 494157
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/note12.jpg
   
@@ -287,6 +317,11 @@
 - name: Honda Fit
   slug: honda-fit
   estimated_total_cost: 1539650
+  costs:
+    cnf: 869000
+    customs: 525650
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/fit.jpg
 
@@ -332,6 +367,11 @@
 - name: Honda Vezel
   slug: honda-vezel
   estimated_total_cost: 2405502
+  costs:
+    cnf: 1455000
+    customs: 805502
+    clearance: 75000
+    service_fee: 70000
   category: Crossover
   image: /assets/images/vehicles/cars/vezel.jpg
 
@@ -371,7 +411,12 @@
 
 - name: Peugeot 3008
   slug: peugeot-3008
-  estimated_total_cost: 2654181
+  estimated_total_cost: 2676000
+  costs:
+    cnf: 1400000
+    customs: 1096000
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/3008.jpg
 
@@ -683,6 +728,11 @@
 - name: Mazda Mazda3
   slug: mazda-mazda3
   estimated_total_cost: 2223815
+  costs:
+    cnf: 1300815
+    customs: 778000
+    clearance: 80000
+    service_fee: 70000
   category: Sedan
   image: /assets/images/vehicles/cars/mazda3.jpg
 
@@ -859,6 +909,11 @@
 - name: Nissan Teana
   slug: nissan-teana
   estimated_total_cost: 1831337
+  costs:
+    cnf: 1039190
+    customs: 647147
+    clearance: 80000
+    service_fee: 70000
   category: Sedan
   image: /assets/images/vehicles/cars/teana.jpg
 
@@ -1147,6 +1202,11 @@
 - name: Honda Insight
   slug: honda-insight
   estimated_total_cost: 2400300
+  costs:
+    cnf: 1464951
+    customs: 790349
+    clearance: 75000
+    service_fee: 70000
   category: Sedan
   image: /assets/images/vehicles/cars/insight.jpg
 
@@ -1213,6 +1273,11 @@
 - name: Mazda CX-30
   slug: mazda-cx-30
   estimated_total_cost: 2904989
+  costs: 
+    cnf: 1947589
+    customs: 777400
+    clearance: 80000
+    service_fee: 100000
   category: compact SUV
   image: /assets/images/vehicles/cars/cx30.jpg
 
@@ -1257,6 +1322,11 @@
 - name: Mercedes GLA220
   slug: mercedes-gla220
   estimated_total_cost: 2920567
+  costs:
+    cnf: 1453567
+    customs: 1287000
+    clearance: 80000
+    service_fee: 100000
   category: Compact SUV
   image: /assets/images/vehicles/cars/gla220.jpg
 
@@ -1966,7 +2036,12 @@
 
 - name: Peugeot 2008
   slug: peugeot-2008
-  estimated_total_cost: 2528995
+  estimated_total_cost: 1620680
+  costs:
+    cnf: 857120
+    customs: 618560
+    clearance: 75000
+    service_fee: 70000
   category: crossover SUV
   image: /assets/images/vehicles/cars/2008.jpeg
 
@@ -2634,3 +2709,192 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
+
+- name: Mazda CX8 Exclusive Mode
+  slug: mazda-cx8-exclusive
+  estimated_total_cost: 3381985
+  costs:
+    cnf: 1861200
+    customs: 1420785
+    clearance: 85000
+    service_fee: 100000
+  category: SUV
+  image: /assets/images/vehicles/cars/cx8.jpg
+
+  short_description: A premium three-row SUV that combines elegant Scandinavian design, top-tier safety features, and smooth, refined performance for family and long-distance comfort.
+
+  ideal_for:
+    - Families seeking a spacious and comfortable SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium midsize car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Audi Q5
+  slug: audi-q5
+  estimated_total_cost: 3313659
+  costs:
+    cnf: 1875280
+    customs: 1243379
+    clearance: 85000 
+    service_fee: 110000
+  category: SUV
+  image: /assets/images/vehicles/cars/q5.jpeg
+
+  short_description: A premium compact SUV that combines sporty performance, advanced technology, and a stylish design for a dynamic driving experience.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
+
+- name: Suzuki Escudo
+  slug: suzuki-escudo
+  estimated_total_cost: 2888880
+  costs:
+    cnf: 2090880
+    customs: 618000
+    clearance: 80000
+    service_fee: 100000
+  category: SUV
+  image: /assets/images/vehicles/cars/escudo.jpeg
+
+  short_description: A compact and capable SUV that combines off-road performance, modern technology, and a stylish design for both urban and adventurous driving.
+
+  ideal_for:
+    - Off-road enthusiasts seeking a capable and affordable SUV
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Powerful engine options
+    - Advanced off-road capabilities
+    - Comfortable and practical interior
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Mitsubishi RVR
+  slug: mitsubishi-rvr
+  estimated_total_cost: 2358475
+  costs:
+    cnf: 1573440
+    customs: 640035
+    clearance: 75000
+    service_fee: 70000
+  category: SUV
+  image: /assets/images/vehicles/cars/rvr.jpeg
+
+  short_description: A compact and fuel-efficient SUV that combines modern styling, practical features, and reliable performance for everyday driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Suzuki Baleno
+  slug: suzuki-baleno
+  estimated_total_cost: 1546724
+  costs:
+    cnf: 1136960
+    customs: 264764
+    clearance: 75000
+    service_fee: 70000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/baleno.jpeg
+
+  short_description: A compact and fuel-efficient hatchback that combines modern styling, practical features, and reliable performance for everyday driving.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical hatchback
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Peugeot 2008
+  slug: peugeot-2008-gt
+  estimated_total_cost: 2600480
+  costs:
+    cnf: 1320880
+    customs: 1096000
+    clearance: 80000
+    service_fee: 100000
+  category: Crossover SUV
+  image: /assets/images/vehicles/cars/2008gt.jpeg
+
+  short_description: A stylish and fuel-efficient compact SUV that combines bold French design, modern technology, and smooth city-friendly performance.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical SUV
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact SUV
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
+
+- name: Peugeot 208
+  slug: peugeot-208
+  estimated_total_cost: 1370262
+  costs:
+    cnf: 653840
+    customs: 571422
+    clearance: 75000
+    service_fee: 70000
+  category: Hatchback
+  image: /assets/images/vehicles/cars/208.jpeg
+
+  short_description: A stylish and fuel-efficient hatchback that combines bold French design, modern technology, and smooth city-friendly performance.
+
+  ideal_for:
+    - Urban commuters seeking a stylish and practical hatchback
+    - Young professionals looking for a well-equipped vehicle
+    - Those seeking a reliable and efficient compact car
+
+  highlights:
+    - Stylish design with modern features
+    - Comfortable interior for its class
+    - Good fuel economy
+
+  caution:
+    - Some models may have less powerful engines
+    - Interior materials may feel less premium than some competitors
