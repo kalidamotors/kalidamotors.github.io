@@ -350,3 +350,46 @@ deals:
       - assets/images/vehicles/deals/mazda6_8.jpeg
       - assets/images/vehicles/deals/mazda6_9.jpeg
       - assets/images/vehicles/deals/mazda6_10.jpeg
+
+  - id: toyota-hilux-2024-j7p2
+    title: Toyota Hilux
+    subtitle: 2.4L Diesel 4WD
+    price: KES 5,852,312
+    costs:
+      cnf: 3800000
+      customs: 1794312
+      clearance: 90000
+      service_fee: 168000
+    savings_text: Save KES 2,000,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2024"
+    grade: "4.5"
+    mileage: "20000 km"
+    fuel: "Diesel"
+    transmission: "Auto"
+    engine_size: "2.4L"
+    drive_type: "4WD"
+    color: "Black"
+    seats: "5 Seater"
+    chassis_id: "3DF-GUN125"
+    engine_model: "2GD-FTV"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "18-inch Alloy Wheels"
+    safety_systems: "Toyota Safety Sense (PCS, LDA, ACC)"
+    doors: "4"
+    efficiency: "10-12 km/l"
+    images:
+      - assets/images/vehicles/deals/hilux1.jpg
+      - assets/images/vehicles/deals/hilux2.jpg
+      - assets/images/vehicles/deals/hilux3.jpg
+      - assets/images/vehicles/deals/hilux4.jpg
+      - assets/images/vehicles/deals/hilux5.jpg
+      - assets/images/vehicles/deals/hilux6.jpg
+      - assets/images/vehicles/deals/hilux7.jpg
+      - assets/images/vehicles/deals/hilux8.jpg
+      - assets/images/vehicles/deals/hilux9.jpg
+      - assets/images/vehicles/deals/hilux10.jpg
+      - assets/images/vehicles/deals/hilux11.jpg
+      - assets/images/vehicles/deals/hilux12.jpg
+      - assets/images/vehicles/deals/hilux13.jpg

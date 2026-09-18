@@ -274,6 +274,11 @@
 - name: Nissan Note E13
   slug: note-epower-e13
   estimated_total_cost: 1514157
+  costs:
+    cnf: 976537
+    customs: 392150
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/note13.jpg
   
@@ -344,6 +349,11 @@
 - name: Toyota Sienta
   slug: toyota-sienta
   estimated_total_cost: 1893931
+  costs: 
+    cnf: 1310931
+    customs: 438000
+    clearance: 75000
+    service_fee: 70000
   category: Family Car
   image: /assets/images/vehicles/cars/sienta.jpg
 
@@ -394,6 +404,11 @@
 - name: Toyota Noah WxB
   slug: toyota-noah-wxb
   estimated_total_cost: 3056250
+  costs:
+    cnf: 2150000
+    customs: 726250
+    clearance: 80000
+    service_fee: 100000
   category: Minivan
   image: /assets/images/vehicles/cars/noahwxb.jpg
   short_description: Spacious and practical Multi-Purpose Vehicle with a comfortable interior and good fuel economy.
@@ -460,6 +475,11 @@
 - name: Volvo XC40
   slug: volvo-xc40
   estimated_total_cost: 2971879
+  costs:
+    cnf: 1800000
+    customs: 991879
+    clearance: 80000
+    service_fee: 100000
   category: Crossover
   image: /assets/images/vehicles/cars/xc40.jpg
 
@@ -482,6 +502,11 @@
 - name: Peugeot 308
   slug: peugeot-308
   estimated_total_cost: 1805160
+  costs:
+    cnf: 925000
+    customs: 735160
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/308.jpg
 
@@ -504,6 +529,11 @@
 - name: Suzuki Alto
   slug: suzuki-alto
   estimated_total_cost: 707946
+  costs:
+    cnf: 325000
+    customs: 237946
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/alto.jpg
 
@@ -553,6 +583,11 @@
 - name: Mercedes A180
   slug: mercedes-a180
   estimated_total_cost: 2436360
+  costs:
+    cnf: 1500000
+    customs: 776360
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/a180.jpg
 
@@ -575,6 +610,11 @@
 - name: Toyota Passo
   slug: toyota-passo
   estimated_total_cost: 1053841
+  costs:
+    cnf: 625000
+    customs: 283841
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/passo.jpg
 
@@ -597,6 +637,11 @@
 - name: Toyota Yaris
   slug: toyota-yaris
   estimated_total_cost: 1509478
+  costs:
+    cnf: 920000
+    customs: 444478
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/yaris.jpg
 
@@ -619,6 +664,11 @@
 - name: Toyota Harrier
   slug: toyota-harrier
   estimated_total_cost: 3166028
+  costs: 
+    cnf: 1686931
+    customs: 1299097
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/harrier.jpg
 
