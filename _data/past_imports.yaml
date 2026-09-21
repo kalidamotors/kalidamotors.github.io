@@ -1197,7 +1197,7 @@
     - "assets/images/vehicles/past_imports/cx5_1.jpg"
     - "assets/images/vehicles/past_imports/cx5_2.jpg"
     - "assets/images/vehicles/past_imports/cx5_3.jpg"
-  badge: "Customs Clearance Pending at Mombasa Port"
+  badge: "Delivered to Nairobi"
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
@@ -1220,11 +1220,11 @@
         carrier: "TURANDOT V.705"
         estimated_arrival: "2026-08-18"
     - step: "Customs Clearance"
-      date_completed: null
+      date_completed: "2026-09-10"
       details: "Awaiting customs clearance in Kenya."
     - step: "Final Delivery"
-      date_completed: null
-      details: "Estimated delivery to client's location in Mombasa."
+      date_completed: "2026-09-15"
+      details: "Delivered to client's location in Nairobi."
 
 - id: "v8f4w0x3z"
   tracking_id: "KM-8R5Y0M"
@@ -1251,11 +1251,11 @@
     - "assets/images/vehicles/past_imports/shuttle1.jpg"
     - "assets/images/vehicles/past_imports/shuttle2.jpg"
     - "assets/images/vehicles/past_imports/shuttle3.jpg"
-  badge: "Clearing Customs in Mombasa"
+  badge: "Delivered to Nairobi"
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-06-18"
-  current_status: "Customs Clearance Pending"
+  current_status: "Delivered to Nairobi"
   estimated_delivery: "September 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1274,11 +1274,11 @@
         carrier: "TURANDOT V.705"
         estimated_arrival: "2026-08-18"
     - step: "Customs Clearance"
-      date_completed: null
-      details: "Awaiting customs clearance in Kenya."
+      date_completed: "2026-09-10"
+      details: "Customs clearance completed in Kenya."
     - step: "Final Delivery"
-      date_completed: null
-      details: "Estimated delivery to client's location in Mombasa."
+      date_completed: "2026-09-15"
+      details: "Delivered to client's location in Nairobi."
 
 - id: "w9g5x1y4a"
   tracking_id: "KM-9S6Z1N"
@@ -1708,7 +1708,7 @@
   cta: "Similar Inquiry"
   auction_date: "2026-08-18"
   current_status: "Shipping pending"
-  estimated_delivery: "November 2026"
+  estimated_delivery: "October 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-08-18"

@@ -393,3 +393,38 @@ deals:
       - assets/images/vehicles/deals/hilux11.jpg
       - assets/images/vehicles/deals/hilux12.jpg
       - assets/images/vehicles/deals/hilux13.jpg
+    
+  - id: vw-audi-a3-2020-k8q3
+    title: Audi A3
+    subtitle: 1.4L TFSI
+    price: KES 2,596,398
+    costs:
+      cnf: 1760000
+      customs: 666398
+      clearance: 75000
+      service_fee: 95000
+    savings_text: Save KES 300,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2020"
+    grade: "4.5"
+    mileage: "56000 km"
+    fuel: "Petrol"
+    transmission: "Auto"
+    engine_size: "1.4L"
+    drive_type: "FWD"
+    color: "White"
+    seats: "5 Seater"
+    chassis_id: "8V-8V1LA0"
+    engine_model: "CPTA"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "Audi Pre Sense Basic, Audi Pre Sense Front, Lane Departure Warning, Adaptive Cruise Control"
+    doors: "4"
+    efficiency: "15-17 km/l"
+    images:
+      - assets/images/vehicles/deals/a3_1.jpg
+      - assets/images/vehicles/deals/a3_2.jpg
+      - assets/images/vehicles/deals/a3_3.jpg
+      - assets/images/vehicles/deals/a3_4.jpg
+      - assets/images/vehicles/deals/a3_5.jpg
