@@ -713,6 +713,11 @@
 - name: Toyota Fielder
   slug: toyota-fielder
   estimated_total_cost: 1825818
+  costs:
+    cnf: 1225000
+    customs: 455818
+    clearance: 75000
+    service_fee: 70000
   category: Station Wagon
   image: /assets/images/vehicles/cars/fielder.jpg
 
@@ -735,6 +740,11 @@
 - name: Toyota Axio
   slug: toyota-axio
   estimated_total_cost: 1617580
+  costs:
+    cnf: 1064000
+    customs: 408580
+    clearance: 75000
+    service_fee: 70000
   category: Sedan
   image: /assets/images/vehicles/cars/axio.jpg
 
@@ -757,6 +767,11 @@
 - name: Volkswagen Golf GTI
   slug: volkswagen-golf-gti
   estimated_total_cost: 3258686
+  costs:
+    cnf: 2100000
+    customs: 978686
+    clearance: 80000
+    service_fee: 100000
   category: Hatchback
   image: /assets/images/vehicles/cars/gti.jpg
 
@@ -805,6 +820,11 @@
 - name: Volkswagen Golf
   slug: volkswagen-golf
   estimated_total_cost: 2250934
+  costs:
+    cnf: 1385000
+    customs: 720934
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/golf.jpg
 
@@ -827,6 +847,11 @@
 - name: Subaru Levorg
   slug: subaru-levorg
   estimated_total_cost: 1920071
+  costs:
+    cnf: 1085000
+    customs: 690071
+    clearance: 75000
+    service_fee: 70000
   category: Station Wagon
   image: /assets/images/vehicles/cars/levorg.jpg
 
@@ -849,6 +874,11 @@
 - name: Toyota Voxy
   slug: toyota-voxy
   estimated_total_cost: 2423450
+  costs:
+    cnf: 1535000
+    customs: 743450
+    clearance: 75000
+    service_fee: 70000
   category: Minivan
   image: /assets/images/vehicles/cars/voxy.jpg
 
@@ -871,6 +901,11 @@
 - name: Toyota Hilux
   slug: toyota-hilux
   estimated_total_cost: 4338391
+  costs:
+    cnf: 3005000
+    customs: 1138391
+    clearance: 85000
+    service_fee: 110000
   category: Pickup Truck
   image: /assets/images/vehicles/cars/hilux.jpg
 
@@ -893,6 +928,11 @@
 - name: Nissan Sylphy
   slug: nissan-sylphy
   estimated_total_cost: 1409343
+  costs:
+    cnf: 775000
+    customs: 489343
+    clearance: 75000
+    service_fee: 70000
   category: Sedan
   image: /assets/images/vehicles/cars/sylphy.jpg
 
@@ -915,6 +955,11 @@
 - name: Volkswagen Polo
   slug: volkswagen-polo
   estimated_total_cost: 1817420
+  costs:
+    cnf: 1095000
+    customs: 577420
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/polo.jpg
 
@@ -937,6 +982,11 @@
 - name: Suzuki Hustler
   slug: suzuki-hustler
   estimated_total_cost: 888995
+  costs:
+    cnf: 425000
+    customs: 318995
+    clearance: 75000
+    service_fee: 70000
   category: Crossover
   image: /assets/images/vehicles/cars/hustler.jpg
 
@@ -986,6 +1036,11 @@
 - name: Nissan Dayz
   slug: nissan-dayz
   estimated_total_cost: 995000
+  costs:
+    cnf: 495000
+    customs: 354410
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/dayz.jpg
 
@@ -1008,6 +1063,11 @@
 - name: Mitsubishi Delica D2
   slug: mitsubishi-delica
   estimated_total_cost: 1441730
+  costs:
+    cnf: 875000
+    customs: 421730
+    clearance: 75000
+    service_fee: 70000
   category: Family Car
   image: /assets/images/vehicles/cars/delica.jpg
 
@@ -1030,6 +1090,11 @@
 - name: Toyota Roomy
   slug: toyota-roomy
   estimated_total_cost: 1317895
+  costs:
+    cnf: 725000
+    customs: 447895
+    clearance: 75000
+    service_fee: 70000
   category: Family Car
   image: /assets/images/vehicles/cars/roomy.jpg
 
@@ -1053,6 +1118,11 @@
 - name: Toyota Succeed Probox
   slug: toyota-succeed-probox
   estimated_total_cost: 1423119
+  costs:
+    cnf: 864779
+    customs: 413340
+    clearance: 75000
+    service_fee: 70000
   category: Station Wagon
   image: /assets/images/vehicles/cars/probox.jpg
 
@@ -1074,6 +1144,11 @@
 - name: Toyota Spade
   slug: toyota-spade
   estimated_total_cost: 1497321
+  costs:
+    cnf: 875000
+    customs: 477321
+    clearance: 75000
+    service_fee: 70000
   category: Family Car
   image: /assets/images/vehicles/cars/spade.jpg
 
@@ -1097,6 +1172,11 @@
 - name: Suzuki Solio
   slug: suzuki-solio
   estimated_total_cost: 1025930
+  costs:
+    cnf: 550000
+    customs: 330930
+    clearance: 75000
+    service_fee: 70000
   category: Taxi
   image: /assets/images/vehicles/cars/solio.jpg
 
@@ -1120,6 +1200,11 @@
 - name: Toyota Corolla Sport G
   slug: toyota-corolla-sport-g
   estimated_total_cost: 2053271
+  costs:
+    cnf: 1200000
+    customs: 882271
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/corollasport.jpg
 
@@ -1141,7 +1226,12 @@
 
 - name: Toyota Vellfire
   slug: toyota-vellfire
-  estimated_total_cost: 3471712
+  estimated_total_cost: 3476712
+  costs:
+    cnf: 2400000
+    customs: 891712
+    clearance: 85000
+    service_fee: 100000
   category: Family Car
   image: /assets/images/vehicles/cars/vellfire.jpg
 
@@ -1163,7 +1253,12 @@
 
 - name: Mazda Bongo
   slug: mazda-bongo
-  estimated_total_cost: 1319764
+  estimated_total_cost: 1344764
+  costs:
+    cnf: 750000
+    customs: 449764
+    clearance: 75000
+    service_fee: 70000
   category: Minivan
   image: /assets/images/vehicles/cars/bongo.jpg
 
@@ -1185,7 +1280,12 @@
 
 - name: Nissan NV200 Vanette
   slug: nissan-nv200-vanette
-  estimated_total_cost: 1525816
+  estimated_total_cost: 1520816
+  costs:
+    cnf: 900000
+    customs: 475816
+    clearance: 75000
+    service_fee: 70000
   category: Minivan
   image: /assets/images/vehicles/cars/vanette.jpg
 
@@ -1207,7 +1307,12 @@
 
 - name: Daihatsu Move
   slug: daihatsu-move
-  estimated_total_cost: 862970
+  estimated_total_cost: 887970
+  costs:
+    cnf: 450000
+    customs: 292970
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/move.jpg
 
@@ -1229,7 +1334,12 @@
 
 - name: Toyota Aqua Crossover
   slug: toyota-aqua-crossover
-  estimated_total_cost: 1936068
+  estimated_total_cost: 1961068
+  costs:
+    cnf: 1200000
+    customs: 616068
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/aqua-crossover.jpg
 
@@ -1279,6 +1389,11 @@
 - name: Toyota Prius
   slug: toyota-prius
   estimated_total_cost: 2200000
+  costs:
+    cnf: 1300000
+    customs: 750000
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/prius.jpg
 
@@ -1350,6 +1465,11 @@
 - name: Subaru Outback
   slug: subaru-outback
   estimated_total_cost: 2873121
+  costs:
+    cnf: 1650000
+    customs: 1043121
+    clearance: 80000
+    service_fee: 100000
   category: Crossover SUV
   image: /assets/images/vehicles/cars/outback.jpg
 
@@ -1398,7 +1518,12 @@
 
 - name: Volkswagen Tiguan
   slug: volkswagen-tiguan
-  estimated_total_cost: 3082606
+  estimated_total_cost: 3062606
+  costs:
+    cnf: 1800000
+    customs: 1082606
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/tiguan.jpg
 
@@ -1421,6 +1546,11 @@
 - name: Mercedes C180
   slug: mercedes-c180
   estimated_total_cost: 3201666
+  costs:
+    cnf: 170000
+    customs: 1151666
+    clearance: 80000
+    service_fee: 100000
   category: Sedan
   image: /assets/images/vehicles/cars/c180.jpg
 
@@ -1443,6 +1573,11 @@
 - name: Volkswagen T-roc
   slug: volkswagen-troc
   estimated_total_cost: 3450767
+  costs:
+    cnf: 2020000
+    customs: 1250767
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/troc.jpg
 
@@ -1465,6 +1600,11 @@
 - name: BMW 330i M-SPORT
   slug: bmw-330i-m-sport
   estimated_total_cost: 3523847
+  costs:
+    cnf: 1815000
+    customs: 1523847
+    clearance: 80000
+    service_fee: 105000
   category: Sedan
   image: /assets/images/vehicles/cars/330i.jpg
 
@@ -1487,6 +1627,11 @@
 - name: Volkswagen Arteon
   slug: volkswagen-arteon
   estimated_total_cost: 3570091
+  costs:
+    cnf: 1895000
+    customs: 1490091
+    clearance: 80000
+    service_fee: 100000
   category: Sedan
   image: /assets/images/vehicles/cars/arteon.jpg
 
@@ -1509,6 +1654,11 @@
 - name: Mercedes C220D
   slug: mercedes-c220d
   estimated_total_cost: 3498794
+  costs:
+    cnf: 1407057
+    customs: 1906737
+    clearance: 80000
+    service_fee: 105000
   category: Sedan
   image: /assets/images/vehicles/cars/c220d.jpg
 
@@ -1531,6 +1681,11 @@
 - name: Peugeot 5008
   slug: peugeot-5008
   estimated_total_cost: 3157882
+  costs:
+    cnf: 1821282
+    customs: 1156600
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/5008.jpg
 
@@ -1553,6 +1708,11 @@
 - name: Lexus NX300
   slug: lexus-nx300
   estimated_total_cost: 3826276
+  costs:
+    cnf: 2346276
+    customs: 1300000
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/nx300.jpg
 
@@ -1574,7 +1734,12 @@
 
 - name: BMW X3 XDRIVE
   slug: bmw-x3-xdrive
-  estimated_total_cost: 3855295
+  estimated_total_cost: 3850295
+  costs:
+    cnf: 2060000
+    customs: 1595295
+    clearance: 85000
+    service_fee: 110000
   category: SUV
   image: /assets/images/vehicles/cars/x3.jpg
 
@@ -1596,7 +1761,12 @@
 
 - name: Toyota Alphard
   slug: toyota-alphard
-  estimated_total_cost: 3859066
+  estimated_total_cost: 3804066
+  costs:
+    cnf: 2600000
+    customs: 1009066
+    clearance: 85000
+    service_fee: 110000
   category: Family Car
   image: /assets/images/vehicles/cars/alphard.jpg
 
@@ -1618,7 +1788,12 @@
   
 - name: Mercedes E220D
   slug: mercedes-e220d
-  estimated_total_cost: 4028795
+  estimated_total_cost: 4023795
+  costs:
+    cnf: 2100000
+    customs: 1728795
+    clearance: 85000
+    service_fee: 110000
   category: Sedan
   image: /assets/images/vehicles/cars/e220d.jpg
 
@@ -1640,7 +1815,12 @@
 
 - name: Mercedes E200
   slug: mercedes-e200
-  estimated_total_cost: 4054174
+  estimated_total_cost: 4049174
+  costs:
+    cnf: 2000000
+    customs: 1854174
+    clearance: 85000
+    service_fee: 110000
   category: Sedan
   image: /assets/images/vehicles/cars/e200.jpg
 
@@ -2948,3 +3128,30 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
+
+- name: Audi A3
+  slug: audi-a3
+  estimated_total_cost: 2596398
+  costs:
+    cnf: 1760000
+    customs: 666398
+    clearance: 75000
+    service_fee: 95000
+  category: Sedan
+  image: /assets/images/vehicles/cars/a3.jpeg
+
+  short_description: A premium compact sedan that combines sporty performance, advanced technology, and a stylish design for a dynamic driving experience.
+
+  ideal_for:
+    - Driving enthusiasts seeking a sporty and luxurious sedan
+    - Urban commuters looking for a stylish and well-equipped vehicle
+    - Those seeking a reliable and premium compact car
+
+  highlights:
+    - Powerful engine options
+    - Stylish design with luxury features
+    - Comfortable and premium interior
+
+  caution:
+    - Higher price point than many competitors
+    - Some models may have higher maintenance costs
