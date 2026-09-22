@@ -589,3 +589,44 @@
     - "assets/images/vehicles/past_imports/2008_4.jpeg"
     - "assets/images/vehicles/past_imports/2008_5.jpeg"
     - "assets/images/vehicles/past_imports/2008_6.jpeg"
+
+- id: "c7g2h3i4j"
+  title: "Toyota Harrier Hybrid"
+  year: "2017"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  mileage: "88,000 km"
+  price: "KES 2,850,000"
+  color: "black"
+  drive_type: "AWD"
+  engine_model: "2AR-FXE"
+  engine_size: "2.5L"
+  doors: "5"
+  seats: "5"
+  wheel_size: "18 inches"
+  chassis_id: "ZSU60-1234567"
+  badge: "Available for Viewing at Limuru"
+  efficiency: "12-14 km/l"
+  paid_for: false
+  listed_date: "2026-09-05"
+  active: true
+  additional_features: |
+    Sunroof, power back door, leather seats
+    360° camera, JBL sound system
+    Factory navigation with full-segment TV
+    Toyota Safety Sense, radar cruise control
+    LED headlights, dash cam, GPS radar detector
+  images:
+    - "assets/images/vehicles/local/harrier2_1.jpeg"
+    - "assets/images/vehicles/local/harrier2_2.jpeg"
+    - "assets/images/vehicles/local/harrier2_3.jpeg"
+    - "assets/images/vehicles/local/harrier2_4.jpeg"
+    - "assets/images/vehicles/local/harrier2_5.jpeg"
+    - "assets/images/vehicles/local/harrier2_6.jpeg"
+    - "assets/images/vehicles/local/harrier2_7.jpeg"
+    - "assets/images/vehicles/local/harrier2_8.jpeg"
+    - "assets/images/vehicles/local/harrier2_9.jpeg"
+    - "assets/images/vehicles/local/harrier2_10.jpeg"
+    - "assets/images/vehicles/local/harrier2_11.jpeg"
+    - "assets/images/vehicles/local/harrier2_12.jpeg"
