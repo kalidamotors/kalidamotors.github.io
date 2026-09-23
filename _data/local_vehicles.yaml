@@ -605,7 +605,7 @@
   doors: "5"
   seats: "5"
   wheel_size: "18 inches"
-  chassis_id: "ZSU60-1234567"
+  chassis_id: "AVU65-1234567"
   badge: "Available for Viewing at Limuru"
   efficiency: "12-14 km/l"
   paid_for: false
@@ -616,7 +616,7 @@
     360° camera, JBL sound system
     Factory navigation with full-segment TV
     Toyota Safety Sense, radar cruise control
-    LED headlights, dash cam, GPS radar detector
+    LED headlights, dash cam, GPS radar detector, restored wheels
   images:
     - "assets/images/vehicles/local/harrier2_1.jpeg"
     - "assets/images/vehicles/local/harrier2_2.jpeg"
@@ -630,3 +630,70 @@
     - "assets/images/vehicles/local/harrier2_10.jpeg"
     - "assets/images/vehicles/local/harrier2_11.jpeg"
     - "assets/images/vehicles/local/harrier2_12.jpeg"
+
+- id: "d8h3i4j5k"
+  title: "Toyota Fortuner"
+  year: "2013"
+  grade: "Locally Used"
+  fuel: "Diesel"
+  transmission: "Manual"
+  mileage: "112,000 km"
+  price: "KES 2,100,000"
+  color: "Silver"
+  drive_type: "4WD"
+  engine_model: "1GD-FTV"
+  engine_size: "3L"
+  doors: "5"
+  seats: "7"
+  wheel_size: "18 inches"
+  chassis_id: "GGH30-1234567"
+  badge: "Available for Viewing at Citam, Woodley"
+  efficiency: "10-12 km/l"
+  paid_for: false
+  listed_date: "2026-09-10"
+  active: true
+  additional_features: |
+    leather seats, factory navigation
+  images:
+    - "assets/images/vehicles/local/fortuner1.jpeg"
+    - "assets/images/vehicles/local/fortuner2.jpeg"
+    - "assets/images/vehicles/local/fortuner3.jpeg"
+    - "assets/images/vehicles/local/fortuner4.jpeg"
+    - "assets/images/vehicles/local/fortuner5.jpeg"
+    - "assets/images/vehicles/local/fortuner6.jpeg"
+    - "assets/images/vehicles/local/fortuner7.jpeg"
+    - "assets/images/vehicles/local/fortuner8.jpeg"
+    - "assets/images/vehicles/local/fortuner9.jpeg"
+    - "assets/images/vehicles/local/fortuner10.jpeg"
+
+- id: "e9i4j5k6l"
+  title: "Nissan X-Trail"
+  year: "2002"
+  grade: "Locally Used"
+  fuel: "Petrol"
+  transmission: "Auto"
+  mileage: "211,000 km"
+  price: "KES 680,000"
+  color: "Silver"
+  drive_type: "4WD"
+  engine_model: "QR20DE"
+  engine_size: "2L"
+  doors: "5"
+  seats: "5"
+  wheel_size: "16 inches"
+  chassis_id: "T30-1234567"
+  badge: "Available for Viewing at Kitengela"
+  efficiency: "10-12 km/l"
+  paid_for: false
+  listed_date: "2026-09-15"
+  active: true
+  images:
+    - "assets/images/vehicles/local/xtrail2_1.jpeg"
+    - "assets/images/vehicles/local/xtrail2_2.jpeg"
+    - "assets/images/vehicles/local/xtrail2_3.jpeg"
+    - "assets/images/vehicles/local/xtrail2_4.jpeg"
+    - "assets/images/vehicles/local/xtrail2_5.jpeg"
+    - "assets/images/vehicles/local/xtrail2_6.jpeg"
+    - "assets/images/vehicles/local/xtrail2_7.jpeg"
+    - "assets/images/vehicles/local/xtrail2_8.jpeg"
+    - "assets/images/vehicles/local/xtrail2_9.jpeg"
