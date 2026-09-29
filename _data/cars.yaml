@@ -2151,12 +2151,12 @@
 
 - name: Mazda Mazda6
   slug: mazda-mazda6
-  estimated_total_cost: 2696878
+  estimated_total_cost: 2511878
   costs:
-    cnf: 1680609
+    cnf: 1505609
     customs: 836269
-    clearance: 80000
-    service_fee: 100000
+    clearance: 75000
+    service_fee: 95000
   category: Sedan
   image: /assets/images/vehicles/cars/mazda6.jpg
 
