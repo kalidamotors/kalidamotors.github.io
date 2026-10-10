@@ -161,7 +161,7 @@
                 <span class="font-black uppercase tracking-widest text-[10px] text-primary mb-4 block">Kalida
                     Analytics</span>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 mb-6 leading-none mb-8">What Can I <span class="text-primary">import?</span></h1>
-                <p class="text-secondary text-lg mb-10 leading-relaxed max-w-2xl mx-auto">Search by car name, model, category or enter your budget to find your best options.</p>
+                <p class="text-secondary text-lg mb-10 leading-relaxed max-w-2xl mx-auto">Search by car name, model, category or enter your budget to find your best matches.</p>
                 <div class="flex flex-col md:flex-row gap-4 items-end">
                     <div class="w-full">
                         <label
@@ -813,6 +813,13 @@
         const searchInput = document.getElementById('searchInput');
         const searchBtn = document.getElementById('searchBtn');
         const searchAgainBtn = document.getElementById('searchAgainBtn');
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialQuery = urlParams.get('query') || urlParams.get('search') || '';
+
+        if (initialQuery && searchInput) {
+            searchInput.value = initialQuery;
+            setTimeout(() => searchBtn.click(), 50);
+        }
 
         // Search button click handler
         searchBtn.addEventListener('click', function() {
