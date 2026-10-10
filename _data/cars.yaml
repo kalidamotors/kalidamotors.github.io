@@ -131,6 +131,11 @@
 - name: Mitsubishi Outlander
   slug: mitsubishi-outlander
   estimated_total_cost: 2624587
+  costs:
+    cnf: 1473180
+    customs: 971407
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/outlander.jpg
 
@@ -179,7 +184,12 @@
 
 - name: Toyota Land Cruiser Prado TZ G
   slug: toyota-land-cruiser-prado
-  estimated_total_cost: 5648024
+  estimated_total_cost: 5681024
+  costs:
+    cnf: 3483000
+    customs: 1948024
+    clearance: 90000
+    service_fee: 160000
   category: SUV
   image: /assets/images/vehicles/cars/prado.jpg
 
@@ -228,7 +238,12 @@
 
 - name: Suzuki Swift
   slug: suzuki-swift
-  estimated_total_cost: 1606000
+  estimated_total_cost: 1729460
+  costs:
+    cnf: 998460
+    customs: 586000
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/swift.jpg
   short_description: Stylish and fun-to-drive hatchback with good fuel economy and a comfortable interior.
@@ -300,7 +315,12 @@
 
 - name: Toyota Aqua
   slug: toyota-aqua
-  estimated_total_cost: 1936068
+  estimated_total_cost: 1592668
+  costs:
+    cnf: 831600
+    customs: 616068
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/aqua.jpg
   short_description: Fuel-efficient hybrid hatchback with a comfortable interior and a reputation for reliability.
@@ -453,6 +473,11 @@
 - name: Mazda Mazda2
   slug: mazda-mazda2
   estimated_total_cost: 1459516
+  costs:
+    cnf: 851516
+    customs: 293000
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/mazda2.jpg
   
@@ -690,7 +715,12 @@
 
 - name: Toyota Raize
   slug: toyota-raize
-  estimated_total_cost: 2047654
+  estimated_total_cost: 2297654
+  costs:
+    cnf: 1584980
+    customs: 567654
+    clearance: 75000
+    service_fee: 70000
   category: Crossover
   image: /assets/images/vehicles/cars/raize.jpg
 
@@ -1843,6 +1873,11 @@
 - name: Mercedes GLC 250
   slug: mercedes-glc-250
   estimated_total_cost: 4123972
+  costs:
+    cnf: 2200000
+    customs: 1743972
+    clearance: 85000
+    service_fee: 110000
   category: SUV
   image: /assets/images/vehicles/cars/glc250.jpg
 
@@ -1891,7 +1926,12 @@
 
 - name: Toyota Crown
   slug: toyota-crown
-  estimated_total_cost: 4370060
+  estimated_total_cost: 3579060
+  costs:
+    cnf: 2214000
+    customs: 1170060
+    clearance: 85000
+    service_fee: 110000
   category: Sedan
   image: /assets/images/vehicles/cars/crown.jpg
 
@@ -1913,7 +1953,12 @@
 
 - name: Range Rover Evoque
   slug: range-rover-evoque
-  estimated_total_cost: 4502753
+  estimated_total_cost: 4497753
+  costs:
+    cnf: 2500000
+    customs: 1802753
+    clearance: 85000
+    service_fee: 110000
   category: SUV
   image: /assets/images/vehicles/cars/evoque.jpg
 
@@ -1935,7 +1980,12 @@
 
 - name: Range Rover Sport
   slug: range-rover-sport
-  estimated_total_cost: 5607308
+  estimated_total_cost: 11354551
+  costs:
+    cnf: 7000000
+    customs: 3869551
+    clearance: 100000
+    service_fee: 385000
   category: SUV
   image: /assets/images/vehicles/cars/sport.jpg
 
@@ -1957,7 +2007,12 @@
 
 - name: Audi Q7
   slug: audi-q7
-  estimated_total_cost: 5630188
+  estimated_total_cost: 5075188
+  costs:
+    cnf: 2795000
+    customs: 2030188
+    clearance: 90000
+    service_fee: 160000
   category: SUV
   image: /assets/images/vehicles/cars/q7.jpg
 
@@ -1979,7 +2034,12 @@
 
 - name: Volvo XC90
   slug: volvo-xc90
-  estimated_total_cost: 6028842
+  estimated_total_cost: 5364842
+  costs:
+    cnf: 2476000
+    customs: 2628842
+    clearance: 100000
+    service_fee: 160000
   category: SUV
   image: /assets/images/vehicles/cars/XC90.jpg
 
@@ -2001,7 +2061,12 @@
 
 - name: BMW M2 Competition
   slug: bmw-m2-competition
-  estimated_total_cost: 6054934
+  estimated_total_cost: 6464934
+  costs:
+    cnf: 4085000
+    customs: 2104934
+    clearance: 100000
+    service_fee: 175000
   category: Coupe
   image: /assets/images/vehicles/cars/m2.jpg
 
@@ -2023,7 +2088,12 @@
 
 - name: Porsche Cayenne
   slug: porsche-cayenne
-  estimated_total_cost: 6210357
+  estimated_total_cost: 7189586
+  costs:
+    cnf: 4402000
+    customs: 2507586
+    clearance: 100000
+    service_fee: 180000
   category: SUV
   image: /assets/images/vehicles/cars/cayenne.jpg
 
@@ -2045,7 +2115,12 @@
 
 - name: Suzuki Jimny
   slug: suzuki-jimny
-  estimated_total_cost: 2452091
+  estimated_total_cost: 2159091
+  costs:
+    cnf: 1462000
+    customs: 552091
+    clearance: 75000
+    service_fee: 70000
   category: compact SUV
   image: /assets/images/vehicles/cars/jimny.jpg
 
@@ -2067,7 +2142,12 @@
 
 - name: Toyota Hiace
   slug: toyota-hiace
-  estimated_total_cost: 2698557
+  estimated_total_cost: 3463557
+  costs:
+    cnf: 2365000
+    customs: 918557
+    clearance: 75000
+    service_fee: 70000
   category: Van
   image: /assets/images/vehicles/cars/hiace.jpg
 
@@ -2089,7 +2169,12 @@
 
 - name: Mercedes GLC300
   slug: mercedes-glc300
-  estimated_total_cost: 5245227
+  estimated_total_cost: 4935600
+  costs:
+    cnf: 2451000
+    customs: 2279600
+    clearance: 85000
+    service_fee: 120000
   category: SUV
   image: /assets/images/vehicles/cars/glc300.jpg
 
@@ -2111,7 +2196,12 @@
 
 - name: Mercedes GLS 400D
   slug: mercedes-gls-400d
-  estimated_total_cost: 9717331
+  estimated_total_cost: 8897331
+  costs:
+    cnf: 4730000
+    customs: 3867331
+    clearance: 100000
+    service_fee: 200000
   category: SUV
   image: /assets/images/vehicles/cars/gls400d.jpg
   short_description: Flagship seven-seater SUV that combines powerful diesel performance, first-class interior luxury, and exceptional comfort for long-distance family travel.
@@ -2129,7 +2219,12 @@
 
 - name: Mazda CX-8
   slug: mazda-cx-8
-  estimated_total_cost: 3167554
+  estimated_total_cost: 3100194
+  costs:
+    cnf: 1682640
+    customs: 1237554
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/cx8.jpg
 
@@ -2178,7 +2273,12 @@
 
 - name: Mercedes GLE  
   slug: mercedes-gle
-  estimated_total_cost: 8263530
+  estimated_total_cost: 9369217
+  costs:
+    cnf: 4486000
+    customs: 4573217
+    clearance: 100000
+    service_fee: 210000
   category: SUV
   image: /assets/images/vehicles/cars/gle.jpg
 
@@ -2223,6 +2323,11 @@
 - name: Tesla Model 3
   slug: tesla-model-3
   estimated_total_cost: 2532413
+  costs:
+    cnf: 1420000
+    customs: 1287413
+    clearance: 75000
+    service_fee: 100000
   category: Sedan
   image: /assets/images/vehicles/cars/model3.jpg
 
@@ -2245,6 +2350,11 @@
 - name: Nissan Kicks
   slug: nissan-kicks
   estimated_total_cost: 2138349
+  costs:
+    cnf: 1420000
+    customs: 573349
+    clearance: 75000
+    service_fee: 70000
   category: crossover SUV
   image: /assets/images/vehicles/cars/kicks.jpeg
 
@@ -2293,7 +2403,12 @@
 
 - name: Nissan Juke
   slug: nissan-juke
-  estimated_total_cost: 1505445
+  estimated_total_cost: 1570100
+  costs:
+    cnf: 933100
+    customs: 492000
+    clearance: 75000
+    service_fee: 70000
   category: crossover SUV
   image: /assets/images/vehicles/cars/juke.jpeg
 
@@ -2316,6 +2431,11 @@
 - name: Honda Fit RS
   slug: honda-fit
   estimated_total_cost: 1940954
+  costs:
+    cnf: 1400000
+    customs: 395954
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/fitrs.jpg
 
@@ -2337,7 +2457,12 @@
 
 - name: Subaru Impreza
   slug: subaru-impreza
-  estimated_total_cost: 1883917
+  estimated_total_cost: 1783917
+  costs:
+    cnf: 946000
+    customs: 692917
+    clearance: 75000
+    service_fee: 70000
   category: Sedan
   image: /assets/images/vehicles/cars/impreza.jpeg
 
@@ -2360,6 +2485,11 @@
 - name: Toyota CHR
   slug: toyota-chr
   estimated_total_cost: 2547288
+  costs:
+    cnf: 1614650
+    customs: 787638
+    clearance: 75000
+    service_fee: 70000
   category: Crossover SUV
   image: /assets/images/vehicles/cars/chr.jpg
 
@@ -2382,6 +2512,11 @@
 - name: Suzuki SX4
   slug: suzuki-sx4
   estimated_total_cost: 2227281
+  costs:
+    cnf: 1214320
+    customs: 867961
+    clearance: 75000
+    service_fee: 70000
   category: Crossover SUV
   image: /assets/images/vehicles/cars/sx4.jpeg
 
@@ -2403,7 +2538,12 @@
 
 - name: Mercedes Benz GLC220D Coupe
   slug: mercedes-glc220d
-  estimated_total_cost: 5576463
+  estimated_total_cost: 4316737
+  costs:
+    cnf: 2215000
+    customs: 1906737
+    clearance: 85000
+    service_fee: 160000
   category: SUV
   image: /assets/images/vehicles/cars/glc220d.jpeg
 
@@ -2426,6 +2566,11 @@
 - name: BMW X1
   slug: bmw-x1
   estimated_total_cost: 2875162
+  costs:
+    cnf: 1247000
+    customs: 1448162
+    clearance: 80000
+    service_fee: 100000
   category: SUV
   image: /assets/images/vehicles/cars/x1.jpeg
 
@@ -2448,6 +2593,11 @@
 - name: Toyota Esquire
   slug: toyota-esquire
   estimated_total_cost: 2780005
+  costs:
+    cnf: 1705000
+    customs: 895005
+    clearance: 80000
+    service_fee: 100000
   category: Minivan
   image: /assets/images/vehicles/cars/esquire.jpeg
 
@@ -2469,7 +2619,12 @@
 
 - name: Honda Shuttle
   slug: honda-shuttle
-  estimated_total_cost: 1737985
+  estimated_total_cost: 1702120
+  costs:
+    cnf: 980000
+    customs: 577120
+    clearance: 75000
+    service_fee: 70000
   category: Minivan
   image: /assets/images/vehicles/cars/shuttle.jpeg
 
@@ -2492,6 +2647,11 @@
 - name: Renault Megane
   slug: renault-megane
   estimated_total_cost: 1754671
+  costs:
+    cnf: 906440
+    customs: 703231
+    clearance: 75000
+    service_fee: 70000
   category: Hatchback
   image: /assets/images/vehicles/cars/megane.jpeg
 
@@ -2514,6 +2674,11 @@
 - name: Toyota Allion
   slug: toyota-allion
   estimated_total_cost: 2501432
+  costs:
+    cnf: 1639504
+    customs: 696928
+    clearance: 75000
+    service_fee: 90000
   category: Sedan
   image: /assets/images/vehicles/cars/allion.jpeg
 
@@ -2535,12 +2700,12 @@
 
 - name: Toyota Premio
   slug: toyota-premio
-  estimated_total_cost: 2513241
+  estimated_total_cost: 2633641
   costs:
-    cnf: 1460000
-    customs: 873241
-    clearance: 80000
-    service_fee: 100000
+    cnf: 1761710
+    customs: 706931
+    clearance: 75000
+    service_fee: 90000
   category: Sedan
   image: /assets/images/vehicles/cars/premio.jpeg
 
@@ -2589,7 +2754,12 @@
 
 - name: Nissan NV200
   slug: nissan-nv200
-  estimated_total_cost: 1935908
+  estimated_total_cost: 1626672
+  costs:
+    cnf: 1005856
+    customs: 475816
+    clearance: 75000
+    service_fee: 70000
   category: Van
   image: /assets/images/vehicles/cars/nv200.jpeg
 
@@ -2611,7 +2781,12 @@
 
 - name: Volvo v40
   slug: volvo-v40
-  estimated_total_cost: 2330057
+  estimated_total_cost: 2099780
+  costs:
+    cnf: 879780
+    customs: 1075000
+    clearance: 75000
+    service_fee: 100000
   category: Hatchback
   image: /assets/images/vehicles/cars/v40.jpeg
 
@@ -2633,7 +2808,12 @@
 
 - name: Volvo v60
   slug: volvo-v60
-  estimated_total_cost: 3025610
+  estimated_total_cost: 3046250
+  costs:
+    cnf: 1580250
+    customs: 1286000
+    clearance: 80000
+    service_fee: 100000
   category: Wagon
   image: /assets/images/vehicles/cars/v60.jpeg
 
@@ -2655,7 +2835,12 @@
 
 - name: Mercedes Benz GLE Coupe 400D
   slug: mercedes-gle-coupe-400d
-  estimated_total_cost: 10600342
+  estimated_total_cost: 12150000
+  costs:
+    cnf: 6700000
+    customs: 4900000
+    clearance: 100000
+    service_fee: 450000
   category: SUV
   image: /assets/images/vehicles/cars/glecoupe400d.jpeg
 
@@ -2705,6 +2890,11 @@
 - name: BMW 340i
   slug: bmw-340i
   estimated_total_cost: 5967109
+  costs:
+    cnf: 3094800
+    customs: 2612309
+    clearance: 90000
+    service_fee: 1700000
   category: Wagon
   image: /assets/images/vehicles/cars/340i.jpeg
 
@@ -2841,7 +3031,7 @@
     clearance: 75000
     service_fee: 70000
   category: Hatchback
-  image: /assets/images/vehicles/cars/move.jpeg
+  image: /assets/images/vehicles/cars/move.jpg
 
   short_description: A compact and fuel-efficient hatchback that combines practical design, modern technology, and reliable performance for urban driving.
 
