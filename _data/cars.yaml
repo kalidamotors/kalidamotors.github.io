@@ -23,7 +23,6 @@
 
   caution:
     - Smaller boot space compared to larger SUVs
-
 - name: Toyota RAV4
   slug: toyota-rav4
   estimated_total_cost: 3279253
@@ -49,7 +48,6 @@
 
   caution:
     - Higher price point than smaller SUVs
-
 - name: Honda CR-V
   slug: honda-crv
   estimated_total_cost: 3311372
@@ -73,7 +71,6 @@
   caution:
     - Some models may have higher maintenance costs
     - Limited off-road capability compared to larger SUVs
-
 - name: Subaru Forester
   slug: subaru-forester
   estimated_total_cost: 2694621
@@ -100,7 +97,6 @@
   caution:
     - Higher fuel consumption than some competitors
     - Interior may feel less refined than some rivals
-
 - name: Nissan X-Trail
   slug: nissan-xtrail
   estimated_total_cost: 2438141
@@ -127,7 +123,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mitsubishi Outlander
   slug: mitsubishi-outlander
   estimated_total_cost: 2624587
@@ -154,7 +149,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior quality may not match some rivals
-
 - name: Mazda CX-5
   slug: mazda-cx5
   estimated_total_cost: 2675535
@@ -181,7 +175,6 @@
   caution:
     - Higher price point than some competitors
     - Rear seat space may be tight for taller passengers
-
 - name: Toyota Land Cruiser Prado TZ G
   slug: toyota-land-cruiser-prado
   estimated_total_cost: 5681024
@@ -208,7 +201,6 @@
   caution:
     - Higher price point than many competitors
     - Fuel consumption may be higher than smaller SUVs
-
 - name: Toyota Vitz
   slug: toyota-vitz
   estimated_total_cost: 1289516
@@ -235,7 +227,6 @@
   caution:
     - Limited interior space compared to larger vehicles
     - May not be suitable for long road trips or larger families
-
 - name: Suzuki Swift
   slug: suzuki-swift
   estimated_total_cost: 1729460
@@ -258,7 +249,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Nissan Note E12
   slug: note-epower-e12
   estimated_total_cost: 1281694
@@ -285,7 +275,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Nissan Note E13
   slug: note-epower-e13
   estimated_total_cost: 1514157
@@ -312,7 +301,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Aqua
   slug: toyota-aqua
   estimated_total_cost: 1592668
@@ -338,7 +326,6 @@
   caution:
     - Limited cargo space compared to larger vehicles
     - Higher initial cost than some non-hybrid competitors
-
 - name: Honda Fit
   slug: honda-fit
   estimated_total_cost: 1539650
@@ -365,7 +352,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Sienta
   slug: toyota-sienta
   estimated_total_cost: 1893931
@@ -393,7 +379,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Honda Vezel
   slug: honda-vezel
   estimated_total_cost: 2405502
@@ -420,7 +405,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Noah WxB
   slug: toyota-noah-wxb
   estimated_total_cost: 3056250
@@ -443,7 +427,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Peugeot 3008
   slug: peugeot-3008
   estimated_total_cost: 2676000
@@ -469,7 +452,6 @@
 
   caution:
     - Some models may have less powerful engines
-
 - name: Mazda Mazda2
   slug: mazda-mazda2
   estimated_total_cost: 1459516
@@ -496,7 +478,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Volvo XC40
   slug: volvo-xc40
   estimated_total_cost: 2971879
@@ -523,7 +504,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Peugeot 308
   slug: peugeot-308
   estimated_total_cost: 1805160
@@ -550,7 +530,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Suzuki Alto
   slug: suzuki-alto
   estimated_total_cost: 707946
@@ -577,7 +556,6 @@
   caution:
     - Limited interior space compared to larger vehicles
     - May not be suitable for long road trips or larger families
-
 - name: Subaru XV
   slug: subaru-xv
   estimated_total_cost: 2187548
@@ -604,7 +582,6 @@
   caution:
     - Higher fuel consumption than some competitors
     - Interior may feel less refined than some rivals
-
 - name: Mercedes A180
   slug: mercedes-a180
   estimated_total_cost: 2436360
@@ -631,7 +608,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Passo
   slug: toyota-passo
   estimated_total_cost: 1053841
@@ -658,7 +634,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Toyota Yaris
   slug: toyota-yaris
   estimated_total_cost: 1509478
@@ -685,7 +660,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Toyota Harrier
   slug: toyota-harrier
   estimated_total_cost: 3166028
@@ -712,7 +686,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Raize
   slug: toyota-raize
   estimated_total_cost: 2297654
@@ -739,7 +712,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Fielder
   slug: toyota-fielder
   estimated_total_cost: 1825818
@@ -766,7 +738,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Toyota Axio
   slug: toyota-axio
   estimated_total_cost: 1617580
@@ -793,7 +764,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Volkswagen Golf GTI
   slug: volkswagen-golf-gti
   estimated_total_cost: 3258686
@@ -819,7 +789,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mazda Mazda3
   slug: mazda-mazda3
   estimated_total_cost: 2223815
@@ -846,7 +815,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Volkswagen Golf
   slug: volkswagen-golf
   estimated_total_cost: 2250934
@@ -873,7 +841,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Subaru Levorg
   slug: subaru-levorg
   estimated_total_cost: 1920071
@@ -900,7 +867,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Toyota Voxy
   slug: toyota-voxy
   estimated_total_cost: 2423450
@@ -927,7 +893,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Toyota Hilux
   slug: toyota-hilux
   estimated_total_cost: 4338391
@@ -954,7 +919,6 @@
   caution:
     - Higher price point than many competitors
     - Fuel consumption may be higher than smaller vehicles
-
 - name: Nissan Sylphy
   slug: nissan-sylphy
   estimated_total_cost: 1409343
@@ -981,7 +945,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Volkswagen Polo
   slug: volkswagen-polo
   estimated_total_cost: 1817420
@@ -1008,7 +971,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Suzuki Hustler
   slug: suzuki-hustler
   estimated_total_cost: 888995
@@ -1035,7 +997,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Nissan Teana
   slug: nissan-teana
   estimated_total_cost: 1831337
@@ -1062,7 +1023,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Nissan Dayz
   slug: nissan-dayz
   estimated_total_cost: 995000
@@ -1089,7 +1049,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Mitsubishi Delica D2
   slug: mitsubishi-delica
   estimated_total_cost: 1441730
@@ -1116,7 +1075,6 @@
   caution:
     - Higher price point than many competitors
     - Fuel consumption may be higher than smaller vehicles
-
 - name: Toyota Roomy
   slug: toyota-roomy
   estimated_total_cost: 1317895
@@ -1144,7 +1102,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Succeed Probox
   slug: toyota-succeed-probox
   estimated_total_cost: 1423119
@@ -1198,7 +1155,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors 
-
 - name: Suzuki Solio
   slug: suzuki-solio
   estimated_total_cost: 1025930
@@ -1226,7 +1182,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Corolla Sport G
   slug: toyota-corolla-sport-g
   estimated_total_cost: 2053271
@@ -1253,7 +1208,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Vellfire
   slug: toyota-vellfire
   estimated_total_cost: 3476712
@@ -1280,7 +1234,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mazda Bongo
   slug: mazda-bongo
   estimated_total_cost: 1344764
@@ -1307,7 +1260,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Nissan NV200 Vanette
   slug: nissan-nv200-vanette
   estimated_total_cost: 1520816
@@ -1334,7 +1286,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Daihatsu Move
   slug: daihatsu-move
   estimated_total_cost: 887970
@@ -1361,7 +1312,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Toyota Aqua Crossover
   slug: toyota-aqua-crossover
   estimated_total_cost: 1961068
@@ -1388,7 +1338,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Higher initial cost than some non-hybrid competitors
-
 - name: Honda Insight
   slug: honda-insight
   estimated_total_cost: 2400300
@@ -1415,7 +1364,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Higher initial cost than some non-hybrid competitors
-
 - name: Toyota Prius
   slug: toyota-prius
   estimated_total_cost: 2200000
@@ -1442,7 +1390,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Higher initial cost than some non-hybrid competitors
-
 - name: Toyota Camry Hybrid
   slug: toyota-camry-hybrid
   estimated_total_cost: 3000000
@@ -1464,7 +1411,6 @@
   caution:
     - Higher price point than some non-hybrid competitors
     - Some models may have less powerful engines
-
 - name: Mazda CX-30
   slug: mazda-cx-30
   estimated_total_cost: 2904989
@@ -1491,7 +1437,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Subaru Outback
   slug: subaru-outback
   estimated_total_cost: 2873121
@@ -1518,7 +1463,6 @@
   caution:
     - Higher fuel consumption than some competitors
     - Interior may feel less refined than some rivals
-
 - name: Mercedes GLA220
   slug: mercedes-gla220
   estimated_total_cost: 2920567
@@ -1545,7 +1489,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Volkswagen Tiguan
   slug: volkswagen-tiguan
   estimated_total_cost: 3062606
@@ -1572,7 +1515,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mercedes C180
   slug: mercedes-c180
   estimated_total_cost: 3201666
@@ -1599,7 +1541,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Volkswagen T-roc
   slug: volkswagen-troc
   estimated_total_cost: 3450767
@@ -1626,7 +1567,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: BMW 330i M-SPORT
   slug: bmw-330i-m-sport
   estimated_total_cost: 3523847
@@ -1653,7 +1593,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Volkswagen Arteon
   slug: volkswagen-arteon
   estimated_total_cost: 3570091
@@ -1680,7 +1619,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mercedes C220D
   slug: mercedes-c220d
   estimated_total_cost: 3498794
@@ -1707,7 +1645,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Peugeot 5008
   slug: peugeot-5008
   estimated_total_cost: 3157882
@@ -1734,7 +1671,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Lexus NX300
   slug: lexus-nx300
   estimated_total_cost: 3826276
@@ -1761,7 +1697,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: BMW X3 XDRIVE
   slug: bmw-x3-xdrive
   estimated_total_cost: 3850295
@@ -1788,7 +1723,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Alphard
   slug: toyota-alphard
   estimated_total_cost: 3804066
@@ -1842,7 +1776,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mercedes E200
   slug: mercedes-e200
   estimated_total_cost: 4049174
@@ -1869,7 +1802,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mercedes GLC 250
   slug: mercedes-glc-250
   estimated_total_cost: 4123972
@@ -1896,7 +1828,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Lexus RX300
   slug: lexus-rx300
   estimated_total_cost: 4310969
@@ -1923,7 +1854,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Crown
   slug: toyota-crown
   estimated_total_cost: 3579060
@@ -1950,7 +1880,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Range Rover Evoque
   slug: range-rover-evoque
   estimated_total_cost: 4497753
@@ -1977,14 +1906,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Range Rover Sport
   slug: range-rover-sport
-  estimated_total_cost: 11354551
+  estimated_total_cost: 11379551
   costs:
     cnf: 7000000
     customs: 3869551
-    clearance: 100000
+    clearance: 125000
     service_fee: 385000
   category: SUV
   image: /assets/images/vehicles/cars/sport.jpg
@@ -2004,7 +1932,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Audi Q7
   slug: audi-q7
   estimated_total_cost: 5075188
@@ -2031,14 +1958,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Volvo XC90
   slug: volvo-xc90
-  estimated_total_cost: 5364842
+  estimated_total_cost: 5389842
   costs:
     cnf: 2476000
     customs: 2628842
-    clearance: 100000
+    clearance: 125000
     service_fee: 160000
   category: SUV
   image: /assets/images/vehicles/cars/XC90.jpg
@@ -2058,14 +1984,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: BMW M2 Competition
   slug: bmw-m2-competition
-  estimated_total_cost: 6464934
+  estimated_total_cost: 6489934
   costs:
     cnf: 4085000
     customs: 2104934
-    clearance: 100000
+    clearance: 125000
     service_fee: 175000
   category: Coupe
   image: /assets/images/vehicles/cars/m2.jpg
@@ -2085,14 +2010,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Porsche Cayenne
   slug: porsche-cayenne
-  estimated_total_cost: 7189586
+  estimated_total_cost: 7214586
   costs:
     cnf: 4402000
     customs: 2507586
-    clearance: 100000
+    clearance: 125000
     service_fee: 180000
   category: SUV
   image: /assets/images/vehicles/cars/cayenne.jpg
@@ -2112,7 +2036,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Suzuki Jimny
   slug: suzuki-jimny
   estimated_total_cost: 2159091
@@ -2139,7 +2062,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Toyota Hiace
   slug: toyota-hiace
   estimated_total_cost: 3463557
@@ -2166,7 +2088,6 @@
   caution:
     - Higher price point than some competitors
     - Some models may have less powerful engines
-
 - name: Mercedes GLC300
   slug: mercedes-glc300
   estimated_total_cost: 4935600
@@ -2193,14 +2114,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mercedes GLS 400D
   slug: mercedes-gls-400d
-  estimated_total_cost: 8897331
+  estimated_total_cost: 8922331
   costs:
     cnf: 4730000
     customs: 3867331
-    clearance: 100000
+    clearance: 125000
     service_fee: 200000
   category: SUV
   image: /assets/images/vehicles/cars/gls400d.jpg
@@ -2216,7 +2136,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mazda CX-8
   slug: mazda-cx-8
   estimated_total_cost: 3100194
@@ -2243,7 +2162,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mazda Mazda6
   slug: mazda-mazda6
   estimated_total_cost: 2511878
@@ -2270,14 +2188,13 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mercedes GLE  
   slug: mercedes-gle
-  estimated_total_cost: 9369217
+  estimated_total_cost: 9394217
   costs:
     cnf: 4486000
     customs: 4573217
-    clearance: 100000
+    clearance: 125000
     service_fee: 210000
   category: SUV
   image: /assets/images/vehicles/cars/gle.jpg
@@ -2297,7 +2214,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Volvo XC60
   slug: volvo-xc60
   estimated_total_cost: 4175817
@@ -2319,7 +2235,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Tesla Model 3
   slug: tesla-model-3
   estimated_total_cost: 2532413
@@ -2346,7 +2261,6 @@
   caution:
     - Higher initial cost than some non-electric competitors
     - Limited charging infrastructure in some areas
-
 - name: Nissan Kicks
   slug: nissan-kicks
   estimated_total_cost: 2138349
@@ -2373,7 +2287,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Peugeot 2008
   slug: peugeot-2008
   estimated_total_cost: 1620680
@@ -2400,7 +2313,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Nissan Juke
   slug: nissan-juke
   estimated_total_cost: 1570100
@@ -2427,7 +2339,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Honda Fit RS
   slug: honda-fit
   estimated_total_cost: 1940954
@@ -2454,7 +2365,6 @@
   caution:
     - Limited rear seat space for taller passengers
     - Some models may have less powerful engines
-
 - name: Subaru Impreza
   slug: subaru-impreza
   estimated_total_cost: 1783917
@@ -2481,7 +2391,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota CHR
   slug: toyota-chr
   estimated_total_cost: 2547288
@@ -2508,7 +2417,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Suzuki SX4
   slug: suzuki-sx4
   estimated_total_cost: 2227281
@@ -2535,7 +2443,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mercedes Benz GLC220D Coupe
   slug: mercedes-glc220d
   estimated_total_cost: 4316737
@@ -2562,7 +2469,6 @@
   caution:
     - Higher maintenance and repair costs
     - Premium fuel requirements
-
 - name: BMW X1
   slug: bmw-x1
   estimated_total_cost: 2875162
@@ -2589,7 +2495,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Esquire
   slug: toyota-esquire
   estimated_total_cost: 2780005
@@ -2616,7 +2521,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Honda Shuttle
   slug: honda-shuttle
   estimated_total_cost: 1702120
@@ -2643,7 +2547,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Renault Megane
   slug: renault-megane
   estimated_total_cost: 1754671
@@ -2670,7 +2573,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Allion
   slug: toyota-allion
   estimated_total_cost: 2501432
@@ -2697,7 +2599,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Toyota Premio
   slug: toyota-premio
   estimated_total_cost: 2633641
@@ -2724,7 +2625,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mercedes Benz C200
   slug: mercedes-c200
   estimated_total_cost: 3361686
@@ -2751,7 +2651,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Nissan NV200
   slug: nissan-nv200
   estimated_total_cost: 1626672
@@ -2778,7 +2677,6 @@
   caution:
     - Limited passenger seating options
     - Some models may have less powerful engines
-
 - name: Volvo v40
   slug: volvo-v40
   estimated_total_cost: 2099780
@@ -2805,7 +2703,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Volvo v60
   slug: volvo-v60
   estimated_total_cost: 3046250
@@ -2832,14 +2729,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mercedes Benz GLE Coupe 400D
   slug: mercedes-gle-coupe-400d
-  estimated_total_cost: 12150000
+  estimated_total_cost: 12175000
   costs:
     cnf: 6700000
     customs: 4900000
-    clearance: 100000
+    clearance: 125000
     service_fee: 450000
   category: SUV
   image: /assets/images/vehicles/cars/glecoupe400d.jpeg
@@ -2859,14 +2755,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Lexus LX 570
   slug: lexus-lx-570
-  estimated_total_cost: 10605530
+  estimated_total_cost: 10630530
   costs:
     cnf: 6784800
     customs: 3360730
-    clearance: 100000
+    clearance: 150000
     service_fee: 360000
   category: SUV
   image: /assets/images/vehicles/cars/lx570.jpeg
@@ -2886,7 +2781,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: BMW 340i
   slug: bmw-340i
   estimated_total_cost: 5967109
@@ -2913,14 +2807,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Landrover Defender 110 
   slug: landrover-defender-110
-  estimated_total_cost: 15075898
+  estimated_total_cost: 15100898
   costs:
     cnf: 8300000
     customs: 6075898
-    clearance: 100000
+    clearance: 125000
     service_fee: 600000
   category: SUV
   image: /assets/images/vehicles/cars/defender110.jpeg
@@ -2940,7 +2833,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mercedes Benz B180
   slug: mercedes-b180
   estimated_total_cost: 2306435
@@ -2967,7 +2859,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Yaris Cross
   slug: toyota-yaris-cross
   estimated_total_cost: 2497515
@@ -2994,14 +2885,13 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mercedes Benz GLE 63S
   slug: mercedes-gle-63s
-  estimated_total_cost: 13537685
+  estimated_total_cost: 13562685
   costs:
     cnf: 6700000
     customs: 6737685
-    clearance: 100000
+    clearance: 125000
     service_fee: 450000
   category: SUV
   image: /assets/images/vehicles/cars/gle63s.jpeg
@@ -3021,7 +2911,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Daihatsu Move
   slug: daihatsu-move
   estimated_total_cost: 1022658
@@ -3048,7 +2937,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Nissan Elgrand
   slug: nissan-elgrand
   estimated_total_cost: 2595029
@@ -3075,14 +2963,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Toyota Landcruiser J250
   slug: toyota-landcruiser-j250
-  estimated_total_cost: 12467354
+  estimated_total_cost: 12492354
   costs:
     cnf: 6700000
     customs: 5217354
-    clearance: 100000
+    clearance: 125000
     service_fee: 450000
   category: SUV
   image: /assets/images/vehicles/cars/j250.jpeg
@@ -3102,14 +2989,13 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Landrover Defender
   slug: landrover-defender
-  estimated_total_cost: 13325898
+  estimated_total_cost: 13600898
   costs:
     cnf: 6700000
     customs: 6075898
-    clearance: 100000
+    clearance: 150000
     service_fee: 450000
   category: SUV
   image: /assets/images/vehicles/cars/defender.jpeg
@@ -3129,7 +3015,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Mazda CX8 Exclusive Mode
   slug: mazda-cx8-exclusive
   estimated_total_cost: 3381985
@@ -3156,7 +3041,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Audi Q5
   slug: audi-q5
   estimated_total_cost: 3313659
@@ -3183,7 +3067,6 @@
   caution:
     - Higher price point than many competitors
     - Some models may have higher maintenance costs
-
 - name: Suzuki Escudo
   slug: suzuki-escudo
   estimated_total_cost: 2888880
@@ -3210,7 +3093,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Mitsubishi RVR
   slug: mitsubishi-rvr
   estimated_total_cost: 2358475
@@ -3237,7 +3119,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Suzuki Baleno
   slug: suzuki-baleno
   estimated_total_cost: 1546724
@@ -3264,7 +3145,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Peugeot 2008
   slug: peugeot-2008-gt
   estimated_total_cost: 2600480
@@ -3291,7 +3171,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Peugeot 208
   slug: peugeot-208
   estimated_total_cost: 1370262
@@ -3318,7 +3197,6 @@
   caution:
     - Some models may have less powerful engines
     - Interior materials may feel less premium than some competitors
-
 - name: Audi A3
   slug: audi-a3
   estimated_total_cost: 2596398
