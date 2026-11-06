@@ -80,7 +80,7 @@
   listed_date: "2026-06-01"
   active: true
   price: "KES 750,000"
-  badge: "Available for Viewing at Kalida Motors Showroom"
+  badge: "Sold"
   efficiency: "11-12 km/l"
   images:
     - "assets/images/vehicles/local/stream1.jpeg"
@@ -578,7 +578,7 @@
   mileage: "50,000 km"
   price: "KES 1,950,000"
   badge: "Available for Viewing at Kalida Motors Showroom"
-  efficiency: "15-17 km/l"
+  efficiency: "15-18 km/l"
   paid_for: false
   listed_date: "2026-08-30"
   active: true
@@ -714,7 +714,7 @@
   seats: "5"
   wheel_size: "18 inches"
   chassis_id: "BL5-1234567"
-  badge: "Available for Viewing at Panari Hotel"
+  badge: "Sold"
   efficiency: "10-12 km/l"
   paid_for: false
   listed_date: "2026-09-20"
@@ -730,3 +730,42 @@
     - "assets/images/vehicles/local/legacy8.jpeg"
     - "assets/images/vehicles/local/legacy9.jpeg"
     - "assets/images/vehicles/local/legacy10.jpeg"
+
+- id: "g1k7l8m9n"
+  title: "Toyota Land Cruiser Prado"
+  year: "2010"
+  grade: "Locally Used"
+  fuel: "Diesel"
+  transmission: "Auto"
+  mileage: "180,000 km"
+  price: "KES 4,000,000"
+  color: "White"
+  drive_type: "4WD"
+  engine_model: "1KD-FTV"
+  engine_size: "3L"
+  doors: "5"
+  seats: "7"
+  wheel_size: "18 inches"
+  chassis_id: "KDJ150-1234567"
+  badge: "Available for Viewing at Juja"
+  efficiency: "8-10 km/l"
+  paid_for: false
+  listed_date: "2026-09-25"
+  active: true
+  images:
+    - "assets/images/vehicles/local/prado2_1.jpeg"
+    - "assets/images/vehicles/local/prado2_2.jpeg"
+    - "assets/images/vehicles/local/prado2_3.jpeg"
+    - "assets/images/vehicles/local/prado2_4.jpeg"
+    - "assets/images/vehicles/local/prado2_5.jpeg"
+    - "assets/images/vehicles/local/prado2_6.jpeg"
+    - "assets/images/vehicles/local/prado2_7.jpeg"
+    - "assets/images/vehicles/local/prado2_8.jpeg"
+    - "assets/images/vehicles/local/prado2_9.jpeg"
+    - "assets/images/vehicles/local/prado2_10.jpeg"
+    - "assets/images/vehicles/local/prado2_11.jpeg"
+    - "assets/images/vehicles/local/prado2_12.jpeg"
+    - "assets/images/vehicles/local/prado2_13.jpeg"
+    - "assets/images/vehicles/local/prado2_14.jpeg"
+    - "assets/images/vehicles/local/prado2_15.jpeg"
+    
