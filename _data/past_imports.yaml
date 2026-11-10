@@ -1869,7 +1869,7 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-10-03"
-  current_status: "Inspection pending"
+  current_status: "Shipping pending"
   estimated_delivery: "November 2026"
   import_steps_completed:
     - step: "Auction Bidding"
@@ -1886,7 +1886,7 @@
       details: "Vehicle will be shipped after inspection and preparation."
       shipping_details:
         carrier: "Morning Cello"
-        estimated_arrival: "2026-11-05"
+        estimated_arrival: "2026-12-05"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya after arrival."
