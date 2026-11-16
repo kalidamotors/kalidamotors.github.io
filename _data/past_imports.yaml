@@ -1977,24 +1977,24 @@
   link: "inquiry"
   cta: "Similar Inquiry"
   auction_date: "2026-09-29"
-  current_status: "Payment pending"
+  current_status: "Shipping pending"
   estimated_delivery: "December 2026"
   import_steps_completed:
     - step: "Auction Bidding"
       date_completed: "2026-09-29"
       details: "Successfully won the bid for the vehicle at the auction."
     - step: "Payment Processing"
-      date_completed: null
+      date_completed: "2026-10-08"
       details: "Payment is processed for the vehicle."
     - step: "Vehicle Inspection"
-      date_completed: null
+      date_completed: "2026-10-26"
       details: "Vehicle inspection will be scheduled after payment confirmation."
     - step: "Shipping"
       date_completed: null
       details: "Vehicle will be shipped after inspection and preparation."
-      # shipping_details:
-      #   carrier: "Gentle Leader"
-      #   estimated_arrival: "2026-10-15"
+      shipping_details:
+        carrier: "HARMONY LEADER"
+        estimated_arrival: "2026-12-12"
     - step: "Customs Clearance"
       date_completed: null
       details: "Awaiting customs clearance in Kenya after arrival."
@@ -2067,6 +2067,9 @@
       details: "Vehicle inspection will be scheduled after payment confirmation."
     - step: "Shipping"
       date_completed: null
+      shipping_details:
+        carrier: "HARMONY LEADER"
+        estimated_arrival: "2026-12-12"
       details: "Vehicle will be shipped after inspection and preparation."
     - step: "Customs Clearance"
       date_completed: null
@@ -2124,3 +2127,55 @@
     - step: "Final Delivery"
       date_completed: null
       details: "Estimated delivery to client's location in Nairobi after customs clearance."
+
+- id: "o5p6q7r8"
+  tracking_id: "KM-15N6O7P"
+  title: "Mercedes GLC"
+  subtitle: "GLC 300 | 2L"
+  year: "2021"
+  grade: "4.5"
+  mileage: "60,000 km"
+  fuel: "Petrol"
+  transmission: "Auto"
+  engine_size: "2.0L"
+  price: "KES 4,500,000 CNF"
+  drive_type: "AWD"
+  color: "Black"
+  seats: "5 Seater"
+  chassis_id: "WDC"
+  engine_model: "M264"
+  airbags: "6 (Front, Side, Curtain)"
+  wheel_size: "19-inch Alloy"
+  safety_systems: "ABS, EBD, Brake Assist, Lane Assist"
+  doors: "5"
+  efficiency: "12-14 km/l (combined)"
+  images:
+    - "assets/images/vehicles/past_imports/mercedes_glc_1.jpeg"
+    - "assets/images/vehicles/past_imports/mercedes_glc_2.jpeg"
+  badge: "Shipping to Mombasa"
+  link: "inquiry"
+  cta: "Similar Inquiry"
+  auction_date: "2026-12-05"
+  current_status: "Inspection pending"
+  estimated_delivery: "February 2027"
+  import_steps_completed:
+    - step: "Auction Bidding"
+      date_completed: "2026-12-05"
+      details: "Successfully won the bid for the vehicle at the auction."
+    - step: "Payment Processing"
+      date_completed: "2026-12-06"
+      details: "Payment is processed for the vehicle."
+    - step: "Vehicle Inspection"
+      date_completed: null
+      details: "Vehicle inspection will be scheduled after payment confirmation."
+    - step: "Shipping"
+      date_completed: null
+      details: "Vehicle will be shipped after inspection and preparation."
+    - step: "Customs Clearance"
+      date_completed: null
+      details: "Awaiting customs clearance in Kenya after arrival."
+    - step: "Final Delivery"
+      date_completed: null
+      details: "Estimated delivery to client's location in Nairobi after customs clearance."
+
+
