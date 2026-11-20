@@ -3,206 +3,6 @@ title: Deals of the Week
 subtitle: Direct from Japan Auction Houses
 footer_note: All prices are estimated landed costs.
 deals:
-  - id: xtrail-2019-a7f2
-    title: Nissan X-Trail
-    subtitle: 2L Petrol
-    price: KES 2,200,000
-    savings_text: Save KES 500,000 vs Local
-    badge: Direct Import Deal
-    cta_text: Grab this deal
-    year: "2019"
-    grade: "4.5"
-    mileage: "82000 km"
-    fuel: "Petrol"
-    transmission: "Auto"
-    engine_size: "2L"
-    # savings: "KES 400,000"
-    drive_type: "FWD"
-    color: "Black"
-    seats: "5 Seater"
-    chassis_id: "DBA-T32"
-    engine_model: "MR20DD"
-    airbags: "8 (Front, Side, Curtain)"
-    wheel_size: "17-inch Alloy Wheels"
-    safety_systems: "ABS, EBD, Brake Assist, Traction Control, Stability Control"
-    doors: "5"
-    efficiency: "12-14 km/l"
-    images: 
-      - assets/images/vehicles/deals/xtrail1.jpeg
-      - assets/images/vehicles/deals/xtrail2.jpeg
-      - assets/images/vehicles/deals/xtrail3.jpeg
-      - assets/images/vehicles/deals/xtrail4.jpeg
-      - assets/images/vehicles/deals/xtrail5.jpeg
-      - assets/images/vehicles/deals/xtrail6.jpeg
-      - assets/images/vehicles/deals/xtrail8.jpeg
-      - assets/images/vehicles/deals/xtrail9.jpeg
-      - assets/images/vehicles/deals/xtrail10.jpeg
-      - assets/images/vehicles/deals/xtrail11.jpeg
-      - assets/images/vehicles/deals/xtrail12.jpeg
-      - assets/images/vehicles/deals/xtrail13.jpeg
-      - assets/images/vehicles/deals/xtrail14.jpeg
-      - assets/images/vehicles/deals/xtrail15.jpeg
-
-  - id: vezel-2019-b8g3
-    title: Honda Vezel
-    subtitle: Hybrid Z
-    price: KES 2,300,000
-    savings_text: Save KES 400,000 vs Local
-    badge: Sold
-    cta_text: Grab this deal
-    year: "2019"
-    grade: "4"
-    mileage: "63000 km"
-    fuel: "Petrol"
-    transmission: "Auto"
-    engine_size: "1.5L"
-    # savings: "KES 400,000"
-    drive_type: "FWD"
-    color: "Red"
-    seats: "5 Seater"
-    chassis_id: "DAA-RU3"
-    engine_model: "LEB-H1"
-    airbags: "8 (Front, Side, Curtain)"
-    wheel_size: "17-inch Alloy Wheels"
-    safety_systems: "Honda Z Sensing"
-    doors: "5"
-    efficiency: "18 km/l"
-    images: 
-      - assets/images/vehicles/deals/vezel1.jpeg
-      - assets/images/vehicles/deals/vezel2.jpeg
-      - assets/images/vehicles/deals/vezel3.jpeg
-      - assets/images/vehicles/deals/vezel4.jpeg
-      - assets/images/vehicles/deals/vezel5.jpeg
-      - assets/images/vehicles/deals/vezel6.jpeg
-      - assets/images/vehicles/deals/vezel7.jpeg
-      - assets/images/vehicles/deals/vezel8.jpeg
-      - assets/images/vehicles/deals/vezel9.jpeg
-      - assets/images/vehicles/deals/vezel10.jpeg
-      - assets/images/vehicles/deals/vezel11.jpeg
-      - assets/images/vehicles/deals/vezel12.jpeg
-
-  - id: outlander-2019-c9h4
-    title: Mitsubishi Outlander
-    subtitle: PHEV G Premium Package
-    price: KES 2,750,000
-    savings_text: Save KES 800,000 vs Local
-    badge: Direct Import Deal
-    cta_text: Grab this deal
-    year: "2019"
-    grade: "4.5"
-    mileage: "107000 km"
-    fuel: "Petrol / Plug-in Hybrid"
-    transmission: "Auto"
-    engine_size: "2.4L"
-    # savings: "KES 450,000"
-    drive_type: "S-AWC 4WD"
-    color: "Black"
-    seats: "5 Seater"
-    chassis_id: "LA-GG3W"
-    engine_model: "4B12-MIVEC"
-    airbags: "7 (Front, Side, Curtain, Driver Knee)"
-    wheel_size: "18-inch Alloy Wheels"
-    safety_systems: "e-Assist (FCM, LDW, ACC, BSW)"
-    doors: "5"
-    efficiency: "18.6 km/l (EV Range ~55 km)"
-    images: 
-      - assets/images/vehicles/deals/outlander1.jpeg
-      - assets/images/vehicles/deals/outlander2.jpeg
-      - assets/images/vehicles/deals/outlander3.jpeg
-      - assets/images/vehicles/deals/outlander4.jpeg
-      - assets/images/vehicles/deals/outlander5.jpeg
-      - assets/images/vehicles/deals/outlander6.jpeg
-      - assets/images/vehicles/deals/outlander7.jpeg
-
-  - id: subaru-xv-2019-d1j5
-    title: Subaru XV
-    subtitle: Advance e-BOXER
-    price: KES 2,000,000
-    savings_text: Save KES 600,000 vs Local
-    badge: Direct Import Deal
-    cta_text: Grab this deal
-    year: "2019"
-    grade: "4.5"
-    mileage: "91,000 km"
-    fuel: "Petrol / Mild-Hybrid (e-BOXER)"
-    transmission: "Lineartronic CVT"
-    engine_size: "2.0L"
-    # savings: "KES 350,000"
-    drive_type: "Symmetrical AWD"
-    color: "Lagoon Blue Pearl"
-    seats: "5 Seater"
-    chassis_id: "5AA-GTE"
-    engine_model: "FB20-MA1"
-    airbags: "7 (Front, Side, Curtain, Driver Knee)"
-    wheel_size: "18-inch Alloy Wheels"
-    safety_systems: "Subaru EyeSight Ver.3"
-    doors: "5"
-    efficiency: "19.2 km/l"
-    images: 
-      - assets/images/vehicles/deals/xv1.jpeg
-      - assets/images/vehicles/deals/xv2.jpeg
-      - assets/images/vehicles/deals/xv3.jpeg
-      - assets/images/vehicles/deals/xv4.jpeg
-      - assets/images/vehicles/deals/xv5.jpeg
-      - assets/images/vehicles/deals/xv6.jpeg
-      - assets/images/vehicles/deals/xv7.jpeg
-      - assets/images/vehicles/deals/xv8.jpeg
-      - assets/images/vehicles/deals/xv9.jpeg
-      - assets/images/vehicles/deals/xv10.jpeg
-      - assets/images/vehicles/deals/xv11.jpeg
-      - assets/images/vehicles/deals/xv12.jpeg
-      - assets/images/vehicles/deals/xv13.jpeg
-      - assets/images/vehicles/deals/xv14.jpeg
-      - assets/images/vehicles/deals/xv15.jpeg
-      - assets/images/vehicles/deals/xv16.jpeg
-      - assets/images/vehicles/deals/xv17.jpeg
-      - assets/images/vehicles/deals/xv18.jpeg
-      - assets/images/vehicles/deals/xv19.jpeg
-
-  - id: honda-vezel-2019-e2k6
-    title: Honda Vezel
-    subtitle: Hybrid X
-    price: KES 2,300,000
-    savings_text: Save KES 400,000 vs Local
-    badge: Direct Import Deal
-    cta_text: Grab this deal
-    year: "2019"
-    grade: "4"
-    mileage: "83000 km"
-    fuel: "Petrol"
-    transmission: "Auto"
-    engine_size: "1.5L"
-    # savings: "KES 400,000"
-    drive_type: "FWD"
-    color: "Gray"
-    seats: "5 Seater"
-    chassis_id: "DAA-RU3"
-    engine_model: "LEB-H1"
-    airbags: "6 (Front, Side, Curtain)"
-    wheel_size: "17-inch Alloy Wheels"
-    safety_systems: "Honda Sensing"
-    doors: "5"
-    efficiency: "20.1 km/l"
-    images: 
-      - assets/images/vehicles/deals/vezel2_1.jpeg
-      - assets/images/vehicles/deals/vezel2_2.jpeg
-      - assets/images/vehicles/deals/vezel2_3.jpeg
-      - assets/images/vehicles/deals/vezel2_4.jpeg
-      - assets/images/vehicles/deals/vezel2_5.jpeg
-      - assets/images/vehicles/deals/vezel2_6.jpeg
-      - assets/images/vehicles/deals/vezel2_7.jpeg
-      - assets/images/vehicles/deals/vezel2_8.jpeg
-      - assets/images/vehicles/deals/vezel2_9.jpeg
-      - assets/images/vehicles/deals/vezel2_10.jpeg
-      - assets/images/vehicles/deals/vezel2_11.jpeg
-      - assets/images/vehicles/deals/vezel2_12.jpeg
-      - assets/images/vehicles/deals/vezel2_13.jpeg
-      - assets/images/vehicles/deals/vezel2_14.jpeg
-      - assets/images/vehicles/deals/vezel2_15.jpeg
-      - assets/images/vehicles/deals/vezel2_16.jpeg
-      - assets/images/vehicles/deals/vezel2_17.jpeg
-      - assets/images/vehicles/deals/vezel2_18.jpeg
-
   - id: honda-vezel-2021-f3l7
     title: Honda Vezel
     subtitle: Hybrid Z
@@ -276,39 +76,6 @@ deals:
       - assets/images/vehicles/deals/cx5_3.jpeg
       - assets/images/vehicles/deals/cx5_4.jpeg
       - assets/images/vehicles/deals/cx5_5.jpeg
-
-  - id: forester-2019-h5n9
-    title: Subaru Forester
-    subtitle: 2.0i-L Advance
-    price: KES 3,200,000
-    savings_text: Save KES 700,000 vs Local
-    badge: Direct Import Deal
-    cta_text: Grab this deal
-    year: "2019"
-    grade: "4"
-    mileage: "107000 km"
-    fuel: "Petrol"
-    transmission: "Auto"
-    engine_size: "2.0L"
-    # savings: "KES 400,000"
-    drive_type: "Symmetrical AWD"
-    color: "White"
-    seats: "5 Seater"
-    chassis_id: "DBA-SKE"
-    engine_model: "FB20-MA1"
-    airbags: "7 (Front, Side, Curtain, Driver Knee)"
-    wheel_size: "17-inch Alloy Wheels"
-    safety_systems: "Subaru EyeSight Ver.3"
-    doors: "5"
-    efficiency: "17-19 km/l"
-    additional_features: "360-Degree Camera, Adaptive Cruise Control, Lane Departure Warning, Automatic Emergency Braking, leather seats, Apple CarPlay, Android Auto, digital instrument cluster, keyless entry, push-button start, dual-zone climate control, heated seats, power-adjustable driver's seat, rain-sensing wipers, LED headlights, and more."
-    images:
-      - assets/images/vehicles/deals/forester1.jpeg
-      - assets/images/vehicles/deals/forester2.jpeg
-      - assets/images/vehicles/deals/forester3.jpeg
-      - assets/images/vehicles/deals/forester4.jpeg
-      - assets/images/vehicles/deals/forester5.jpeg
-      - assets/images/vehicles/deals/forester6.jpeg
 
   - id: mazda6-2020-i6o1
     title: Mazda 6
@@ -428,3 +195,38 @@ deals:
       - assets/images/vehicles/deals/a3_3.jpg
       - assets/images/vehicles/deals/a3_4.jpg
       - assets/images/vehicles/deals/a3_5.jpg
+
+  - id: mazda-3-2020-j9k4
+    title: Mazda 3
+    subtitle: 2.0L Skyactiv-D
+    price: KES 2,065,000
+    costs:
+      cnf: 1200000
+      customs: 720000
+      clearance: 75000
+      service_fee: 70000
+    savings_text: Save KES 400,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2020"
+    grade: "4"
+    mileage: "93000 km"
+    fuel: "Diesel"
+    transmission: "Auto"
+    engine_size: "1.8L"
+    drive_type: "FWD"
+    color: "Silver"
+    seats: "5 Seater"
+    chassis_id: "BP8P"
+    engine_model: "Skyactiv-D"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "ABS, EBD, Brake Assist, Lane Assist"
+    doors: "4"
+    efficiency: "16-18 km/l"
+    images:
+      - assets/images/vehicles/deals/mazda3_1.jpg
+      - assets/images/vehicles/deals/mazda3_2.jpg
+      - assets/images/vehicles/deals/mazda3_3.jpg
+      - assets/images/vehicles/deals/mazda3_4.jpg
+      - assets/images/vehicles/deals/mazda3_5.jpg
