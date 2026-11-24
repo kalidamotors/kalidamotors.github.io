@@ -230,3 +230,39 @@ deals:
       - assets/images/vehicles/deals/mazda3_3.jpg
       - assets/images/vehicles/deals/mazda3_4.jpg
       - assets/images/vehicles/deals/mazda3_5.jpg
+
+  - id: subaru-forester-2020-k9l5
+    title: Subaru Forester
+    subtitle: 2.0L Hybrid Advance
+    price: KES 3,421,000
+    costs:
+      cnf: 2000000
+      customs: 1236000
+      clearance: 85000
+      service_fee: 100000
+    savings_text: Save KES 350,000 vs Local
+    badge: Direct Import Deal
+    cta_text: Grab this deal
+    year: "2020"
+    grade: "4"
+    mileage: "116000 km"
+    fuel: "Hybrid"
+    transmission: "Auto"
+    engine_size: "2.0L"
+    drive_type: "AWD"
+    color: "White"
+    seats: "5 Seater"
+    chassis_id: "SJG"
+    engine_model: "FB20"
+    airbags: "6 (Front, Side, Curtain)"
+    wheel_size: "17-inch Alloy Wheels"
+    safety_systems: "ABS, EBD, Brake Assist, Lane Assist"
+    doors: "5"
+    efficiency: "14-16 km/l"
+    images:
+      - assets/images/vehicles/deals/forester_1.jpeg
+      - assets/images/vehicles/deals/forester_2.jpeg
+      - assets/images/vehicles/deals/forester_3.jpeg
+      - assets/images/vehicles/deals/forester_4.jpeg
+      - assets/images/vehicles/deals/forester_5.jpeg
+    
